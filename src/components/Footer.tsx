@@ -7,11 +7,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-8">
           {/* Logo */}
-          <div className="flex items-center justify-center space-x-3">
-            <div className="w-10 h-10 bg-primary transform rotate-45 flex items-center justify-center">
-              <div className="w-4 h-4 bg-white transform -rotate-45"></div>
-            </div>
-            <h2 className="text-3xl font-serif font-bold text-primary">CashoM</h2>
+          <div className="flex items-center justify-center">
+            <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-16 w-auto" />
           </div>
 
           {/* Social Icons */}

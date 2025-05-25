@@ -21,10 +21,7 @@ const Header = () => {
 
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary transform rotate-45 flex items-center justify-center">
-              <div className="w-3 h-3 bg-white transform -rotate-45"></div>
-            </div>
-            <h1 className="text-2xl font-serif font-bold text-primary">CashoM</h1>
+            <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-10 w-auto" />
           </div>
 
           {/* Social Icons */}
