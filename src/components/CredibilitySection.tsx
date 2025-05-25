@@ -1,7 +1,5 @@
-
 const CredibilitySection = () => {
-  return (
-    <section className="py-20 bg-secondary/30">
+  return <section className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Text Content */}
@@ -10,7 +8,7 @@ const CredibilitySection = () => {
               Trusted by Thousands
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Philip Wolf has guided over <strong className="text-primary">3,500+ cannabis consumers</strong> through 
+              Philip Wolf has guided over <strong className="text-primary">5,000+ cannabis consumers</strong> through 
               mindful experiences, bringing decades of expertise in conscious consumption and 
               wellness education to every certification program.
             </p>
@@ -22,11 +20,7 @@ const CredibilitySection = () => {
 
           {/* Image */}
           <div className="relative">
-            <img 
-              src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-              alt="Philip Wolf speaking at an event"
-              className="rounded-lg shadow-lg w-full h-80 object-cover"
-            />
+            <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Philip Wolf speaking at an event" className="rounded-lg shadow-lg w-full h-80 object-cover" />
           </div>
         </div>
 
@@ -36,18 +30,14 @@ const CredibilitySection = () => {
             As Featured In
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
-            {['NYTimes', 'Forbes', 'TIME', 'Bloomberg', 'CBC', 'Al Jazeera', 'High Times', 'Rolling Stone'].map((outlet) => (
-              <div key={outlet} className="text-center">
+            {['NYTimes', 'Forbes', 'TIME', 'Bloomberg', 'CBC', 'Al Jazeera', 'High Times', 'Rolling Stone'].map(outlet => <div key={outlet} className="text-center">
                 <div className="h-8 flex items-center justify-center bg-muted rounded px-3">
                   <span className="text-sm font-semibold text-muted-foreground">{outlet}</span>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CredibilitySection;
