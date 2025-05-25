@@ -1,7 +1,5 @@
-
 const CashomSection = () => {
-  return (
-    <section className="py-20 bg-white">
+  return <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
@@ -29,15 +27,11 @@ const CashomSection = () => {
               <div className="w-12 h-12 bg-primary transform rotate-45 flex items-center justify-center">
                 <div className="w-6 h-6 bg-white transform -rotate-45"></div>
               </div>
-              <span className="text-primary font-serif font-semibold text-xl">
-                Join the movement towards conscious cannabis education
-              </span>
+              <span className="text-primary font-serif font-semibold text-xl">Join the movement towards conscious cannabis education</span>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CashomSection;
