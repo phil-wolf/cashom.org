@@ -1,5 +1,6 @@
 
 import { Circle, Star, BarChart3, BookOpen, GraduationCap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const CoursesSection = () => {
   const offerings = [
@@ -22,7 +23,8 @@ const CoursesSection = () => {
       title: "THC ServeSmart",
       description: "Specialized training for the liquor industry on legal THC beverages. Learn proper serving techniques, dosage awareness, and responsible service practices for this emerging market segment.",
       buttonText: "Learn More →",
-      isLink: false
+      isLink: true,
+      url: "/thc-servesmart"
     },
     {
       icon: <BookOpen className="w-6 h-6 text-primary" />,
@@ -72,14 +74,23 @@ const CoursesSection = () => {
 
               {/* Learn More Button */}
               {offering.isLink ? (
-                <a 
-                  href={offering.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80 transition-colors font-medium text-sm inline-block"
-                >
-                  {offering.buttonText}
-                </a>
+                offering.url?.startsWith('http') ? (
+                  <a 
+                    href={offering.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-primary hover:text-primary/80 transition-colors font-medium text-sm inline-block"
+                  >
+                    {offering.buttonText}
+                  </a>
+                ) : (
+                  <Link 
+                    to={offering.url || '#'}
+                    className="text-primary hover:text-primary/80 transition-colors font-medium text-sm inline-block"
+                  >
+                    {offering.buttonText}
+                  </Link>
+                )
               ) : (
                 <button className="text-primary hover:text-primary/80 transition-colors font-medium text-sm">
                   {offering.buttonText}
