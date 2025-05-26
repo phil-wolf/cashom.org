@@ -61,15 +61,44 @@ const CredibilitySection = () => {
           </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-                <blockquote className="text-foreground/80 italic mb-4 text-sm leading-relaxed">
-                  "{testimonial.quote}"
-                </blockquote>
-                <div className="border-t pt-4">
-                  <p className="font-semibold text-primary">{testimonial.author}</p>
-                  {testimonial.company && (
-                    <p className="text-sm text-muted-foreground">{testimonial.company}</p>
-                  )}
+              <div key={index} className="relative group">
+                {/* Movie poster-inspired card */}
+                <div className="relative bg-gradient-to-br from-primary/90 via-primary/80 to-primary/70 p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl overflow-hidden">
+                  {/* Decorative elements */}
+                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent to-secondary"></div>
+                  <div className="absolute top-2 right-4 w-3 h-3 bg-accent rounded-full opacity-70"></div>
+                  <div className="absolute bottom-4 left-4 w-2 h-2 bg-secondary rounded-full opacity-50"></div>
+                  
+                  {/* Quote */}
+                  <blockquote className="text-primary-foreground/95 italic mb-6 text-sm leading-relaxed font-medium relative z-10">
+                    <span className="text-2xl text-accent opacity-70 absolute -top-2 -left-2">"</span>
+                    {testimonial.quote}
+                    <span className="text-2xl text-accent opacity-70 absolute -bottom-4 -right-2">"</span>
+                  </blockquote>
+                  
+                  {/* Author section with movie credits styling */}
+                  <div className="border-t border-primary-foreground/30 pt-4 relative z-10">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                        <span className="text-primary-foreground font-bold text-lg">
+                          {testimonial.author.charAt(0)}
+                        </span>
+                      </div>
+                      <div>
+                        <p className="font-bold text-primary-foreground text-base">
+                          {testimonial.author}
+                        </p>
+                        {testimonial.company && (
+                          <p className="text-primary-foreground/80 text-xs uppercase tracking-wider font-medium">
+                            {testimonial.company}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Subtle overlay pattern */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10 pointer-events-none"></div>
                 </div>
               </div>
             ))}
