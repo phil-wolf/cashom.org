@@ -1,4 +1,3 @@
-
 const CredibilitySection = () => {
   const testimonials = [
     {
@@ -7,7 +6,7 @@ const CredibilitySection = () => {
       company: "Kelly's Green Lounge"
     },
     {
-      quote: "What a moment to honor. In an industry where so much is performative, fast-paced, or purely transactional, this program grounded us in humility, reciprocity, and true plant education. Philip Wolf, thank you for teaching us the math, science, and art of cannabis service; even more, the responsibility that comes with it.",
+      quote: "Philip Wolf, thank you for teaching us the math, science, and art of cannabis service; even more, the responsibility that comes with it.",
       author: "Vanessa Olivar",
       company: "CannaLuxxe"
     },
@@ -17,12 +16,12 @@ const CredibilitySection = () => {
       company: "Dispensary owner in Oklahoma"
     },
     {
-      quote: "The past 10 weeks have really helped me shape all the goals and visions I have into something that is actually about to take off. I was really appreciative of not just the review and conversations we had around consumption methods and how to address it to folks of all different experience levels. But echoing what Vanessa said, the whole environmental element.",
+      quote: "The past 10 weeks have really helped me shape all the goals and visions I have into something that is actually about to take off. I was really appreciative of not just the review and conversations we had around consumption methods and how to address it to folks of all different experience levels.",
       author: "Isabella Dechard",
-      company: ""
+      company: "Cannabis Coach and Copywriter"
     },
     {
-      quote: "My customers come in all day, people and I'd be able to tell them the new facts or things I've learned and it was incredible to see the spark in their eyes of learning about terpenes and just learning the importance of the plant... I'm just so jazzed on the events I have planned up here. It's incredible and thank you so much.",
+      quote: "My customers come in all day, people and I'd be able to tell them the new facts or things I've learned (class) and it was incredible to see the spark in their eyes of learning about terpenes and just learning the importance of the plant... I'm just so jazzed on the events I have planned up here. It's incredible and thank you so much.",
       author: "Andrew Sablon",
       company: "Dispensary Owner in Kodiak (Island), Alaska"
     }
