@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import THCServeSmart from "./pages/THCServeSmart";
 import CashomInitiation from "./pages/CashomInitiation";
+import CannabisHospitalityCertification from "./pages/CannabisHospitalityCertification";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/thc-servesmart" element={<THCServeSmart />} />
           <Route path="/cashom-initiation" element={<CashomInitiation />} />
+          <Route path="/cannabis-hospitality-certification" element={<CannabisHospitalityCertification />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,3 +1,4 @@
+
 import { Circle, Star, BarChart3, BookOpen, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +9,8 @@ const CoursesSection = () => {
       title: "Cannabis Hospitality Stewardship Certification",
       description: "Learn the art of hospitality at the highest level—welcoming people into a transformational relationship with cannabis. Embody reverence and help others experience cannabis in ways that are relational, sacred, and impactful.",
       buttonText: "Learn More →",
-      isLink: false
+      isLink: true,
+      url: "/cannabis-hospitality-certification"
     },
     {
       icon: <Star className="w-6 h-6 text-primary" />,
