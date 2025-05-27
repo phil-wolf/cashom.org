@@ -1,4 +1,3 @@
-
 import { Circle, Star, BarChart3, BookOpen, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -16,7 +15,8 @@ const CoursesSection = () => {
       title: "The CashoM Initiation",
       description: "A yearlong training to become a Level 1 CashoM — a steward and server of the Cannabis plant. Investment: $12,000. Timeline: 12 months with weekly meetings, monthly group sessions, and a retreat in April 2026.",
       buttonText: "Learn More →",
-      isLink: false
+      isLink: true,
+      url: "/cashom-initiation"
     },
     {
       icon: <BarChart3 className="w-6 h-6 text-primary" />,
