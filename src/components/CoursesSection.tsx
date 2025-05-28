@@ -45,46 +45,56 @@ const CoursesSection = () => {
     }
   ];
 
-  const featuredSections = [
+  const horizontalOfferings = [
     {
-      icon: <Circle className="w-8 h-8 text-primary" />,
-      title: "Cannabis Hospitality Stewardship",
-      description: "Master the art of cannabis hospitality through personalized mentorship with Philip Wolf. Learn to create transformational experiences that honor the sacred relationship between people and the cannabis plant.",
+      icon: <Circle className="w-12 h-12 text-white" />,
+      title: "Cannabis Hospitality Stewardship Certification",
+      subtitle: "Personalized Mentorship Program",
+      description: "Master the art of cannabis hospitality through one-on-one mentorship with Philip Wolf. This comprehensive program teaches you to create transformational experiences that honor the sacred relationship between people and cannabis. Learn to guide others with reverence, intention, and deep understanding of the plant's healing potential.",
+      features: ["Personalized mentorship", "Sacred plant wisdom", "Hospitality mastery", "Transformational experiences"],
       buttonText: "Start Your Journey",
       url: "/cannabis-hospitality-certification",
-      bgColor: "bg-gradient-to-br from-primary/10 to-accent/20"
+      bgColor: "bg-gradient-to-r from-primary to-primary/80"
     },
     {
-      icon: <Star className="w-8 h-8 text-primary" />,
-      title: "CashoM Initiation",
-      description: "Embark on a comprehensive year-long journey to become a Level 1 CashoM. This intensive program combines weekly training, monthly group sessions, and hands-on retreat experiences.",
+      icon: <Star className="w-12 h-12 text-white" />,
+      title: "The CashoM Initiation",
+      subtitle: "Year-Long Comprehensive Training",
+      description: "Embark on an intensive 12-month journey to become a Level 1 CashoM—a true steward and server of the Cannabis plant. This transformative program combines weekly training sessions, monthly group experiences, and immersive retreat learning to develop your expertise and spiritual connection with cannabis.",
+      features: ["12-month program", "Weekly meetings", "Monthly group sessions", "April 2026 retreat"],
       buttonText: "Begin Initiation",
       url: "/cashom-initiation",
-      bgColor: "bg-gradient-to-br from-secondary/30 to-primary/10"
+      bgColor: "bg-gradient-to-r from-secondary/80 to-accent/80"
     },
     {
-      icon: <BarChart3 className="w-8 h-8 text-primary" />,
+      icon: <BarChart3 className="w-12 h-12 text-white" />,
       title: "THC ServeSmart Certification",
-      description: "Professional training for the hospitality industry on legal THC beverages. Master responsible service practices, dosage awareness, and customer education for this emerging market.",
+      subtitle: "Professional Hospitality Training",
+      description: "Specialized certification program designed for hospitality professionals working with legal THC beverages. Master responsible service practices, understand dosage implications, educate customers effectively, and navigate the regulatory landscape of this rapidly growing market segment.",
+      features: ["Industry certification", "Dosage awareness", "Customer education", "Regulatory compliance"],
       buttonText: "Get Certified",
       url: "/thc-servesmart",
-      bgColor: "bg-gradient-to-br from-accent/30 to-secondary/20"
+      bgColor: "bg-gradient-to-r from-accent/80 to-primary/60"
     },
     {
-      icon: <Heart className="w-8 h-8 text-primary" />,
-      title: "Core Beliefs & Philosophy",
-      description: "Explore our foundational beliefs about cannabis as teacher, ally, and sacred medicine. Understand the principles that guide our approach to education, hospitality, and conscious consumption.",
-      buttonText: "Discover Our Beliefs",
-      url: "#beliefs",
-      bgColor: "bg-gradient-to-br from-primary/15 to-accent/25"
-    },
-    {
-      icon: <BookOpen className="w-8 h-8 text-primary" />,
+      icon: <BookOpen className="w-12 h-12 text-white" />,
       title: "Free Educational Resources",
-      description: "Access our comprehensive library of cannabis education through our Substack publication. Stay informed with the latest research, insights, and developments in cannabis consciousness.",
+      subtitle: "Comprehensive Cannabis Library",
+      description: "Access our extensive collection of cannabis education through our Substack publication. Discover research-backed insights, consciousness-expanding content, and the latest developments in cannabis science, spirituality, and responsible consumption practices. All completely free to our community.",
+      features: ["Research insights", "Latest developments", "Consciousness content", "Community access"],
       buttonText: "Access Resources",
       url: "https://CashoM.substack.com",
-      bgColor: "bg-gradient-to-br from-secondary/25 to-primary/15"
+      bgColor: "bg-gradient-to-r from-primary/70 to-secondary/70"
+    },
+    {
+      icon: <GraduationCap className="w-12 h-12 text-white" />,
+      title: "Public Cannabis Courses",
+      subtitle: "Evidence-Based Learning",
+      description: "Enhance your cannabis knowledge through our public course offerings. Understand the plant's complex chemistry, learn evidence-based consumption practices, and stay current with emerging research that's transforming how we think about cannabis and its therapeutic applications.",
+      features: ["Plant chemistry", "Evidence-based practices", "Emerging research", "Therapeutic applications"],
+      buttonText: "Explore Courses",
+      url: "#",
+      bgColor: "bg-gradient-to-r from-secondary/60 to-accent/60"
     }
   ];
 
@@ -97,101 +107,81 @@ const CoursesSection = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-12 max-w-7xl mx-auto mb-20">
-          {offerings.map((offering, index) => (
-            <div key={index} className="text-center space-y-6">
-              {/* Icon Circle */}
-              <div className="w-24 h-24 border-2 border-primary rounded-full flex items-center justify-center mx-auto">
-                <div className="w-12 h-12 border border-primary rounded-full flex items-center justify-center">
-                  {offering.icon}
+        {/* Horizontal Offering Sections */}
+        <div className="space-y-12 max-w-7xl mx-auto">
+          {horizontalOfferings.map((offering, index) => (
+            <div 
+              key={index} 
+              className={`${offering.bgColor} rounded-2xl overflow-hidden shadow-xl border border-primary/20`}
+            >
+              <div className="p-8 md:p-12">
+                <div className="grid lg:grid-cols-2 gap-8 items-center">
+                  {/* Content Side */}
+                  <div className="space-y-6 text-white">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-20 h-20 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                        {offering.icon}
+                      </div>
+                      <div>
+                        <h3 className="text-2xl md:text-3xl font-serif font-bold">
+                          {offering.title}
+                        </h3>
+                        <p className="text-white/90 font-medium">
+                          {offering.subtitle}
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <p className="text-lg leading-relaxed text-white/95">
+                      {offering.description}
+                    </p>
+                    
+                    <div className="grid md:grid-cols-2 gap-2">
+                      {offering.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center space-x-2">
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
+                          <span className="text-white/90 text-sm">{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                    
+                    {offering.url.startsWith('http') ? (
+                      <a 
+                        href={offering.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors"
+                      >
+                        {offering.buttonText}
+                      </a>
+                    ) : offering.url === '#' ? (
+                      <button className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors">
+                        {offering.buttonText}
+                      </button>
+                    ) : (
+                      <Link 
+                        to={offering.url}
+                        className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-white/90 transition-colors"
+                      >
+                        {offering.buttonText}
+                      </Link>
+                    )}
+                  </div>
+                  
+                  {/* Visual Side */}
+                  <div className="relative">
+                    <div className="w-full h-64 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 flex items-center justify-center">
+                      <div className="w-32 h-32 border-4 border-white/30 rounded-full flex items-center justify-center">
+                        <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
+                          {offering.icon}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              {/* Title */}
-              <h3 className="text-xl font-serif text-primary font-semibold px-4">
-                {offering.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-foreground/70 leading-relaxed px-2 text-sm">
-                {offering.description}
-              </p>
-
-              {/* Learn More Button */}
-              {offering.isLink ? (
-                offering.url?.startsWith('http') ? (
-                  <a 
-                    href={offering.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary hover:text-primary/80 transition-colors font-medium text-sm inline-block"
-                  >
-                    {offering.buttonText}
-                  </a>
-                ) : (
-                  <Link 
-                    to={offering.url || '#'}
-                    className="text-primary hover:text-primary/80 transition-colors font-medium text-sm inline-block"
-                  >
-                    {offering.buttonText}
-                  </Link>
-                )
-              ) : (
-                <button className="text-primary hover:text-primary/80 transition-colors font-medium text-sm">
-                  {offering.buttonText}
-                </button>
-              )}
             </div>
           ))}
-        </div>
-
-        {/* Featured Sections */}
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {featuredSections.map((section, index) => (
-              <div 
-                key={index} 
-                className={`${section.bgColor} p-6 rounded-lg border border-primary/20 hover:shadow-lg transition-all duration-300 group`}
-              >
-                <div className="flex items-center justify-center w-16 h-16 bg-white rounded-full mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {section.icon}
-                </div>
-                
-                <h3 className="text-lg font-serif font-semibold text-primary mb-3 text-center">
-                  {section.title}
-                </h3>
-                
-                <p className="text-foreground/80 text-sm leading-relaxed mb-4 text-center">
-                  {section.description}
-                </p>
-                
-                {section.url.startsWith('http') ? (
-                  <a 
-                    href={section.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="block w-full text-center bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
-                  >
-                    {section.buttonText}
-                  </a>
-                ) : section.url.startsWith('#') ? (
-                  <a 
-                    href={section.url}
-                    className="block w-full text-center bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
-                  >
-                    {section.buttonText}
-                  </a>
-                ) : (
-                  <Link 
-                    to={section.url}
-                    className="block w-full text-center bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/90 transition-colors text-sm font-medium"
-                  >
-                    {section.buttonText}
-                  </Link>
-                )}
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>
