@@ -107,6 +107,46 @@ const CoursesSection = () => {
           </h2>
         </div>
 
+        {/* Original Offerings Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
+          {offerings.map((offering, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-shadow">
+              <div className="flex items-center mb-4">
+                {offering.icon}
+                <h3 className="text-xl font-serif font-semibold text-primary ml-3">
+                  {offering.title}
+                </h3>
+              </div>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                {offering.description}
+              </p>
+              {offering.isLink ? (
+                offering.url.startsWith('http') ? (
+                  <a 
+                    href={offering.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
+                  >
+                    {offering.buttonText}
+                  </a>
+                ) : (
+                  <Link 
+                    to={offering.url}
+                    className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors"
+                  >
+                    {offering.buttonText}
+                  </Link>
+                )
+              ) : (
+                <button className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors">
+                  {offering.buttonText}
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+
         {/* Horizontal Offering Sections */}
         <div className="space-y-12 max-w-7xl mx-auto">
           {horizontalOfferings.map((offering, index) => (
