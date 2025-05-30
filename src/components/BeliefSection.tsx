@@ -1,20 +1,21 @@
+
 import { Heart, Users, BookOpen } from 'lucide-react';
 
 const BeliefSection = () => {
   const beliefs = [
     {
       icon: <Heart className="w-8 h-8 text-primary" />,
-      title: "Cannabis for Social Connection, Lifestyle & Healing",
+      title: "Cannabis as a Plant Medicine for Social Connection, Lifestyle & Healing",
       description: "We believe cannabis is a powerful plant medicine that enhances social experiences, supports balanced lifestyles, and promotes holistic healing. When approached with intention and respect, it can foster meaningful connections, creative expression, and personal wellness journeys."
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Professional Excellence & Mindful Service",
+      title: "Cannabis as a Plant Medicine for Professional Excellence & Mindful Service",
       description: "We believe the cannabis industry deserves the highest standards of professionalism and mindful hospitality. Through comprehensive training and certification, we elevate cannabis service to create intentional, educational experiences that honor both the plant and the person."
     },
     {
       icon: <BookOpen className="w-8 h-8 text-primary" />,
-      title: "Education-First & Evidence-Based Approach",
+      title: "Cannabis as a Plant Medicine for Education-First & Evidence-Based Approach",
       description: "We believe in bridging traditional plant knowledge with modern science and evidence-based practices. Our commitment to authentic education over commercialization empowers individuals to make informed decisions and develop meaningful, mindful relationships with cannabis."
     }
   ];
