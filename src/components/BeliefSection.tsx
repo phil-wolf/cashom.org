@@ -1,12 +1,11 @@
-
 import { Heart, Users, BookOpen } from 'lucide-react';
 
 const BeliefSection = () => {
   const beliefs = [
     {
       icon: <Heart className="w-8 h-8 text-primary" />,
-      title: "Cannabis as Plant Medicine & Mindful Ally",
-      description: "We believe cannabis is a powerful plant medicine that, when approached with intention and respect, can support wellness, creativity, and personal growth. Through mindful consumption practices, we help people develop a conscious relationship with this remarkable plant."
+      title: "Cannabis for Social Connection, Lifestyle & Healing",
+      description: "We believe cannabis is a powerful plant medicine that enhances social experiences, supports balanced lifestyles, and promotes holistic healing. When approached with intention and respect, it can foster meaningful connections, creative expression, and personal wellness journeys."
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
