@@ -1,4 +1,3 @@
-
 import { Circle, Star, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -42,7 +41,7 @@ const CoursesSection = () => {
         "Professional service standards",
         "Customer experience optimization"
       ],
-      gradient: "from-primary/10 via-primary/5 to-secondary/10",
+      gradient: "from-primary/5 via-secondary/10 to-accent/15",
       iconBg: "bg-primary/10",
       iconColor: "text-primary",
       buttonText: "Learn More →",
@@ -61,8 +60,8 @@ const CoursesSection = () => {
         "Exclusive retreat experience in April 2026",
         "Professional certification upon completion"
       ],
-      gradient: "from-accent/20 via-secondary/10 to-primary/5",
-      iconBg: "bg-accent/20",
+      gradient: "from-accent/10 via-muted/15 to-secondary/20",
+      iconBg: "bg-accent/15",
       iconColor: "text-primary",
       buttonText: "Learn More →",
       isLink: true,
@@ -80,7 +79,7 @@ const CoursesSection = () => {
         "Legal compliance guidelines",
         "Market trend insights"
       ],
-      gradient: "from-secondary/15 via-muted/10 to-primary/5",
+      gradient: "from-secondary/15 via-muted/20 to-accent/10",
       iconBg: "bg-secondary/20",
       iconColor: "text-primary",
       buttonText: "Learn More →",
@@ -143,7 +142,7 @@ const CoursesSection = () => {
       </section>
 
       {/* Enhanced Horizontal Stacked Section */}
-      <section className="py-20 bg-gradient-to-br from-muted/30 to-secondary/20">
+      <section className="py-20 bg-gradient-to-br from-muted/20 to-secondary/10">
         <div className="w-full px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
@@ -156,16 +155,16 @@ const CoursesSection = () => {
 
           <div className="max-w-7xl mx-auto space-y-12">
             {enhancedOfferings.map((offering, index) => (
-              <div key={index} className={`relative overflow-hidden rounded-2xl bg-gradient-to-r ${offering.gradient} border border-white/20 shadow-xl`}>
+              <div key={index} className={`relative overflow-hidden rounded-2xl bg-gradient-to-r ${offering.gradient} border border-white/30 shadow-lg`}>
                 {/* Decorative circles */}
-                <div className="absolute top-8 right-8 w-32 h-32 rounded-full bg-white/10 blur-xl"></div>
-                <div className="absolute bottom-8 left-8 w-24 h-24 rounded-full bg-white/5 blur-lg"></div>
+                <div className="absolute top-8 right-8 w-32 h-32 rounded-full bg-white/5 blur-xl"></div>
+                <div className="absolute bottom-8 left-8 w-24 h-24 rounded-full bg-white/10 blur-lg"></div>
                 
                 <div className="relative p-8 md:p-12">
                   <div className="flex flex-col lg:flex-row items-start gap-8">
                     {/* Icon Section */}
                     <div className="flex-shrink-0">
-                      <div className={`w-20 h-20 ${offering.iconBg} rounded-2xl flex items-center justify-center shadow-lg border border-white/20`}>
+                      <div className={`w-20 h-20 ${offering.iconBg} rounded-2xl flex items-center justify-center shadow-md border border-white/30`}>
                         <div className={offering.iconColor}>
                           {offering.icon}
                         </div>
@@ -204,20 +203,20 @@ const CoursesSection = () => {
                               href={offering.url} 
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                             >
                               {offering.buttonText}
                             </a>
                           ) : (
                             <Link 
                               to={offering.url}
-                              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                             >
                               {offering.buttonText}
                             </Link>
                           )
                         ) : (
-                          <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                          <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             {offering.buttonText}
                           </button>
                         )}
