@@ -1,4 +1,5 @@
-import { Circle, Star, BarChart3, BookOpen, GraduationCap } from 'lucide-react';
+
+import { Circle, Star, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const CoursesSection = () => {
@@ -26,21 +27,6 @@ const CoursesSection = () => {
       buttonText: "Learn More →",
       isLink: true,
       url: "/thc-servesmart"
-    },
-    {
-      icon: <BookOpen className="w-6 h-6 text-primary" />,
-      title: "Free Education",
-      description: "Access our comprehensive library of cannabis education content, insights, and research through our Substack publication. Stay informed about the latest developments in cannabis consciousness and responsible consumption practices.",
-      buttonText: "Visit Substack →",
-      isLink: true,
-      url: "https://CashoM.substack.com"
-    },
-    {
-      icon: <GraduationCap className="w-6 h-6 text-primary" />,
-      title: "Public Courses",
-      description: "Become a better cannabis consumer by understanding the plant's complexities and applying new knowledge that's transforming the industry. Learn evidence-based consumption practices and stay current with emerging research and innovations.",
-      buttonText: "Learn More →",
-      isLink: false
     }
   ];
 
@@ -56,9 +42,9 @@ const CoursesSection = () => {
         "Professional service standards",
         "Customer experience optimization"
       ],
-      gradient: "from-emerald-500/20 via-green-400/15 to-teal-300/20",
-      iconBg: "bg-emerald-100",
-      iconColor: "text-emerald-600",
+      gradient: "from-primary/10 via-primary/5 to-secondary/10",
+      iconBg: "bg-primary/10",
+      iconColor: "text-primary",
       buttonText: "Learn More →",
       isLink: true,
       url: "/cannabis-hospitality-certification"
@@ -75,9 +61,9 @@ const CoursesSection = () => {
         "Exclusive retreat experience in April 2026",
         "Professional certification upon completion"
       ],
-      gradient: "from-purple-500/20 via-violet-400/15 to-indigo-300/20",
-      iconBg: "bg-purple-100",
-      iconColor: "text-purple-600",
+      gradient: "from-accent/20 via-secondary/10 to-primary/5",
+      iconBg: "bg-accent/20",
+      iconColor: "text-primary",
       buttonText: "Learn More →",
       isLink: true,
       url: "/cashom-initiation"
@@ -94,49 +80,12 @@ const CoursesSection = () => {
         "Legal compliance guidelines",
         "Market trend insights"
       ],
-      gradient: "from-blue-500/20 via-cyan-400/15 to-sky-300/20",
-      iconBg: "bg-blue-100",
-      iconColor: "text-blue-600",
+      gradient: "from-secondary/15 via-muted/10 to-primary/5",
+      iconBg: "bg-secondary/20",
+      iconColor: "text-primary",
       buttonText: "Learn More →",
       isLink: true,
       url: "/thc-servesmart"
-    },
-    {
-      icon: <BookOpen className="w-12 h-12" />,
-      title: "Free Education",
-      subtitle: "Comprehensive Cannabis Knowledge Library",
-      description: "Access our extensive library of cannabis education content, research insights, and industry analysis through our Substack publication. Stay informed about the latest developments in cannabis science and mindful consumption practices.",
-      features: [
-        "Weekly educational content",
-        "Research-backed insights",
-        "Industry trend analysis",
-        "Expert interviews and perspectives",
-        "Community discussion forums"
-      ],
-      gradient: "from-amber-500/20 via-orange-400/15 to-yellow-300/20",
-      iconBg: "bg-amber-100",
-      iconColor: "text-amber-600",
-      buttonText: "Visit Substack →",
-      isLink: true,
-      url: "https://CashoM.substack.com"
-    },
-    {
-      icon: <GraduationCap className="w-12 h-12" />,
-      title: "Public Courses",
-      subtitle: "Consumer Education & Best Practices",
-      description: "Become a more informed cannabis consumer by understanding the plant's complexities and applying evidence-based knowledge that's transforming the industry. Learn responsible consumption practices and stay current with emerging research.",
-      features: [
-        "Evidence-based consumption education",
-        "Plant science and biology",
-        "Consumption method comparisons",
-        "Safety and wellness protocols",
-        "Latest research findings"
-      ],
-      gradient: "from-rose-500/20 via-pink-400/15 to-red-300/20",
-      iconBg: "bg-rose-100",
-      iconColor: "text-rose-600",
-      buttonText: "Learn More →",
-      isLink: false
     }
   ];
 
@@ -151,8 +100,8 @@ const CoursesSection = () => {
             </h2>
           </div>
 
-          {/* Offerings Grid - All 5 Side by Side */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+          {/* Offerings Grid - 3 Side by Side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {offerings.map((offering, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-shadow">
                 <div className="flex flex-col items-center mb-4">
@@ -194,7 +143,7 @@ const CoursesSection = () => {
       </section>
 
       {/* Enhanced Horizontal Stacked Section */}
-      <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-muted/30 to-secondary/20">
         <div className="w-full px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
@@ -216,7 +165,7 @@ const CoursesSection = () => {
                   <div className="flex flex-col lg:flex-row items-start gap-8">
                     {/* Icon Section */}
                     <div className="flex-shrink-0">
-                      <div className={`w-20 h-20 ${offering.iconBg} rounded-2xl flex items-center justify-center shadow-lg`}>
+                      <div className={`w-20 h-20 ${offering.iconBg} rounded-2xl flex items-center justify-center shadow-lg border border-white/20`}>
                         <div className={offering.iconColor}>
                           {offering.icon}
                         </div>
@@ -255,20 +204,20 @@ const CoursesSection = () => {
                               href={offering.url} 
                               target="_blank" 
                               rel="noopener noreferrer"
-                              className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             >
                               {offering.buttonText}
                             </a>
                           ) : (
                             <Link 
                               to={offering.url}
-                              className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                              className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                             >
                               {offering.buttonText}
                             </Link>
                           )
                         ) : (
-                          <button className="inline-flex items-center px-8 py-4 bg-primary text-white font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                          <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                             {offering.buttonText}
                           </button>
                         )}
