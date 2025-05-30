@@ -46,55 +46,118 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section id="courses" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-            Our Offerings
-          </h2>
-        </div>
+    <>
+      {/* Original Grid Section */}
+      <section id="courses" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Our Offerings
+            </h2>
+          </div>
 
-        {/* Offerings Grid - All 5 Side by Side */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
-          {offerings.map((offering, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-shadow">
-              <div className="flex flex-col items-center mb-4">
-                {offering.icon}
-                <h3 className="text-lg font-serif font-semibold text-primary mt-3 text-center">
-                  {offering.title}
-                </h3>
-              </div>
-              <p className="text-gray-600 mb-6 leading-relaxed text-sm text-center">
-                {offering.description}
-              </p>
-              {offering.isLink ? (
-                offering.url.startsWith('http') ? (
-                  <a 
-                    href={offering.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
-                  >
-                    {offering.buttonText}
-                  </a>
+          {/* Offerings Grid - All 5 Side by Side */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto">
+            {offerings.map((offering, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-6 hover:shadow-xl transition-shadow">
+                <div className="flex flex-col items-center mb-4">
+                  {offering.icon}
+                  <h3 className="text-lg font-serif font-semibold text-primary mt-3 text-center">
+                    {offering.title}
+                  </h3>
+                </div>
+                <p className="text-gray-600 mb-6 leading-relaxed text-sm text-center">
+                  {offering.description}
+                </p>
+                {offering.isLink ? (
+                  offering.url.startsWith('http') ? (
+                    <a 
+                      href={offering.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
+                    >
+                      {offering.buttonText}
+                    </a>
+                  ) : (
+                    <Link 
+                      to={offering.url}
+                      className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
+                    >
+                      {offering.buttonText}
+                    </Link>
+                  )
                 ) : (
-                  <Link 
-                    to={offering.url}
-                    className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
-                  >
+                  <button className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm">
                     {offering.buttonText}
-                  </Link>
-                )
-              ) : (
-                <button className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm">
-                  {offering.buttonText}
-                </button>
-              )}
-            </div>
-          ))}
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* New Horizontal Stacked Section */}
+      <section className="py-20 bg-gradient-to-br from-accent/30 to-secondary/50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
+              Featured Programs
+            </h2>
+          </div>
+
+          <div className="max-w-6xl mx-auto space-y-8">
+            {offerings.map((offering, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                      <div className="w-8 h-8 text-primary">
+                        {offering.icon}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex-1 text-center md:text-left">
+                    <h3 className="text-2xl md:text-3xl font-serif font-bold text-primary mb-4">
+                      {offering.title}
+                    </h3>
+                    <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                      {offering.description}
+                    </p>
+                    <div className="flex justify-center md:justify-start">
+                      {offering.isLink ? (
+                        offering.url.startsWith('http') ? (
+                          <a 
+                            href={offering.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors"
+                          >
+                            {offering.buttonText}
+                          </a>
+                        ) : (
+                          <Link 
+                            to={offering.url}
+                            className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors"
+                          >
+                            {offering.buttonText}
+                          </Link>
+                        )
+                      ) : (
+                        <button className="inline-flex items-center px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors">
+                          {offering.buttonText}
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
