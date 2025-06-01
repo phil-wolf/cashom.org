@@ -31,24 +31,40 @@ const CannabisHospitalityCertification = () => {
 
   const curriculum = [
     {
-      title: "Consumption Theory",
-      description: "Learn the intricacies of cannabis so you can teach others how to identify their high before consuming and apply it to their experiences or passions in life."
+      title: "Relationship, Acknowledgement, Goals, Overview & Reciprocity",
+      description: "Establish foundational understanding of the sacred relationship with cannabis, acknowledge its cultural significance, and set clear goals for your journey in cannabis hospitality."
     },
     {
-      title: "Space Holder/Vibe Setter",
-      description: "Explore the flow of service and hospitality to become the ultimate space holder and vibe setter for cannabis consumption experiences."
+      title: "History, Plant Medicines, Strain Dilemma",
+      description: "Explore the rich history of cannabis as plant medicine, understand traditional uses, and navigate the complexities of modern strain selection and categorization."
     },
     {
-      title: "Legal Models",
-      description: "Gain insights into creating a legal cannabis hospitality business."
+      title: "Cultivation, Genetics, Entourage Effect",
+      description: "Learn about cannabis cultivation practices, genetic variations, and the scientific understanding of how different compounds work together in the entourage effect."
     },
     {
-      title: "Cannabis Guide",
-      description: "Understand how to guide participants in their consumption to achieve desired goals."
+      title: "A Deep Dive into Terpenes and Cannabinoids",
+      description: "Master the science behind cannabis compounds, understanding how terpenes and cannabinoids interact to create unique effects and experiences."
     },
     {
-      title: "Sales",
-      description: "Learn about marketing your business or services to maximize sales."
+      title: "Consumption Theory: How Cannabis Makes You Feel",
+      description: "Develop expertise in consumption theory to help clients understand and predict their cannabis experiences based on product selection and consumption methods."
+    },
+    {
+      title: "Customer Engagement, Service Techniques, Dosing",
+      description: "Learn professional service techniques for engaging with clients during their cannabis experience, including proper dosing guidance and safety protocols."
+    },
+    {
+      title: "Space Holding, Vibe Setting, Over Consumption Prevention",
+      description: "Master the art of creating safe, welcoming environments and learn techniques to prevent over-consumption while maintaining positive experiences."
+    },
+    {
+      title: "Concluding Your High",
+      description: "Understand how to guide clients through the end of their cannabis experience, ensuring comfort and integration of their journey."
+    },
+    {
+      title: "Marketing, Business Models, Legal and Business Strategy",
+      description: "Develop practical business skills including marketing strategies, viable business models, and understanding legal frameworks for cannabis hospitality enterprises."
     }
   ];
 
