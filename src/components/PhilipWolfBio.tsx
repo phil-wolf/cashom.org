@@ -1,5 +1,4 @@
-
-import { User, Award, BookOpen, Star, Users, Trophy } from 'lucide-react';
+import { User, Award, BookOpen, Star, Users, Trophy, ExternalLink } from 'lucide-react';
 
 const PhilipWolfBio = () => {
   const credentials = [
@@ -62,6 +61,59 @@ const PhilipWolfBio = () => {
     "Bon Appétit",
     "Travel + Leisure",
     "Condé Nast Traveler"
+  ];
+
+  const featuredArticles = [
+    {
+      publication: "High Times",
+      quote: "Philip Wolf is a pioneer in cannabis hospitality, bringing a unique approach to how people experience and understand cannabis.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "Men's Journal",
+      quote: "Cultivating Spirits elevates cannabis consumption with expertly curated pairings, akin to fine dining experiences.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "Rolling Stone",
+      quote: "Philip Wolf has redefined cannabis culture by creating immersive experiences that blend education and enjoyment.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "New York Times",
+      quote: "Cultivating Spirits offers an innovative take on cannabis, merging it seamlessly with culinary arts and hospitality.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "The Guardian",
+      quote: "Philip Wolf's Cultivating Spirits is at the forefront of the cannabis tourism wave, transforming perceptions of the plant.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "NBC Nightly News",
+      quote: "Cultivating Spirits pioneers the intersection of cannabis and hospitality, setting a new standard for industry events.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "Vice",
+      quote: "With Cultivating Spirits, Philip Wolf creates sophisticated cannabis experiences that challenge the stereotypes of consumption.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "Forbes",
+      quote: "Philip Wolf and Cultivating Spirits are leading the charge in the evolving cannabis industry, blending education with luxury.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "Thrillist",
+      quote: "Cultivating Spirits crafts experiences that change the way people think about cannabis, moving beyond the traditional.",
+      url: "#" // Replace with actual URL when available
+    },
+    {
+      publication: "Time",
+      quote: "Through Cultivating Spirits, Philip Wolf has made cannabis dining a sought-after experience, elevating the plant's cultural status.",
+      url: "#" // Replace with actual URL when available
+    }
   ];
 
   const speakingEngagements = [
@@ -210,9 +262,32 @@ const PhilipWolfBio = () => {
                 Philip's influence has been recognized by major media outlets, and as a Cannabis and Psychedelics Member Leader in the Rolling Stone Culture Council, Philip brings curiosity leadership to the global stage.
               </p>
               
+              {/* Featured Articles with Quotes */}
+              <div className="mb-8">
+                <h4 className="text-lg font-semibold text-primary mb-4">Featured Press Coverage</h4>
+                <div className="grid lg:grid-cols-2 gap-4">
+                  {featuredArticles.map((article, index) => (
+                    <div key={index} className="bg-white/70 rounded-lg p-4 border border-gray-200">
+                      <div className="flex items-start justify-between mb-2">
+                        <h5 className="font-semibold text-primary">{article.publication}</h5>
+                        <a 
+                          href={article.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-primary hover:text-primary/80 transition-colors"
+                        >
+                          <ExternalLink className="w-4 h-4" />
+                        </a>
+                      </div>
+                      <p className="text-sm text-gray-700 italic">"{article.quote}"</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
               <div className="grid lg:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-lg font-semibold text-primary mb-3">Media Recognition</h4>
+                  <h4 className="text-lg font-semibold text-primary mb-3">Additional Media Recognition</h4>
                   <div className="grid grid-cols-2 gap-2 max-h-80 overflow-y-auto">
                     {mediaRecognition.map((outlet, index) => (
                       <div key={index} className="flex items-center space-x-2">
