@@ -2,15 +2,13 @@ import { User, Award, BookOpen, Star, Users, Trophy } from 'lucide-react';
 
 const PhilipWolfBio = () => {
   const credentials = [
-    "Over 16 Years of Legal Cannabis Industry Experience",
+    "16+ Years of Legal Cannabis Industry Experience",
     "Founder & CEO of Cultivating Spirits – First U.S. Company to Offer Legal Cannabis Dinners",
-    "A Master Cultivator of Cannabis",
-    "Creator of the Cannabis Pairing Protocol",
-    "Over 5,000 Guests Served Through Curated Cannabis Dinners",
-    "Rolling Stone Magazine Culture Council – Member Leader for Cannabis & Psychedelics (2022-present)",
-    "Founder, Cannabis Hospitality Stewardship Certification Program",
-    "Public Speaker at SXSW, TEDx, and National Association of Catering and Events",
-    "Board of Directors – Cannabis Hospitality Program at Metropolitan State University (Curriculum Designer)"
+    "Master Cultivator & Creator of the Cannabis Pairing Protocol",
+    "5,000+ Guests Served Through Curated Cannabis Dinners",
+    "Rolling Stone Magazine Culture Council – Member Leader (2022-present)",
+    "Cannabis Hospitality Certification Program Founder",
+    "Board of Directors – Cannabis Hospitality Program at Metropolitan State University"
   ];
 
   const mediaRecognition = [
