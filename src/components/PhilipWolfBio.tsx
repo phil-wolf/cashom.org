@@ -49,17 +49,6 @@ const PhilipWolfBio = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              
-              {/* Rolling Stone Badge Overlay */}
-              <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-full shadow-lg border-4 border-white">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-2">
-                    <Award className="w-8 h-8 text-primary" />
-                  </div>
-                  <p className="text-xs font-bold text-primary">Rolling Stone</p>
-                  <p className="text-xs text-gray-600">Culture Council</p>
-                </div>
-              </div>
             </div>
 
             {/* Introduction Content */}
