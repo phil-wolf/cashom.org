@@ -287,7 +287,7 @@ const PhilipWolfBio = () => {
               
               <div className="grid lg:grid-cols-2 gap-8">
                 <div>
-                  <h4 className="text-lg font-semibold text-primary mb-3">Additional Media Recognition</h4>
+                  <h4 className="text-lg font-semibold text-primary mb-3">Media Recognition</h4>
                   <div className="grid grid-cols-2 gap-2 max-h-80 overflow-y-auto">
                     {mediaRecognition.map((outlet, index) => (
                       <div key={index} className="flex items-center space-x-2">
