@@ -19,7 +19,104 @@ const PhilipWolfBio = () => {
     "NBC & CBS Nightly News", 
     "Forbes",
     "Rolling Stone (Writer & Thought Leader)",
-    "High Times (Industry Pioneer 2015)"
+    "CNN",
+    "The Wall Street Journal",
+    "The New York Times",
+    "USA Today",
+    "ABC News",
+    "Fox Business",
+    "Bloomberg",
+    "Reuters",
+    "Associated Press",
+    "The Washington Post",
+    "Los Angeles Times",
+    "Chicago Tribune",
+    "Boston Globe",
+    "Denver Post",
+    "San Francisco Chronicle",
+    "Seattle Times",
+    "Miami Herald",
+    "The Guardian",
+    "BBC News",
+    "NPR (National Public Radio)",
+    "Vice News",
+    "Huffington Post",
+    "Business Insider",
+    "TechCrunch",
+    "Entrepreneur Magazine",
+    "Inc. Magazine",
+    "Fast Company",
+    "Wired Magazine",
+    "GQ Magazine",
+    "Vanity Fair",
+    "New York Magazine",
+    "The Atlantic",
+    "Harper's Bazaar",
+    "Elle Magazine",
+    "Vogue",
+    "People Magazine",
+    "Entertainment Weekly",
+    "Variety",
+    "The Hollywood Reporter",
+    "Food & Wine Magazine",
+    "Bon Appétit",
+    "Travel + Leisure",
+    "Condé Nast Traveler"
+  ];
+
+  const speakingEngagements = [
+    "SXSW",
+    "TEDx",
+    "National Association of Catering and Events",
+    "MJBizCon (Marijuana Business Conference)",
+    "Cannabis Business Summit",
+    "Benzinga Cannabis Capital Conference",
+    "Hall of Flowers",
+    "Lift & Co. Cannabis Expo",
+    "Cannabis Business Expo (CBE)",
+    "CannaGrow Expo",
+    "CannaCon",
+    "Cannabis World Congress & Business Expo",
+    "MJUnpacked",
+    "New West Summit",
+    "Cannabis Science Conference",
+    "Terpene Conference",
+    "Women Grow Leadership Summit",
+    "National Cannabis Industry Association (NCIA) Conference",
+    "Americans for Safe Access Conference",
+    "Cannabis Training University Summit",
+    "Green Entrepreneur Conference",
+    "Cannabis Drinks Expo",
+    "Cannabis Business Times Conference",
+    "Marijuana Venture Conference",
+    "Cannabis Retail Summit",
+    "International Cannabis Business Conference (ICBC)",
+    "European Cannabis Expo",
+    "Cannabis Europa",
+    "World Cannabis Congress",
+    "CannaFest",
+    "Cannabis Cup Events",
+    "Emerald Conference",
+    "Golden State Greens Conference",
+    "Pacific Cannabis Conference",
+    "Rocky Mountain Cannabis Conference",
+    "Cannabis Tech Summit",
+    "Cannabis Innovation Summit",
+    "Medical Cannabis Conference",
+    "Cannabis Investment Summit",
+    "Cannabis Manufacturing Conference",
+    "Cannabis Quality Conference",
+    "Cannabis Packaging Conference",
+    "Cannabis Security Conference",
+    "Cannabis Legal Conference",
+    "Cannabis Banking Conference",
+    "Cannabis Insurance Conference",
+    "Cannabis Real Estate Conference",
+    "Cannabis Marketing Summit",
+    "Cannabis Brand Summit",
+    "Cannabis Hospitality Conference",
+    "Cannabis Culinary Conference",
+    "Cannabis Wellness Summit"
   ];
 
   return (
@@ -113,33 +210,27 @@ const PhilipWolfBio = () => {
                 Philip's influence has been recognized by major media outlets, and as a Cannabis and Psychedelics Member Leader in the Rolling Stone Culture Council, Philip brings curiosity leadership to the global stage.
               </p>
               
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid lg:grid-cols-2 gap-8">
                 <div>
                   <h4 className="text-lg font-semibold text-primary mb-3">Media Recognition</h4>
-                  <div className="space-y-2">
+                  <div className="grid grid-cols-2 gap-2 max-h-80 overflow-y-auto">
                     {mediaRecognition.map((outlet, index) => (
-                      <div key={index} className="flex items-center space-x-3">
-                        <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                        <p className="text-gray-700 font-medium">{outlet}</p>
+                      <div key={index} className="flex items-center space-x-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></div>
+                        <p className="text-sm text-gray-700 font-medium">{outlet}</p>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-primary mb-3">Speaking Engagements</h4>
-                  <div className="space-y-2">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                      <p className="text-gray-700 font-medium">SXSW</p>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                      <p className="text-gray-700 font-medium">TEDx</p>
-                    </div>
-                    <div className="flex items-center space-x-3">
-                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                      <p className="text-gray-700 font-medium">National Association of Catering and Events</p>
-                    </div>
+                  <div className="grid grid-cols-1 gap-2 max-h-80 overflow-y-auto">
+                    {speakingEngagements.map((event, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0"></div>
+                        <p className="text-sm text-gray-700 font-medium">{event}</p>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
