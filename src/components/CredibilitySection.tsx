@@ -38,19 +38,18 @@ const CredibilitySection = () => {
               Trusted by Thousands
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Philip Wolf has guided over <strong className="text-primary">5,000+ cannabis consumers</strong> through 
-              mindful experiences, bringing decades of expertise in conscious consumption and 
-              wellness education to every certification program.
+              Through cannabis pairing dinners and curated events, Philip Wolf has guided over <strong className="text-primary">5,000+ cannabis consumers</strong> with 
+              precision and expertise, holding safe space and guiding them into enriching, elevated highs. With over 16 years in the legal cannabis industry, Philip brings decades of experience in cannabis hospitality, cannabis education, and professional service standards to every certification program he leads.
             </p>
             <p className="text-foreground/70">
-              His work has been featured in leading publications and media outlets, 
-              establishing him as a trusted voice in the evolving cannabis wellness space.
+              His work has been featured in Time Magazine, NBC & CBS Nightly News, Forbes, and as a writer for Rolling Stone, 
+              establishing him as a trusted authority in the evolving cannabis education and hospitality space.
             </p>
           </div>
 
           {/* Image */}
           <div className="relative">
-            <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Philip Wolf speaking at an event" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <img src="/lovable-uploads/528a060d-1f4b-4975-bbf6-eb1c257aa493.png" alt="Philip Wolf speaking at an event" className="rounded-lg shadow-lg w-full h-80 object-cover" />
           </div>
         </div>
 
