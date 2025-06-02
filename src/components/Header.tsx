@@ -2,6 +2,13 @@
 import { Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
 
 const Header = () => {
+  const scrollToCourses = () => {
+    const coursesSection = document.getElementById('courses');
+    if (coursesSection) {
+      coursesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-white shadow-sm border-b border-border">
       <div className="container mx-auto px-4 py-4">
@@ -11,9 +18,12 @@ const Header = () => {
             <a href="#" className="text-foreground hover:text-primary transition-colors">
               Home
             </a>
-            <a href="#courses" className="text-foreground hover:text-primary transition-colors">
+            <button 
+              onClick={scrollToCourses}
+              className="text-foreground hover:text-primary transition-colors"
+            >
               All Courses
-            </a>
+            </button>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>

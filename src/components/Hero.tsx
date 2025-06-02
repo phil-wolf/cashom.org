@@ -3,6 +3,13 @@ import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const scrollToCourses = () => {
+    const coursesSection = document.getElementById('courses');
+    if (coursesSection) {
+      coursesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-accent/20 to-secondary/30">
       <div 
@@ -22,6 +29,7 @@ const Hero = () => {
           size="lg" 
           className="bg-accent hover:bg-accent/90 text-primary border-2 border-primary/20 px-8 py-4 text-lg font-semibold animate-scale-in group"
           style={{ animationDelay: '0.4s' }}
+          onClick={scrollToCourses}
         >
           All Courses
           <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
