@@ -1,4 +1,3 @@
-
 import { User, Award, BookOpen, Star, Users, Trophy } from 'lucide-react';
 
 const PhilipWolfBio = () => {
@@ -19,7 +18,8 @@ const PhilipWolfBio = () => {
     "NBC & CBS Nightly News", 
     "Forbes",
     "Rolling Stone (Writer & Thought Leader)",
-    "High Times (Industry Pioneer 2015)"
+    "High Times (Industry Pioneer 2015)",
+    "+ many more mainstream media mentions"
   ];
 
   return (
@@ -139,6 +139,10 @@ const PhilipWolfBio = () => {
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 rounded-full bg-secondary"></div>
                       <p className="text-gray-700 font-medium">National Association of Catering and Events</p>
+                    </div>
+                    <div className="flex items-center space-x-3">
+                      <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                      <p className="text-gray-700 font-medium">30+ cannabis conferences</p>
                     </div>
                   </div>
                 </div>
