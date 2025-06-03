@@ -1,5 +1,6 @@
 import { Circle, Star, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const CoursesSection = () => {
   const offerings = [
@@ -9,7 +10,8 @@ const CoursesSection = () => {
       description: "Learn the art of hospitality at the highest level—welcoming people into a transformational relationship with cannabis. Develop skills to help others experience cannabis in ways that are intentional, mindful, and impactful.",
       buttonText: "Learn More →",
       isLink: true,
-      url: "/cannabis-hospitality-certification"
+      url: "/cannabis-hospitality-certification",
+      hasApplication: true
     },
     {
       icon: <Star className="w-6 h-6 text-primary" />,
@@ -46,7 +48,8 @@ const CoursesSection = () => {
       iconColor: "text-primary",
       buttonText: "Learn More →",
       isLink: true,
-      url: "/cannabis-hospitality-certification"
+      url: "/cannabis-hospitality-certification",
+      hasApplication: true
     },
     {
       icon: <Star className="w-12 h-12" />,
@@ -112,29 +115,39 @@ const CoursesSection = () => {
                 <p className="text-gray-600 mb-6 leading-relaxed text-sm text-center">
                   {offering.description}
                 </p>
-                {offering.isLink ? (
-                  offering.url.startsWith('http') ? (
-                    <a 
-                      href={offering.url} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
-                    >
-                      {offering.buttonText}
-                    </a>
+                <div className="space-y-3">
+                  {offering.isLink ? (
+                    offering.url.startsWith('http') ? (
+                      <a 
+                        href={offering.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
+                      >
+                        {offering.buttonText}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={offering.url}
+                        className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
+                      >
+                        {offering.buttonText}
+                      </Link>
+                    )
                   ) : (
-                    <Link 
-                      to={offering.url}
-                      className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm"
-                    >
+                    <button className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm">
                       {offering.buttonText}
+                    </button>
+                  )}
+                  
+                  {offering.hasApplication && (
+                    <Link to="/cannabis-hospitality-application">
+                      <Button className="w-full bg-accent hover:bg-accent/90 text-primary border border-primary/20">
+                        Apply Now
+                      </Button>
                     </Link>
-                  )
-                ) : (
-                  <button className="inline-flex items-center justify-center w-full text-primary font-medium hover:text-primary/80 transition-colors text-sm">
-                    {offering.buttonText}
-                  </button>
-                )}
+                  )}
+                </div>
               </div>
             ))}
           </div>
@@ -195,8 +208,8 @@ const CoursesSection = () => {
                         ))}
                       </div>
                       
-                      {/* Button */}
-                      <div className="pt-4">
+                      {/* Buttons */}
+                      <div className="pt-4 flex flex-wrap gap-4">
                         {offering.isLink ? (
                           offering.url.startsWith('http') ? (
                             <a 
@@ -219,6 +232,18 @@ const CoursesSection = () => {
                           <button className="inline-flex items-center px-8 py-4 bg-primary text-primary-foreground font-semibold rounded-xl hover:bg-primary/90 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
                             {offering.buttonText}
                           </button>
+                        )}
+                        
+                        {offering.hasApplication && (
+                          <Link to="/cannabis-hospitality-application">
+                            <Button 
+                              variant="outline" 
+                              size="lg"
+                              className="px-8 py-4 text-lg font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                            >
+                              Apply Now
+                            </Button>
+                          </Link>
                         )}
                       </div>
                     </div>

@@ -1,4 +1,3 @@
-
 import { ArrowLeft, CheckCircle, Target, BookOpen, Users, Award, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -96,9 +95,15 @@ const CannabisHospitalityCertification = () => {
             By Philip Wolf
           </p>
           
-          <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-foreground/70 max-w-3xl mx-auto leading-relaxed mb-8">
             Start Your Own Cannabis Hospitality Business or Service
           </p>
+          
+          <Link to="/cannabis-hospitality-application">
+            <Button size="lg" className="text-lg px-8 py-6">
+              Apply Now
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -139,9 +144,17 @@ const CannabisHospitalityCertification = () => {
                 The Cannabis Hospitality Stewardship Certificate (CHSC) is a prestigious credential designed for cannabis enthusiasts who aim to serve in the cannabis hospitality industry or incorporate cannabis into existing services like yoga asana.
               </p>
               
-              <p className="text-lg text-foreground/80 leading-relaxed">
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
                 This certification provides expertise in creating, managing, and delivering exceptional cannabis-infused experiences across various hospitality and wellness settings. Holding the CHP title signifies a comprehensive understanding of cannabis, including consumption theory, applications, legalities, mindfulness, market strategy and best practices, ensuring you can offer enlightening, compliant, safe and memorable services and experiences to your clients.
               </p>
+              
+              <div className="text-center">
+                <Link to="/cannabis-hospitality-application">
+                  <Button size="lg" className="text-lg px-8 py-4">
+                    Start Your Application
+                  </Button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -223,13 +236,15 @@ const CannabisHospitalityCertification = () => {
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
             Join the Cannabis Hospitality Stewardship Certification Program and learn directly from industry pioneer Philip Wolf.
           </p>
-          <Button 
-            size="lg" 
-            variant="secondary"
-            className="text-lg px-8 py-6"
-          >
-            Apply for Mentorship
-          </Button>
+          <Link to="/cannabis-hospitality-application">
+            <Button 
+              size="lg" 
+              variant="secondary"
+              className="text-lg px-8 py-6"
+            >
+              Apply for Mentorship
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
