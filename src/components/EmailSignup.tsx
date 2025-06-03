@@ -7,7 +7,7 @@ const EmailSignup = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState('');
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!email) {
@@ -18,28 +18,21 @@ const EmailSignup = () => {
     setIsSubmitting(true);
     setError('');
 
-    try {
-      const formData = new FormData();
-      formData.append('fields[email]', email);
-      formData.append('ml-submit', '1');
-      formData.append('anticsrf', 'true');
-
-      const response = await fetch('https://assets.mailerlite.com/jsonp/318197/forms/105933278184211992/subscribe', {
-        method: 'POST',
-        body: formData,
-        mode: 'no-cors'
-      });
-
-      // Since we're using no-cors, we can't read the response
-      // But if no error is thrown, we assume success
+    // Submit the form to the hidden iframe
+    const form = e.target as HTMLFormElement;
+    form.submit();
+    
+    // Show success message after a short delay
+    setTimeout(() => {
       setIsSuccess(true);
       setEmail('');
-    } catch (error) {
-      console.error('Subscription error:', error);
-      setError('Something went wrong. Please try again.');
-    } finally {
       setIsSubmitting(false);
-    }
+    }, 1000);
+  };
+
+  const handleIframeLoad = () => {
+    // This will be called when the iframe loads, indicating the form was submitted
+    console.log('Form submitted to MailerLite');
   };
 
   return (
@@ -65,33 +58,52 @@ const EmailSignup = () => {
               </button>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-              <div className="mb-4">
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Email"
-                  required
-                  className="w-full px-4 py-3 rounded border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-primary"
-                  disabled={isSubmitting}
-                />
-              </div>
+            <>
+              {/* Hidden iframe to capture form submission */}
+              <iframe 
+                name="hidden_iframe" 
+                style={{ display: 'none' }} 
+                onLoad={handleIframeLoad}
+              ></iframe>
               
-              {error && (
-                <div className="text-red-300 text-sm mb-4">
-                  {error}
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-white text-primary px-6 py-3 rounded font-semibold hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              <form 
+                onSubmit={handleSubmit} 
+                action="https://assets.mailerlite.com/jsonp/318197/forms/105933278184211992/subscribe" 
+                method="post" 
+                target="hidden_iframe"
+                className="max-w-md mx-auto"
               >
-                {isSubmitting ? 'Subscribing...' : 'Subscribe'}
-              </button>
-            </form>
+                <div className="mb-4">
+                  <input
+                    type="email"
+                    name="fields[email]"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Email"
+                    required
+                    className="w-full px-4 py-3 rounded border border-gray-300 text-gray-900 placeholder-gray-500 focus:outline-none focus:border-primary"
+                    disabled={isSubmitting}
+                  />
+                </div>
+                
+                {error && (
+                  <div className="text-red-300 text-sm mb-4">
+                    {error}
+                  </div>
+                )}
+
+                <input type="hidden" name="ml-submit" value="1" />
+                <input type="hidden" name="anticsrf" value="true" />
+
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-white text-primary px-6 py-3 rounded font-semibold hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {isSubmitting ? 'Subscribing...' : 'Subscribe'}
+                </button>
+              </form>
+            </>
           )}
 
           <p className="text-sm text-primary-foreground/60 mt-6">
