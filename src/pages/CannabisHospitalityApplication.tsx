@@ -1,6 +1,7 @@
 
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { Button } from '@/components/ui/button';
 
 const CannabisHospitalityApplication = () => {
   return (
@@ -22,28 +23,71 @@ const CannabisHospitalityApplication = () => {
             Apply for Cannabis Hospitality Stewardship Certification
           </h1>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto mb-8">
-            Take the first step towards becoming a certified cannabis hospitality professional. Complete the application form below to begin your journey.
+            Take the first step towards becoming a certified cannabis hospitality professional. Complete the application form to begin your journey.
           </p>
         </div>
       </section>
 
-      {/* Form Section */}
-      <section className="py-8">
+      {/* Application Section */}
+      <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-lg shadow-lg border border-border overflow-hidden">
-              <iframe 
-                src="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?embedded=true" 
-                width={640}
-                height={4333}
-                frameBorder={0}
-                marginHeight={0}
-                marginWidth={0}
-                className="w-full"
-                title="Cannabis Hospitality Stewardship Certification Application"
+          <div className="max-w-2xl mx-auto text-center">
+            <div className="bg-white rounded-lg shadow-lg border border-border p-12">
+              <h2 className="text-3xl font-serif font-bold text-primary mb-6">
+                Ready to Apply?
+              </h2>
+              <p className="text-lg text-foreground/70 mb-8">
+                Click the button below to access our secure application form. You'll be redirected to Google Forms where you can complete your application.
+              </p>
+              
+              <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Loading…
-              </iframe>
+                <Button size="lg" className="text-lg px-8 py-6">
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  Complete Application Form
+                </Button>
+              </a>
+              
+              <p className="text-sm text-foreground/60 mt-6">
+                The form will open in a new tab for your convenience
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Additional Info Section */}
+      <section className="py-16 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-2xl font-serif font-bold text-primary mb-6">
+              What to Expect
+            </h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary font-bold text-xl">1</span>
+                </div>
+                <h4 className="font-semibold text-primary mb-2">Complete Form</h4>
+                <p className="text-foreground/70">Fill out the comprehensive application with your background and goals</p>
+              </div>
+              <div className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary font-bold text-xl">2</span>
+                </div>
+                <h4 className="font-semibold text-primary mb-2">Review Process</h4>
+                <p className="text-foreground/70">Our team will review your application and contact you within 48 hours</p>
+              </div>
+              <div className="p-6">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <span className="text-primary font-bold text-xl">3</span>
+                </div>
+                <h4 className="font-semibold text-primary mb-2">Begin Journey</h4>
+                <p className="text-foreground/70">Start your cannabis hospitality certification program</p>
+              </div>
             </div>
           </div>
         </div>
