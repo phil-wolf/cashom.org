@@ -5,6 +5,8 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
 const CannabisHospitalityCertification = () => {
+  const applicationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header";
+
   const benefits = [
     "The Cannabis Hospitality Stewardship Certification Program for Professionals",
     "CashoM seal of approval – This seal will continue to grow in value as CashoM gains popularity",
@@ -99,11 +101,15 @@ const CannabisHospitalityCertification = () => {
             Start Your Own Cannabis Hospitality Business or Service
           </p>
           
-          <Link to="/cannabis-hospitality-application">
+          <a 
+            href={applicationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button size="lg" className="text-lg px-8 py-6">
               Apply Now
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -149,11 +155,15 @@ const CannabisHospitalityCertification = () => {
               </p>
               
               <div className="text-center">
-                <Link to="/cannabis-hospitality-application">
+                <a 
+                  href={applicationUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button size="lg" className="text-lg px-8 py-4">
                     Start Your Application
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -236,7 +246,11 @@ const CannabisHospitalityCertification = () => {
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
             Join the Cannabis Hospitality Stewardship Certification Program and learn directly from industry pioneer Philip Wolf.
           </p>
-          <Link to="/cannabis-hospitality-application">
+          <a 
+            href={applicationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <Button 
               size="lg" 
               variant="secondary"
@@ -244,7 +258,7 @@ const CannabisHospitalityCertification = () => {
             >
               Apply for Mentorship
             </Button>
-          </Link>
+          </a>
         </div>
       </section>
     </div>

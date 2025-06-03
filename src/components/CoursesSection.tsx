@@ -1,3 +1,4 @@
+
 import { Circle, Star, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -11,7 +12,8 @@ const CoursesSection = () => {
       buttonText: "Learn More →",
       isLink: true,
       url: "/cannabis-hospitality-certification",
-      hasApplication: true
+      hasApplication: true,
+      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
     },
     {
       icon: <Star className="w-6 h-6 text-primary" />,
@@ -49,7 +51,8 @@ const CoursesSection = () => {
       buttonText: "Learn More →",
       isLink: true,
       url: "/cannabis-hospitality-certification",
-      hasApplication: true
+      hasApplication: true,
+      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
     },
     {
       icon: <Star className="w-12 h-12" />,
@@ -141,11 +144,15 @@ const CoursesSection = () => {
                   )}
                   
                   {offering.hasApplication && (
-                    <Link to="/cannabis-hospitality-application">
+                    <a 
+                      href={offering.applicationUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Button className="w-full bg-accent hover:bg-accent/90 text-primary border border-primary/20">
                         Apply Now
                       </Button>
-                    </Link>
+                    </a>
                   )}
                 </div>
               </div>
@@ -235,7 +242,11 @@ const CoursesSection = () => {
                         )}
                         
                         {offering.hasApplication && (
-                          <Link to="/cannabis-hospitality-application">
+                          <a 
+                            href={offering.applicationUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <Button 
                               variant="outline" 
                               size="lg"
@@ -243,7 +254,7 @@ const CoursesSection = () => {
                             >
                               Apply Now
                             </Button>
-                          </Link>
+                          </a>
                         )}
                       </div>
                     </div>
