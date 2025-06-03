@@ -34,11 +34,11 @@ const CannabisHospitalityApplication = () => {
             <div className="bg-white rounded-lg shadow-lg border border-border overflow-hidden">
               <iframe 
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?embedded=true" 
-                width="100%" 
-                height="4333" 
-                frameBorder="0" 
-                marginHeight="0" 
-                marginWidth="0"
+                width={640}
+                height={4333}
+                frameBorder={0}
+                marginHeight={0}
+                marginWidth={0}
                 className="w-full"
                 title="Cannabis Hospitality Stewardship Certification Application"
               >
