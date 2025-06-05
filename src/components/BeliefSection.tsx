@@ -28,7 +28,7 @@ const BeliefSection = () => {
             We Believe
           </h2>
           <p className="text-xl text-center text-primary/80 mb-16 max-w-4xl mx-auto">
-            Our core beliefs shape everything we do—from education and certification to the experiences we create and the professionals we train.
+            that we're Not Just Serving Cannabis — We're Shaping Culture
           </p>
           
           <div className="grid md:grid-cols-3 gap-8">
