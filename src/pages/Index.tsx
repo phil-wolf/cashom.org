@@ -19,9 +19,9 @@ const Index = () => {
       <CoursesSection />
       <CredibilitySection />
       <PhilipWolfSection />
-      <EmailSignup />
       <FeaturedProgramsSection />
       <CashomSection />
+      <EmailSignup />
       <Footer />
     </div>
   );
