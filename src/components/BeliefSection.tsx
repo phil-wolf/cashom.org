@@ -11,19 +11,27 @@ const BeliefSection = () => {
       
       <div className="relative z-10 container mx-auto px-4">
         <div className="max-w-5xl mx-auto text-center">
-          {/* Main heading with enhanced styling */}
+          {/* Main heading with enhanced styling and background logo */}
           <div className="relative">
-            <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-primary leading-tight tracking-tight">
-              <span className="block bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
-                Elevating Culture
-              </span>
-              <span className="block mt-2 bg-gradient-to-r from-primary/90 via-accent to-primary bg-clip-text text-transparent">
-                Through Cannabis
-              </span>
-              <span className="block mt-2 text-primary/80">
-                Hospitality
-              </span>
-            </h2>
+            {/* Large transparent logo behind text */}
+            <div className="absolute inset-0 flex items-center justify-center opacity-10 z-0">
+              <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo Background" className="h-96 w-auto" />
+            </div>
+            
+            {/* Main heading text */}
+            <div className="relative z-10">
+              <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-primary leading-tight tracking-tight">
+                <span className="block bg-gradient-to-r from-primary via-primary/80 to-primary bg-clip-text text-transparent">
+                  Elevating Culture
+                </span>
+                <span className="block mt-2 bg-gradient-to-r from-primary/90 via-accent to-primary bg-clip-text text-transparent">
+                  Through Cannabis
+                </span>
+                <span className="block mt-2 text-primary/80">
+                  Hospitality
+                </span>
+              </h2>
+            </div>
             
             {/* Decorative underline */}
             <div className="flex justify-center mt-8">
@@ -36,11 +44,6 @@ const BeliefSection = () => {
             <p className="text-lg md:text-xl text-primary/70 font-medium leading-relaxed">
               Setting new standards for mindful, professional cannabis service
             </p>
-          </div>
-
-          {/* CashoM Logo */}
-          <div className="mt-12 flex justify-center">
-            <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-20 w-auto" />
           </div>
         </div>
       </div>
