@@ -32,7 +32,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
             alt="CashoM Logo" 
-            className="h-20 w-auto md:h-24 opacity-90" 
+            className="h-40 w-auto md:h-48 opacity-90" 
           />
         </div>
 
