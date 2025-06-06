@@ -1,8 +1,8 @@
 
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import BeliefSection from '@/components/BeliefSection';
 import CashomSection from '@/components/CashomSection';
+import BeliefSection from '@/components/BeliefSection';
 import CredibilitySection from '@/components/CredibilitySection';
 import CoursesSection from '@/components/CoursesSection';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
@@ -14,8 +14,8 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <Hero />
-      <BeliefSection />
       <CashomSection />
+      <BeliefSection />
       <CredibilitySection />
       <CoursesSection />
       <PhilipWolfSection />
