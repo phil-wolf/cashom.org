@@ -40,9 +40,7 @@ const BeliefSection = () => {
 
           {/* CashoM Logo */}
           <div className="mt-12 flex justify-center">
-            <div className="inline-flex items-center bg-white/80 backdrop-blur-sm px-8 py-4 rounded-2xl shadow-lg border border-white/30">
-              <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-12 w-auto" />
-            </div>
+            <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-20 w-auto" />
           </div>
         </div>
       </div>
