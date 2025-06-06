@@ -15,7 +15,7 @@ const BeliefSection = () => {
           <div className="relative">
             {/* Large transparent logo behind text */}
             <div className="absolute inset-0 flex items-center justify-center opacity-10 z-0">
-              <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo Background" className="h-96 w-auto" />
+              <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo Background" className="h-[32rem] w-auto" />
             </div>
             
             {/* Main heading text */}
