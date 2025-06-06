@@ -42,7 +42,7 @@ const BeliefSection = () => {
           {/* Subtle supporting text */}
           <div className="mt-12 max-w-2xl mx-auto">
             <p className="text-lg md:text-xl text-primary/70 font-medium leading-relaxed">
-              Setting new standards for mindful, professional cannabis service
+              Setting new standards for professional cannabis service through education
             </p>
           </div>
         </div>
