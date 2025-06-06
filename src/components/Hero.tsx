@@ -26,7 +26,7 @@ const Hero = () => {
         }}>Cannabis Certifications for Hospitality, Service & Wellness Professionals</p>
         
         {/* CashoM Logo */}
-        <div className="flex justify-center mb-8 animate-fade-in" style={{
+        <div className="flex justify-center mb-4 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
           <img 
