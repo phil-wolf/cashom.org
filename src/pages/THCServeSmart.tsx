@@ -1,4 +1,3 @@
-
 import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
@@ -135,7 +134,7 @@ const THCServeSmart = () => {
               Get Certified in THC Beverage Service with ServeSmart™
             </h1>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
-              The First-of-Its-Kind Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
+              The most comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-foreground/80 leading-relaxed mb-8">
