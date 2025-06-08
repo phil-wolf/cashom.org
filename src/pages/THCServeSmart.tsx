@@ -2,128 +2,71 @@ import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefc
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-
 const THCServeSmart = () => {
-  const benefits = [
-    {
-      icon: <Check className="w-6 h-6 text-primary" />,
-      title: "Protect Your Bar, Venue, or License",
-      description: "Learn how to dose and serve responsibly, avoiding overconsumption and liability."
-    },
-    {
-      icon: <Users className="w-6 h-6 text-primary" />,
-      title: "Train Your Staff to Sell With Confidence",
-      description: "Give your team the language and understanding to properly guide first-time THC beverage drinkers."
-    },
-    {
-      icon: <Star className="w-6 h-6 text-primary" />,
-      title: "Meet the Moment",
-      description: "Be one of the first in your region to responsibly integrate cannabis drinks into service — and stand out from competitors."
-    },
-    {
-      icon: <BookOpen className="w-6 h-6 text-primary" />,
-      title: "Align With Regulation Before It Hits",
-      description: "Get ahead of evolving compliance standards by implementing safe service practices now."
-    },
-    {
-      icon: <Award className="w-6 h-6 text-primary" />,
-      title: "Gain Product Expertise",
-      description: "Learn directly from leading THC beverage brands through embedded product education modules."
-    }
-  ];
-
-  const learningTopics = [
-    "How THC works in the body — and how to explain onset and duration to customers",
-    "Best practices for low-dose, microdose, and stacked beverage service",
-    "Differences between cannabis and alcohol intoxication",
-    "Guidelines for combining THC and alcohol — and when not to",
-    "How to talk about effects, cannabinoids, and dosing without sounding like a dispensary",
-    "Real-world examples for managing guest experiences with professionalism and care",
-    "Brand education on specific products you'll be selling or serving"
-  ];
-
-  const targetAudience = [
-    "Bartenders & Servers",
-    "Bar Managers & Beverage Directors",
-    "Alcohol Distributors & Brand Reps",
-    "Retail Beverage Staff & Hospitality Teams",
-    "Event Hosts, Venues & Promoters"
-  ];
-
-  const included = [
-    {
-      icon: <Play className="w-5 h-5 text-primary" />,
-      title: "On-Demand Video Training"
-    },
-    {
-      icon: <Download className="w-5 h-5 text-primary" />,
-      title: "Downloadable Tools & Dosing Guides"
-    },
-    {
-      icon: <Mic className="w-5 h-5 text-primary" />,
-      title: "Bonus: \"Real Talk with Bartenders\" Podcast Series"
-    },
-    {
-      icon: <Check className="w-5 h-5 text-primary" />,
-      title: "Certification Exam + Digital Badge"
-    },
-    {
-      icon: <Badge className="w-5 h-5 text-primary" />,
-      title: "ServeSmart Lapel Pin to wear proudly behind the bar"
-    },
-    {
-      icon: <BookOpen className="w-5 h-5 text-primary" />,
-      title: "Brand-Specific THC Beverage Product Education"
-    },
-    {
-      icon: <Briefcase className="w-5 h-5 text-primary" />,
-      title: "Lifetime Access + Updates as Regulations Evolve"
-    }
-  ];
-
-  const pathway = [
-    {
-      level: "Level 1: THC ServeSmart Certified™",
-      subtitle: "Safe Service Fundamentals",
-      items: [
-        "Responsible service",
-        "Dosing basics",
-        "Onset & duration",
-        "Guest communication",
-        "THC vs alcohol"
-      ],
-      badge: "🥇",
-      note: "Includes digital badge + lapel pin"
-    },
-    {
-      level: "Level 2: THC ServeSmart Sensory Pro™ (Coming Soon)",
-      subtitle: "Flavor & Experience Design",
-      items: [
-        "Terpenes & flavonoids",
-        "Flavor mapping",
-        "Food & beverage pairing",
-        "Aromatic profiles",
-        "Elevated mixology"
-      ],
-      badge: "🥈"
-    },
-    {
-      level: "CashoM™ – Full-Spectrum Cannabis Hospitality",
-      subtitle: "Understanding All Realms of THC",
-      items: [
-        "Scientific + energetic THC knowledge",
-        "Historical + cultural cannabis use",
-        "Conscious consumption frameworks",
-        "Hosting intentional cannabis experiences",
-        "Deepening the human–plant relationship"
-      ],
-      badge: "🌟",
-      note: "Mastery Level"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const benefits = [{
+    icon: <Check className="w-6 h-6 text-primary" />,
+    title: "Protect Your Bar, Venue, or License",
+    description: "Learn how to dose and serve responsibly, avoiding overconsumption and liability."
+  }, {
+    icon: <Users className="w-6 h-6 text-primary" />,
+    title: "Train Your Staff to Sell With Confidence",
+    description: "Give your team the language and understanding to properly guide first-time THC beverage drinkers."
+  }, {
+    icon: <Star className="w-6 h-6 text-primary" />,
+    title: "Meet the Moment",
+    description: "Be one of the first in your region to responsibly integrate cannabis drinks into service — and stand out from competitors."
+  }, {
+    icon: <BookOpen className="w-6 h-6 text-primary" />,
+    title: "Align With Regulation Before It Hits",
+    description: "Get ahead of evolving compliance standards by implementing safe service practices now."
+  }, {
+    icon: <Award className="w-6 h-6 text-primary" />,
+    title: "Gain Product Expertise",
+    description: "Learn directly from leading THC beverage brands through embedded product education modules."
+  }];
+  const learningTopics = ["How THC works in the body — and how to explain onset and duration to customers", "Best practices for low-dose, microdose, and stacked beverage service", "Differences between cannabis and alcohol intoxication", "Guidelines for combining THC and alcohol — and when not to", "How to talk about effects, cannabinoids, and dosing without sounding like a dispensary", "Real-world examples for managing guest experiences with professionalism and care", "Brand education on specific products you'll be selling or serving"];
+  const targetAudience = ["Bartenders & Servers", "Bar Managers & Beverage Directors", "Alcohol Distributors & Brand Reps", "Retail Beverage Staff & Hospitality Teams", "Event Hosts, Venues & Promoters"];
+  const included = [{
+    icon: <Play className="w-5 h-5 text-primary" />,
+    title: "On-Demand Video Training"
+  }, {
+    icon: <Download className="w-5 h-5 text-primary" />,
+    title: "Downloadable Tools & Dosing Guides"
+  }, {
+    icon: <Mic className="w-5 h-5 text-primary" />,
+    title: "Bonus: \"Real Talk with Bartenders\" Podcast Series"
+  }, {
+    icon: <Check className="w-5 h-5 text-primary" />,
+    title: "Certification Exam + Digital Badge"
+  }, {
+    icon: <Badge className="w-5 h-5 text-primary" />,
+    title: "ServeSmart Lapel Pin to wear proudly behind the bar"
+  }, {
+    icon: <BookOpen className="w-5 h-5 text-primary" />,
+    title: "Brand-Specific THC Beverage Product Education"
+  }, {
+    icon: <Briefcase className="w-5 h-5 text-primary" />,
+    title: "Lifetime Access + Updates as Regulations Evolve"
+  }];
+  const pathway = [{
+    level: "Level 1: THC ServeSmart Certified™",
+    subtitle: "Safe Service Fundamentals",
+    items: ["Responsible service", "Dosing basics", "Onset & duration", "Guest communication", "THC vs alcohol"],
+    badge: "🥇",
+    note: "Includes digital badge + lapel pin"
+  }, {
+    level: "Level 2: THC ServeSmart Sensory Pro™ (Coming Soon)",
+    subtitle: "Flavor & Experience Design",
+    items: ["Terpenes & flavonoids", "Flavor mapping", "Food & beverage pairing", "Aromatic profiles", "Elevated mixology"],
+    badge: "🥈"
+  }, {
+    level: "CashoM™ – Full-Spectrum Cannabis Hospitality",
+    subtitle: "Understanding All Realms of THC",
+    items: ["Scientific + energetic THC knowledge", "Historical + cultural cannabis use", "Conscious consumption frameworks", "Hosting intentional cannabis experiences", "Deepening the human–plant relationship"],
+    badge: "🌟",
+    note: "Mastery Level"
+  }];
+  return <div className="min-h-screen">
       <Header />
       
       {/* Hero Section */}
@@ -141,11 +84,9 @@ const THCServeSmart = () => {
                 Cannabis-infused beverages are rapidly entering bars, restaurants, events, and retail shelves across the country. As this category grows, the need for educated, responsible service is critical — especially for professionals already skilled in alcohol service.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                <strong className="text-primary">ServeSmart™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
+                <strong className="text-primary">THC-ServeSmart™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
               </p>
-              <p className="text-foreground/70 mb-8">
-                Created by cannabis hospitality expert Philip Wolf through CashoM – The Trusted School for Cannabis Hospitality Professionals, ServeSmart bridges the gap between alcohol experience and cannabis beverage expertise.
-              </p>
+              <p className="text-foreground/70 mb-8">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC-ServeSmart bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
               👉 Enroll in ServeSmart Today
@@ -162,8 +103,7 @@ const THCServeSmart = () => {
               Why Get ServeSmart Certified?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {benefits.map((benefit, index) => (
-                <div key={index} className="bg-secondary/20 p-8 rounded-lg">
+              {benefits.map((benefit, index) => <div key={index} className="bg-secondary/20 p-8 rounded-lg">
                   <div className="flex items-center mb-4">
                     {benefit.icon}
                     <h3 className="text-xl font-serif font-semibold text-primary ml-3">
@@ -173,8 +113,7 @@ const THCServeSmart = () => {
                   <p className="text-foreground/70 leading-relaxed">
                     {benefit.description}
                   </p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -188,12 +127,10 @@ const THCServeSmart = () => {
               What You'll Learn
             </h2>
             <div className="space-y-4">
-              {learningTopics.map((topic, index) => (
-                <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-lg shadow-sm">
+              {learningTopics.map((topic, index) => <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-lg shadow-sm">
                   <Check className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                   <p className="text-foreground/80 leading-relaxed">{topic}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -207,12 +144,10 @@ const THCServeSmart = () => {
               Who Should Get Certified
             </h2>
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              {targetAudience.map((audience, index) => (
-                <div key={index} className="flex items-center space-x-4 bg-accent/20 p-6 rounded-lg">
+              {targetAudience.map((audience, index) => <div key={index} className="flex items-center space-x-4 bg-accent/20 p-6 rounded-lg">
                   <Users className="w-8 h-8 text-primary" />
                   <span className="text-lg font-medium text-primary">{audience}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
             <p className="text-center text-foreground/70 text-lg">
               Whether you're preparing your team or your accounts, ServeSmart gives you the tools to lead with clarity and confidence.
@@ -229,12 +164,10 @@ const THCServeSmart = () => {
               What's Included
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {included.map((item, index) => (
-                <div key={index} className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
+              {included.map((item, index) => <div key={index} className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
                   {item.icon}
                   <span className="text-foreground/80 font-medium">{item.title}</span>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -276,8 +209,7 @@ const THCServeSmart = () => {
               Your certification journey doesn't stop here. Continue your education and elevate your role in cannabis hospitality with our advanced training offerings:
             </p>
             <div className="space-y-8">
-              {pathway.map((level, index) => (
-                <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
+              {pathway.map((level, index) => <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
                   <div className="flex items-start space-x-4 mb-6">
                     <span className="text-3xl">{level.badge}</span>
                     <div>
@@ -285,21 +217,16 @@ const THCServeSmart = () => {
                         {level.level}
                       </h3>
                       <p className="text-lg text-primary/80 font-medium mb-4">{level.subtitle}</p>
-                      {level.note && (
-                        <p className="text-sm text-foreground/60 mb-4">{level.note}</p>
-                      )}
+                      {level.note && <p className="text-sm text-foreground/60 mb-4">{level.note}</p>}
                     </div>
                   </div>
                   <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {level.items.map((item, itemIndex) => (
-                      <div key={itemIndex} className="flex items-center space-x-2">
+                    {level.items.map((item, itemIndex) => <div key={itemIndex} className="flex items-center space-x-2">
                         <Check className="w-4 h-4 text-primary flex-shrink-0" />
                         <span className="text-foreground/80">{item}</span>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -326,8 +253,6 @@ const THCServeSmart = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default THCServeSmart;
