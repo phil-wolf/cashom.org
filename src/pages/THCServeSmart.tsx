@@ -191,7 +191,7 @@ const THCServeSmart = () => {
               </div>
               <div className="bg-secondary/20 p-6 rounded-lg">
                 <p className="text-lg text-foreground/80 mb-2">
-                  <strong>Team & Distributor Packages:</strong> Custom pricing for 5+ licenses
+                  <strong>Team & Distributor Packages:</strong> Custom pricing for 5+ Employees
                 </p>
                 <p className="text-foreground/70">
                   Bulk discounts and sponsorship options available — <Button variant="link" className="p-0 h-auto text-primary">Contact Us</Button>
