@@ -134,7 +134,7 @@ const THCServeSmart = () => {
               Get Certified in THC Beverage Service with ServeSmart™
             </h1>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
-              The most comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
+              The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg text-foreground/80 leading-relaxed mb-8">
