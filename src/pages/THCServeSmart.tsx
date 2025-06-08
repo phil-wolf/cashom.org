@@ -1,4 +1,4 @@
-import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase } from 'lucide-react';
+import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -11,6 +11,10 @@ const THCServeSmart = () => {
     icon: <Users className="w-6 h-6 text-primary" />,
     title: "Train Your Staff to Sell With Confidence",
     description: "Give your team the language and understanding to properly guide first-time THC beverage drinkers."
+  }, {
+    icon: <RefreshCw className="w-6 h-6 text-primary" />,
+    title: "Build Customer Loyalty & Repeat Business",
+    description: "Create positive first experiences that turn curious customers into loyal regulars who trust your expertise."
   }, {
     icon: <Star className="w-6 h-6 text-primary" />,
     title: "Meet the Moment",
