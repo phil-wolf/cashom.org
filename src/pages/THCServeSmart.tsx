@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 const THCServeSmart = () => {
   const benefits = [{
     icon: <Check className="w-6 h-6 text-primary" />,
-    title: "Protect Your Bar, Venue, or License",
+    title: "Safeguard Your Bar, Venue, or License",
     description: "Learn how to dose and serve responsibly, avoiding overconsumption and liability."
   }, {
     icon: <Users className="w-6 h-6 text-primary" />,
