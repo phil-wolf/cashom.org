@@ -1,4 +1,3 @@
-
 import { Circle, Star, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -8,7 +7,7 @@ const CoursesSection = () => {
     {
       icon: <Circle className="w-6 h-6 text-primary" />,
       title: "Cannabis Hospitality Stewardship Certification",
-      description: "Learn the art of hospitality at the highest level—welcoming people into a transformational relationship with cannabis. Develop skills to help others experience cannabis in ways that are intentional, mindful, and impactful.",
+      description: "Earn your Cannabis Hospitality Stewardship Certificate which is the premiere program to bring your company to life. Start the program with a vision and end with your event or company coming to life.",
       buttonText: "Learn More →",
       isLink: true,
       url: "/cannabis-hospitality-certification",
