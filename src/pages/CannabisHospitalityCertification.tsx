@@ -1,3 +1,4 @@
+
 import { ArrowLeft, CheckCircle, Target, BookOpen, Users, Award, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -118,6 +119,14 @@ const CannabisHospitalityCertification = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+              The Cannabis Hospitality Stewardship Certificate (CHSC) is a prestigious credential designed for cannabis enthusiasts who aim to serve in the cannabis hospitality industry or incorporate cannabis into existing services like yoga asana.
+            </p>
+            
+            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+              This certification provides expertise in creating, managing, and delivering exceptional cannabis-infused experiences across various hospitality and wellness settings. Holding the CHP title signifies a comprehensive understanding of cannabis, including consumption theory, applications, legalities, mindfulness, market strategy and best practices, ensuring you can offer enlightening, compliant, safe and memorable services and experiences to your clients.
+            </p>
+
+            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               Welcome to the Cannabis Hospitality Stewardship Certification Program for Professionals, an exclusive mentorship experience that offers you the opportunity to learn directly from Philip Wolf. Philip is a trailblazer in the Cannabis Hospitality Industry, offers a mentorship program designed to give you the personalized guidance and education needed to thrive in this rapidly growing field.
             </p>
             
@@ -146,14 +155,6 @@ const CannabisHospitalityCertification = () => {
             </div>
             
             <div className="mt-12 p-8 bg-white rounded-lg border border-border">
-              <p className="text-lg text-foreground/80 leading-relaxed mb-4">
-                The Cannabis Hospitality Stewardship Certificate (CHSC) is a prestigious credential designed for cannabis enthusiasts who aim to serve in the cannabis hospitality industry or incorporate cannabis into existing services like yoga asana.
-              </p>
-              
-              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                This certification provides expertise in creating, managing, and delivering exceptional cannabis-infused experiences across various hospitality and wellness settings. Holding the CHP title signifies a comprehensive understanding of cannabis, including consumption theory, applications, legalities, mindfulness, market strategy and best practices, ensuring you can offer enlightening, compliant, safe and memorable services and experiences to your clients.
-              </p>
-              
               <div className="text-center">
                 <a 
                   href={applicationUrl}
