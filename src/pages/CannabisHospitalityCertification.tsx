@@ -122,9 +122,13 @@ const CannabisHospitalityCertification = () => {
               Welcome to the Cannabis Hospitality Stewardship Certification Program for Professionals, an exclusive mentorship experience that offers you the opportunity to learn directly from Philip Wolf. Philip is a trailblazer in the Cannabis Hospitality Industry, offers a mentorship program designed to give you the personalized guidance and education needed to thrive in this rapidly growing field.
             </p>
             
-            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+            <p className="text-lg text-foreground/80 leading-relaxed mb-12">
               Whether you're launching a cannabis business, expanding your current offerings, or seeking to deepen your understanding of the plant, Philip will be with you every step of the way. His program blends practical expertise with a holistic approach, recognizing cannabis as a powerful force for transformation and healing in our society. Through this mentorship, you'll be equipped to lead and inspire in the evolving cannabis landscape.
             </p>
+
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-12">
+              Who This Is For
+            </h2>
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               The Cannabis Hospitality Stewardship Certificate (CHSC) is a distinguished professional credential for industry leaders seeking to excel in cannabis hospitality or integrate cannabis services into established business operations. This comprehensive certification equips professionals with advanced expertise in developing, managing, and executing premium cannabis experiences across diverse hospitality and wellness environments.
