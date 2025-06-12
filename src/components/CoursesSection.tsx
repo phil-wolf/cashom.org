@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -7,7 +6,7 @@ const CoursesSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/0033d46b-6b37-45d4-841d-c8dd5c518dbe.png" 
+          src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
           alt="Cannabis Hospitality Stewardship Certification"
           className="w-6 h-6"
         />
@@ -23,7 +22,7 @@ const CoursesSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/528a060d-1f4b-4975-bbf6-eb1c257aa493.png" 
+          src="/lovable-uploads/5b234463-d921-4745-9983-ab209166b5ae.png" 
           alt="The CashoM Initiation"
           className="w-6 h-6"
         />
@@ -37,7 +36,7 @@ const CoursesSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/91f0e0bf-59ed-4093-8106-b51ec5e5ad1e.png" 
+          src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
           alt="THC ServeSmart"
           className="w-6 h-6"
         />
