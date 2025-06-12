@@ -1,4 +1,5 @@
-import { Check, Star, BookOpen, Users, Award, Heart, Compass, Brain, Leaf, Calendar, DollarSign, Clock } from 'lucide-react';
+
+import { Check, Star, BookOpen, Users, Award, Heart, Compass, Brain, Leaf, Calendar, DollarSign, Clock, Target, Lightbulb, Zap, Map } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -7,119 +8,127 @@ const CashomInitiation = () => {
   const whyItMatters = [
     {
       icon: <Heart className="w-6 h-6 text-primary" />,
-      title: "Cannabis as Teacher",
-      description: "This isn't about cannabis as a product. This is about cannabis as a teacher, an ally, and a changer of culture."
+      title: "Cannabis as Catalyst",
+      description: "This program isn't about cannabis as a commodity. It's about cannabis as a catalyst—for personal growth, cultural change, and responsible leadership."
+    },
+    {
+      icon: <Compass className="w-6 h-6 text-primary" />,
+      title: "Going Deeper",
+      description: "Most people stay on the surface with this plant. The CashoM Initiation is for those ready to go deeper—to engage cannabis with intention and integrity."
     },
     {
       icon: <Star className="w-6 h-6 text-primary" />,
-      title: "Hospitality at the Highest Level",
-      description: "How do we welcome people into a relationship with cannabis that is transformational?"
+      title: "Elevated Hospitality",
+      description: "At its core, this work is a form of elevated hospitality. How do we invite others into a relationship with cannabis that is intentional, impactful, and transformative?"
     },
     {
-      icon: <Users className="w-6 h-6 text-primary" />,
-      title: "Bridge Between Worlds",
-      description: "To be a bridge between cultures, industries, and paradigms. To speak the language of both tradition and innovation."
-    },
-    {
-      icon: <Compass className="w-6 h-6 text-primary" />,
-      title: "Conscious Leadership",
-      description: "For those ready to go deeper — into devotional relationship, meaningful stewardship, and conscious leadership."
+      icon: <Target className="w-6 h-6 text-primary" />,
+      title: "Conscious Future",
+      description: "This training is for those committed to elevating the conversation and shaping a more thoughtful, conscious future for the plant—and for those it serves."
     }
   ];
 
-  const whatYoullReceive = [
+  const experiences = [
     {
-      icon: <Calendar className="w-6 h-6 text-primary" />,
-      title: "Weekly Calls for One Year",
-      description: "Focused, personal, and immersive sessions. Each month includes a group call to reflect, connect, and integrate. High-touch support throughout your journey.",
+      icon: <Compass className="w-8 h-8 text-primary" />,
+      title: "A Guided Initiation",
+      emoji: "🧭",
+      description: "This isn't just a curriculum—it's a guided journey. You'll receive monthly \"consumption homework\" that goes beyond what to use and into how and why. You'll learn to listen, reflect, and engage cannabis as a guide.",
       features: [
-        "Weekly deep-dive sessions",
-        "Monthly group calls",
-        "Personal support and guidance",
-        "Turn weaknesses into strengths"
+        "How cannabis interacts with mood, mindset, and creativity",
+        "How to approach cannabis with clarity and confidence",
+        "How to integrate plant experiences into your professional life",
+        "Building a relationship that's personal and deeply informed"
       ]
     },
     {
-      icon: <Compass className="w-6 h-6 text-primary" />,
-      title: "Guided Initiation with the Medicine",
-      description: "Monthly consumption homework — not just what to consume, but how and why. Learn to listen to cannabis and dive deep into terpenes.",
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Weekly One-on-One Mentorship",
+      emoji: "🌱",
+      description: "We meet weekly for immersive, personalized mentorship. This is where we do the deep work—shaping your relationship with cannabis, identifying areas for growth, and applying what you're learning in real time.",
       features: [
-        "Monthly consumption guidance",
-        "Deep dive into terpenes",
-        "Cannabis as ally and teacher",
-        "Initiatory path experience"
+        "Monthly group integration calls",
+        "Personalized support to overcome challenges",
+        "Grow your capacity as a steward",
+        "Access to a tight-knit, supportive peer group"
       ]
     },
     {
-      icon: <Brain className="w-6 h-6 text-primary" />,
-      title: "Deep Study & Exploration",
-      description: "Dive deep into topics through the lens of cannabis. Embodying knowledge, activating wisdom, and applying what you learn in real time.",
+      icon: <Award className="w-8 h-8 text-primary" />,
+      title: "In-Person Retreat: April 2026",
+      emoji: "🏕️",
+      description: "The retreat is a two-part experience combining intensive training and practical application in a live environment.",
       features: [
-        "Cannabis archetypes and biology",
-        "Science of cannabis effects",
-        "Creativity and expression",
-        "Psychedelic and spiritual aspects"
+        "Training intensive to solidify your identity as a Level 1 CashoM",
+        "Practicum where you'll co-facilitate sessions",
+        "Guide others and apply what you've learned",
+        "Live environment practice and feedback"
       ]
     }
   ];
 
   const studyTopics = [
     {
-      category: "Archetypes, Biology & Lifestyle",
-      icon: <Leaf className="w-5 h-5 text-primary" />,
+      icon: <Brain className="w-6 h-6 text-primary" />,
+      title: "Cannabinoids & Terpenes",
+      emoji: "🧪",
+      description: "Deep dive into the science behind cannabis effects",
       topics: [
-        "Different cannabis archetypes",
-        "Variations in the endocannabinoid system",
-        "How cannabis affects different people",
-        "Cannabis alignment with different lifestyles"
+        "Major and minor cannabinoids and their effects",
+        "Terpene profiles and how they influence energy, creativity, and calm",
+        "Whole-plant synergy and product selection",
+        "Understanding compounds beyond marketing"
       ]
     },
     {
-      category: "Science & Theories",
-      icon: <Brain className="w-5 h-5 text-primary" />,
+      icon: <Lightbulb className="w-6 h-6 text-primary" />,
+      title: "Conscious Consumption",
+      emoji: "💨",
+      description: "Mindful practices for intentional cannabis use",
       topics: [
-        "Emotional, mental, and sensory effects",
-        "High vs. stoned experiences",
-        "Euphoria, anxiety, creativity exploration",
-        "Internal feelings and introspection"
+        "Self-awareness practices before, during, and after use",
+        "Identifying your unique high",
+        "Smoking, vaping, and ingesting with intention",
+        "Making consumption a mindful, daily-life practice"
       ]
     },
     {
-      category: "Creativity & Expression",
-      icon: <Star className="w-5 h-5 text-primary" />,
+      icon: <Zap className="w-6 h-6 text-primary" />,
+      title: "Deep Integration Topics",
+      emoji: "🔍",
+      description: "Advanced applications and lifestyle integration",
       topics: [
-        "Cannabis and creative flow",
-        "Music, painting, and art enhancement",
-        "Movement integration (sports, nature)",
-        "Expression and play"
+        "Cannabis and lifestyle alignment (sports, sex, creativity, nature)",
+        "Deepening mindfulness, meditation, and focus",
+        "Emotional processing and insight development",
+        "Creating safe, enriching experiences for others"
       ]
     },
     {
-      category: "Psychedelic & Spiritual",
-      icon: <Compass className="w-5 h-5 text-primary" />,
+      icon: <Map className="w-6 h-6 text-primary" />,
+      title: "Science & Sensory Awareness",
+      emoji: "🧠",
+      description: "Understanding the neurological and emotional impacts",
       topics: [
-        "Cannabis as psychedelic medicine",
-        "Spiritual ally relationship",
-        "Consciousness expansion",
-        "Altered states exploration"
+        "How cannabis affects emotion, perception, and neurochemistry",
+        "The role of euphoria, laughter, and introspection",
+        "Supporting diverse consumption styles and preferences",
+        "The difference between being high and being connected"
       ]
     }
   ];
 
-  const retreat = {
-    title: "Retreat in April 2026",
-    subtitle: "A Two-Part Transformational Experience",
-    parts: [
-      "Training intensive for you as a Level 1 CashoM",
-      "Leadership practicum where you'll begin guiding others alongside Philip"
-    ]
-  };
+  const additionalOpportunities = [
+    "Collaborate with Philip on live webinars and industry events",
+    "Eligible participants may explore licensing Cultivating Spirits in their region",
+    "Homework assignments customized to your goals—brand-building, service design, etc."
+  ];
 
-  const otherFeatures = [
-    "Ongoing group calls for sharing and reflection",
-    "Opportunities for practicum webinars alongside Philip",
-    "Potential opportunity to license Cultivating Spirits in your region",
-    "Immersive homework opportunities tailored to your needs"
+  const whoThisIsFor = [
+    "Professionals seeking to serve cannabis to the public with skill, care, and awareness",
+    "Visionaries, creators, and connectors ready to lead in the space",
+    "Bartenders, hosts, guides, and facilitators who want to elevate their craft",
+    "Individuals called to be stewards—not just consumers—of the plant"
   ];
 
   return (
@@ -133,30 +142,30 @@ const CashomInitiation = () => {
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               The CashoM Initiation
             </h1>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
-              A yearlong training to become a Level 1 CashoM — a steward and server of the Cannabis plant
+            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-12">
+              A Yearlong Training to Become a Level 1 CashoM
             </p>
             
-            {/* Investment & Timeline */}
+            {/* Investment & Timeline Cards */}
             <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-primary/10">
                 <div className="flex items-center justify-center mb-4">
                   <DollarSign className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-2">Investment</h3>
                 <p className="text-3xl font-bold text-primary">$12,000</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-primary/10">
                 <div className="flex items-center justify-center mb-4">
                   <Clock className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-2">Timeline</h3>
-                <p className="text-sm text-foreground/80">12 months — Weekly meetings + Monthly group meetings + Retreat in April 2026</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">12 months — Weekly individual meetings · Monthly group calls · In-person retreat, April 2026</p>
               </div>
             </div>
 
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
-              👉 Begin Your Initiation
+              Apply Now →
             </Button>
           </div>
         </div>
@@ -169,17 +178,9 @@ const CashomInitiation = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
               Why This Work Matters
             </h2>
-            <div className="text-center mb-12 max-w-4xl mx-auto">
-              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
-                Mainstream America still doesn't understand the depth of what this plant offers. It's often commercialized, misunderstood, or minimized. That's why this path matters.
-              </p>
-              <p className="text-lg text-foreground/80 leading-relaxed">
-                This container is for those who feel called to hold space, embody reverence, and help others experience cannabis in ways that are relational, possibly sacred, accessible, and impactful.
-              </p>
-            </div>
             <div className="grid md:grid-cols-2 gap-8">
               {whyItMatters.map((matter, index) => (
-                <div key={index} className="bg-secondary/20 p-8 rounded-lg">
+                <div key={index} className="bg-secondary/20 p-8 rounded-lg border border-primary/5">
                   <div className="flex items-center mb-4">
                     {matter.icon}
                     <h3 className="text-xl font-serif font-semibold text-primary ml-3">
@@ -196,34 +197,37 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* What You'll Receive */}
+      {/* What You'll Experience */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              What You'll Receive
+              What You'll Experience
             </h2>
             <div className="space-y-12">
-              {whatYoullReceive.map((item, index) => (
-                <div key={index} className="bg-white p-8 rounded-lg shadow-sm">
+              {experiences.map((experience, index) => (
+                <div key={index} className="bg-white p-8 rounded-lg shadow-sm border border-primary/5">
                   <div className="flex items-start space-x-6">
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 border-2 border-primary rounded-full flex items-center justify-center">
-                        {item.icon}
+                      <div className="w-16 h-16 border-2 border-primary rounded-full flex items-center justify-center bg-primary/5">
+                        {experience.icon}
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-2xl font-serif font-bold text-primary mb-4">
-                        {item.title}
-                      </h3>
+                      <div className="flex items-center space-x-3 mb-4">
+                        <span className="text-2xl">{experience.emoji}</span>
+                        <h3 className="text-2xl font-serif font-bold text-primary">
+                          {experience.title}
+                        </h3>
+                      </div>
                       <p className="text-foreground/80 leading-relaxed mb-6">
-                        {item.description}
+                        {experience.description}
                       </p>
                       <div className="grid md:grid-cols-2 gap-4">
-                        {item.features.map((feature, featureIndex) => (
-                          <div key={featureIndex} className="flex items-center space-x-2">
-                            <Check className="w-4 h-4 text-primary flex-shrink-0" />
-                            <span className="text-foreground/70">{feature}</span>
+                        {experience.features.map((feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-start space-x-2">
+                            <Check className="w-4 h-4 text-primary flex-shrink-0 mt-1" />
+                            <span className="text-foreground/70 text-sm">{feature}</span>
                           </div>
                         ))}
                       </div>
@@ -236,29 +240,28 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* Deep Study Topics */}
+      {/* What You'll Study */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              Deep Study & Exploration
+              What You'll Study
             </h2>
-            <p className="text-center text-lg text-foreground/80 mb-12 max-w-4xl mx-auto">
-              Throughout the year, we'll dive deep into topics through the lens of cannabis. This isn't about memorizing facts. It's about embodying knowledge, activating wisdom, and applying what you learn in real time.
-            </p>
             <div className="grid md:grid-cols-2 gap-8">
               {studyTopics.map((topic, index) => (
-                <div key={index} className="bg-accent/20 p-6 rounded-lg">
+                <div key={index} className="bg-accent/20 p-6 rounded-lg border border-primary/5">
                   <div className="flex items-center mb-4">
+                    <span className="text-2xl mr-3">{topic.emoji}</span>
                     {topic.icon}
                     <h3 className="text-lg font-serif font-semibold text-primary ml-3">
-                      {topic.category}
+                      {topic.title}
                     </h3>
                   </div>
+                  <p className="text-foreground/70 text-sm mb-4">{topic.description}</p>
                   <div className="space-y-2">
                     {topic.topics.map((item, itemIndex) => (
-                      <div key={itemIndex} className="flex items-center space-x-2">
-                        <Check className="w-4 h-4 text-primary flex-shrink-0" />
+                      <div key={itemIndex} className="flex items-start space-x-2">
+                        <Check className="w-3 h-3 text-primary flex-shrink-0 mt-1" />
                         <span className="text-foreground/70 text-sm">{item}</span>
                       </div>
                     ))}
@@ -270,7 +273,26 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* Initiation Message */}
+      {/* Additional Opportunities */}
+      <section className="py-20 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
+              Additional Opportunities
+            </h2>
+            <div className="space-y-4">
+              {additionalOpportunities.map((opportunity, index) => (
+                <div key={index} className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm border border-primary/5">
+                  <Check className="w-6 h-6 text-primary flex-shrink-0" />
+                  <p className="text-foreground/80 leading-relaxed">{opportunity}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* This Is an Initiation */}
       <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
@@ -278,58 +300,11 @@ const CashomInitiation = () => {
               This Is an Initiation, Not Just Information
             </h2>
             <div className="space-y-6 text-lg text-foreground/80">
-              <p>There are things you can learn from videos. There are things you can learn in a course.</p>
-              <p className="font-medium text-primary">
-                But the true value of this container is what can't be taught in a curriculum:
-              </p>
-              <p>You are being guided into direct relationship with cannabis.</p>
-              <p>
-                I will teach you through experience, help you see what the plant is revealing, and support you as you build a living connection with cannabis so you can be the ultimate teacher!
-              </p>
+              <p>You could learn the facts elsewhere. But The CashoM Initiation is about becoming someone who embodies the plant's message—who can hold space, translate complexity into connection, and guide others responsibly.</p>
+              <p>This is a high-touch, immersive training. You'll be challenged to grow, to get clear on your voice, and to offer something that's genuinely needed in the cannabis space.</p>
               <p className="text-xl font-semibold text-primary">
-                This is how you become a true CashoM — not by memorizing information, but by living in right relationship with the plant.
+                You won't just learn how to work with cannabis—you'll become someone it can work through.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Retreat Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-8">
-              {retreat.title}
-            </h2>
-            <p className="text-xl text-primary/80 font-medium text-center mb-12">
-              {retreat.subtitle}
-            </p>
-            <div className="space-y-6">
-              {retreat.parts.map((part, index) => (
-                <div key={index} className="flex items-center space-x-4 bg-secondary/20 p-6 rounded-lg">
-                  <Award className="w-8 h-8 text-primary" />
-                  <span className="text-lg text-foreground/80">{part}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Other Features */}
-      <section className="py-20 bg-secondary/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              Additional Features
-            </h2>
-            <div className="space-y-4">
-              {otherFeatures.map((feature, index) => (
-                <div key={index} className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm">
-                  <Check className="w-6 h-6 text-primary flex-shrink-0" />
-                  <p className="text-foreground/80 leading-relaxed">{feature}</p>
-                </div>
-              ))}
             </div>
           </div>
         </div>
@@ -338,20 +313,22 @@ const CashomInitiation = () => {
       {/* Who This Is For */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
               Who This Is For
             </h2>
-            <div className="space-y-6 text-lg text-foreground/80">
-              <div className="bg-accent/20 p-6 rounded-lg">
-                <p>People ready to serve cannabis to the public with reverence, skill, and awareness.</p>
-              </div>
-              <div className="bg-secondary/20 p-6 rounded-lg">
-                <p>Leaders, masters at hospitality, the best bartenders, visionaries, and creators who want to align their work with cannabis.</p>
-              </div>
-              <div className="bg-primary/10 p-6 rounded-lg">
-                <p>Those who want to become CashoMs — not a casual user or facilitator, but devoted to being a teacher for cannabis.</p>
-              </div>
+            <div className="space-y-4">
+              {whoThisIsFor.map((person, index) => (
+                <div key={index} className="flex items-start space-x-4 bg-accent/20 p-6 rounded-lg border border-primary/5">
+                  <Check className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                  <p className="text-foreground/80 leading-relaxed">{person}</p>
+                </div>
+              ))}
+            </div>
+            <div className="text-center mt-12">
+              <p className="text-lg text-foreground/80 mb-6">
+                If this resonates, apply now. This isn't casual work. But if you're ready for the path, you'll have support at every step.
+              </p>
             </div>
           </div>
         </div>
@@ -368,7 +345,7 @@ const CashomInitiation = () => {
               Step into a year-long transformation and become a true steward of the Cannabis plant.
             </p>
             <Button size="lg" variant="secondary" className="px-8 py-4 text-lg font-semibold">
-              👉 Begin Your Initiation
+              Apply Now →
             </Button>
           </div>
         </div>
