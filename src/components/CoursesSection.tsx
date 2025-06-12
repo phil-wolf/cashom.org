@@ -8,7 +8,7 @@ const CoursesSection = () => {
         <img 
           src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
           alt="Cannabis Hospitality Stewardship Certification"
-          className="w-6 h-6"
+          className="w-12 h-12"
         />
       ),
       title: "Cannabis Hospitality Stewardship Certification",
@@ -24,7 +24,7 @@ const CoursesSection = () => {
         <img 
           src="/lovable-uploads/5b234463-d921-4745-9983-ab209166b5ae.png" 
           alt="The CashoM Initiation"
-          className="w-6 h-6"
+          className="w-12 h-12"
         />
       ),
       title: "The CashoM Initiation",
@@ -38,7 +38,7 @@ const CoursesSection = () => {
         <img 
           src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
           alt="THC ServeSmart"
-          className="w-6 h-6"
+          className="w-12 h-12"
         />
       ),
       title: "THC ServeSmart",
