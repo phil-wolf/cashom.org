@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -7,18 +6,21 @@ const FeaturedProgramsSection = () => {
     {
       icon: (
         <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <ellipse cx="50" cy="50" rx="8" ry="16" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <ellipse cx="50" cy="50" rx="16" ry="8" stroke="currentColor" strokeWidth="2" fill="none"/>
           {/* Radiating lines */}
-          <line x1="50" y1="5" x2="50" y2="15" stroke="currentColor" strokeWidth="2"/>
-          <line x1="50" y1="85" x2="50" y2="95" stroke="currentColor" strokeWidth="2"/>
-          <line x1="5" y1="50" x2="15" y2="50" stroke="currentColor" strokeWidth="2"/>
-          <line x1="85" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="2"/>
-          <line x1="21.21" y1="21.21" x2="28.28" y2="28.28" stroke="currentColor" strokeWidth="2"/>
-          <line x1="71.72" y1="71.72" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="2"/>
-          <line x1="78.79" y1="21.21" x2="71.72" y2="28.28" stroke="currentColor" strokeWidth="2"/>
-          <line x1="28.28" y1="71.72" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+          <line x1="50" y1="5" x2="50" y2="25" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="50" y1="75" x2="50" y2="95" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="5" y1="50" x2="25" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="75" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="21.21" y1="21.21" x2="35.36" y2="35.36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="64.64" y1="64.64" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="78.79" y1="21.21" x2="64.64" y2="35.36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="35.36" y1="64.64" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          {/* Outer circle */}
+          <circle cx="50" cy="50" r="20" stroke="currentColor" strokeWidth="3" fill="none"/>
+          {/* Inner circles */}
+          <circle cx="50" cy="50" r="12" stroke="currentColor" strokeWidth="3" fill="none"/>
+          {/* Inner leaf-like shape */}
+          <path d="M44 50 C44 44, 50 44, 50 50 C50 44, 56 44, 56 50 C56 56, 50 56, 50 50 C50 56, 44 56, 44 50 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
         </svg>
       ),
       title: "Cannabis Hospitality Stewardship Certification",
@@ -42,18 +44,25 @@ const FeaturedProgramsSection = () => {
     {
       icon: (
         <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <path d="M50 35 L55 45 L50 50 L45 45 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
           {/* Radiating lines */}
-          <line x1="50" y1="5" x2="50" y2="15" stroke="currentColor" strokeWidth="2"/>
-          <line x1="50" y1="85" x2="50" y2="95" stroke="currentColor" strokeWidth="2"/>
-          <line x1="5" y1="50" x2="15" y2="50" stroke="currentColor" strokeWidth="2"/>
-          <line x1="85" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="2"/>
-          <line x1="21.21" y1="21.21" x2="28.28" y2="28.28" stroke="currentColor" strokeWidth="2"/>
-          <line x1="71.72" y1="71.72" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="2"/>
-          <line x1="78.79" y1="21.21" x2="71.72" y2="28.28" stroke="currentColor" strokeWidth="2"/>
-          <line x1="28.28" y1="71.72" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+          <line x1="50" y1="5" x2="50" y2="25" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="50" y1="75" x2="50" y2="95" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="5" y1="50" x2="25" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="75" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="21.21" y1="21.21" x2="35.36" y2="35.36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="64.64" y1="64.64" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="78.79" y1="21.21" x2="64.64" y2="35.36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="35.36" y1="64.64" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          {/* Outer circle */}
+          <circle cx="50" cy="50" r="20" stroke="currentColor" strokeWidth="3" fill="none"/>
+          {/* Inner circle with cannabis leaf design */}
+          <circle cx="50" cy="50" r="12" stroke="currentColor" strokeWidth="3" fill="none"/>
+          {/* Cannabis leaf design */}
+          <ellipse cx="50" cy="50" rx="6" ry="3" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <ellipse cx="47" cy="47" rx="4" ry="2" stroke="currentColor" strokeWidth="1.5" fill="none" transform="rotate(-30 47 47)"/>
+          <ellipse cx="53" cy="47" rx="4" ry="2" stroke="currentColor" strokeWidth="1.5" fill="none" transform="rotate(30 53 47)"/>
+          <ellipse cx="47" cy="53" rx="4" ry="2" stroke="currentColor" strokeWidth="1.5" fill="none" transform="rotate(30 47 53)"/>
+          <ellipse cx="53" cy="53" rx="4" ry="2" stroke="currentColor" strokeWidth="1.5" fill="none" transform="rotate(-30 53 53)"/>
         </svg>
       ),
       title: "The CashoM Initiation",
@@ -76,19 +85,22 @@ const FeaturedProgramsSection = () => {
     {
       icon: (
         <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <circle cx="35" cy="50" r="12" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <circle cx="65" cy="50" r="12" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <path d="M35 50 Q50 35 65 50" stroke="currentColor" strokeWidth="2" fill="none"/>
           {/* Radiating lines */}
-          <line x1="50" y1="5" x2="50" y2="15" stroke="currentColor" strokeWidth="2"/>
-          <line x1="50" y1="85" x2="50" y2="95" stroke="currentColor" strokeWidth="2"/>
-          <line x1="5" y1="50" x2="15" y2="50" stroke="currentColor" strokeWidth="2"/>
-          <line x1="85" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="2"/>
-          <line x1="21.21" y1="21.21" x2="28.28" y2="28.28" stroke="currentColor" strokeWidth="2"/>
-          <line x1="71.72" y1="71.72" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="2"/>
-          <line x1="78.79" y1="21.21" x2="71.72" y2="28.28" stroke="currentColor" strokeWidth="2"/>
-          <line x1="28.28" y1="71.72" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+          <line x1="50" y1="5" x2="50" y2="25" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="50" y1="75" x2="50" y2="95" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="5" y1="50" x2="25" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="75" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="21.21" y1="21.21" x2="35.36" y2="35.36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="64.64" y1="64.64" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="78.79" y1="21.21" x2="64.64" y2="35.36" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          <line x1="35.36" y1="64.64" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+          {/* Outer circle */}
+          <circle cx="50" cy="50" r="20" stroke="currentColor" strokeWidth="3" fill="none"/>
+          {/* Inner circle */}
+          <circle cx="50" cy="50" r="10" stroke="currentColor" strokeWidth="3" fill="none"/>
+          {/* Four-pointed star in center */}
+          <path d="M50 42 L54 50 L50 58 L46 50 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <path d="M42 50 L50 46 L58 50 L50 54 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
         </svg>
       ),
       title: "THC ServeSmart",
