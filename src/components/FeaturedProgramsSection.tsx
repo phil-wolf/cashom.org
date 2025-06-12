@@ -1,12 +1,26 @@
 
-import { Circle, Star, BarChart3 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
 const FeaturedProgramsSection = () => {
   const enhancedOfferings = [
     {
-      icon: <Circle className="w-12 h-12" />,
+      icon: (
+        <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <ellipse cx="50" cy="50" rx="8" ry="16" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <ellipse cx="50" cy="50" rx="16" ry="8" stroke="currentColor" strokeWidth="2" fill="none"/>
+          {/* Radiating lines */}
+          <line x1="50" y1="5" x2="50" y2="15" stroke="currentColor" strokeWidth="2"/>
+          <line x1="50" y1="85" x2="50" y2="95" stroke="currentColor" strokeWidth="2"/>
+          <line x1="5" y1="50" x2="15" y2="50" stroke="currentColor" strokeWidth="2"/>
+          <line x1="85" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="2"/>
+          <line x1="21.21" y1="21.21" x2="28.28" y2="28.28" stroke="currentColor" strokeWidth="2"/>
+          <line x1="71.72" y1="71.72" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+          <line x1="78.79" y1="21.21" x2="71.72" y2="28.28" stroke="currentColor" strokeWidth="2"/>
+          <line x1="28.28" y1="71.72" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+        </svg>
+      ),
       title: "Cannabis Hospitality Stewardship Certification",
       subtitle: "Professional Cannabis Service Excellence",
       description: "Master the art of hospitality at the highest level—welcoming people into a mindful relationship with cannabis. Develop advanced skills to guide others through intentional, responsible, and impactful cannabis experiences.",
@@ -26,7 +40,22 @@ const FeaturedProgramsSection = () => {
       applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
     },
     {
-      icon: <Star className="w-12 h-12" />,
+      icon: (
+        <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <circle cx="50" cy="50" r="15" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <path d="M50 35 L55 45 L50 50 L45 45 Z" stroke="currentColor" strokeWidth="2" fill="none"/>
+          {/* Radiating lines */}
+          <line x1="50" y1="5" x2="50" y2="15" stroke="currentColor" strokeWidth="2"/>
+          <line x1="50" y1="85" x2="50" y2="95" stroke="currentColor" strokeWidth="2"/>
+          <line x1="5" y1="50" x2="15" y2="50" stroke="currentColor" strokeWidth="2"/>
+          <line x1="85" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="2"/>
+          <line x1="21.21" y1="21.21" x2="28.28" y2="28.28" stroke="currentColor" strokeWidth="2"/>
+          <line x1="71.72" y1="71.72" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+          <line x1="78.79" y1="21.21" x2="71.72" y2="28.28" stroke="currentColor" strokeWidth="2"/>
+          <line x1="28.28" y1="71.72" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+        </svg>
+      ),
       title: "The CashoM Initiation",
       subtitle: "Year-Long Professional Development Program",
       description: "A comprehensive 12-month training program to become a Level 1 CashoM — a knowledgeable steward and server of cannabis. This intensive program combines weekly sessions, monthly workshops, and immersive learning experiences.",
@@ -45,7 +74,23 @@ const FeaturedProgramsSection = () => {
       url: "/cashom-initiation"
     },
     {
-      icon: <BarChart3 className="w-12 h-12" />,
+      icon: (
+        <svg className="w-12 h-12" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <circle cx="35" cy="50" r="12" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <circle cx="65" cy="50" r="12" stroke="currentColor" strokeWidth="2" fill="none"/>
+          <path d="M35 50 Q50 35 65 50" stroke="currentColor" strokeWidth="2" fill="none"/>
+          {/* Radiating lines */}
+          <line x1="50" y1="5" x2="50" y2="15" stroke="currentColor" strokeWidth="2"/>
+          <line x1="50" y1="85" x2="50" y2="95" stroke="currentColor" strokeWidth="2"/>
+          <line x1="5" y1="50" x2="15" y2="50" stroke="currentColor" strokeWidth="2"/>
+          <line x1="85" y1="50" x2="95" y2="50" stroke="currentColor" strokeWidth="2"/>
+          <line x1="21.21" y1="21.21" x2="28.28" y2="28.28" stroke="currentColor" strokeWidth="2"/>
+          <line x1="71.72" y1="71.72" x2="78.79" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+          <line x1="78.79" y1="21.21" x2="71.72" y2="28.28" stroke="currentColor" strokeWidth="2"/>
+          <line x1="28.28" y1="71.72" x2="21.21" y2="78.79" stroke="currentColor" strokeWidth="2"/>
+        </svg>
+      ),
       title: "THC ServeSmart",
       subtitle: "Specialized Training for Beverage Industry",
       description: "Cutting-edge training designed specifically for the liquor and beverage industry focusing on legal THC beverages. Learn evidence-based serving techniques, dosage awareness, and responsible service practices for this rapidly emerging market.",
