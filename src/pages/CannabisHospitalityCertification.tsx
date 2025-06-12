@@ -123,7 +123,7 @@ const CannabisHospitalityCertification = () => {
             </p>
             
             <p className="text-lg text-foreground/80 leading-relaxed mb-12">
-              Whether you're launching a cannabis business, expanding your current offerings, or seeking to deepen your understanding of the plant, Philip will be with you every step of the way. His program blends practical expertise with a holistic approach, recognizing cannabis as a powerful force for transformation and healing in our society. Through this mentorship, you'll be equipped to lead and inspire in the evolving cannabis landscape.
+              Whether you're launching a cannabis business, expanding your offerings, or looking to deepen your knowledge of the plant, Philip provides expert guidance every step of the way. This certification program integrates proven industry insights with a thoughtful, whole-person approach—recognizing cannabis as a meaningful catalyst for socializing and growth, both personally and professionally. Participants will emerge prepared to lead with clarity, purpose, and confidence in today's evolving cannabis landscape.
             </p>
 
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-12">
