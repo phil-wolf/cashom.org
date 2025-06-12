@@ -1,4 +1,3 @@
-
 const CredibilitySection = () => {
   const testimonials = [
     {
@@ -35,15 +34,13 @@ const CredibilitySection = () => {
           {/* Text Content */}
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">
-              Trusted by Thousands
+              A Trusted Pioneer in Cannabis Hospitality
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Through cannabis pairing dinners and curated events, Philip Wolf has guided over <strong className="text-primary">5,000+ cannabis consumers</strong> with 
-              precision and expertise, holding safe space and guiding them into enriching, elevated highs. With over 16 years in the legal cannabis industry, Philip brings decades of experience in cannabis hospitality, cannabis education, and professional service standards to every certification program he leads.
+              Recognized by High Times as the pioneer of cannabis hospitality, Philip Wolf founded the first company in the United States to legally offer cannabis pairing dinners. Through curated experiences and immersive events, he has guided over <strong className="text-primary">5,000</strong> cannabis consumers with precision, care, and deep expertise—helping them access elevated, enriching experiences in a safe and intentional setting.
             </p>
-            <p className="text-foreground/70">
-              His work has been featured in Time Magazine, NBC & CBS Nightly News, Forbes, and as a writer for Rolling Stone, 
-              establishing him as a trusted authority in the evolving cannabis education and hospitality space.
+            <p className="text-foreground/80 leading-relaxed">
+              With over 16 years in the legal cannabis industry, Philip brings unparalleled knowledge in cannabis hospitality, education, and service standards to every certification program he leads. His work has been featured in Time Magazine, NBC and CBS Nightly News, Forbes, and as a writer for Rolling Stone, cementing his role as a trusted authority in the evolving cannabis landscape.
             </p>
           </div>
 
