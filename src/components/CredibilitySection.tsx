@@ -1,3 +1,4 @@
+
 const CredibilitySection = () => {
   const testimonials = [
     {
@@ -37,7 +38,7 @@ const CredibilitySection = () => {
               A Trusted Pioneer in Cannabis Hospitality
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              Recognized by High Times as the pioneer of cannabis hospitality, Philip Wolf founded the first company in the United States to legally offer cannabis pairing dinners. Through curated experiences and immersive events, he has guided over <strong className="text-primary">5,000</strong> cannabis consumers with precision, care, and deep expertise—helping them access elevated, enriching experiences in a safe and intentional setting.
+              Recognized by High Times as the pioneer of cannabis hospitality, Philip Wolf founded the first company in the United States to legally offer cannabis pairing dinners. Through curated experiences and immersive events, he has guided over <strong className="text-primary">5,000</strong> consumers in their consumption of cannabis with precision, care, and deep expertise—helping them access elevated, enriching experiences in a safe and intentional setting.
             </p>
             <p className="text-foreground/80 leading-relaxed">
               With over 16 years in the legal cannabis industry, Philip brings unparalleled knowledge in cannabis hospitality, education, and service standards to every certification program he leads. His work has been featured in Time Magazine, NBC and CBS Nightly News, Forbes, and as a writer for Rolling Stone, cementing his role as a trusted authority in the evolving cannabis landscape.
