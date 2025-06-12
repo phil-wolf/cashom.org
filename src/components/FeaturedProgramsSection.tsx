@@ -8,7 +8,7 @@ const FeaturedProgramsSection = () => {
         <img 
           src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
           alt="Cannabis Hospitality Stewardship Certification"
-          className="w-16 h-16"
+          className="w-24 h-24"
         />
       ),
       title: "Cannabis Hospitality Stewardship Certification",
@@ -34,7 +34,7 @@ const FeaturedProgramsSection = () => {
         <img 
           src="/lovable-uploads/5b234463-d921-4745-9983-ab209166b5ae.png" 
           alt="The CashoM Initiation"
-          className="w-16 h-16"
+          className="w-24 h-24"
         />
       ),
       title: "The CashoM Initiation",
@@ -59,7 +59,7 @@ const FeaturedProgramsSection = () => {
         <img 
           src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
           alt="THC ServeSmart"
-          className="w-16 h-16"
+          className="w-24 h-24"
         />
       ),
       title: "THC ServeSmart",
@@ -104,7 +104,7 @@ const FeaturedProgramsSection = () => {
                 <div className="flex flex-col lg:flex-row items-start gap-8">
                   {/* Icon Section */}
                   <div className="flex-shrink-0">
-                    <div className={`w-20 h-20 ${offering.iconBg} rounded-2xl flex items-center justify-center shadow-md border border-white/30`}>
+                    <div className={`w-28 h-28 ${offering.iconBg} rounded-2xl flex items-center justify-center shadow-md border border-white/30`}>
                       {offering.icon}
                     </div>
                   </div>
