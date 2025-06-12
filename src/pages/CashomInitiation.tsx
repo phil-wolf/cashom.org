@@ -8,61 +8,61 @@ const CashomInitiation = () => {
   const whyItMatters = [
     {
       icon: <Heart className="w-6 h-6 text-primary" />,
-      title: "Cannabis as Catalyst",
-      description: "This program isn't about cannabis as a commodity. It's about cannabis as a catalyst—for personal growth, cultural change, and responsible leadership."
+      title: "Experience Over Product",
+      description: "In many sectors, cannabis is still treated as a product. But in hospitality, it must be treated as an experience."
     },
     {
       icon: <Compass className="w-6 h-6 text-primary" />,
-      title: "Going Deeper",
-      description: "Most people stay on the surface with this plant. The CashoM Initiation is for those ready to go deeper—to engage cannabis with intention and integrity."
+      title: "True Hospitality",
+      description: "A true host doesn't just serve a drink—they guide a moment. A true CashoM doesn't just serve cannabis—they shape the space, elevate the energy, and ensure each guest feels safe, seen, and supported in their high."
     },
     {
       icon: <Star className="w-6 h-6 text-primary" />,
-      title: "Elevated Hospitality",
-      description: "At its core, this work is a form of elevated hospitality. How do we invite others into a relationship with cannabis that is intentional, impactful, and transformative?"
+      title: "The Future",
+      description: "This is the future of cannabis hospitality. You'll learn how to serve cannabis with cultural awareness, scientific understanding, emotional intelligence, and refined etiquette."
     },
     {
       icon: <Target className="w-6 h-6 text-primary" />,
-      title: "Conscious Future",
-      description: "This training is for those committed to elevating the conversation and shaping a more thoughtful, conscious future for the plant—and for those it serves."
+      title: "Becoming a Bridge",
+      description: "This work is about becoming a bridge: Between wellness and celebration, between tradition and innovation, between the plant and the people."
     }
   ];
 
   const experiences = [
     {
       icon: <Compass className="w-8 h-8 text-primary" />,
-      title: "A Guided Initiation",
-      emoji: "🧭",
-      description: "This isn't just a curriculum—it's a guided journey. You'll receive monthly \"consumption homework\" that goes beyond what to use and into how and why. You'll learn to listen, reflect, and engage cannabis as a guide.",
+      title: "Weekly One-on-One Mentorship",
+      emoji: "🌿",
+      description: "This isn't passive learning. It's a co-created journey with Philip Wolf—founder of Cultivating Spirits and pioneer of legal cannabis dining in the U.S. You'll meet weekly to build skills, grow your presence, and refine your approach to service.",
       features: [
-        "How cannabis interacts with mood, mindset, and creativity",
-        "How to approach cannabis with clarity and confidence",
-        "How to integrate plant experiences into your professional life",
-        "Building a relationship that's personal and deeply informed"
+        "Personal mentorship with Philip Wolf",
+        "Co-created learning journey",
+        "Build skills and presence",
+        "Refine your approach to service"
       ]
     },
     {
       icon: <Users className="w-8 h-8 text-primary" />,
-      title: "Weekly One-on-One Mentorship",
-      emoji: "🌱",
-      description: "We meet weekly for immersive, personalized mentorship. This is where we do the deep work—shaping your relationship with cannabis, identifying areas for growth, and applying what you're learning in real time.",
+      title: "Monthly Group Sessions",
+      emoji: "🤝",
+      description: "Our group calls provide time to reflect, practice, and connect with a small cohort of peers (5–7 people per group). These are industry professionals like you, all seeking to advance cannabis hospitality through excellence and heart.",
       features: [
-        "Monthly group integration calls",
-        "Personalized support to overcome challenges",
-        "Grow your capacity as a steward",
-        "Access to a tight-knit, supportive peer group"
+        "Small cohort of 5-7 peers",
+        "Time to reflect and practice",
+        "Connect with industry professionals",
+        "Advance through excellence and heart"
       ]
     },
     {
       icon: <Award className="w-8 h-8 text-primary" />,
-      title: "In-Person Retreat: April 2026",
+      title: "In-Person Retreat (April 2026)",
       emoji: "🏕️",
-      description: "The retreat is a two-part experience combining intensive training and practical application in a live environment.",
+      description: "This immersive retreat includes advanced hospitality training and real-time practice in guiding guests through high-touch, intentional cannabis experiences.",
       features: [
-        "Training intensive to solidify your identity as a Level 1 CashoM",
-        "Practicum where you'll co-facilitate sessions",
-        "Guide others and apply what you've learned",
-        "Live environment practice and feedback"
+        "Service-based leadership practicum",
+        "Advanced hospitality training",
+        "Real-time practice with guests",
+        "High-touch, intentional experiences"
       ]
     }
   ];
@@ -70,65 +70,65 @@ const CashomInitiation = () => {
   const studyTopics = [
     {
       icon: <Brain className="w-6 h-6 text-primary" />,
-      title: "Cannabinoids & Terpenes",
-      emoji: "🧪",
-      description: "Deep dive into the science behind cannabis effects",
+      title: "Foundations of Elevated Cannabis Hospitality",
+      emoji: "🧠",
+      description: "Core principles of professional cannabis service",
       topics: [
-        "Major and minor cannabinoids and their effects",
-        "Terpene profiles and how they influence energy, creativity, and calm",
-        "Whole-plant synergy and product selection",
-        "Understanding compounds beyond marketing"
+        "Creating a service environment for cannabis use",
+        "Managing energy and expectations during consumption events",
+        "The psychology of comfort, care, and emotional safety",
+        "Professional etiquette when working with cannabis"
       ]
     },
     {
       icon: <Lightbulb className="w-6 h-6 text-primary" />,
-      title: "Conscious Consumption",
-      emoji: "💨",
-      description: "Mindful practices for intentional cannabis use",
+      title: "Product Mastery",
+      emoji: "🧪",
+      description: "Deep understanding of cannabis products and effects",
       topics: [
-        "Self-awareness practices before, during, and after use",
-        "Identifying your unique high",
-        "Smoking, vaping, and ingesting with intention",
-        "Making consumption a mindful, daily-life practice"
+        "The effects of flower, beverages, tinctures, edibles, and concentrates",
+        "How cannabinoids and terpenes influence the guest experience",
+        "Choosing products to fit different settings and guest needs",
+        "The science of dosing and absorption in social settings"
       ]
     },
     {
       icon: <Zap className="w-6 h-6 text-primary" />,
-      title: "Deep Integration Topics",
-      emoji: "🔍",
-      description: "Advanced applications and lifestyle integration",
+      title: "Guiding the Experience",
+      emoji: "🧭",
+      description: "Advanced skills in hosting and facilitation",
       topics: [
-        "Cannabis and lifestyle alignment (sports, sex, creativity, nature)",
-        "Deepening mindfulness, meditation, and focus",
-        "Emotional processing and insight development",
-        "Creating safe, enriching experiences for others"
+        "Hosting guests through various states of being high",
+        "Recognizing and adjusting to guest energy in real-time",
+        "Holding space without overpowering the moment",
+        "Storytelling and education as part of the guest journey"
       ]
     },
     {
       icon: <Map className="w-6 h-6 text-primary" />,
-      title: "Science & Sensory Awareness",
-      emoji: "🧠",
-      description: "Understanding the neurological and emotional impacts",
+      title: "Creative Expression & Event Design",
+      emoji: "🎨",
+      description: "Creating memorable and transformative experiences",
       topics: [
-        "How cannabis affects emotion, perception, and neurochemistry",
-        "The role of euphoria, laughter, and introspection",
-        "Supporting diverse consumption styles and preferences",
-        "The difference between being high and being connected"
+        "Integrating food, music, nature, and ritual into service",
+        "Designing memorable cannabis pairing events",
+        "Fusing ambiance, timing, and flow into unforgettable moments",
+        "Advanced event design and execution"
       ]
     }
   ];
 
   const additionalOpportunities = [
-    "Collaborate with Philip on live webinars and industry events",
-    "Eligible participants may explore licensing Cultivating Spirits in their region",
-    "Homework assignments customized to your goals—brand-building, service design, etc."
+    "Co-lead webinars and live events with Philip",
+    "Exclusive access to licensed offerings of Cultivating Spirits in your region",
+    "Customized field assignments to align with your goals and offerings"
   ];
 
   const whoThisIsFor = [
-    "Professionals seeking to serve cannabis to the public with skill, care, and awareness",
-    "Visionaries, creators, and connectors ready to lead in the space",
-    "Bartenders, hosts, guides, and facilitators who want to elevate their craft",
-    "Individuals called to be stewards—not just consumers—of the plant"
+    "Cannabis event producers and hospitality entrepreneurs",
+    "High-level hosts, retreat leaders, and service professionals",
+    "Bartenders, chefs, sommeliers, and wellness guides ready to add cannabis to their craft",
+    "Visionaries committed to shaping the future of cannabis culture"
   ];
 
   return (
@@ -140,10 +140,13 @@ const CashomInitiation = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-              The CashoM Initiation
+              Become a CashoM
             </h1>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-12">
-              A Yearlong Training to Become a Level 1 CashoM
+            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-4">
+              A Yearlong Training in Cannabis Hospitality at Its Highest Level
+            </p>
+            <p className="text-lg text-primary/70 mb-12">
+              Earn your Level 1 Certification as a steward and host of meaningful cannabis experiences.
             </p>
             
             {/* Investment & Timeline Cards */}
@@ -160,7 +163,7 @@ const CashomInitiation = () => {
                   <Clock className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-2xl font-serif font-bold text-primary mb-2">Timeline</h3>
-                <p className="text-sm text-foreground/80 leading-relaxed">12 months — Weekly individual meetings · Monthly group calls · In-person retreat, April 2026</p>
+                <p className="text-sm text-foreground/80 leading-relaxed">12 Months · Weekly Mentorship · Monthly Group Calls · In-Person Retreat – April 2026</p>
               </div>
             </div>
 
@@ -171,8 +174,26 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* Why This Work Matters */}
+      {/* Elevating Cannabis Hospitality */}
       <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+              Elevating Cannabis Hospitality
+            </h2>
+            <div className="space-y-6 text-lg text-foreground/80">
+              <p>The CashoM Initiation is not a course—it's a professional and personal transformation. This yearlong container is for those ready to serve cannabis with care, precision, and integrity.</p>
+              <p>In today's cannabis industry, hospitality is often overlooked. But true cannabis hospitality is an art form. It's the ability to create experiences that are not only enjoyable, but transformative. It's about reading the room, guiding guests with intention, and offering cannabis in a way that's both informed and deeply respectful.</p>
+              <p className="text-xl font-semibold text-primary">
+                This program trains you to do just that—at the highest level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why This Work Matters */}
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
@@ -180,7 +201,7 @@ const CashomInitiation = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {whyItMatters.map((matter, index) => (
-                <div key={index} className="bg-secondary/20 p-8 rounded-lg border border-primary/5">
+                <div key={index} className="bg-white p-8 rounded-lg border border-primary/5 shadow-sm">
                   <div className="flex items-center mb-4">
                     {matter.icon}
                     <h3 className="text-xl font-serif font-semibold text-primary ml-3">
@@ -197,16 +218,16 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* What You'll Experience */}
-      <section className="py-20 bg-secondary/30">
+      {/* What You'll Gain */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              What You'll Experience
+              What You'll Gain
             </h2>
             <div className="space-y-12">
               {experiences.map((experience, index) => (
-                <div key={index} className="bg-white p-8 rounded-lg shadow-sm border border-primary/5">
+                <div key={index} className="bg-accent/20 p-8 rounded-lg border border-primary/5">
                   <div className="flex items-start space-x-6">
                     <div className="flex-shrink-0">
                       <div className="w-16 h-16 border-2 border-primary rounded-full flex items-center justify-center bg-primary/5">
@@ -240,16 +261,16 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* What You'll Study */}
-      <section className="py-20 bg-white">
+      {/* What You'll Learn */}
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              What You'll Study
+              What You'll Learn
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {studyTopics.map((topic, index) => (
-                <div key={index} className="bg-accent/20 p-6 rounded-lg border border-primary/5">
+                <div key={index} className="bg-white p-6 rounded-lg border border-primary/5 shadow-sm">
                   <div className="flex items-center mb-4">
                     <span className="text-2xl mr-3">{topic.emoji}</span>
                     {topic.icon}
@@ -273,16 +294,32 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* Additional Opportunities */}
-      <section className="py-20 bg-secondary/30">
+      {/* This Is an Initiation */}
+      <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
+              This Is an Initiation
+            </h2>
+            <div className="space-y-6 text-lg text-foreground/80">
+              <p>Hospitality is not just what you do—it's who you become.</p>
+              <p>The CashoM Initiation is about cultivating yourself into someone who can guide others through elevated cannabis experiences with professionalism, poise, and presence.</p>
+              <p>You'll be learning from one of the most experienced cannabis hosts in the industry. You'll be supported every step of the way. And you'll graduate with the skills, confidence, and certification to lead in this evolving space.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Optional Opportunities */}
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              Additional Opportunities
+              Optional Opportunities
             </h2>
             <div className="space-y-4">
               {additionalOpportunities.map((opportunity, index) => (
-                <div key={index} className="flex items-center space-x-4 bg-white p-6 rounded-lg shadow-sm border border-primary/5">
+                <div key={index} className="flex items-center space-x-4 bg-accent/20 p-6 rounded-lg border border-primary/5">
                   <Check className="w-6 h-6 text-primary flex-shrink-0" />
                   <p className="text-foreground/80 leading-relaxed">{opportunity}</p>
                 </div>
@@ -292,43 +329,23 @@ const CashomInitiation = () => {
         </div>
       </section>
 
-      {/* This Is an Initiation */}
-      <section className="py-20 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-8">
-              This Is an Initiation, Not Just Information
-            </h2>
-            <div className="space-y-6 text-lg text-foreground/80">
-              <p>You could learn the facts elsewhere. But The CashoM Initiation is about becoming someone who embodies the plant's message—who can hold space, translate complexity into connection, and guide others responsibly.</p>
-              <p>This is a high-touch, immersive training. You'll be challenged to grow, to get clear on your voice, and to offer something that's genuinely needed in the cannabis space.</p>
-              <p className="text-xl font-semibold text-primary">
-                You won't just learn how to work with cannabis—you'll become someone it can work through.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Who This Is For */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
               Who This Is For
             </h2>
+            <p className="text-lg text-foreground/80 text-center mb-8">
+              This program is for professionals ready to serve cannabis with integrity and depth:
+            </p>
             <div className="space-y-4">
               {whoThisIsFor.map((person, index) => (
-                <div key={index} className="flex items-start space-x-4 bg-accent/20 p-6 rounded-lg border border-primary/5">
+                <div key={index} className="flex items-start space-x-4 bg-white p-6 rounded-lg border border-primary/5 shadow-sm">
                   <Check className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <p className="text-foreground/80 leading-relaxed">{person}</p>
                 </div>
               ))}
-            </div>
-            <div className="text-center mt-12">
-              <p className="text-lg text-foreground/80 mb-6">
-                If this resonates, apply now. This isn't casual work. But if you're ready for the path, you'll have support at every step.
-              </p>
             </div>
           </div>
         </div>
@@ -339,10 +356,13 @@ const CashomInitiation = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Ready to Begin Your Journey?
+              Apply Now
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Step into a year-long transformation and become a true steward of the Cannabis plant.
+            <p className="text-xl mb-4 opacity-90">
+              We only accept a limited number of participants per year to ensure the highest level of support and mentorship.
+            </p>
+            <p className="text-lg mb-8 opacity-90">
+              If you're ready to bring the art of hospitality into cannabis—and bring cannabis into the future of hospitality—The CashoM Initiation is your next step.
             </p>
             <Button size="lg" variant="secondary" className="px-8 py-4 text-lg font-semibold">
               Apply Now →
