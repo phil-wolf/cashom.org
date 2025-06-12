@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -6,7 +7,7 @@ const CoursesSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
+          src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
           alt="Cannabis Hospitality Stewardship Certification"
           className="w-28 h-20"
         />
@@ -36,7 +37,7 @@ const CoursesSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
+          src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
           alt="THC ServeSmart"
           className="w-28 h-20"
         />
