@@ -31,7 +31,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8 flex-1">
             <button 
               onClick={handleHomeClick}
               className="text-foreground hover:text-primary transition-colors"
@@ -60,8 +60,8 @@ const Header = () => {
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          {/* Logo - Made more prominent */}
-          <div className="flex items-center justify-center flex-1 md:flex-none">
+          {/* Logo - Centered */}
+          <div className="flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 md:relative md:left-auto md:transform-none">
             <img 
               src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
               alt="CashoM Logo" 
@@ -70,7 +70,7 @@ const Header = () => {
           </div>
 
           {/* Social Icons */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4 flex-1 justify-end">
             <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
               <Instagram className="w-5 h-5" />
             </a>
