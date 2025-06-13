@@ -25,14 +25,14 @@ const Hero = () => {
           animationDelay: '0.2s'
         }}>Cannabis Certifications for Hospitality, Service & Wellness Professionals</p>
         
-        {/* CashoM Logo - Made much larger */}
+        {/* CashoM Logo */}
         <div className="flex justify-center mb-4 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
           <img 
             src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
             alt="CashoM Logo" 
-            className="h-64 w-auto md:h-80 lg:h-96 opacity-90" 
+            className="h-40 w-auto md:h-48 opacity-90" 
           />
         </div>
 

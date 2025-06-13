@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="bg-white border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-8">
-          {/* Logo - Made much larger */}
+          {/* Logo */}
           <div className="flex items-center justify-center">
-            <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-24 w-auto md:h-32 lg:h-36" />
+            <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Logo" className="h-16 w-auto" />
           </div>
 
           {/* Social Icons */}
