@@ -60,12 +60,12 @@ const Header = () => {
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          {/* Logo - Made significantly larger */}
+          {/* Logo - Restored to previous size */}
           <div className="flex items-center justify-center flex-1 md:flex-none">
             <img 
               src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
               alt="CashoM Logo" 
-              className="h-20 w-auto md:h-24 lg:h-28" 
+              className="h-12 w-auto md:h-14" 
             />
           </div>
 

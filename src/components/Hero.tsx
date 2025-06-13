@@ -18,16 +18,9 @@ const Hero = () => {
         backgroundImage: `url('/lovable-uploads/0033d46b-6b37-45d4-841d-c8dd5c518dbe.png')`
       }} />
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-6 animate-fade-in">
-          Welcome to CashoM
-        </h1>
-        <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>Cannabis Certifications for Hospitality, Service & Wellness Professionals</p>
-        
         {/* CashoM Logo - Made much larger */}
-        <div className="flex justify-center mb-4 animate-fade-in" style={{
-          animationDelay: '0.3s'
+        <div className="flex justify-center mb-6 animate-fade-in" style={{
+          animationDelay: '0.1s'
         }}>
           <img 
             src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
@@ -35,6 +28,15 @@ const Hero = () => {
             className="h-64 w-auto md:h-80 lg:h-96 opacity-90" 
           />
         </div>
+
+        <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-6 animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
+          Welcome to CashoM
+        </h1>
+        <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>Cannabis Certifications for Hospitality, Service & Wellness Professionals</p>
 
         <Button size="lg" className="bg-accent hover:bg-accent/90 text-primary border-2 border-primary/20 px-8 py-4 text-lg font-semibold animate-scale-in group" style={{
           animationDelay: '0.4s'
