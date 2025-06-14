@@ -91,7 +91,7 @@ const CannabisHospitalityCertification = () => {
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-            CashoM Mentorship Program
+            Cannabis Hospitality Stewardship Certification Program
           </h1>
           
           <p className="text-xl md:text-2xl text-primary/80 font-medium mb-4">
