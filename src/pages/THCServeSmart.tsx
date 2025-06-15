@@ -1,8 +1,43 @@
 import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { useState } from 'react';
+
 const THCServeSmart = () => {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState('');
+
+  const handleEmailSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email) {
+      setError('Please enter your email address');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setError('');
+
+    // Submit the form to the hidden iframe
+    const form = e.target as HTMLFormElement;
+    form.submit();
+    
+    // Show success message after a short delay
+    setTimeout(() => {
+      setIsSuccess(true);
+      setEmail('');
+      setIsSubmitting(false);
+    }, 1000);
+  };
+
+  const handleIframeLoad = () => {
+    console.log('Form submitted to MailerLite');
+  };
+
   const benefits = [{
     icon: <Check className="w-6 h-6 text-primary" />,
     title: "Safeguard Your Bar, Venue, or License",
@@ -70,13 +105,17 @@ const THCServeSmart = () => {
     badge: "🌟",
     note: "Mastery Level"
   }];
-  return <div className="min-h-screen">
+  return (
+    <div className="min-h-screen">
       <Header />
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/20 to-accent/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
+              <span className="text-primary font-semibold">Coming August 2025</span>
+            </div>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               Get Certified in THC Beverage Service with ServeSmart™
             </h1>
@@ -92,9 +131,73 @@ const THCServeSmart = () => {
               </p>
               <p className="text-foreground/70 mb-8">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC-ServeSmart bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
-              👉 Enroll in ServeSmart Today
-            </Button>
+
+            {/* Email Signup Form */}
+            <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 border border-primary/20">
+              <h3 className="text-xl font-serif font-bold text-primary mb-2">
+                Be the First to Know
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in August 2025!
+              </p>
+              
+              {isSuccess ? (
+                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
+                  <h4 className="font-bold">Thank you!</h4>
+                  <p>You're on the list! Watch for your 20% off code coming soon.</p>
+                  <button 
+                    onClick={() => setIsSuccess(false)}
+                    className="mt-2 text-sm underline hover:no-underline"
+                  >
+                    Add another email
+                  </button>
+                </div>
+              ) : (
+                <>
+                  <iframe 
+                    name="hidden_iframe" 
+                    style={{ display: 'none' }} 
+                    onLoad={handleIframeLoad}
+                  ></iframe>
+                  
+                  <form 
+                    onSubmit={handleEmailSubmit} 
+                    action="https://assets.mailerlite.com/jsonp/318197/forms/105933278184211992/subscribe" 
+                    method="post" 
+                    target="hidden_iframe"
+                    className="space-y-4"
+                  >
+                    <Input
+                      type="email"
+                      name="fields[email]"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      placeholder="Enter your email address"
+                      required
+                      disabled={isSubmitting}
+                      className="w-full"
+                    />
+                    
+                    {error && (
+                      <div className="text-red-600 text-sm">
+                        {error}
+                      </div>
+                    )}
+
+                    <input type="hidden" name="ml-submit" value="1" />
+                    <input type="hidden" name="anticsrf" value="true" />
+
+                    <Button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                    >
+                      {isSubmitting ? 'Joining...' : 'Get 20% Off - Join Early Access'}
+                    </Button>
+                  </form>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </section>
@@ -187,14 +290,17 @@ const THCServeSmart = () => {
             <div className="space-y-6 mb-12">
               <div className="bg-primary/10 p-8 rounded-lg">
                 <h3 className="text-2xl font-serif font-bold text-primary mb-4">ServeSmart Certification</h3>
-                <p className="text-4xl font-bold text-primary mb-4">$125 <span className="text-lg font-normal">per person</span></p>
+                <p className="text-4xl font-bold text-primary mb-2">$125 <span className="text-lg font-normal">per person</span></p>
+                <p className="text-lg text-primary/80">
+                  <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Early Bird: $100</span> with 20% off for email subscribers
+                </p>
               </div>
               <div className="bg-secondary/20 p-6 rounded-lg">
                 <p className="text-lg text-foreground/80 mb-2">
                   <strong>Team & Distributor Packages:</strong> Custom pricing for 5+ Employees
                 </p>
                 <p className="text-foreground/70">
-                  Bulk discounts and sponsorship options available — <Button variant="link" className="p-0 h-auto text-primary">Contact Us</Button>
+                  Bulk discounts and sponsorship options available — Contact us for details
                 </p>
               </div>
             </div>
@@ -241,22 +347,29 @@ const THCServeSmart = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Be the Professional That Sets the Standard
+              Be Ready When the Industry Needs You Most
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              This category is growing fast. Don't get left behind.
+              This category is growing fast. Get ahead of the curve.
             </p>
             <p className="text-lg mb-8 opacity-80">
-              Get certified. Get educated. And be ready to responsibly serve the future of beverage.
+              Join our early access list and be among the first certified professionals when we launch in August 2025.
             </p>
-            <Button size="lg" variant="secondary" className="px-8 py-4 text-lg font-semibold">
-              👉 Enroll in ServeSmart Today
+            <Button 
+              size="lg" 
+              variant="secondary" 
+              className="px-8 py-4 text-lg font-semibold"
+              onClick={() => document.querySelector('input[type="email"]')?.focus()}
+            >
+              👉 Join Early Access for 20% Off
             </Button>
           </div>
         </div>
       </section>
 
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default THCServeSmart;
