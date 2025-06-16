@@ -1,5 +1,3 @@
-
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -66,7 +64,7 @@ const FeaturedProgramsSection = () => {
       ),
       title: "THC ServeSmart",
       subtitle: "Specialized Training for Beverage Industry",
-      description: "Cutting-edge training designed specifically for the liquor and beverage industry focusing on legal THC beverages. Learn evidence-based serving techniques, dosage awareness, and responsible service practices for this rapidly emerging market.",
+      description: "Cutting-edge training designed specifically for the liquor and beverage industry focusing on legal THC beverages. Learn proven serving techniques, dosage awareness, and responsible service practices for this rapidly emerging market.",
       features: [
         "Industry-specific training protocols",
         "Dosage calculation and awareness",
