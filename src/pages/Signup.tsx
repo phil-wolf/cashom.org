@@ -44,10 +44,10 @@ const Signup = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-              Join Our Newsletter
+              Be the First to Know
             </h1>
             <p className="text-xl text-gray-600 mb-12">
-              Stay informed with exclusive updates, course announcements, and special offers from CashoM.
+              Join our early access list and receive 20% off when we launch THC ServeSmart in August 2025!
             </p>
 
             {isSuccess ? (
@@ -79,7 +79,7 @@ const Signup = () => {
                 >
                   <div className="mb-6">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email Address
+                      Enter your email address
                     </label>
                     <input
                       id="email"
@@ -108,7 +108,7 @@ const Signup = () => {
                     disabled={isSubmitting}
                     className="w-full bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    {isSubmitting ? 'Subscribing...' : 'Subscribe to Newsletter'}
+                    {isSubmitting ? 'Subscribing...' : 'Get 20% Off - Join Early Access'}
                   </button>
                 </form>
               </>
