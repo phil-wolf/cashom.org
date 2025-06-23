@@ -47,7 +47,7 @@ const Signup = () => {
               Be the First to Know
             </h1>
             <p className="text-xl text-gray-600 mb-12">
-              Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in August 2025!
+              Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch THC ServeSmart in August 2025!
             </p>
 
             {isSuccess ? (
