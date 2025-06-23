@@ -1,4 +1,3 @@
-
 import { Check, Star, BookOpen, Users, Award, Heart, Compass, Brain, Leaf, Calendar, DollarSign, Clock, Target, Lightbulb, Zap, Map } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
@@ -167,9 +166,15 @@ const CashomInitiation = () => {
               </div>
             </div>
 
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
-              Apply Now →
-            </Button>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-lg font-semibold">
+                Apply Now →
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -364,9 +369,15 @@ const CashomInitiation = () => {
             <p className="text-lg mb-8 opacity-90">
               If you're ready to bring the art of hospitality into cannabis—and bring cannabis into the future of hospitality—The CashoM Initiation is your next step.
             </p>
-            <Button size="lg" variant="secondary" className="px-8 py-4 text-lg font-semibold">
-              Apply Now →
-            </Button>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button size="lg" variant="secondary" className="px-8 py-4 text-lg font-semibold">
+                Apply Now →
+              </Button>
+            </a>
           </div>
         </div>
       </section>

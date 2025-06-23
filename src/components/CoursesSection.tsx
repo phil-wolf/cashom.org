@@ -32,7 +32,9 @@ const CoursesSection = () => {
       description: "Learn the art of hospitality at the highest level—Develop skills to help others experience cannabis in the most impactful way. A yearlong training to become a Level 1 CashoM — a steward and server of the Cannabis plant. Timeline: 12 months with weekly meetings, monthly group sessions, live practicums and a retreat in 2026.",
       buttonText: "Learn More →",
       isLink: true,
-      url: "/cashom-initiation"
+      url: "/cashom-initiation",
+      hasApplication: true,
+      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
     },
     {
       icon: (
