@@ -1,6 +1,5 @@
 import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
@@ -173,7 +172,7 @@ const THCServeSmart = () => {
                     target="hidden_iframe"
                     className="space-y-4"
                   >
-                    <Input
+                    <input
                       type="email"
                       name="fields[email]"
                       value={email}
@@ -181,7 +180,7 @@ const THCServeSmart = () => {
                       placeholder="Enter your email address"
                       required
                       disabled={isSubmitting}
-                      className="w-full"
+                      className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
                     />
                     
                     {error && (
