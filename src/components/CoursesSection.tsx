@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -34,7 +33,7 @@ const CoursesSection = () => {
       isLink: true,
       url: "/cashom-initiation",
       hasApplication: true,
-      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
+      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScD5JIWqI0ESr-gaSr8DeEXa_yx2TWXrIysSBRkbPv6c5SGjw/viewform?usp=header"
     },
     {
       icon: (

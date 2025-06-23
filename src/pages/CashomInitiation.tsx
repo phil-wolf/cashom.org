@@ -167,7 +167,7 @@ const CashomInitiation = () => {
             </div>
 
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScD5JIWqI0ESr-gaSr8DeEXa_yx2TWXrIysSBRkbPv6c5SGjw/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -370,7 +370,7 @@ const CashomInitiation = () => {
               If you're ready to bring the art of hospitality into cannabis—and bring cannabis into the future of hospitality—The CashoM Initiation is your next step.
             </p>
             <a 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScD5JIWqI0ESr-gaSr8DeEXa_yx2TWXrIysSBRkbPv6c5SGjw/viewform?usp=header"
               target="_blank"
               rel="noopener noreferrer"
             >
