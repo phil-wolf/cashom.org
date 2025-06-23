@@ -1,41 +1,8 @@
 
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
-import { useState } from 'react';
 
 const CoursesSection = () => {
-  const [thcEmail, setThcEmail] = useState('');
-  const [isThcSubmitting, setIsThcSubmitting] = useState(false);
-  const [isThcSuccess, setIsThcSuccess] = useState(false);
-  const [thcError, setThcError] = useState('');
-
-  const handleThcEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!thcEmail) {
-      setThcError('Please enter your email address');
-      return;
-    }
-
-    setIsThcSubmitting(true);
-    setThcError('');
-
-    // Submit the form to the hidden iframe
-    const form = e.target as HTMLFormElement;
-    form.submit();
-    
-    // Show success message after a short delay
-    setTimeout(() => {
-      setIsThcSuccess(true);
-      setThcEmail('');
-      setIsThcSubmitting(false);
-    }, 1000);
-  };
-
-  const handleThcIframeLoad = () => {
-    console.log('THC Form submitted to MailerLite');
-  };
-
   const offerings = [
     {
       icon: (
@@ -76,11 +43,12 @@ const CoursesSection = () => {
         />
       ),
       title: "THC ServeSmart",
+      subtitle: "Coming August 2025!",
       description: "Specialized training for the liquor industry on legal THC beverages. Learn proper serving techniques, dosage awareness, and responsible service practices for this emerging market segment.",
       buttonText: "Learn More →",
       isLink: true,
       url: "/thc-servesmart",
-      hasEmailSignup: true
+      hasSignupButton: true
     }
   ];
 
@@ -102,6 +70,11 @@ const CoursesSection = () => {
                 <h3 className="text-lg font-serif font-semibold text-primary mt-3 text-center">
                   {offering.title}
                 </h3>
+                {offering.subtitle && (
+                  <p className="text-sm font-medium text-accent mt-1">
+                    {offering.subtitle}
+                  </p>
+                )}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed text-sm text-center">
                 {offering.description}
@@ -143,70 +116,12 @@ const CoursesSection = () => {
                   </a>
                 )}
 
-                {offering.hasEmailSignup && (
-                  <div className="mt-4 p-4 bg-gray-50 rounded-lg border">
-                    <p className="text-xs text-gray-600 mb-3 text-center">
-                      <strong>Coming August 2025!</strong><br />
-                      Get 20% off - Join Early Access
-                    </p>
-                    
-                    {isThcSuccess ? (
-                      <div className="bg-green-100 border border-green-400 text-green-700 px-3 py-2 rounded text-xs">
-                        <p className="font-bold">Thank you!</p>
-                        <p>You're on the list! Watch for your 20% off code.</p>
-                        <button 
-                          onClick={() => setIsThcSuccess(false)}
-                          className="mt-1 text-xs underline hover:no-underline"
-                        >
-                          Add another email
-                        </button>
-                      </div>
-                    ) : (
-                      <>
-                        <iframe 
-                          name="thc_hidden_iframe" 
-                          style={{ display: 'none' }} 
-                          onLoad={handleThcIframeLoad}
-                        ></iframe>
-                        
-                        <form 
-                          onSubmit={handleThcEmailSubmit} 
-                          action="https://assets.mailerlite.com/jsonp/318197/forms/105933278184211992/subscribe" 
-                          method="post" 
-                          target="thc_hidden_iframe"
-                          className="space-y-2"
-                        >
-                          <input
-                            type="email"
-                            name="fields[email]"
-                            value={thcEmail}
-                            onChange={(e) => setThcEmail(e.target.value)}
-                            placeholder="Enter your email"
-                            required
-                            disabled={isThcSubmitting}
-                            className="w-full px-3 py-2 text-xs border border-gray-300 rounded focus:outline-none focus:border-primary"
-                          />
-                          
-                          {thcError && (
-                            <div className="text-red-600 text-xs">
-                              {thcError}
-                            </div>
-                          )}
-
-                          <input type="hidden" name="ml-submit" value="1" />
-                          <input type="hidden" name="anticsrf" value="true" />
-
-                          <Button
-                            type="submit"
-                            disabled={isThcSubmitting}
-                            className="w-full text-xs py-2 bg-primary hover:bg-primary/90 text-primary-foreground"
-                          >
-                            {isThcSubmitting ? 'Joining...' : 'Get 20% Off'}
-                          </Button>
-                        </form>
-                      </>
-                    )}
-                  </div>
+                {offering.hasSignupButton && (
+                  <Link to="/signup">
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                      Sign-up Now
+                    </Button>
+                  </Link>
                 )}
               </div>
             </div>
