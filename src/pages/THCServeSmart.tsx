@@ -134,6 +134,13 @@ const THCServeSmart = () => {
               <p className="text-lg text-foreground/80 leading-relaxed mb-8">
                 <strong className="text-primary">THC-ServeSmart™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
               </p>
+              <div className="flex justify-center mb-6">
+                <img 
+                  src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
+                  alt="CashoM Logo" 
+                  className="h-16 w-auto opacity-80"
+                />
+              </div>
               <p className="text-foreground/70 mb-8">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC-ServeSmart bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
 
@@ -211,9 +218,16 @@ const THCServeSmart = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-16">
-              Why Get ServeSmart Certified?
-            </h2>
+            <div className="flex items-center justify-center mb-8">
+              <img 
+                src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
+                alt="CashoM Logo" 
+                className="h-12 w-auto opacity-60 mr-4"
+              />
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">
+                Why Get ServeSmart Certified?
+              </h2>
+            </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {benefits.map((benefit, index) => <div key={index} className="bg-secondary/20 p-8 rounded-lg">
                   <div className="flex items-center mb-4">
@@ -261,9 +275,16 @@ const THCServeSmart = () => {
                   <span className="text-lg font-medium text-primary">{audience}</span>
                 </div>)}
             </div>
-            <p className="text-center text-foreground/70 text-lg">
-              Whether you're preparing your team or your accounts, ServeSmart gives you the tools to lead with clarity and confidence.
-            </p>
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
+                alt="CashoM Logo" 
+                className="h-10 w-auto opacity-50 mx-auto mb-4"
+              />
+              <p className="text-foreground/70 text-lg">
+                Whether you're preparing your team or your accounts, ServeSmart gives you the tools to lead with clarity and confidence.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -289,9 +310,16 @@ const THCServeSmart = () => {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mb-16">
-              Pricing
-            </h2>
+            <div className="flex items-center justify-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mr-4">
+                Pricing
+              </h2>
+              <img 
+                src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
+                alt="CashoM Logo" 
+                className="h-12 w-auto opacity-60"
+              />
+            </div>
             <div className="space-y-6 mb-12">
               <div className="bg-primary/10 p-8 rounded-lg">
                 <h3 className="text-2xl font-serif font-bold text-primary mb-4">ServeSmart Certification</h3>
@@ -320,6 +348,13 @@ const THCServeSmart = () => {
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-4">
               🪜 THC Beverage Education Pathway
             </h2>
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
+                alt="CashoM Logo" 
+                className="h-14 w-auto opacity-70"
+              />
+            </div>
             <p className="text-center text-foreground/70 mb-16 text-lg">
               Your certification journey doesn't stop here. Continue your education and elevate your role in cannabis hospitality with our advanced training offerings:
             </p>
@@ -351,6 +386,13 @@ const THCServeSmart = () => {
       <section className="py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
+                alt="CashoM Logo" 
+                className="h-16 w-auto opacity-80 brightness-0 invert"
+              />
+            </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
               Be Ready When the Industry Needs You Most
             </h2>
