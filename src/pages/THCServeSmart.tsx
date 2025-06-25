@@ -138,7 +138,7 @@ const THCServeSmart = () => {
                 <img 
                   src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                   alt="CashoM Logo" 
-                  className="h-16 w-auto opacity-80"
+                  className="h-32 w-auto opacity-80"
                 />
               </div>
               <p className="text-foreground/70 mb-8">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC-ServeSmart bridges the gap between alcohol experience and cannabis beverage expertise.</p>
@@ -222,7 +222,7 @@ const THCServeSmart = () => {
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                 alt="CashoM Logo" 
-                className="h-12 w-auto opacity-60 mr-4"
+                className="h-24 w-auto opacity-60 mr-4"
               />
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">
                 Why Get ServeSmart Certified?
@@ -279,7 +279,7 @@ const THCServeSmart = () => {
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                 alt="CashoM Logo" 
-                className="h-10 w-auto opacity-50 mx-auto mb-4"
+                className="h-20 w-auto opacity-50 mx-auto mb-4"
               />
               <p className="text-foreground/70 text-lg">
                 Whether you're preparing your team or your accounts, ServeSmart gives you the tools to lead with clarity and confidence.
@@ -317,7 +317,7 @@ const THCServeSmart = () => {
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                 alt="CashoM Logo" 
-                className="h-12 w-auto opacity-60"
+                className="h-24 w-auto opacity-60"
               />
             </div>
             <div className="space-y-6 mb-12">
@@ -352,7 +352,7 @@ const THCServeSmart = () => {
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                 alt="CashoM Logo" 
-                className="h-14 w-auto opacity-70"
+                className="h-28 w-auto opacity-70"
               />
             </div>
             <p className="text-center text-foreground/70 mb-16 text-lg">
@@ -390,7 +390,7 @@ const THCServeSmart = () => {
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                 alt="CashoM Logo" 
-                className="h-16 w-auto opacity-80 brightness-0 invert"
+                className="h-32 w-auto opacity-80 brightness-0 invert"
               />
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
