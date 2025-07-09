@@ -113,13 +113,13 @@ const THCServeSmart = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
-              <span className="text-primary font-semibold">Coming August 2025</span>
+              <span className="text-primary font-semibold">Coming September 2025</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               Get Certified in THC Beverage Service with ServeSmart™
             </h1>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
-              "Certified Servers = Confident Sales = Returning Customers"
+              Certified Servers = Confident Sales = Returning Customers
             </p>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
@@ -147,7 +147,7 @@ const THCServeSmart = () => {
                 Be the First to Know
               </h3>
               <p className="text-gray-600 mb-4">
-                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in August 2025!
+                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in September 2025!
               </p>
               
               {isSuccess ? (
@@ -397,7 +397,7 @@ const THCServeSmart = () => {
               This category is growing fast. Get ahead of the curve.
             </p>
             <p className="text-lg mb-8 opacity-80">
-              Join our early access list and be among the first certified professionals when we launch in August 2025.
+              Join our early access list and be among the first certified professionals when we launch in September 2025.
             </p>
             <Button 
               size="lg" 
