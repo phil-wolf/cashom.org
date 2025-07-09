@@ -118,11 +118,8 @@ const THCServeSmart = () => {
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               Get Certified in THC Beverage Service with ServeSmart™
             </h1>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-2">
+            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
               "Certified Servers = Confident Sales = Returning Customers"
-            </p>
-            <p className="text-lg text-primary/70 mb-8">
-              Help sponsors see the downstream effect of proper training.
             </p>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
