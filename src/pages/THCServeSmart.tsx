@@ -119,7 +119,7 @@ const THCServeSmart = () => {
               Get Certified in THC Beverage Service with ServeSmart™
             </h1>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-2">
-              "Certified Servers = Confident Sales"
+              "Certified Servers = Confident Sales = Returning Customers"
             </p>
             <p className="text-lg text-primary/70 mb-8">
               Help sponsors see the downstream effect of proper training.
