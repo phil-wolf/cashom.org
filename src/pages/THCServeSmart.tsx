@@ -62,7 +62,7 @@ const THCServeSmart = () => {
     title: "Gain Product Expertise",
     description: "Learn directly from leading THC beverage brands through embedded product education modules."
   }];
-  const learningTopics = ["How THC works in the body — and how to explain onset and duration to customers", "Best practices for low-dose, microdose, and stacked beverage service", "Differences between cannabis and alcohol intoxication", "Guidelines for combining THC and alcohol — and when not to", "How to talk about effects, cannabinoids, and dosing without sounding like a dispensary", "Real-world examples for managing guest experiences with professionalism and care", "Brand education on specific products you'll be selling or serving"];
+  const learningTopics = ["How THC works in the body — and how to explain onset and duration to customers", "Best practices for low-dose, microdose, and stacked beverage service", "Differences between cannabis and alcohol intoxication", "Guidelines for combining THC and alcohol — and when not to", "How to talk about effects, cannabinoids, and dosing without sounding like a dispensary", "Real-world examples for managing guest experiences with professionalism and care", "Brand education on specific products you'll be selling or serving", "Understand why THC Beverages are legal and how to explain it to customers to ensure confidence in the consumer"];
   const targetAudience = ["Bartenders & Servers", "Bar Managers & Beverage Directors", "Alcohol Distributors & Brand Reps", "Retail Beverage Staff & Hospitality Teams", "Event Hosts, Venues & Promoters"];
   const included = [{
     icon: <Play className="w-5 h-5 text-primary" />,
