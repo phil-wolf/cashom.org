@@ -46,11 +46,10 @@ const CoursesSection = () => {
           </h2>
         </div>
 
-        {/* Offerings - Left and Right Aligned */}
-        <div className="space-y-16 max-w-6xl mx-auto">
+        {/* Offerings - Side by Side */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {offerings.map((offering, index) => (
-            <div key={index} className={`flex flex-col lg:flex-row items-center gap-12 ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
-              <div className="flex-1 bg-white rounded-lg shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow">
                 <div className="flex flex-col items-center lg:items-start mb-6">
                   {offering.icon}
                   <h3 className="text-2xl font-serif font-semibold text-primary mt-4 text-center lg:text-left">
@@ -98,7 +97,6 @@ const CoursesSection = () => {
                 )}
 
                 </div>
-              </div>
             </div>
           ))}
         </div>
