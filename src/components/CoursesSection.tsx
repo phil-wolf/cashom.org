@@ -34,22 +34,6 @@ const CoursesSection = () => {
       url: "/cashom-initiation",
       hasApplication: true,
       applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScD5JIWqI0ESr-gaSr8DeEXa_yx2TWXrIysSBRkbPv6c5SGjw/viewform?usp=header"
-    },
-    {
-      icon: (
-        <img 
-          src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
-          alt="THC ServeSmart"
-          className="w-28 h-20"
-        />
-      ),
-      title: "THC ServeSmart",
-      subtitle: "Coming August 2025!",
-      description: "Specialized training for the liquor industry on legal THC beverages. Learn proper serving techniques, dosage awareness, and responsible service practices for this emerging market segment.",
-      buttonText: "Learn More →",
-      isLink: true,
-      url: "/thc-servesmart",
-      hasSignupButton: true
     }
   ];
 
@@ -71,11 +55,6 @@ const CoursesSection = () => {
                 <h3 className="text-lg font-serif font-semibold text-primary mt-3 text-center">
                   {offering.title}
                 </h3>
-                {offering.subtitle && (
-                  <p className="text-sm font-medium text-accent mt-1">
-                    {offering.subtitle}
-                  </p>
-                )}
               </div>
               <p className="text-gray-600 mb-6 leading-relaxed text-sm text-center">
                 {offering.description}
@@ -117,13 +96,6 @@ const CoursesSection = () => {
                   </a>
                 )}
 
-                {offering.hasSignupButton && (
-                  <Link to="/signup">
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
-                      Sign-up Now
-                    </Button>
-                  </Link>
-                )}
               </div>
             </div>
           ))}
