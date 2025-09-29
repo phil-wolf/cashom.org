@@ -53,31 +53,6 @@ const FeaturedProgramsSection = () => {
       buttonText: "Learn More →",
       isLink: true,
       url: "/cashom-initiation"
-    },
-    {
-      icon: (
-        <img 
-          src="/lovable-uploads/ced58816-8fc0-4a73-9fd9-552a1026cf79.png" 
-          alt="THC ServeSmart"
-          className="w-32 h-24"
-        />
-      ),
-      title: "THC ServeSmart",
-      subtitle: "Specialized Training for Beverage Industry",
-      description: "Cutting-edge training designed specifically for the liquor and beverage industry focusing on legal THC beverages. Learn proven serving techniques, dosage awareness, and responsible service practices for this rapidly emerging market.",
-      features: [
-        "Industry-specific training protocols",
-        "Dosage calculation and awareness",
-        "Responsible service practices",
-        "Legal compliance guidelines",
-        "Market trend insights"
-      ],
-      gradient: "from-secondary/15 via-muted/20 to-accent/10",
-      iconBg: "bg-secondary/20",
-      iconColor: "text-primary",
-      buttonText: "Learn More →",
-      isLink: true,
-      url: "/thc-servesmart"
     }
   ];
 
