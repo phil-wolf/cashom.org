@@ -49,17 +49,17 @@ const CoursesSection = () => {
         {/* Offerings - Side by Side */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {offerings.map((offering, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow">
+            <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow flex flex-col">
                 <div className="flex flex-col items-center lg:items-start mb-6">
                   {offering.icon}
                   <h3 className="text-2xl font-serif font-semibold text-primary mt-4 text-center lg:text-left">
                     {offering.title}
                   </h3>
                 </div>
-                <p className="text-gray-600 mb-8 leading-relaxed text-center lg:text-left">
+                <p className="text-gray-600 mb-8 leading-relaxed text-center lg:text-left flex-1">
                   {offering.description}
                 </p>
-                <div className="space-y-3">
+                <div className="space-y-3 mt-auto">
                 {offering.isLink ? (
                   offering.url.startsWith('http') ? (
                     <a 
