@@ -39,7 +39,7 @@ const THCServeSmart = () => {
 
   const benefits = [{
     icon: <Check className="w-6 h-6 text-primary" />,
-    title: "Safeguard Your Bar, Venue, or License",
+    title: "Safeguard Your Bar, Venue, or License & Qualify for Insurance Discounts",
     description: "Learn how to dose and serve responsibly, avoiding overconsumption and liability. Being best-in-class certified may qualify you for insurance discounts and automatic qualifications with venues and distributors."
   }, {
     icon: <Users className="w-6 h-6 text-primary" />,
