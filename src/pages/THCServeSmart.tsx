@@ -40,7 +40,7 @@ const THCServeSmart = () => {
   const benefits = [{
     icon: <Check className="w-6 h-6 text-primary" />,
     title: "Safeguard Your Bar, Venue, or License",
-    description: "Learn how to dose and serve responsibly, avoiding overconsumption and liability."
+    description: "Learn how to dose and serve responsibly, avoiding overconsumption and liability. Being best-in-class certified may qualify you for insurance discounts and automatic qualifications with venues and distributors."
   }, {
     icon: <Users className="w-6 h-6 text-primary" />,
     title: "Train Your Staff to Sell With Confidence",
@@ -61,10 +61,6 @@ const THCServeSmart = () => {
     icon: <Award className="w-6 h-6 text-primary" />,
     title: "Gain Product Expertise",
     description: "Learn directly from leading THC beverage brands through embedded product education modules."
-  }, {
-    icon: <Award className="w-6 h-6 text-primary" />,
-    title: "Receive Insurance Discounts & Automatic Qualifications",
-    description: "Being best-in-class certified may qualify you for insurance discounts and automatic qualifications with venues and distributors."
   }];
   const learningTopics = ["How THC works in the body — and how to explain onset and duration to customers", "Best practices for low-dose, microdose, and stacked beverage service", "Differences between cannabis and alcohol intoxication", "Guidelines for combining THC and alcohol — and when not to", "How to talk about effects, cannabinoids, and dosing without sounding like a dispensary", "Real-world examples for managing guest experiences with professionalism and care", "Brand education on specific products you'll be selling or serving", "Legal framework and consumer education — Know the regulations that make THC beverages legal and develop clear, confident explanations that build customer trust"];
   const targetAudience = ["Bartenders & Servers", "Bar Managers & Beverage Directors", "Alcohol Distributors & Brand Reps", "Retail Beverage Staff & Hospitality Teams", "Event Hosts, Venues & Promoters"];
