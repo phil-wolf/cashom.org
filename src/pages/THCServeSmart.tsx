@@ -61,6 +61,10 @@ const THCServeSmart = () => {
     icon: <Award className="w-6 h-6 text-primary" />,
     title: "Gain Product Expertise",
     description: "Learn directly from leading THC beverage brands through embedded product education modules."
+  }, {
+    icon: <Award className="w-6 h-6 text-primary" />,
+    title: "Receive Insurance Discounts & Automatic Qualifications",
+    description: "Being best-in-class certified may qualify you for insurance discounts and automatic qualifications with venues and distributors."
   }];
   const learningTopics = ["How THC works in the body — and how to explain onset and duration to customers", "Best practices for low-dose, microdose, and stacked beverage service", "Differences between cannabis and alcohol intoxication", "Guidelines for combining THC and alcohol — and when not to", "How to talk about effects, cannabinoids, and dosing without sounding like a dispensary", "Real-world examples for managing guest experiences with professionalism and care", "Brand education on specific products you'll be selling or serving", "Legal framework and consumer education — Know the regulations that make THC beverages legal and develop clear, confident explanations that build customer trust"];
   const targetAudience = ["Bartenders & Servers", "Bar Managers & Beverage Directors", "Alcohol Distributors & Brand Reps", "Retail Beverage Staff & Hospitality Teams", "Event Hosts, Venues & Promoters"];
@@ -113,7 +117,7 @@ const THCServeSmart = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
-              <span className="text-primary font-semibold">Coming September 2025</span>
+              <span className="text-primary font-semibold">Coming December 2025</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
               Get Certified in THC Beverage Service with ServePro™
@@ -147,7 +151,7 @@ const THCServeSmart = () => {
                 Be the First to Know
               </h3>
               <p className="text-gray-600 mb-4">
-                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in September 2025!
+                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in December 2025!
               </p>
               
               {isSuccess ? (
@@ -397,7 +401,7 @@ const THCServeSmart = () => {
               This category is growing fast. Get ahead of the curve.
             </p>
             <p className="text-lg mb-8 opacity-80">
-              Join our early access list and be among the first certified professionals when we launch in September 2025.
+              Join our early access list and be among the first certified professionals when we launch in December 2025.
             </p>
             <Button 
               size="lg" 
