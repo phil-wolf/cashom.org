@@ -21,7 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<THCServeSmart />} />
+          <Route path="/" element={<Index />} />
           <Route path="/thc-servesmart" element={<THCServeSmart />} />
           <Route path="/cashom-initiation" element={<CashomInitiation />} />
           <Route path="/cannabis-hospitality-certification" element={<CannabisHospitalityCertification />} />
