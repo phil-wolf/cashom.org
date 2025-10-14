@@ -122,8 +122,12 @@ const CannabisHospitalityCertification = () => {
               Welcome to the Cannabis Hospitality Stewardship Certification Program for Professionals, an exclusive mentorship experience that offers you the opportunity to learn directly from Philip Wolf. Philip is a trailblazer in the Cannabis Hospitality Industry, offers a mentorship program designed to give you the personalized guidance and education needed to thrive in this rapidly growing field.
             </p>
             
-            <p className="text-lg text-foreground/80 leading-relaxed mb-12">
+            <p className="text-lg text-foreground/80 leading-relaxed mb-8">
               Whether you're launching a cannabis business, expanding your offerings, or looking to deepen your knowledge of the plant, Philip provides expert guidance every step of the way. This certification program integrates proven industry insights with a thoughtful, whole-person approach—recognizing cannabis as a meaningful catalyst for socializing and growth, both personally and professionally. Participants will emerge prepared to lead with clarity, purpose, and confidence in today's evolving cannabis landscape.
+            </p>
+
+            <p className="text-lg text-foreground/80 leading-relaxed mb-12">
+              Get certified and have private coaching sessions with Philip Wolf to bring your visions to life or gather in-depth knowledge.
             </p>
 
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary text-center mb-12">
