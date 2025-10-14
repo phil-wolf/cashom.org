@@ -12,7 +12,7 @@ const CoursesSection = () => {
         />
       ),
       title: "Cannabis Hospitality Stewardship Certification",
-      description: "Earn your Cannabis Hospitality Stewardship Certificate which is the premiere program to bring your company to life. Start the program with a vision and end with your event or company coming to life.",
+      description: "Earn your Cannabis Hospitality Stewardship Certificate which is the premiere program to bring your company to life. Start the program with a vision and end with your event or company coming to life. Get certified and have private coaching sessions with Philip Wolf to bring your visions to life or gather in-depth knowledge.",
       buttonText: "Learn More →",
       isLink: true,
       url: "/cannabis-hospitality-certification",
