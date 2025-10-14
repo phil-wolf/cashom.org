@@ -10,6 +10,7 @@ const CannabisHospitalityCertification = () => {
 
   const benefits = [
     "The Cannabis Hospitality Stewardship Certification Program for Professionals",
+    "Private coaching sessions with Philip Wolf to bring your visions to life or gather in-depth knowledge",
     "CashoM seal of approval – This seal will continue to grow in value as CashoM gains popularity",
     "The ability to open up a cannabis hospitality business for under $5,000",
     "Direct access to Philip Wolf's expertise, insights, and guidance",
