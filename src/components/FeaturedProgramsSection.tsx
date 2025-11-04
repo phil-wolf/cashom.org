@@ -53,6 +53,32 @@ const FeaturedProgramsSection = () => {
       buttonText: "Learn More →",
       isLink: true,
       url: "/cashom-initiation"
+    },
+    {
+      icon: (
+        <img 
+          src="/lovable-uploads/8ddffa03-d227-43f3-8350-e5e3d765dbd6.png" 
+          alt="Cannabis Brand Activator Certification"
+          className="w-32 h-24"
+        />
+      ),
+      title: "Cannabis Brand Activator Certification",
+      subtitle: "Professional Brand Experience Training",
+      description: "Develop the competence, confidence, and cultural fluency to represent cannabis brands with integrity and presence. Train to elevate experiences, communicate with intention, and create meaningful moments that connect people to the plant and the brand.",
+      features: [
+        "Safe, intentional cannabis serving in public-facing environments",
+        "Product-to-experience alignment and emotional awareness",
+        "Brand-aligned communication and experiential hosting presence",
+        "6-week cohort-based online training with live sessions"
+      ],
+      gradient: "from-secondary/15 via-primary/10 to-muted/20",
+      iconBg: "bg-secondary/10",
+      iconColor: "text-primary",
+      buttonText: "Learn More →",
+      isLink: true,
+      url: "/cannabis-activator-certification",
+      hasApplication: true,
+      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
     }
   ];
 
