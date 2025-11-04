@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import THCServeSmart from "./pages/THCServeSmart";
 import CashomInitiation from "./pages/CashomInitiation";
 import CannabisHospitalityCertification from "./pages/CannabisHospitalityCertification";
+import CannabisActivatorCertification from "./pages/CannabisActivatorCertification";
 import Team from "./pages/Team";
 import Signup from "./pages/Signup";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/thc-servesmart" element={<THCServeSmart />} />
           <Route path="/cashom-initiation" element={<CashomInitiation />} />
           <Route path="/cannabis-hospitality-certification" element={<CannabisHospitalityCertification />} />
+          <Route path="/cannabis-activator-certification" element={<CannabisActivatorCertification />} />
           <Route path="/team" element={<Team />} />
           <Route path="/signup" element={<Signup />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

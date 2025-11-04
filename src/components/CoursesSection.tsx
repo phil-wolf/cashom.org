@@ -34,6 +34,22 @@ const CoursesSection = () => {
       url: "/cashom-initiation",
       hasApplication: true,
       applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLScD5JIWqI0ESr-gaSr8DeEXa_yx2TWXrIysSBRkbPv6c5SGjw/viewform?usp=header"
+    },
+    {
+      icon: (
+        <img 
+          src="/lovable-uploads/91f0e0bf-59ed-4093-8106-b51ec5e5ad1e.png" 
+          alt="Cannabis Brand Activator Certification"
+          className="w-28 h-20"
+        />
+      ),
+      title: "Cannabis Brand Activator Certification",
+      description: "Develop the competence, confidence, and cultural fluency to represent cannabis brands with integrity and presence. This certification trains marketers, brand ambassadors, and experiential teams to serve cannabis with intention, professionalism, and emotional awareness.",
+      buttonText: "Learn More →",
+      isLink: true,
+      url: "/cannabis-activator-certification",
+      hasApplication: true,
+      applicationUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header"
     }
   ];
 
@@ -46,8 +62,8 @@ const CoursesSection = () => {
           </h2>
         </div>
 
-        {/* Offerings - Side by Side */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {/* Offerings - Three Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {offerings.map((offering, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg border border-gray-100 p-8 hover:shadow-xl transition-shadow flex flex-col">
                 <div className="flex flex-col items-center lg:items-start mb-6">
