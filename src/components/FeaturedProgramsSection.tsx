@@ -57,9 +57,9 @@ const FeaturedProgramsSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/8ddffa03-d227-43f3-8350-e5e3d765dbd6.png" 
+          src="/lovable-uploads/cannabis-activator-icon.png" 
           alt="Cannabis Brand Activator Certification"
-          className="w-32 h-24"
+          className="w-32 h-24 object-contain"
         />
       ),
       title: "Cannabis Brand Activator Certification",

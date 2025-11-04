@@ -38,9 +38,9 @@ const CoursesSection = () => {
     {
       icon: (
         <img 
-          src="/lovable-uploads/91f0e0bf-59ed-4093-8106-b51ec5e5ad1e.png" 
+          src="/lovable-uploads/cannabis-activator-icon.png" 
           alt="Cannabis Brand Activator Certification"
-          className="w-28 h-20"
+          className="w-28 h-20 object-contain"
         />
       ),
       title: "Cannabis Brand Activator Certification",
