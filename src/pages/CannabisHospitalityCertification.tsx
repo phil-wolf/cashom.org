@@ -136,11 +136,11 @@ const CannabisHospitalityCertification = () => {
             </h2>
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              The CashoM Certified Server of Cannabis (CHSC) is a distinguished professional credential for industry leaders seeking to excel in cannabis hospitality or integrate cannabis services into established business operations. This comprehensive certification equips professionals with advanced expertise in developing, managing, and executing premium cannabis experiences across diverse hospitality and wellness environments.
+              The CashoM Certified Server of Cannabis (CCSC) is a distinguished professional credential for industry leaders seeking to excel in cannabis hospitality or integrate cannabis services into established business operations. This comprehensive certification equips professionals with advanced expertise in developing, managing, and executing premium cannabis experiences across diverse hospitality and wellness environments.
             </p>
             
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              CHSC holders demonstrate mastery of cannabis consumption science, regulatory compliance, risk management, strategic business development, and evidence-based best practices. This certification ensures professionals can deliver sophisticated, legally compliant, and transformative cannabis experiences that meet the highest industry standards and exceed client expectations.
+              CCSC holders demonstrate mastery of cannabis consumption science, regulatory compliance, risk management, strategic business development, and evidence-based best practices. This certification ensures professionals can deliver sophisticated, legally compliant, and transformative cannabis experiences that meet the highest industry standards and exceed client expectations.
             </p>
           </div>
         </div>
