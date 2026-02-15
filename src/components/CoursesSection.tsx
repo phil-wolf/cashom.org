@@ -7,12 +7,12 @@ const CoursesSection = () => {
       icon: (
         <img 
           src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
-          alt="Cannabis Hospitality Stewardship Certification"
+          alt="CashoM Certified Server of Cannabis"
           className="w-28 h-20"
         />
       ),
-      title: "Cannabis Hospitality Stewardship Certification",
-      description: "Earn your Cannabis Hospitality Stewardship Certificate which is the premiere program to bring your company to life. Start the program with a vision and end with your event or company coming to life. Get certified and have private coaching sessions with Philip Wolf to bring your visions to life or gather in-depth knowledge.",
+      title: "CashoM Certified Server of Cannabis",
+      description: "Earn your CashoM Certified Server of Cannabis credential which is the premiere program to bring your company to life. Start the program with a vision and end with your event or company coming to life. Get certified and have private coaching sessions with Philip Wolf to bring your visions to life or gather in-depth knowledge.",
       buttonText: "Learn More →",
       isLink: true,
       url: "/cannabis-hospitality-certification",

@@ -7,11 +7,11 @@ const FeaturedProgramsSection = () => {
       icon: (
         <img 
           src="/lovable-uploads/4128c16f-e7d1-4046-aea4-af6bf9389f17.png" 
-          alt="Cannabis Hospitality Stewardship Certification"
+          alt="CashoM Certified Server of Cannabis"
           className="w-32 h-24"
         />
       ),
-      title: "Cannabis Hospitality Stewardship Certification",
+      title: "CashoM Certified Server of Cannabis",
       subtitle: "Professional Cannabis Service Excellence",
       description: "Master the art of hospitality at the highest level—welcoming people into a mindful relationship with cannabis. Develop advanced skills to guide others through intentional, responsible, and impactful cannabis experiences.",
       features: [

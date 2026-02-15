@@ -227,7 +227,7 @@ const CannabisActivatorCertification = () => {
 
             <div className="p-6 bg-white rounded-lg border border-primary/20">
               <p className="text-foreground/70 leading-relaxed italic">
-                <strong>Note:</strong> This is a foundational serving certification. Those wishing to guide deeper personal experiences and intentional consumption journeys may continue on to the Cannabis Hospitality Stewardship Certification to earn the Certified Server of Cannabis credential.
+                <strong>Note:</strong> This is a foundational serving certification. Those wishing to guide deeper personal experiences and intentional consumption journeys may continue on to the CashoM Certified Server of Cannabis program to earn the Certified Server of Cannabis credential.
               </p>
             </div>
           </div>

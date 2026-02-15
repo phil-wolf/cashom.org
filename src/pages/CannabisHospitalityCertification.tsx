@@ -9,7 +9,7 @@ const CannabisHospitalityCertification = () => {
   const applicationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSfx_ICZtoEDhKl4rg7QtBkzR4UFY7R9JX2cDvUPt8JMaJxXAg/viewform?usp=header";
 
   const benefits = [
-    "The Cannabis Hospitality Stewardship Certification Program for Professionals",
+    "The CashoM Certified Server of Cannabis Program for Professionals",
     "Private coaching sessions with Philip Wolf to bring your visions to life or gather in-depth knowledge",
     "CashoM seal of approval – This seal will continue to grow in value as CashoM gains popularity",
     "The ability to open up a cannabis hospitality business for under $5,000",
@@ -92,7 +92,7 @@ const CannabisHospitalityCertification = () => {
           </Badge>
           
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-            Cannabis Hospitality Stewardship Certification Program
+            CashoM Certified Server of Cannabis Program
           </h1>
           
           <p className="text-xl md:text-2xl text-primary/80 font-medium mb-4">
@@ -120,7 +120,7 @@ const CannabisHospitalityCertification = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              Welcome to the Cannabis Hospitality Stewardship Certification Program for Professionals, an exclusive mentorship experience that offers you the opportunity to learn directly from Philip Wolf. Philip is a trailblazer in the Cannabis Hospitality Industry, offers a mentorship program designed to give you the personalized guidance and education needed to thrive in this rapidly growing field.
+              Welcome to the CashoM Certified Server of Cannabis Program for Professionals, an exclusive mentorship experience that offers you the opportunity to learn directly from Philip Wolf. Philip is a trailblazer in the Cannabis Hospitality Industry, offers a mentorship program designed to give you the personalized guidance and education needed to thrive in this rapidly growing field.
             </p>
             
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
@@ -136,7 +136,7 @@ const CannabisHospitalityCertification = () => {
             </h2>
 
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-              The Cannabis Hospitality Stewardship Certificate (CHSC) is a distinguished professional credential for industry leaders seeking to excel in cannabis hospitality or integrate cannabis services into established business operations. This comprehensive certification equips professionals with advanced expertise in developing, managing, and executing premium cannabis experiences across diverse hospitality and wellness environments.
+              The CashoM Certified Server of Cannabis (CHSC) is a distinguished professional credential for industry leaders seeking to excel in cannabis hospitality or integrate cannabis services into established business operations. This comprehensive certification equips professionals with advanced expertise in developing, managing, and executing premium cannabis experiences across diverse hospitality and wellness environments.
             </p>
             
             <p className="text-lg text-foreground/80 leading-relaxed mb-8">
@@ -254,7 +254,7 @@ const CannabisHospitalityCertification = () => {
             Ready to Begin Your Journey?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto opacity-90">
-            Join the Cannabis Hospitality Stewardship Certification Program and learn directly from industry pioneer Philip Wolf.
+            Join the CashoM Certified Server of Cannabis Program and learn directly from industry pioneer Philip Wolf.
           </p>
           <a 
             href={applicationUrl}
