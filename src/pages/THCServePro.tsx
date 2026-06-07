@@ -352,19 +352,29 @@ const THCServePro = () => {
               />
             </div>
             <div className="space-y-6 mb-12">
-              <div className="bg-primary/10 p-8 rounded-lg">
+              <div className="bg-primary/10 p-8 rounded-2xl border-2 border-primary/20">
                 <h3 className="text-2xl font-serif font-bold text-primary mb-4">THC ServePro Certification</h3>
-                <p className="text-4xl font-bold text-primary mb-2">$125 <span className="text-lg font-normal">per person</span></p>
-                <p className="text-lg text-primary/80">
-                  <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Early Bird: $100</span> with 20% off for email subscribers
+                <p className="text-5xl font-bold text-primary mb-3">$125 <span className="text-xl font-normal">per person</span></p>
+                <p className="text-lg text-primary/80 mb-6">
+                  <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Save $25</span> Join our email list and pay just $100
                 </p>
+                <a
+                  href="https://THCservepro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all hover:scale-105"
+                >
+                  Get Certified for $125
+                  <ExternalLink className="w-5 h-5" />
+                </a>
+                <p className="text-foreground/60 text-sm mt-3">30-day money-back guarantee • Instant access • Digital badge + lapel pin included</p>
               </div>
               <div className="bg-secondary/20 p-6 rounded-lg">
                 <p className="text-lg text-foreground/80 mb-2">
                   <strong>Team & Distributor Packages:</strong> Custom pricing for 5+ Employees
                 </p>
                 <p className="text-foreground/70">
-                  Bulk discounts and sponsorship options available — Contact us for details
+                  Bulk discounts and sponsorship options available — <a href="https://THCservepro.com" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline font-medium">Contact us for details</a>
                 </p>
               </div>
             </div>
@@ -425,25 +435,24 @@ const THCServePro = () => {
               />
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Be Ready When the Industry Needs You Most
+              Don't Get Left Behind
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              This category is growing fast. Get ahead of the curve.
+            <p className="text-xl mb-6 opacity-90">
+              THC beverages are the fastest-growing category in cannabis. Venues, distributors, and brands need certified professionals <em>now</em>.
             </p>
             <p className="text-lg mb-8 opacity-80">
-              Join our early access list and be among the first certified professionals when we launch in December 2025.
+              For just $125, you get the industry's most respected THC beverage certification — and the confidence to lead in this explosive new market.
             </p>
-            <Button 
-              size="lg" 
-              variant="secondary" 
-              className="px-8 py-4 text-lg font-semibold"
-              onClick={() => {
-                const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
-                emailInput?.focus();
-              }}
+            <a
+              href="https://THCservepro.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-brand-copper-dark hover:bg-white/90 px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105"
             >
-              👉 Join Early Access for 20% Off
-            </Button>
+              Get Certified for $125
+              <ExternalLink className="w-5 h-5" />
+            </a>
+            <p className="text-white/60 text-sm mt-4">30-day money-back guarantee. Start today, lead tomorrow.</p>
           </div>
         </div>
       </section>
