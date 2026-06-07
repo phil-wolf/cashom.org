@@ -1,41 +1,8 @@
 import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { useState } from 'react';
 
 const THCServePro = () => {
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email) {
-      setError('Please enter your email address');
-      return;
-    }
-
-    setIsSubmitting(true);
-    setError('');
-
-    // Submit the form to the hidden iframe
-    const form = e.target as HTMLFormElement;
-    form.submit();
-    
-    // Show success message after a short delay
-    setTimeout(() => {
-      setIsSuccess(true);
-      setEmail('');
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
-  const handleIframeLoad = () => {
-    console.log('Form submitted to MailerLite');
-  };
 
   const benefits = [{
     icon: <Check className="w-6 h-6 text-primary" />,
@@ -173,73 +140,6 @@ const THCServePro = () => {
                 <ExternalLink className="w-5 h-5" />
               </a>
               <p className="text-white/70 text-sm">30-day money-back guarantee. No risk, all reward.</p>
-            </div>
-
-            {/* Email Signup Form */}
-            <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 border border-primary/20">
-              <h3 className="text-xl font-serif font-bold text-primary mb-2">
-                Want 20% Off?
-              </h3>
-              <p className="text-gray-600 mb-4">
-                Join our list and receive <strong className="text-primary">20% off</strong> — pay just $100!
-              </p>
-              
-              {isSuccess ? (
-                <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
-                  <h4 className="font-bold">Thank you!</h4>
-                  <p>You're on the list! Watch for your 20% off code coming soon.</p>
-                  <button 
-                    onClick={() => setIsSuccess(false)}
-                    className="mt-2 text-sm underline hover:no-underline"
-                  >
-                    Add another email
-                  </button>
-                </div>
-              ) : (
-                <>
-                  <iframe 
-                    name="hidden_iframe" 
-                    style={{ display: 'none' }} 
-                    onLoad={handleIframeLoad}
-                  ></iframe>
-                  
-                  <form 
-                    onSubmit={handleEmailSubmit} 
-                    action="https://assets.mailerlite.com/jsonp/318197/forms/105933278184211992/subscribe" 
-                    method="post" 
-                    target="hidden_iframe"
-                    className="space-y-4"
-                  >
-                    <input
-                      type="email"
-                      name="fields[email]"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email address"
-                      required
-                      disabled={isSubmitting}
-                      className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-primary"
-                    />
-                    
-                    {error && (
-                      <div className="text-red-600 text-sm">
-                        {error}
-                      </div>
-                    )}
-
-                    <input type="hidden" name="ml-submit" value="1" />
-                    <input type="hidden" name="anticsrf" value="true" />
-
-                    <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                    >
-                      {isSubmitting ? 'Joining...' : 'Get 20% Off - Join Early Access'}
-                    </Button>
-                  </form>
-                </>
-              )}
             </div>
           </div>
         </div>
