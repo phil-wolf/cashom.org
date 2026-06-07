@@ -36,6 +36,11 @@
     --ring: 25 45% 35%;
 
     --radius: 0.5rem;
+
+    /* THC ServePro brand palette */
+    --brand-teal: 174 60% 55%;
+    --brand-copper: 25 55% 50%;
+    --brand-copper-dark: 22 45% 30%;
   }
 }
 

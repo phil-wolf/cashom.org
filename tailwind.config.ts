@@ -53,6 +53,9 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'brand-teal': 'hsl(var(--brand-teal))',
+				'brand-copper': 'hsl(var(--brand-copper))',
+				'brand-copper-dark': 'hsl(var(--brand-copper-dark))',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

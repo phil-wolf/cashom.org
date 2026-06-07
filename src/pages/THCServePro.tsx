@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { useState } from 'react';
 
-const THCServeSmart = () => {
+const THCServePro = () => {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -78,7 +78,7 @@ const THCServeSmart = () => {
     title: "Certification Exam + Digital Badge"
   }, {
     icon: <Badge className="w-5 h-5 text-primary" />,
-    title: "ServePro Lapel Pin to wear proudly behind the bar"
+    title: "THC ServePro Lapel Pin to wear proudly behind the bar"
   }, {
     icon: <BookOpen className="w-5 h-5 text-primary" />,
     title: "Brand-Specific THC Beverage Product Education"
@@ -109,36 +109,38 @@ const THCServeSmart = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/20 to-accent/10">
-        <div className="container mx-auto px-4">
+      <section className="py-24 bg-gradient-to-br from-brand-copper-dark via-brand-copper to-[hsl(35,55%,70%)] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_hsl(35_60%_85%_/_0.35),_transparent_60%)]" />
+        <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
-              <span className="text-primary font-semibold">Coming December 2025</span>
+            <div className="inline-block bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+              <span className="text-white font-semibold tracking-wide">Coming December 2025</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-              Get Certified in THC Beverage Service with ServePro™
+            <h1 className="text-5xl md:text-7xl font-sans font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
+              Leading the Future of{' '}
+              <span className="text-brand-teal block">THC Beverage Service</span>
             </h1>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
+            <p className="text-xl md:text-2xl text-white/95 font-medium mb-6">
               Certified Servers = Confident Sales = Returning Customers
             </p>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
+            <p className="text-lg md:text-xl text-white/85 font-medium mb-10 max-w-3xl mx-auto">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+            <div className="max-w-3xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 mb-10 shadow-2xl">
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
                 Cannabis-infused beverages are rapidly entering bars, restaurants, events, and retail shelves across the country. As this category grows, the need for educated, responsible service is critical — especially for professionals already skilled in alcohol service.
               </p>
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                <strong className="text-primary">THC-ServePro™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+                <strong className="text-brand-copper-dark">THC ServePro™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
               </p>
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-4">
                 <img 
                   src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                   alt="CashoM Logo" 
-                  className="h-32 w-auto opacity-80"
+                  className="h-24 w-auto opacity-80"
                 />
               </div>
-              <p className="text-foreground/70 mb-8">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC-ServePro bridges the gap between alcohol experience and cannabis beverage expertise.</p>
+              <p className="text-foreground/70 text-sm">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC ServePro bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
 
             {/* Email Signup Form */}
@@ -222,7 +224,7 @@ const THCServeSmart = () => {
                 className="h-24 w-auto opacity-60 mr-4"
               />
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">
-                Why Get ServePro Certified?
+                Why Get THC ServePro Certified?
               </h2>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -279,7 +281,7 @@ const THCServeSmart = () => {
                 className="h-20 w-auto opacity-50 mx-auto mb-4"
               />
               <p className="text-foreground/70 text-lg">
-                Whether you're preparing your team or your accounts, ServePro gives you the tools to lead with clarity and confidence.
+                Whether you're preparing your team or your accounts, THC ServePro gives you the tools to lead with clarity and confidence.
               </p>
             </div>
           </div>
@@ -319,7 +321,7 @@ const THCServeSmart = () => {
             </div>
             <div className="space-y-6 mb-12">
               <div className="bg-primary/10 p-8 rounded-lg">
-                <h3 className="text-2xl font-serif font-bold text-primary mb-4">ServePro Certification</h3>
+                <h3 className="text-2xl font-serif font-bold text-primary mb-4">THC ServePro Certification</h3>
                 <p className="text-4xl font-bold text-primary mb-2">$125 <span className="text-lg font-normal">per person</span></p>
                 <p className="text-lg text-primary/80">
                   <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Early Bird: $100</span> with 20% off for email subscribers
@@ -380,7 +382,7 @@ const THCServeSmart = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-gradient-to-br from-brand-copper-dark via-brand-copper to-brand-copper-dark text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
@@ -419,4 +421,4 @@ const THCServeSmart = () => {
   );
 };
 
-export default THCServeSmart;
+export default THCServePro;
