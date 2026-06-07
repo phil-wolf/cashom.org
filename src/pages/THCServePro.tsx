@@ -382,7 +382,7 @@ const THCServePro = () => {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-20 bg-gradient-to-br from-brand-copper-dark via-brand-copper to-brand-copper-dark text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
