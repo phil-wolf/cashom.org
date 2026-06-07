@@ -126,21 +126,21 @@ const THCServePro = () => {
             <p className="text-lg md:text-xl text-white/85 font-medium mb-10 max-w-3xl mx-auto">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
+            <div className="max-w-3xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 mb-10 shadow-2xl">
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
                 Cannabis-infused beverages are rapidly entering bars, restaurants, events, and retail shelves across the country. As this category grows, the need for educated, responsible service is critical — especially for professionals already skilled in alcohol service.
               </p>
-              <p className="text-lg text-foreground/80 leading-relaxed mb-8">
-                <strong className="text-primary">THC ServePro™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
+              <p className="text-lg text-foreground/80 leading-relaxed mb-6">
+                <strong className="text-brand-copper-dark">THC ServePro™ Certification</strong> is the gold standard in THC Beverage training, built specifically for bartenders, distributors, bar managers, servers, and retail staff looking to expand their knowledge and confidently serve this new category.
               </p>
-              <div className="flex justify-center mb-6">
+              <div className="flex justify-center mb-4">
                 <img 
                   src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
                   alt="CashoM Logo" 
-                  className="h-32 w-auto opacity-80"
+                  className="h-24 w-auto opacity-80"
                 />
               </div>
-              <p className="text-foreground/70 mb-8">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC ServePro bridges the gap between alcohol experience and cannabis beverage expertise.</p>
+              <p className="text-foreground/70 text-sm">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC ServePro bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
 
             {/* Email Signup Form */}
