@@ -109,19 +109,21 @@ const THCServePro = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/20 to-accent/10">
-        <div className="container mx-auto px-4">
+      <section className="py-24 bg-gradient-to-br from-brand-copper-dark via-brand-copper to-[hsl(35,55%,70%)] relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_hsl(35_60%_85%_/_0.35),_transparent_60%)]" />
+        <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-block bg-primary/10 px-4 py-2 rounded-full mb-6">
-              <span className="text-primary font-semibold">Coming December 2025</span>
+            <div className="inline-block bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
+              <span className="text-white font-semibold tracking-wide">Coming December 2025</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-              Get Certified in THC Beverage Service with ServePro™
+            <h1 className="text-5xl md:text-7xl font-sans font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
+              Leading the Future of{' '}
+              <span className="text-brand-teal block">THC Beverage Service</span>
             </h1>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
+            <p className="text-xl md:text-2xl text-white/95 font-medium mb-6">
               Certified Servers = Confident Sales = Returning Customers
             </p>
-            <p className="text-xl md:text-2xl text-primary/80 font-medium mb-8">
+            <p className="text-lg md:text-xl text-white/85 font-medium mb-10 max-w-3xl mx-auto">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
             <div className="max-w-3xl mx-auto">
