@@ -1,4 +1,4 @@
-import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw } from 'lucide-react';
+import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -114,7 +114,7 @@ const THCServePro = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
-              <span className="text-white font-semibold tracking-wide">Coming December 2025</span>
+              <span className="text-white font-semibold tracking-wide">Now Enrolling — Certification Available Online</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-sans font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
               Leading the Future of{' '}
@@ -123,9 +123,21 @@ const THCServePro = () => {
             <p className="text-xl md:text-2xl text-white/95 font-medium mb-6">
               Certified Servers = Confident Sales = Returning Customers
             </p>
-            <p className="text-lg md:text-xl text-white/85 font-medium mb-10 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-white/85 font-medium mb-8 max-w-3xl mx-auto">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+              <a
+                href="https://THCservepro.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105"
+              >
+                Get Certified for $125
+                <ExternalLink className="w-5 h-5" />
+              </a>
+              <span className="text-white/80 text-sm font-medium">Instant access. Self-paced. Industry recognized.</span>
+            </div>
             <div className="max-w-3xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 mb-10 shadow-2xl">
               <p className="text-lg text-foreground/80 leading-relaxed mb-6">
                 Cannabis-infused beverages are rapidly entering bars, restaurants, events, and retail shelves across the country. As this category grows, the need for educated, responsible service is critical — especially for professionals already skilled in alcohol service.
@@ -143,13 +155,33 @@ const THCServePro = () => {
               <p className="text-foreground/70 text-sm">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC ServePro bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
 
+            {/* Direct Purchase CTA */}
+            <div className="max-w-2xl mx-auto bg-brand-teal/20 backdrop-blur-sm rounded-2xl p-8 mb-8 border-2 border-brand-teal/40">
+              <h3 className="text-2xl font-serif font-bold text-white mb-3">
+                Start Your Certification Today
+              </h3>
+              <p className="text-white/90 text-lg mb-6">
+                Join thousands of industry professionals getting ahead of the curve. Instant course access. Digital badge + lapel pin included.
+              </p>
+              <a
+                href="https://THCservepro.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105 mb-4"
+              >
+                Get Certified for $125
+                <ExternalLink className="w-5 h-5" />
+              </a>
+              <p className="text-white/70 text-sm">30-day money-back guarantee. No risk, all reward.</p>
+            </div>
+
             {/* Email Signup Form */}
             <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 border border-primary/20">
               <h3 className="text-xl font-serif font-bold text-primary mb-2">
-                Be the First to Know
+                Want 20% Off?
               </h3>
               <p className="text-gray-600 mb-4">
-                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in December 2025!
+                Join our list and receive <strong className="text-primary">20% off</strong> — pay just $100!
               </p>
               
               {isSuccess ? (
@@ -320,19 +352,29 @@ const THCServePro = () => {
               />
             </div>
             <div className="space-y-6 mb-12">
-              <div className="bg-primary/10 p-8 rounded-lg">
+              <div className="bg-primary/10 p-8 rounded-2xl border-2 border-primary/20">
                 <h3 className="text-2xl font-serif font-bold text-primary mb-4">THC ServePro Certification</h3>
-                <p className="text-4xl font-bold text-primary mb-2">$125 <span className="text-lg font-normal">per person</span></p>
-                <p className="text-lg text-primary/80">
-                  <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Early Bird: $100</span> with 20% off for email subscribers
+                <p className="text-5xl font-bold text-primary mb-3">$125 <span className="text-xl font-normal">per person</span></p>
+                <p className="text-lg text-primary/80 mb-6">
+                  <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Save $25</span> Join our email list and pay just $100
                 </p>
+                <a
+                  href="https://THCservepro.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all hover:scale-105"
+                >
+                  Get Certified for $125
+                  <ExternalLink className="w-5 h-5" />
+                </a>
+                <p className="text-foreground/60 text-sm mt-3">30-day money-back guarantee • Instant access • Digital badge + lapel pin included</p>
               </div>
               <div className="bg-secondary/20 p-6 rounded-lg">
                 <p className="text-lg text-foreground/80 mb-2">
                   <strong>Team & Distributor Packages:</strong> Custom pricing for 5+ Employees
                 </p>
                 <p className="text-foreground/70">
-                  Bulk discounts and sponsorship options available — Contact us for details
+                  Bulk discounts and sponsorship options available — <a href="https://THCservepro.com" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline font-medium">Contact us for details</a>
                 </p>
               </div>
             </div>
@@ -393,25 +435,24 @@ const THCServePro = () => {
               />
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6">
-              Be Ready When the Industry Needs You Most
+              Don't Get Left Behind
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              This category is growing fast. Get ahead of the curve.
+            <p className="text-xl mb-6 opacity-90">
+              THC beverages are the fastest-growing category in cannabis. Venues, distributors, and brands need certified professionals <em>now</em>.
             </p>
             <p className="text-lg mb-8 opacity-80">
-              Join our early access list and be among the first certified professionals when we launch in December 2025.
+              For just $125, you get the industry's most respected THC beverage certification — and the confidence to lead in this explosive new market.
             </p>
-            <Button 
-              size="lg" 
-              variant="secondary" 
-              className="px-8 py-4 text-lg font-semibold"
-              onClick={() => {
-                const emailInput = document.querySelector('input[type="email"]') as HTMLInputElement;
-                emailInput?.focus();
-              }}
+            <a
+              href="https://THCservepro.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-brand-copper-dark hover:bg-white/90 px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105"
             >
-              👉 Join Early Access for 20% Off
-            </Button>
+              Get Certified for $125
+              <ExternalLink className="w-5 h-5" />
+            </a>
+            <p className="text-white/60 text-sm mt-4">30-day money-back guarantee. Start today, lead tomorrow.</p>
           </div>
         </div>
       </section>
