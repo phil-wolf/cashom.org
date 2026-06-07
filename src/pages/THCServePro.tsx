@@ -1,41 +1,8 @@
 import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { useState } from 'react';
 
 const THCServePro = () => {
-  const [email, setEmail] = useState('');
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState('');
-
-  const handleEmailSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!email) {
-      setError('Please enter your email address');
-      return;
-    }
-
-    setIsSubmitting(true);
-    setError('');
-
-    // Submit the form to the hidden iframe
-    const form = e.target as HTMLFormElement;
-    form.submit();
-    
-    // Show success message after a short delay
-    setTimeout(() => {
-      setIsSuccess(true);
-      setEmail('');
-      setIsSubmitting(false);
-    }, 1000);
-  };
-
-  const handleIframeLoad = () => {
-    console.log('Form submitted to MailerLite');
-  };
 
   const benefits = [{
     icon: <Check className="w-6 h-6 text-primary" />,
