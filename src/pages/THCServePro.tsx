@@ -155,13 +155,33 @@ const THCServePro = () => {
               <p className="text-foreground/70 text-sm">Created by cannabis hospitality expert Philip Wolf, Founder of CashoM – The Trusted School for Cannabis Hospitality Professionals, THC ServePro bridges the gap between alcohol experience and cannabis beverage expertise.</p>
             </div>
 
+            {/* Direct Purchase CTA */}
+            <div className="max-w-2xl mx-auto bg-brand-teal/20 backdrop-blur-sm rounded-2xl p-8 mb-8 border-2 border-brand-teal/40">
+              <h3 className="text-2xl font-serif font-bold text-white mb-3">
+                Start Your Certification Today
+              </h3>
+              <p className="text-white/90 text-lg mb-6">
+                Join thousands of industry professionals getting ahead of the curve. Instant course access. Digital badge + lapel pin included.
+              </p>
+              <a
+                href="https://THCservepro.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105 mb-4"
+              >
+                Get Certified for $125
+                <ExternalLink className="w-5 h-5" />
+              </a>
+              <p className="text-white/70 text-sm">30-day money-back guarantee. No risk, all reward.</p>
+            </div>
+
             {/* Email Signup Form */}
             <div className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 border border-primary/20">
               <h3 className="text-xl font-serif font-bold text-primary mb-2">
-                Be the First to Know
+                Want 20% Off?
               </h3>
               <p className="text-gray-600 mb-4">
-                Join our early access list and receive <strong className="text-primary">20% off</strong> when we launch in December 2025!
+                Join our list and receive <strong className="text-primary">20% off</strong> — pay just $100!
               </p>
               
               {isSuccess ? (
