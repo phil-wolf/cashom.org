@@ -114,7 +114,7 @@ const THCServePro = () => {
         <div className="container mx-auto px-4 relative">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-white/20">
-              <span className="text-white font-semibold tracking-wide">Coming December 2025</span>
+              <span className="text-white font-semibold tracking-wide">Now Enrolling — Certification Available Online</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-sans font-extrabold text-white mb-6 leading-[1.05] tracking-tight">
               Leading the Future of{' '}
@@ -123,9 +123,21 @@ const THCServePro = () => {
             <p className="text-xl md:text-2xl text-white/95 font-medium mb-6">
               Certified Servers = Confident Sales = Returning Customers
             </p>
-            <p className="text-lg md:text-xl text-white/85 font-medium mb-10 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-white/85 font-medium mb-8 max-w-3xl mx-auto">
               The Most Comprehensive Certification for Alcohol Industry Professionals Entering the Cannabis Beverage Space
             </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+              <a
+                href="https://THCservepro.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105"
+              >
+                Get Certified for $125
+                <ExternalLink className="w-5 h-5" />
+              </a>
+              <span className="text-white/80 text-sm font-medium">Instant access. Self-paced. Industry recognized.</span>
+            </div>
             <div className="max-w-3xl mx-auto bg-white/95 backdrop-blur-sm rounded-2xl p-8 mb-10 shadow-2xl">
               <p className="text-lg text-foreground/80 leading-relaxed mb-6">
                 Cannabis-infused beverages are rapidly entering bars, restaurants, events, and retail shelves across the country. As this category grows, the need for educated, responsible service is critical — especially for professionals already skilled in alcohol service.
