@@ -3,6 +3,7 @@ import { X } from 'lucide-react';
 
 const PromoModal = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
 
   const openModal = useCallback(() => {
@@ -10,11 +11,18 @@ const PromoModal = () => {
     if (!dismissed && !hasTriggered) {
       setIsOpen(true);
       setHasTriggered(true);
+      // Small delay to allow mount before triggering transition
+      requestAnimationFrame(() => {
+        setIsVisible(true);
+      });
     }
   }, [hasTriggered]);
 
   const closeModal = () => {
-    setIsOpen(false);
+    setIsVisible(false);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
     sessionStorage.setItem('ccsc-promo-dismissed', 'true');
   };
 
@@ -49,12 +57,18 @@ const PromoModal = () => {
     >
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/50 backdrop-blur-sm"
+        className={`absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
+          isVisible ? 'opacity-100' : 'opacity-0'
+        }`}
         onClick={closeModal}
       />
 
       {/* Modal Card */}
-      <div className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-300">
+      <div
+        className={`relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${
+          isVisible ? 'opacity-100 scale-100 translate-y-0' : 'opacity-0 scale-95 translate-y-4'
+        }`}
+      >
         {/* Close Button */}
         <button
           onClick={closeModal}
@@ -65,7 +79,7 @@ const PromoModal = () => {
         </button>
 
         {/* Decorative top accent bar */}
-        <div className="h-1.5 w-full bg-gradient-to-r from-[hsl(25,45%,35%)] via-[hsl(25,55%,50%)] to-[hsl(25,45%,35%)]" />
+        <div className="h-1.5 w-full bg-gradient-to-r from-primary via-[hsl(25,55%,50%)] to-primary" />
 
         <div className="p-8 md:p-10 text-center">
           {/* Logo */}
@@ -80,19 +94,19 @@ const PromoModal = () => {
           {/* Headline */}
           <h2
             id="promo-headline"
-            className="font-serif text-2xl md:text-3xl font-bold text-[hsl(25,35%,20%)] mb-4 leading-tight"
+            className="font-serif text-2xl md:text-3xl font-bold text-foreground mb-4 leading-tight"
           >
             Cannabis Hospitality Is Evolving. Are You Leading It?
           </h2>
 
           {/* Subtext */}
-          <p className="text-[hsl(25,15%,40%)] text-base md:text-lg leading-relaxed mb-5">
+          <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-5">
             Start a cannabis event company. Elevate your existing services. Transform your retail brand. One certification, three paths forward.
           </p>
 
           {/* Urgency Line */}
-          <div className="inline-block bg-[hsl(28,35%,85%)]/60 border border-[hsl(25,45%,35%)]/20 rounded-lg px-5 py-3 mb-8">
-            <p className="text-[hsl(25,35%,20%)] text-sm md:text-base font-medium leading-snug">
+          <div className="inline-block bg-accent/60 border border-primary/20 rounded-lg px-5 py-3 mb-8">
+            <p className="text-foreground text-sm md:text-base font-medium leading-snug">
               Cohorts are limited to a small group of seats — apply now to join the July 22nd cohort.
             </p>
           </div>
@@ -103,13 +117,13 @@ const PromoModal = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => sessionStorage.setItem('ccsc-promo-dismissed', 'true')}
-            className="inline-flex items-center justify-center bg-[hsl(25,45%,35%)] hover:bg-[hsl(25,45%,28%)] text-[hsl(30,25%,95%)] px-10 py-4 rounded-xl text-lg font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+            className="inline-flex items-center justify-center bg-primary hover:bg-primary/90 text-primary-foreground px-10 py-4 rounded-xl text-lg font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           >
             Apply Now
           </a>
 
           {/* Trust hint */}
-          <p className="text-[hsl(25,15%,55%)] text-xs mt-5">
+          <p className="text-muted-foreground text-xs mt-5">
             CashoM Certified Server of Cannabis — The gold standard in cannabis hospitality.
           </p>
         </div>
