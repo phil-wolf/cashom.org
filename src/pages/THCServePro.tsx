@@ -131,7 +131,7 @@ const THCServePro = () => {
                 Join thousands of industry professionals getting ahead of the curve. Instant course access. Digital badge + lapel pin included.
               </p>
               <a
-                href="https://THCservepro.com"
+                href="https://thcservepro.com/live-training"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-brand-teal hover:bg-brand-teal/90 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105 mb-4"
