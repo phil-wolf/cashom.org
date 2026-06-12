@@ -107,7 +107,7 @@ const PromoModal = () => {
           {/* Urgency Line */}
           <div className="inline-block bg-accent/60 border border-primary/20 rounded-lg px-5 py-3 mb-8">
             <p className="text-foreground text-sm md:text-base font-medium leading-snug">
-              Cohorts are limited to a small group of seats — apply now to join the July 22nd cohort.
+              Only 7 seats remain for the July 22nd cohort — apply now before they're gone.
             </p>
           </div>
 
