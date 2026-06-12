@@ -259,7 +259,7 @@ const THCServePro = () => {
                   <span className="bg-accent px-3 py-1 rounded-full text-sm font-semibold">Save $25</span> Join our email list and pay just $100
                 </p>
                 <a
-                  href="https://THCservepro.com"
+                  href="https://thcservepro.com/live-training"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-xl text-lg font-bold shadow-lg transition-all hover:scale-105"
@@ -274,7 +274,7 @@ const THCServePro = () => {
                   <strong>Team & Distributor Packages:</strong> Custom pricing for 5+ Employees
                 </p>
                 <p className="text-foreground/70">
-                  Bulk discounts and sponsorship options available — <a href="https://THCservepro.com" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline font-medium">Contact us for details</a>
+                  Bulk discounts and sponsorship options available — <a href="https://thcservepro.com/live-training" target="_blank" rel="noopener noreferrer" className="text-primary underline hover:no-underline font-medium">Contact us for details</a>
                 </p>
               </div>
             </div>
@@ -344,7 +344,7 @@ const THCServePro = () => {
               For just $125, you get the industry's most respected THC beverage certification — and the confidence to lead in this explosive new market.
             </p>
             <a
-              href="https://THCservepro.com"
+              href="https://thcservepro.com/live-training"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-white text-brand-copper-dark hover:bg-white/90 px-8 py-4 rounded-xl text-lg font-bold shadow-xl transition-all hover:scale-105"
