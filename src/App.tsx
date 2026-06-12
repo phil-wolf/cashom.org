@@ -12,6 +12,7 @@ import CannabisHospitalityCertification from "./pages/CannabisHospitalityCertifi
 import CannabisActivatorCertification from "./pages/CannabisActivatorCertification";
 import Team from "./pages/Team";
 import Signup from "./pages/Signup";
+import PromoModal from "./components/PromoModal";
 
 const queryClient = new QueryClient();
 
