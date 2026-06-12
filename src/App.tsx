@@ -22,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <PromoModal />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/thc-servepro" element={<THCServePro />} />
