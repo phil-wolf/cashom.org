@@ -52,6 +52,8 @@
   button:hover { background: var(--accent-soft); }
   button.primary { background: var(--accent); color: #fff; }
   button.primary:hover { background: #93301f; }
+  button:disabled { opacity: 0.4; cursor: not-allowed; }
+  button:disabled:hover { background: var(--panel); }
   .status {
     font-size: 0.85rem;
     color: var(--muted);
@@ -179,9 +181,11 @@
 <body>
 <div class="wrap">
   <h1>CashoM Certification Pathway Mapping</h1>
-  <p class="subtitle">Click into any cell or paragraph to edit. Changes save to this browser automatically; use Export to save a file.</p>
+  <p class="subtitle">Click into any cell or paragraph to edit. Changes save to this browser automatically; use Undo (or Ctrl/Cmd+Z) if you delete something by mistake; use Export to save a file.</p>
 
   <div class="toolbar">
+    <button id="undoBtn" title="Undo (Ctrl/Cmd+Z)">↶ Undo</button>
+    <button id="redoBtn" title="Redo (Ctrl/Cmd+Shift+Z)">↷ Redo</button>
     <button id="addRowBtn">+ Row</button>
     <button id="addColBtn">+ Column</button>
     <button id="resetBtn">Reset to Default</button>
@@ -264,10 +268,49 @@
   var data = loadData();
   var statusEl = document.getElementById("status");
   var saveTimer = null;
+  var undoStack = [];
+  var redoStack = [];
+  var MAX_UNDO = 50;
 
   function setStatus(text, saved) {
     statusEl.textContent = text;
     statusEl.classList.toggle("saved", !!saved);
+  }
+
+  function cloneData(d) {
+    return JSON.parse(JSON.stringify(d));
+  }
+
+  function updateUndoRedoButtons() {
+    document.getElementById("undoBtn").disabled = undoStack.length === 0;
+    document.getElementById("redoBtn").disabled = redoStack.length === 0;
+  }
+
+  function pushUndo() {
+    undoStack.push(cloneData(data));
+    if (undoStack.length > MAX_UNDO) undoStack.shift();
+    redoStack.length = 0;
+    updateUndoRedoButtons();
+  }
+
+  function doUndo() {
+    if (!undoStack.length) return;
+    redoStack.push(cloneData(data));
+    data = undoStack.pop();
+    scheduleSave();
+    renderAll();
+    updateUndoRedoButtons();
+    setStatus("Undid last change", true);
+  }
+
+  function doRedo() {
+    if (!redoStack.length) return;
+    undoStack.push(cloneData(data));
+    data = redoStack.pop();
+    scheduleSave();
+    renderAll();
+    updateUndoRedoButtons();
+    setStatus("Redid change", true);
   }
 
   function scheduleSave() {
@@ -283,7 +326,15 @@
     var el = document.createElement(tag);
     el.contentEditable = "true";
     el.textContent = value || "";
+    var snapshotTaken = false;
+    el.addEventListener("focus", function () {
+      snapshotTaken = false;
+    });
     el.addEventListener("input", function () {
+      if (!snapshotTaken) {
+        pushUndo();
+        snapshotTaken = true;
+      }
       onInput(el.textContent);
       scheduleSave();
     });
@@ -308,6 +359,7 @@
         delBtn.title = "Remove this column";
         delBtn.addEventListener("click", function () {
           if (data.columns.length <= 2) return;
+          pushUndo();
           data.columns.splice(colIdx, 1);
           data.rows.forEach(function (r) { r.splice(colIdx, 1); });
           scheduleSave();
@@ -332,6 +384,7 @@
           delBtn.textContent = "✕ row";
           delBtn.title = "Remove this row";
           delBtn.addEventListener("click", function () {
+            pushUndo();
             data.rows.splice(rowIdx, 1);
             scheduleSave();
             renderTable();
@@ -352,7 +405,15 @@
       var li = document.createElement("li");
       li.contentEditable = "true";
       li.textContent = item;
+      var snapshotTaken = false;
+      li.addEventListener("focus", function () {
+        snapshotTaken = false;
+      });
       li.addEventListener("input", function () {
+        if (!snapshotTaken) {
+          pushUndo();
+          snapshotTaken = true;
+        }
         data.tier1List[idx] = li.textContent;
         scheduleSave();
       });
@@ -373,7 +434,15 @@
     Object.keys(map).forEach(function (key) {
       var el = document.getElementById(map[key]);
       el.textContent = data[key];
+      var snapshotTaken = false;
+      el.addEventListener("focus", function () {
+        snapshotTaken = false;
+      });
       el.addEventListener("input", function () {
+        if (!snapshotTaken) {
+          pushUndo();
+          snapshotTaken = true;
+        }
         data[key] = el.textContent;
         scheduleSave();
       });
@@ -386,7 +455,24 @@
     renderStatic();
   }
 
+  document.getElementById("undoBtn").addEventListener("click", doUndo);
+  document.getElementById("redoBtn").addEventListener("click", doRedo);
+
+  document.addEventListener("keydown", function (e) {
+    var mod = e.ctrlKey || e.metaKey;
+    if (!mod) return;
+    var key = e.key.toLowerCase();
+    if (key === "z" && !e.shiftKey) {
+      e.preventDefault();
+      doUndo();
+    } else if ((key === "z" && e.shiftKey) || key === "y") {
+      e.preventDefault();
+      doRedo();
+    }
+  });
+
   document.getElementById("addRowBtn").addEventListener("click", function () {
+    pushUndo();
     var newRow = data.columns.map(function () { return ""; });
     newRow[0] = "New Row";
     data.rows.push(newRow);
@@ -395,6 +481,7 @@
   });
 
   document.getElementById("addColBtn").addEventListener("click", function () {
+    pushUndo();
     data.columns.push("New Column");
     data.rows.forEach(function (r) { r.push(""); });
     scheduleSave();
@@ -402,7 +489,8 @@
   });
 
   document.getElementById("resetBtn").addEventListener("click", function () {
-    if (!confirm("Reset all edits back to the original defaults? This cannot be undone.")) return;
+    if (!confirm("Reset all edits back to the original defaults? You can still Undo this afterward.")) return;
+    pushUndo();
     data = JSON.parse(JSON.stringify(defaultData));
     localStorage.removeItem(STORAGE_KEY);
     setStatus("Reset to default", true);
@@ -484,6 +572,7 @@
   });
 
   renderAll();
+  updateUndoRedoButtons();
   setStatus(localStorage.getItem(STORAGE_KEY) ? "Loaded saved edits" : "Loaded defaults", true);
 })();
 </script>
