@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CashoM Certification Pathway Mapping</title>
+<style>
+  :root {
+    --line: #b03a2e;
+    --bg: #fbf8f6;
+    --panel: #ffffff;
+    --text: #2a2320;
+    --muted: #7a6f6a;
+    --accent: #b03a2e;
+    --accent-soft: #f5e2df;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 32px 16px 80px;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  .subtitle { color: var(--muted); margin: 0 0 24px; font-size: 0.95rem; }
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    background: var(--bg);
+    padding: 10px 0 16px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #e7ddd9;
+  }
+  button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid var(--line);
+    background: var(--panel);
+    color: var(--accent);
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+  }
+  button:hover { background: var(--accent-soft); }
+  button.primary { background: var(--accent); color: #fff; }
+  button.primary:hover { background: #93301f; }
+  .status {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-left: auto;
+  }
+  .status.saved { color: #2f7a3d; }
+
+  .table-scroll {
+    overflow-x: auto;
+    background: var(--panel);
+    border-radius: 8px;
+    margin-bottom: 32px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 760px;
+  }
+  th, td {
+    border: 2px solid var(--line);
+    padding: 10px 12px;
+    vertical-align: top;
+    text-align: left;
+    font-size: 0.92rem;
+    min-width: 150px;
+  }
+  th {
+    background: var(--accent-soft);
+    font-weight: 600;
+  }
+  td:first-child, th:first-child {
+    background: var(--accent-soft);
+    font-weight: 600;
+    min-width: 170px;
+  }
+  [contenteditable="true"] {
+    outline: none;
+    min-height: 1.4em;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  [contenteditable="true"]:hover {
+    background: #fffdf6;
+  }
+  [contenteditable="true"]:focus {
+    background: #fffaf0;
+    box-shadow: inset 0 0 0 2px var(--accent);
+    border-radius: 3px;
+  }
+  .row-actions, .col-actions {
+    display: flex;
+    gap: 4px;
+  }
+  .row-actions button, .col-actions button {
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+  }
+  th .col-actions { margin-top: 6px; }
+  td:first-child .row-actions { margin-top: 6px; }
+
+  .note {
+    background: var(--panel);
+    border: 2px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin-bottom: 32px;
+  }
+  .note strong { display: block; margin-bottom: 4px; }
+
+  section.doc {
+    background: var(--panel);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+    border: 1px solid #e7ddd9;
+  }
+  section.doc h2 {
+    margin-top: 0;
+    font-size: 1.15rem;
+    color: var(--accent);
+  }
+  section.doc h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  section.doc ul { margin: 4px 0 0; padding-left: 20px; }
+  section.doc li { margin-bottom: 4px; }
+  .block[contenteditable="true"] {
+    padding: 4px 6px;
+    border-radius: 4px;
+    display: block;
+  }
+  .block[contenteditable="true"]:hover { background: #fffdf6; }
+  .block[contenteditable="true"]:focus {
+    background: #fffaf0;
+    box-shadow: inset 0 0 0 2px var(--accent);
+  }
+
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 40px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1815;
+      --panel: #262019;
+      --text: #f1e9e4;
+      --muted: #b0a39c;
+      --accent: #e07a63;
+      --accent-soft: #3a231e;
+      --line: #e07a63;
+    }
+    [contenteditable="true"]:hover { background: #2f271f; }
+    [contenteditable="true"]:focus { background: #332a20; }
+    .block[contenteditable="true"]:hover { background: #2f271f; }
+    .block[contenteditable="true"]:focus { background: #332a20; }
+    button.primary { color: #1c1815; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>CashoM Certification Pathway Mapping</h1>
+  <p class="subtitle">Click into any cell or paragraph to edit. Changes save to this browser automatically; use Export to save a file.</p>
+
+  <div class="toolbar">
+    <button id="addRowBtn">+ Row</button>
+    <button id="addColBtn">+ Column</button>
+    <button id="resetBtn">Reset to Default</button>
+    <button id="exportMdBtn">Export .md</button>
+    <button id="exportHtmlBtn" class="primary">Save (Export .html)</button>
+    <span id="status" class="status">Loaded</span>
+  </div>
+
+  <div class="table-scroll">
+    <table id="pathwayTable">
+      <thead>
+        <tr id="headerRow"></tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+
+  <div class="note" contenteditable="true" id="branchNote"></div>
+
+  <section class="doc">
+    <h2>Curriculum Detail — Certified Server of Cannabis (Tier 1)</h2>
+    <div class="block" contenteditable="true" id="tier1Intro"></div>
+    <ul id="tier1List"></ul>
+    <div class="block" contenteditable="true" id="tier1Essentials" style="margin-top:10px;"></div>
+  </section>
+
+  <section class="doc">
+    <h2 id="tier2Heading" contenteditable="true">Tier 2 — Certified Steward of Cannabis</h2>
+    <div class="block" contenteditable="true" id="tier2Body"></div>
+  </section>
+
+  <section class="doc">
+    <h2 id="tier3Heading" contenteditable="true">Tier 3 — CashoM</h2>
+    <div class="block" contenteditable="true" id="tier3Body"></div>
+  </section>
+
+  <footer>Edits are stored in this browser's local storage. Use Export to save a snapshot as a file.</footer>
+</div>
+
+<script>
+(function () {
+  var STORAGE_KEY = "cashom-certification-pathway-v1";
+
+  var defaultData = {
+    columns: ["", "Feeder Course", "Certified Server of Cannabis", "Certified Steward of Cannabis", "CashoM"],
+    rows: [
+      ["Price", "Free / very cheap (TBD)", "", "", ""],
+      ["Course Duration", "", "3–75 min classes, 2–3 weeks", "8–75 min classes", ""],
+      ["Prerequisites", "None", "", "Complete Server?", "Complete Steward?"],
+      ["Format/Delivery", "", "", "", ""],
+      ["Learning Outcome", "", "Confidently & knowingly curate a cannabis experience — product selection, tools, flavor curation, business course communication", "Advanced cannabis experience curation, holding space, advanced GUIDE terms, intro to Lens Framework", "Advanced Lens Framework work"],
+      ["Syllabus", "", "", "", ""],
+      ["Assessment Method", "", "", "", ""],
+      ["Target Audience", "", "", "", ""],
+      ["Credential/Deliverable", "", "", "", ""],
+      ["Renewal/Continuing Ed", "", "", "", ""]
+    ],
+    branchNote: "Optional branch off Steward: Specialty certifications (voice, life coach, athletic coach, yoga teacher, etc.) — still needs its own row/column treatment if formalized.",
+    tier1Intro: "Structured by depth level:",
+    tier1List: [
+      "Brief: Reciprocity, History, Plant Medicine, Ethics, Lens Framework (preview of Tier 2)",
+      "Mid: Cleanliness, Risk Mitigation, Flower Anatomy, Entourage Effect/Terpenes/Cannabinoids, Different Bodies & Different Minds, Guide Method",
+      "Extensive: Laws, How to Use in a Hospitality Setting, Consumable Basics"
+    ],
+    tier1Essentials: "Essentials variant (proposed): A lighter slice of Server for lounge staff who don't run their own events — skips the Guide Method, focuses on risk mitigation.",
+    tier2Heading: "Tier 2 — Certified Steward of Cannabis",
+    tier2Body: "Learning outcome centers on stewarding the experience (not just serving it) — includes holding space for guests while they're high, full GUIDE application, Connoisseurship intro, and deepened Lens Framework work. Natural branch point for specialty certs.",
+    tier3Heading: "Tier 3 — CashoM",
+    tier3Body: "Mastery tier: advanced Lens Framework work, Connoisseurship, terroir."
+  };
+
+  function loadData() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    return JSON.parse(JSON.stringify(defaultData));
+  }
+
+  var data = loadData();
+  var statusEl = document.getElementById("status");
+  var saveTimer = null;
+
+  function setStatus(text, saved) {
+    statusEl.textContent = text;
+    statusEl.classList.toggle("saved", !!saved);
+  }
+
+  function scheduleSave() {
+    setStatus("Editing…", false);
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(function () {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+      setStatus("Saved to this browser", true);
+    }, 500);
+  }
+
+  function makeEditableCell(tag, value, onInput) {
+    var el = document.createElement(tag);
+    el.contentEditable = "true";
+    el.textContent = value || "";
+    el.addEventListener("input", function () {
+      onInput(el.textContent);
+      scheduleSave();
+    });
+    return el;
+  }
+
+  function renderTable() {
+    var headerRow = document.getElementById("headerRow");
+    var tableBody = document.getElementById("tableBody");
+    headerRow.innerHTML = "";
+    tableBody.innerHTML = "";
+
+    data.columns.forEach(function (colVal, colIdx) {
+      var th = makeEditableCell("th", colVal, function (val) {
+        data.columns[colIdx] = val;
+      });
+      if (colIdx > 0) {
+        var actions = document.createElement("div");
+        actions.className = "col-actions";
+        var delBtn = document.createElement("button");
+        delBtn.textContent = "✕ col";
+        delBtn.title = "Remove this column";
+        delBtn.addEventListener("click", function () {
+          if (data.columns.length <= 2) return;
+          data.columns.splice(colIdx, 1);
+          data.rows.forEach(function (r) { r.splice(colIdx, 1); });
+          scheduleSave();
+          renderTable();
+        });
+        actions.appendChild(delBtn);
+        th.appendChild(actions);
+      }
+      headerRow.appendChild(th);
+    });
+
+    data.rows.forEach(function (row, rowIdx) {
+      var tr = document.createElement("tr");
+      row.forEach(function (cellVal, colIdx) {
+        var td = makeEditableCell("td", cellVal, function (val) {
+          data.rows[rowIdx][colIdx] = val;
+        });
+        if (colIdx === 0) {
+          var actions = document.createElement("div");
+          actions.className = "row-actions";
+          var delBtn = document.createElement("button");
+          delBtn.textContent = "✕ row";
+          delBtn.title = "Remove this row";
+          delBtn.addEventListener("click", function () {
+            data.rows.splice(rowIdx, 1);
+            scheduleSave();
+            renderTable();
+          });
+          actions.appendChild(delBtn);
+          td.appendChild(actions);
+        }
+        tr.appendChild(td);
+      });
+      tableBody.appendChild(tr);
+    });
+  }
+
+  function renderList(ulId, items) {
+    var ul = document.getElementById(ulId);
+    ul.innerHTML = "";
+    items.forEach(function (item, idx) {
+      var li = document.createElement("li");
+      li.contentEditable = "true";
+      li.textContent = item;
+      li.addEventListener("input", function () {
+        data.tier1List[idx] = li.textContent;
+        scheduleSave();
+      });
+      ul.appendChild(li);
+    });
+  }
+
+  function renderStatic() {
+    var map = {
+      branchNote: "branchNote",
+      tier1Intro: "tier1Intro",
+      tier1Essentials: "tier1Essentials",
+      tier2Heading: "tier2Heading",
+      tier2Body: "tier2Body",
+      tier3Heading: "tier3Heading",
+      tier3Body: "tier3Body"
+    };
+    Object.keys(map).forEach(function (key) {
+      var el = document.getElementById(map[key]);
+      el.textContent = data[key];
+      el.addEventListener("input", function () {
+        data[key] = el.textContent;
+        scheduleSave();
+      });
+    });
+    renderList("tier1List", data.tier1List);
+  }
+
+  function renderAll() {
+    renderTable();
+    renderStatic();
+  }
+
+  document.getElementById("addRowBtn").addEventListener("click", function () {
+    var newRow = data.columns.map(function () { return ""; });
+    newRow[0] = "New Row";
+    data.rows.push(newRow);
+    scheduleSave();
+    renderTable();
+  });
+
+  document.getElementById("addColBtn").addEventListener("click", function () {
+    data.columns.push("New Column");
+    data.rows.forEach(function (r) { r.push(""); });
+    scheduleSave();
+    renderTable();
+  });
+
+  document.getElementById("resetBtn").addEventListener("click", function () {
+    if (!confirm("Reset all edits back to the original defaults? This cannot be undone.")) return;
+    data = JSON.parse(JSON.stringify(defaultData));
+    localStorage.removeItem(STORAGE_KEY);
+    setStatus("Reset to default", true);
+    renderAll();
+  });
+
+  function download(filename, content, mime) {
+    var blob = new Blob([content], { type: mime });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
+
+  function buildMarkdown() {
+    var lines = [];
+    lines.push("# CashoM Certification Pathway Mapping");
+    lines.push("");
+    lines.push("| " + data.columns.join(" | ") + " |");
+    lines.push("|" + data.columns.map(function () { return "---"; }).join("|") + "|");
+    data.rows.forEach(function (row) {
+      var cells = row.map(function (c, i) { return i === 0 ? "**" + c + "**" : c; });
+      lines.push("| " + cells.join(" | ") + " |");
+    });
+    lines.push("");
+    lines.push("**" + data.branchNote + "**");
+    lines.push("");
+    lines.push("---");
+    lines.push("");
+    lines.push("## Curriculum Detail — Certified Server of Cannabis (Tier 1)");
+    lines.push("");
+    lines.push(data.tier1Intro);
+    lines.push("");
+    data.tier1List.forEach(function (item) {
+      var idx = item.indexOf(":");
+      if (idx > -1) {
+        lines.push("- **" + item.slice(0, idx) + ":**" + item.slice(idx + 1));
+      } else {
+        lines.push("- " + item);
+      }
+    });
+    lines.push("");
+    lines.push(data.tier1Essentials);
+    lines.push("");
+    lines.push("## " + data.tier2Heading);
+    lines.push("");
+    lines.push(data.tier2Body);
+    lines.push("");
+    lines.push("## " + data.tier3Heading);
+    lines.push("");
+    lines.push(data.tier3Body);
+    lines.push("");
+    return lines.join("\n");
+  }
+
+  function buildHtmlSnapshot() {
+    return document.documentElement.outerHTML;
+  }
+
+  document.getElementById("exportMdBtn").addEventListener("click", function () {
+    download("cashom-certification-pathway.md", buildMarkdown(), "text/markdown");
+  });
+
+  document.getElementById("exportHtmlBtn").addEventListener("click", function () {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    download("cashom-certification-pathway.html", buildHtmlSnapshot(), "text/html");
+    setStatus("Saved to this browser + exported", true);
+  });
+
+  renderAll();
+  setStatus(localStorage.getItem(STORAGE_KEY) ? "Loaded saved edits" : "Loaded defaults", true);
+})();
+</script>
+</body>
+</html>
