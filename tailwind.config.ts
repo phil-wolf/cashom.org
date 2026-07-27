@@ -56,6 +56,13 @@ export default {
 				'brand-teal': 'hsl(var(--brand-teal))',
 				'brand-copper': 'hsl(var(--brand-copper))',
 				'brand-copper-dark': 'hsl(var(--brand-copper-dark))',
+				parchment: {
+					DEFAULT: 'hsl(var(--parchment))',
+					deep: 'hsl(var(--parchment-deep))'
+				},
+				'ink-brown': 'hsl(var(--ink-brown))',
+				rust: 'hsl(var(--rust))',
+
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

@@ -41,6 +41,13 @@
     --brand-teal: 174 60% 55%;
     --brand-copper: 25 55% 50%;
     --brand-copper-dark: 22 45% 30%;
+
+    /* Pathway / parchment palette */
+    --parchment: 38 45% 94%;
+    --parchment-deep: 36 38% 88%;
+    --ink-brown: 24 40% 18%;
+    --rust: 16 62% 45%;
+
   }
 }
 
