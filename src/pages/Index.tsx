@@ -16,7 +16,7 @@ const Index = () => {
       <Header />
       <Hero />
       <BeliefSection />
-      <CoursesSection />
+      <CertificationPathway />
       <CredibilitySection />
       <PhilipWolfSection />
       <FeaturedProgramsSection />
