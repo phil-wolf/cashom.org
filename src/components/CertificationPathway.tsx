@@ -158,22 +158,10 @@ const CertificationPathway = () => {
           ))}
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl">
-          <div className="border-t-2 border-rust/40 pt-6">
-            <h3 className="font-serif text-2xl font-bold text-ink-brown mb-3">For most people</h3>
-            <p className="text-ink-brown/70 leading-relaxed">
-              Lounge Attendant and Server are all the vast majority ever need.
-            </p>
-          </div>
-          <div className="border-t-2 border-rust/40 pt-6">
-            <h3 className="font-serif text-2xl font-bold text-ink-brown mb-3">
-              For those who want to go further
-            </h3>
-            <p className="text-ink-brown/70 leading-relaxed">
-              Steward and CashoM are optional advanced mastery, pursued by a dedicated few.
-            </p>
-          </div>
-        </div>
+        <p className="mt-16 max-w-3xl mx-auto text-center text-lg text-ink-brown/70 leading-relaxed">
+          Lounge Attendant and Server are all most people ever need. Steward and CashoM are optional
+          advanced mastery, pursued by a dedicated few.
+        </p>
       </div>
     </section>
   );
