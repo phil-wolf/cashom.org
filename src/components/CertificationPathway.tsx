@@ -88,22 +88,27 @@ const tiers: Tier[] = [
   },
 ];
 
-const CertificationPathway = () => {
+const CertificationPathway = ({
+  eyebrow = 'The Certification Pathway',
+  title = 'How the path works',
+  subtitle = 'A four-tier ladder from your first day on the floor to full mastery of the cannabis experience. Start where you are — advance only as far as you want to go.',
+  showFraming = true,
+}: CertificationPathwayProps) => {
   return (
     <section id="courses" className="py-24 bg-parchment">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mb-16">
           <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
-            The Certification Pathway
+            {eyebrow}
           </p>
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-ink-brown mb-5">
-            How the path works
+            {title}
           </h2>
           <p className="text-lg text-ink-brown/70 leading-relaxed">
-            A four-tier ladder from your first day on the floor to full mastery of the cannabis
-            experience. Start where you are — advance only as far as you want to go.
+            {subtitle}
           </p>
         </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-4 items-stretch">
           {tiers.map((tier, i) => (
