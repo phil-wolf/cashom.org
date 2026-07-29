@@ -1,5 +1,13 @@
 import { Check, ChevronRight } from 'lucide-react';
 
+interface CertificationPathwayProps {
+  eyebrow?: string;
+  title?: string;
+  subtitle?: string;
+  showFraming?: boolean;
+}
+
+
 type Tier = {
   eyebrow: string;
   status: string;
