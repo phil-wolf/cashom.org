@@ -171,10 +171,13 @@ const CertificationPathway = ({
           ))}
         </div>
 
-        <p className="mt-16 max-w-3xl mx-auto text-center text-lg text-ink-brown/70 leading-relaxed">
-          Lounge Attendant and Server are all most people ever need. Steward and CashoM are optional
-          advanced mastery, pursued by a dedicated few.
-        </p>
+        {showFraming && (
+          <p className="mt-16 max-w-3xl mx-auto text-center text-lg text-ink-brown/70 leading-relaxed">
+            Lounge Attendant and Server are all most people ever need. Steward and CashoM are optional
+            advanced mastery, pursued by a dedicated few.
+          </p>
+        )}
+
       </div>
     </section>
   );
