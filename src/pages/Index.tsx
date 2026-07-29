@@ -19,8 +19,14 @@ const Index = () => {
       <CertificationPathway />
       <CredibilitySection />
       <PhilipWolfSection />
-      
+      <CertificationPathway
+        eyebrow="Featured Programs"
+        title="Featured Programs"
+        subtitle="Comprehensive cannabis education and professional development programs designed for mindful practice and industry excellence."
+        showFraming={false}
+      />
       <CashomSection />
+
       <EmailSignup />
       <Footer />
     </div>
