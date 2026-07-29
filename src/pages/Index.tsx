@@ -6,7 +6,7 @@ import CertificationPathway from '@/components/CertificationPathway';
 import CredibilitySection from '@/components/CredibilitySection';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
 import EmailSignup from '@/components/EmailSignup';
-import FeaturedProgramsSection from '@/components/FeaturedProgramsSection';
+
 import CashomSection from '@/components/CashomSection';
 import Footer from '@/components/Footer';
 
@@ -19,7 +19,7 @@ const Index = () => {
       <CertificationPathway />
       <CredibilitySection />
       <PhilipWolfSection />
-      <FeaturedProgramsSection />
+      
       <CashomSection />
       <EmailSignup />
       <Footer />
