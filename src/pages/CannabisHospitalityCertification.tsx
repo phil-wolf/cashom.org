@@ -1,4 +1,5 @@
 
+import Seo from '@/components/Seo';
 import { ArrowLeft, CheckCircle, Target, BookOpen, Users, Award, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -73,6 +74,12 @@ const CannabisHospitalityCertification = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <Seo
+        title="Cannabis Hospitality Certification | CashoM"
+        description="Certified Server of Cannabis training covering service standards, dosing, guest safety, and hospitality craft for cannabis professionals."
+        path="/cannabis-hospitality-certification"
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"Cannabis Hospitality Certification","description":"Certified Server of Cannabis training in service standards, dosing, and guest safety.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom-v1-46.lovable.app/"}}}
+      />
       {/* Header */}
       <div className="bg-white border-b border-border">
         <div className="container mx-auto px-4 py-6">
@@ -84,6 +91,7 @@ const CannabisHospitalityCertification = () => {
       </div>
 
       {/* Hero Section */}
+      <main>
       <section className="py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4 text-center">
           <Badge variant="outline" className="mb-6 px-4 py-2">
@@ -271,6 +279,7 @@ const CannabisHospitalityCertification = () => {
           </a>
         </div>
       </section>
+      </main>
     </div>
   );
 };

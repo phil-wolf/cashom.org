@@ -1,3 +1,4 @@
+import Seo from '@/components/Seo';
 import { Check, Star, BookOpen, Users, Award, Heart, Compass, Brain, Leaf, Calendar, DollarSign, Clock, Target, Lightbulb, Zap, Map } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Header from '@/components/Header';
@@ -132,7 +133,14 @@ const CashomInitiation = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="The CashoM Initiation: Cannabis Hospitality Mentorship"
+        description="A yearlong cannabis hospitality mentorship for professionals ready to lead. Deep training in stewardship, philosophy, and conscious cannabis service."
+        path="/cashom-initiation"
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"The CashoM Initiation","description":"A yearlong cannabis hospitality mentorship in stewardship, philosophy, and conscious service.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom-v1-46.lovable.app/"}}}
+      />
       <Header />
+      <main>
       
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-primary/10 via-secondary/20 to-accent/10">
@@ -382,6 +390,7 @@ const CashomInitiation = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
