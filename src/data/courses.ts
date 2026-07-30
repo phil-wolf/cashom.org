@@ -122,7 +122,7 @@ export const courses: Course[] = [
     status: 'Enrollment opening soon',
     title: 'Certified Steward of Cannabis',
     becomes: 'Certified Steward of Cannabis',
-    price: '$597',
+    price: '$798',
     format: '8 classes · 75 minutes each',
     audience: 'Professionals ready to guide guests, curate events, and build a coaching practice',
     intro:
