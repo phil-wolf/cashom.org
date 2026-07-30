@@ -78,7 +78,7 @@ const CannabisHospitalityCertification = () => {
         title="Cannabis Hospitality Certification | CashoM"
         description="Certified Server of Cannabis training covering service standards, dosing, guest safety, and hospitality craft for cannabis professionals."
         path="/cannabis-hospitality-certification"
-        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"Cannabis Hospitality Certification","description":"Certified Server of Cannabis training in service standards, dosing, and guest safety.","provider":{"@type":"Organization","name":"CashoM","url":"https://https-cashom-org.lovable.app/"}}}
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"Cannabis Hospitality Certification","description":"Certified Server of Cannabis training in service standards, dosing, and guest safety.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom.org/"}}}
       />
       {/* Header */}
       <div className="bg-white border-b border-border">

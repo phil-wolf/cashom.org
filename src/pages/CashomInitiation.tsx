@@ -137,7 +137,7 @@ const CashomInitiation = () => {
         title="The CashoM Initiation: Cannabis Hospitality Mentorship"
         description="A yearlong cannabis hospitality mentorship for professionals ready to lead. Deep training in stewardship, philosophy, and conscious cannabis service."
         path="/cashom-initiation"
-        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"The CashoM Initiation","description":"A yearlong cannabis hospitality mentorship in stewardship, philosophy, and conscious service.","provider":{"@type":"Organization","name":"CashoM","url":"https://https-cashom-org.lovable.app/"}}}
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"The CashoM Initiation","description":"A yearlong cannabis hospitality mentorship in stewardship, philosophy, and conscious service.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom.org/"}}}
       />
       <Header />
       <main>
