@@ -3,7 +3,7 @@
 import { writeFileSync } from "fs"
 import { resolve } from "path"
 
-const BASE_URL = "https://https-cashom-org.lovable.app"
+const BASE_URL = "https://cashom.org"
 
 interface SitemapEntry {
   path: string
@@ -14,6 +14,7 @@ interface SitemapEntry {
 const entries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/thc-servepro", changefreq: "monthly", priority: "0.9" },
+  { path: "/thc-servesmart", changefreq: "monthly", priority: "0.7" },
   { path: "/cannabis-hospitality-certification", changefreq: "monthly", priority: "0.9" },
   { path: "/cannabis-activator-certification", changefreq: "monthly", priority: "0.8" },
   { path: "/cashom-initiation", changefreq: "monthly", priority: "0.8" },

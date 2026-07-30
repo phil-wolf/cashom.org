@@ -86,7 +86,7 @@ const PromoModal = () => {
           <div className="flex justify-center mb-6">
             <img
               src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png"
-              alt="CashoM Logo"
+              alt="CashoM Cannabis Hospitality and Training logo"
               className="h-16 w-auto"
             />
           </div>

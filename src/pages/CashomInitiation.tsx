@@ -137,7 +137,7 @@ const CashomInitiation = () => {
         title="The CashoM Initiation: Cannabis Hospitality Mentorship"
         description="A yearlong cannabis hospitality mentorship for professionals ready to lead. Deep training in stewardship, philosophy, and conscious cannabis service."
         path="/cashom-initiation"
-        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"The CashoM Initiation","description":"A yearlong cannabis hospitality mentorship in stewardship, philosophy, and conscious service.","provider":{"@type":"Organization","name":"CashoM","url":"https://https-cashom-org.lovable.app/"}}}
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"The CashoM Initiation","description":"A yearlong cannabis hospitality mentorship in stewardship, philosophy, and conscious service.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom.org/"}}}
       />
       <Header />
       <main>
@@ -162,14 +162,14 @@ const CashomInitiation = () => {
                 <div className="flex items-center justify-center mb-4">
                   <DollarSign className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-primary mb-2">Investment</h3>
+                <h2 className="text-2xl font-serif font-bold text-primary mb-2">Investment</h2>
                 <p className="text-3xl font-bold text-primary">$12,000</p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm border border-primary/10">
                 <div className="flex items-center justify-center mb-4">
                   <Clock className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="text-2xl font-serif font-bold text-primary mb-2">Timeline</h3>
+                <h2 className="text-2xl font-serif font-bold text-primary mb-2">Timeline</h2>
                 <p className="text-sm text-foreground/80 leading-relaxed">12 Months · Weekly Mentorship · Monthly Group Calls · In-Person Retreat – April 2026</p>
               </div>
             </div>

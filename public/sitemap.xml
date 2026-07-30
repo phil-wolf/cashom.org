@@ -1,37 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://https-cashom-org.lovable.app/</loc>
+    <loc>https://cashom.org/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://https-cashom-org.lovable.app/thc-servepro</loc>
+    <loc>https://cashom.org/thc-servepro</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://https-cashom-org.lovable.app/cannabis-hospitality-certification</loc>
+    <loc>https://cashom.org/thc-servesmart</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://cashom.org/cannabis-hospitality-certification</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://https-cashom-org.lovable.app/cannabis-activator-certification</loc>
+    <loc>https://cashom.org/cannabis-activator-certification</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://https-cashom-org.lovable.app/cashom-initiation</loc>
+    <loc>https://cashom.org/cashom-initiation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://https-cashom-org.lovable.app/team</loc>
+    <loc>https://cashom.org/team</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://https-cashom-org.lovable.app/signup</loc>
+    <loc>https://cashom.org/signup</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

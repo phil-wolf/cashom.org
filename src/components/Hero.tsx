@@ -31,7 +31,7 @@ const Hero = () => {
         }}>
           <img 
             src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
-            alt="CashoM Logo" 
+            alt="CashoM Cannabis Hospitality and Training logo" 
             width={512}
             height={512}
             fetchPriority="high"

@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-export const SITE_URL = 'https://https-cashom-org.lovable.app';
+export const SITE_URL = 'https://cashom.org';
 const DEFAULT_IMAGE = `${SITE_URL}/lovable-uploads/59545ae9-e037-4bc7-ab6a-fd9750a70929.png`;
 
 interface SeoProps {

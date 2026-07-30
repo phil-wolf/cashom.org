@@ -78,7 +78,7 @@ const THCServePro = () => {
         title="THC ServePro Certification | CashoM"
         description="Get THC ServePro certified for $125. Responsible cannabis service training for hospitality, dispensary, and event professionals — online and live."
         path="/thc-servepro"
-        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"THC ServePro Certification","description":"Responsible cannabis service certification for hospitality and dispensary professionals.","provider":{"@type":"Organization","name":"CashoM","url":"https://https-cashom-org.lovable.app/"}}}
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"THC ServePro Certification","description":"Responsible cannabis service certification for hospitality and dispensary professionals.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom.org/"}}}
       />
       <Header />
       <main>
@@ -123,7 +123,7 @@ const THCServePro = () => {
               <div className="flex justify-center mb-4">
                 <img 
                   src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
-                  alt="CashoM Logo" 
+                  alt="CashoM Cannabis Hospitality and Training logo" 
                   className="h-24 w-auto opacity-80"
                 />
               </div>
@@ -132,9 +132,9 @@ const THCServePro = () => {
 
             {/* Direct Purchase CTA */}
             <div className="max-w-2xl mx-auto bg-brand-teal/20 backdrop-blur-sm rounded-2xl p-8 mb-8 border-2 border-brand-teal/40">
-              <h3 className="text-2xl font-serif font-bold text-white mb-3">
+              <h2 className="text-2xl font-serif font-bold text-white mb-3">
                 Start Your Certification Today
-              </h3>
+              </h2>
               <p className="text-white/90 text-lg mb-6">
                 Join thousands of industry professionals getting ahead of the curve. Instant course access. Digital badge + lapel pin included.
               </p>
@@ -160,7 +160,7 @@ const THCServePro = () => {
             <div className="flex items-center justify-center mb-8">
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
-                alt="CashoM Logo" 
+                alt="CashoM Cannabis Hospitality and Training logo" 
                 className="h-24 w-auto opacity-60 mr-4"
               />
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">
@@ -217,7 +217,7 @@ const THCServePro = () => {
             <div className="text-center">
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
-                alt="CashoM Logo" 
+                alt="CashoM Cannabis Hospitality and Training logo" 
                 className="h-20 w-auto opacity-50 mx-auto mb-4"
               />
               <p className="text-foreground/70 text-lg">
@@ -255,7 +255,7 @@ const THCServePro = () => {
               </h2>
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
-                alt="CashoM Logo" 
+                alt="CashoM Cannabis Hospitality and Training logo" 
                 className="h-24 w-auto opacity-60"
               />
             </div>
@@ -300,7 +300,7 @@ const THCServePro = () => {
             <div className="flex justify-center mb-6">
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
-                alt="CashoM Logo" 
+                alt="CashoM Cannabis Hospitality and Training logo" 
                 className="h-28 w-auto opacity-70"
               />
             </div>
@@ -338,7 +338,7 @@ const THCServePro = () => {
             <div className="flex justify-center mb-6">
               <img 
                 src="/lovable-uploads/9bc25130-52b6-4bd4-8d97-065022eff1ce.png" 
-                alt="CashoM Logo" 
+                alt="CashoM Cannabis Hospitality and Training logo" 
                 className="h-32 w-auto opacity-80 brightness-0 invert"
               />
             </div>
