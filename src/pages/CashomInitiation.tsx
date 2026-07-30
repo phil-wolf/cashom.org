@@ -147,7 +147,7 @@ const CashomInitiation = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-serif font-bold text-primary mb-6">
-              Become a CashoM
+              Become a CashoM: Yearlong Cannabis Hospitality Mentorship
             </h1>
             <p className="text-xl md:text-2xl text-primary/80 font-medium mb-4">
               A Yearlong Training in Cannabis Hospitality at Its Highest Level
