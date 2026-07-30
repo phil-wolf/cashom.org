@@ -27,9 +27,9 @@ const PhilipWolfBio = () => {
           <div className="text-center mb-16">
             <div className="flex items-center justify-center mb-6">
               <User className="w-8 h-8 text-primary mr-4" />
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">
+              <h1 className="text-4xl md:text-5xl font-serif font-bold text-primary">
                 Meet Philip Wolf
-              </h2>
+              </h1>
             </div>
             <p className="text-2xl text-primary font-serif font-semibold mb-2">
               Your Teacher

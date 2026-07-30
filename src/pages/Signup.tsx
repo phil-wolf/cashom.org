@@ -1,4 +1,5 @@
 
+import Seo from '@/components/Seo';
 import { useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -38,7 +39,13 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Sign Up for CashoM Cannabis Certification Updates"
+        description="Join the CashoM early access list for cannabis certification launches, cohort dates, and exclusive subscriber discounts."
+        path="/signup"
+      />
       <Header />
+      <main>
       
       <section className="py-20 bg-gradient-to-br from-accent/20 to-secondary/30 min-h-[80vh] flex items-center">
         <div className="container mx-auto px-4">
@@ -121,6 +128,7 @@ const Signup = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

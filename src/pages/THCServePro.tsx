@@ -1,3 +1,4 @@
+import Seo from '@/components/Seo';
 import { Check, Star, BookOpen, Users, Award, Play, Download, Mic, Badge, Briefcase, RefreshCw, ExternalLink } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -73,7 +74,14 @@ const THCServePro = () => {
   }];
   return (
     <div className="min-h-screen">
+      <Seo
+        title="THC ServePro Certification | CashoM"
+        description="Get THC ServePro certified for $125. Responsible cannabis service training for hospitality, dispensary, and event professionals — online and live."
+        path="/thc-servepro"
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"THC ServePro Certification","description":"Responsible cannabis service certification for hospitality and dispensary professionals.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom-v1-46.lovable.app/"}}}
+      />
       <Header />
+      <main>
       
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-brand-copper-dark via-brand-copper to-[hsl(35,55%,70%)] relative overflow-hidden">
@@ -357,6 +365,7 @@ const THCServePro = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );
