@@ -15,9 +15,11 @@ const entries: SitemapEntry[] = [
   { path: "/", changefreq: "weekly", priority: "1.0" },
   { path: "/thc-servepro", changefreq: "monthly", priority: "0.9" },
   { path: "/thc-servesmart", changefreq: "monthly", priority: "0.7" },
-  { path: "/cannabis-hospitality-certification", changefreq: "monthly", priority: "0.9" },
-  { path: "/cannabis-activator-certification", changefreq: "monthly", priority: "0.8" },
-  { path: "/cashom-initiation", changefreq: "monthly", priority: "0.8" },
+  { path: "/courses/certified-server-of-cannabis", changefreq: "monthly", priority: "0.9" },
+  { path: "/courses/certified-steward-of-cannabis", changefreq: "monthly", priority: "0.8" },
+  { path: "/courses/cashom-level-1", changefreq: "monthly", priority: "0.8" },
+  { path: "/courses/cannabis-lounge-attendant", changefreq: "monthly", priority: "0.7" },
+
   { path: "/team", changefreq: "monthly", priority: "0.6" },
   { path: "/signup", changefreq: "monthly", priority: "0.5" },
 ]
