@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import BeliefSection from '@/components/BeliefSection';
 import CertificationPathway from '@/components/CertificationPathway';
-import FeaturedProgramsStrip from '@/components/FeaturedProgramsStrip';
+import SignUpCTA from '@/components/SignUpCTA';
 import CredibilitySection from '@/components/CredibilitySection';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
 import EmailSignup from '@/components/EmailSignup';
@@ -21,7 +21,7 @@ const Index = () => {
       <CertificationPathway />
       <CredibilitySection />
       <PhilipWolfSection />
-      <FeaturedProgramsStrip />
+      <SignUpCTA />
       <CashomSection />
 
 
