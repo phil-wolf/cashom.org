@@ -11,6 +11,11 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://cashom.org/thc-servesmart</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://cashom.org/cannabis-hospitality-certification</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
