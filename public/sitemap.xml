@@ -16,19 +16,24 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://cashom.org/cannabis-hospitality-certification</loc>
+    <loc>https://cashom.org/courses/certified-server-of-cannabis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://cashom.org/cannabis-activator-certification</loc>
+    <loc>https://cashom.org/courses/certified-steward-of-cannabis</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://cashom.org/cashom-initiation</loc>
+    <loc>https://cashom.org/courses/cashom-level-1</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://cashom.org/courses/cannabis-lounge-attendant</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cashom.org/team</loc>
