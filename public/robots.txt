@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://cashom-v1-46.lovable.app/sitemap.xml
+Sitemap: https://https-cashom-org.lovable.app/sitemap.xml
