@@ -1,14 +1,11 @@
-
 import Seo from '@/components/Seo';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import BeliefSection from '@/components/BeliefSection';
 import CertificationPathway from '@/components/CertificationPathway';
 import SignUpCTA from '@/components/SignUpCTA';
-import CredibilitySection from '@/components/CredibilitySection';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
 import EmailSignup from '@/components/EmailSignup';
-
 import CashomSection from '@/components/CashomSection';
 import Footer from '@/components/Footer';
 
@@ -26,12 +23,9 @@ const Index = () => {
       <Hero />
       <BeliefSection />
       <CertificationPathway />
-      <CredibilitySection />
       <PhilipWolfSection />
       <SignUpCTA />
       <CashomSection />
-
-
       <EmailSignup />
       </main>
       <Footer />
