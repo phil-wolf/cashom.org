@@ -96,7 +96,7 @@ const Header = () => {
           <div className="flex items-center justify-center absolute left-1/2 transform -translate-x-1/2 md:relative md:left-auto md:transform-none">
             <img 
               src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" 
-              alt="CashoM Logo" 
+              alt="CashoM Cannabis Hospitality and Training logo" 
               width={512}
               height={512}
               className="h-12 w-auto md:h-14" 
