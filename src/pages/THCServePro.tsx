@@ -78,7 +78,7 @@ const THCServePro = () => {
         title="THC ServePro Certification | CashoM"
         description="Get THC ServePro certified for $125. Responsible cannabis service training for hospitality, dispensary, and event professionals — online and live."
         path="/thc-servepro"
-        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"THC ServePro Certification","description":"Responsible cannabis service certification for hospitality and dispensary professionals.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom-v1-46.lovable.app/"}}}
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"THC ServePro Certification","description":"Responsible cannabis service certification for hospitality and dispensary professionals.","provider":{"@type":"Organization","name":"CashoM","url":"https://https-cashom-org.lovable.app/"}}}
       />
       <Header />
       <main>
