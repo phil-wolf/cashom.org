@@ -3,7 +3,7 @@
 import { writeFileSync } from "fs"
 import { resolve } from "path"
 
-const BASE_URL = "https://https-cashom-org.lovable.app"
+const BASE_URL = "https://cashom.org"
 
 interface SitemapEntry {
   path: string
