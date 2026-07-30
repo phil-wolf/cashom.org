@@ -88,7 +88,7 @@ const CannabisActivatorCertification = () => {
         title="Cannabis Brand Activator Certification | CashoM"
         description="Learn to turn cannabis products into experiences. Brand activation training in experiential hosting, storytelling, and event execution."
         path="/cannabis-activator-certification"
-        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"Cannabis Brand Activator Certification","description":"Experiential brand activation training for cannabis brands and hosts.","provider":{"@type":"Organization","name":"CashoM","url":"https://cashom-v1-46.lovable.app/"}}}
+        jsonLd={{"@context":"https://schema.org","@type":"Course","name":"Cannabis Brand Activator Certification","description":"Experiential brand activation training for cannabis brands and hosts.","provider":{"@type":"Organization","name":"CashoM","url":"https://https-cashom-org.lovable.app/"}}}
       />
       {/* Header */}
       <div className="bg-white border-b border-border">
