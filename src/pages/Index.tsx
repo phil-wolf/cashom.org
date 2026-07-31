@@ -24,6 +24,8 @@ const Index = () => {
       <Hero />
       <BeliefSection />
       <CertificationPathway />
+      <CredentialSection />
+
       <PhilipWolfSection />
       <SignUpCTA />
       <CashomSection />
