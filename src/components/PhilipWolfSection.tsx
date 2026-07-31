@@ -135,6 +135,23 @@ const PhilipWolfSection = () => {
           </div>
         </div>
 
+        {/* Media Logos */}
+        <div className="mt-12 mb-8 max-w-6xl mx-auto">
+          <h3 className="text-center text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-10">
+            As Featured In
+          </h3>
+          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 md:gap-x-10 lg:gap-x-12">
+            {publications.map((pub) => (
+              <div
+                key={pub.name}
+                className={`text-base md:text-lg lg:text-xl ${pub.style} ${pub.color} opacity-80 hover:opacity-100 transition-opacity`}
+              >
+                {pub.name}
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Testimonials Section */}
         <div className="mt-20 pt-16 border-t border-border">
           <h3 className="text-center text-3xl font-serif font-bold text-primary mb-12">
@@ -153,23 +170,6 @@ const PhilipWolfSection = () => {
             {testimonials.slice(3, 5).map((testimonial, index) => (
               <div key={index + 3} className="h-full">
                 <TestimonialCard testimonial={testimonial} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Media Logos */}
-        <div className="mt-20 pt-16 border-t border-border">
-          <h3 className="text-center text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-10">
-            As Featured In
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 md:gap-x-10 lg:gap-x-12">
-            {publications.map((pub) => (
-              <div
-                key={pub.name}
-                className={`text-base md:text-lg lg:text-xl ${pub.style} ${pub.color} opacity-80 hover:opacity-100 transition-opacity`}
-              >
-                {pub.name}
               </div>
             ))}
           </div>
