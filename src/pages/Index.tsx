@@ -6,7 +6,7 @@ import CertificationPathway from '@/components/CertificationPathway';
 import CredentialSection from '@/components/CredentialSection';
 import SignUpCTA from '@/components/SignUpCTA';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
-import EmailSignup from '@/components/EmailSignup';
+import PromoModal from '@/components/PromoModal';
 import CashomSection from '@/components/CashomSection';
 import Footer from '@/components/Footer';
 
@@ -21,17 +21,16 @@ const Index = () => {
       />
       <Header />
       <main>
-      <Hero />
-      <BeliefSection />
-      <CertificationPathway />
-      <CredentialSection />
-
-      <PhilipWolfSection />
-      <SignUpCTA />
-      <CashomSection />
-      <EmailSignup />
+        <Hero />
+        <BeliefSection />
+        <CertificationPathway />
+        <CredentialSection />
+        <PhilipWolfSection />
+        <SignUpCTA />
+        <CashomSection />
       </main>
       <Footer />
+      <PromoModal />
     </div>
   );
 };
