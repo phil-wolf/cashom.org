@@ -1,5 +1,4 @@
 import { Check } from 'lucide-react';
-import certificateAsset from '@/assets/cashom-certificate.jpg.asset.json';
 
 const bullets = [
   'Named credential holder and unique recipient ID',
@@ -17,7 +16,7 @@ const CredentialSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <img
-              src={certificateAsset.url}
+              src="/lovable-uploads/cashom-certificate.jpg"
               alt="Sample CashoM Cannabis Hospitality Stewardship Program certificate of completion signed by Philip Wolf"
               width={2000}
               height={1125}
@@ -30,8 +29,11 @@ const CredentialSection = () => {
           </div>
 
           <div>
+            <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
+              The Credential You Earn
+            </p>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
-              The credential you earn
+              A verified credential that travels with you
             </h2>
             <p className="text-lg text-ink-brown/70 leading-relaxed mb-8">
               On completion, you receive an official CashoM credential issued through Accredible — a

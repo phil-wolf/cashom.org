@@ -1,4 +1,4 @@
-import { User, ArrowRight } from 'lucide-react';
+import { User, ArrowRight, Quote } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
 
@@ -37,13 +37,55 @@ const PhilipWolfSection = () => {
     }
   ];
 
+  const publications = [
+    { name: 'NYTimes', style: 'font-serif', color: 'text-ink-brown' },
+    { name: 'Forbes', style: 'font-serif', color: 'text-ink-brown' },
+    { name: 'TIME', style: 'font-sans font-bold tracking-tight', color: 'text-red-700' },
+    { name: 'Bloomberg', style: 'font-sans font-semibold', color: 'text-ink-brown' },
+    { name: 'CBC', style: 'font-sans font-bold', color: 'text-red-600' },
+    { name: 'Al Jazeera', style: 'font-serif', color: 'text-amber-700' },
+    { name: 'High Times', style: 'font-serif font-bold', color: 'text-green-700' },
+    { name: 'Rolling Stone', style: 'font-sans font-bold tracking-wide', color: 'text-red-700' },
+  ];
+
+  const TestimonialCard = ({ testimonial }: { testimonial: typeof testimonials[0] }) => (
+    <div className="relative h-full bg-primary text-primary-foreground p-8 rounded-xl shadow-lg flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rust to-accent" />
+      <Quote className="w-8 h-8 text-accent/40 mb-4" />
+      <blockquote className="text-primary-foreground/95 italic leading-relaxed flex-1 mb-6">
+        "{testimonial.quote}"
+      </blockquote>
+      <div className="border-t border-primary-foreground/20 pt-4">
+        <div className="flex items-center space-x-3">
+          <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center shrink-0">
+            <span className="text-primary-foreground font-bold text-lg">
+              {testimonial.author.charAt(0)}
+            </span>
+          </div>
+          <div>
+            <p className="font-bold text-primary-foreground text-base">
+              {testimonial.author}
+            </p>
+            {testimonial.company && (
+              <p className="text-primary-foreground/70 text-xs uppercase tracking-wider font-medium">
+                {testimonial.company}
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-24 bg-secondary/30">
       <div className="container mx-auto px-4">
         {/* Intro Header */}
         <div className="max-w-4xl mx-auto text-center mb-16">
           <div className="flex items-center justify-center mb-6">
-            <User className="w-8 h-8 text-primary mr-4" />
+            <div className="w-12 h-12 rounded-full bg-rust/10 flex items-center justify-center mr-4">
+              <User className="w-6 h-6 text-rust" />
+            </div>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary">
               Meet Philip Wolf
             </h2>
@@ -57,10 +99,13 @@ const PhilipWolfSection = () => {
         </div>
 
         {/* Credibility Content */}
-        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-20">
           {/* Text Content */}
           <div className="space-y-6">
-            <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary">
+            <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-2">
+              A Trusted Pioneer
+            </p>
+            <h3 className="text-3xl md:text-4xl font-serif font-bold text-primary leading-tight">
               A Trusted Pioneer in Cannabis Hospitality
             </h3>
             <p className="text-lg text-foreground/80 leading-relaxed">
@@ -81,120 +126,50 @@ const PhilipWolfSection = () => {
 
           {/* Image */}
           <div className="relative">
-            <img src="/lovable-uploads/528a060d-1f4b-4975-bbf6-eb1c257aa493.png" alt="Philip Wolf speaking at an event" className="rounded-lg shadow-lg w-full h-80 object-cover" />
+            <div className="absolute -inset-4 bg-rust/10 rounded-2xl -rotate-2" />
+            <img 
+              src="/lovable-uploads/528a060d-1f4b-4975-bbf6-eb1c257aa493.png" 
+              alt="Philip Wolf speaking at an event" 
+              className="relative rounded-xl shadow-xl w-full h-80 lg:h-96 object-cover" 
+            />
           </div>
         </div>
 
         {/* Testimonials Section */}
-        <div className="mt-16 pt-12 border-t border-border">
-          <h3 className="text-center text-2xl font-serif font-bold text-primary mb-12">
+        <div className="mt-20 pt-16 border-t border-border">
+          <h3 className="text-center text-3xl font-serif font-bold text-primary mb-12">
             What Our Students Say
           </h3>
 
-          {/* Top row - 3 testimonials */}
-          <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8">
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {testimonials.slice(0, 3).map((testimonial, index) => (
-              <div key={index} className="relative group">
-                {/* Movie poster-inspired card */}
-                <div className="relative bg-gradient-to-br from-primary/90 via-primary/80 to-primary/70 p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl overflow-hidden">
-                  {/* Decorative elements */}
-                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent to-secondary"></div>
-                  <div className="absolute top-2 right-4 w-3 h-3 bg-accent rounded-full opacity-70"></div>
-                  <div className="absolute bottom-4 left-4 w-2 h-2 bg-secondary rounded-full opacity-50"></div>
-
-                  {/* Quote */}
-                  <blockquote className="text-primary-foreground/95 italic mb-6 text-sm leading-relaxed font-medium relative z-10">
-                    <span className="text-2xl text-accent opacity-70 absolute -top-2 -left-2">"</span>
-                    {testimonial.quote}
-                    <span className="text-2xl text-accent opacity-70 absolute -bottom-4 -right-2">"</span>
-                  </blockquote>
-
-                  {/* Author section with movie credits styling */}
-                  <div className="border-t border-primary-foreground/30 pt-4 relative z-10">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
-                        <span className="text-primary-foreground font-bold text-lg">
-                          {testimonial.author.charAt(0)}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="font-bold text-primary-foreground text-base">
-                          {testimonial.author}
-                        </p>
-                        {testimonial.company && (
-                          <p className="text-primary-foreground/80 text-xs uppercase tracking-wider font-medium">
-                            {testimonial.company}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Subtle overlay pattern */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10 pointer-events-none"></div>
-                </div>
+              <div key={index} className="h-full">
+                <TestimonialCard testimonial={testimonial} />
               </div>
             ))}
           </div>
 
-          {/* Bottom row - 2 testimonials centered */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6">
             {testimonials.slice(3, 5).map((testimonial, index) => (
-              <div key={index + 3} className="relative group">
-                {/* Movie poster-inspired card */}
-                <div className="relative bg-gradient-to-br from-primary/90 via-primary/80 to-primary/70 p-8 rounded-xl shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-3xl overflow-hidden">
-                  {/* Decorative elements */}
-                  <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent to-secondary"></div>
-                  <div className="absolute top-2 right-4 w-3 h-3 bg-accent rounded-full opacity-70"></div>
-                  <div className="absolute bottom-4 left-4 w-2 h-2 bg-secondary rounded-full opacity-50"></div>
-
-                  {/* Quote */}
-                  <blockquote className="text-primary-foreground/95 italic mb-6 text-sm leading-relaxed font-medium relative z-10">
-                    <span className="text-2xl text-accent opacity-70 absolute -top-2 -left-2">"</span>
-                    {testimonial.quote}
-                    <span className="text-2xl text-accent opacity-70 absolute -bottom-4 -right-2">"</span>
-                  </blockquote>
-
-                  {/* Author section with movie credits styling */}
-                  <div className="border-t border-primary-foreground/30 pt-4 relative z-10">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
-                        <span className="text-primary-foreground font-bold text-lg">
-                          {testimonial.author.charAt(0)}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="font-bold text-primary-foreground text-base">
-                          {testimonial.author}
-                        </p>
-                        {testimonial.company && (
-                          <p className="text-primary-foreground/80 text-xs uppercase tracking-wider font-medium">
-                            {testimonial.company}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Subtle overlay pattern */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-black/10 pointer-events-none"></div>
-                </div>
+              <div key={index + 3} className="h-full">
+                <TestimonialCard testimonial={testimonial} />
               </div>
             ))}
           </div>
         </div>
 
         {/* Media Logos */}
-        <div className="mt-16 pt-12 border-t border-border">
-          <h3 className="text-center text-muted-foreground mb-8 font-semibold">
+        <div className="mt-20 pt-16 border-t border-border">
+          <h3 className="text-center text-xs font-semibold tracking-[0.2em] uppercase text-muted-foreground mb-10">
             As Featured In
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-8 items-center opacity-60">
-            {['NYTimes', 'Forbes', 'TIME', 'Bloomberg', 'CBC', 'Al Jazeera', 'High Times', 'Rolling Stone'].map(outlet => (
-              <div key={outlet} className="text-center">
-                <div className="h-8 flex items-center justify-center bg-muted rounded px-3">
-                  <span className="text-sm font-semibold text-muted-foreground">{outlet}</span>
-                </div>
+          <div className="flex flex-wrap justify-center items-center gap-x-6 gap-y-4 md:gap-x-10 lg:gap-x-12">
+            {publications.map((pub) => (
+              <div
+                key={pub.name}
+                className={`text-base md:text-lg lg:text-xl ${pub.style} ${pub.color} opacity-80 hover:opacity-100 transition-opacity`}
+              >
+                {pub.name}
               </div>
             ))}
           </div>
