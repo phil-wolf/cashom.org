@@ -112,41 +112,18 @@ const PhilipWolfSection = () => {
             What Our Students Say
           </h3>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {testimonials.map((testimonial, index) => (
-              <div 
-                key={index} 
-                className={`relative group h-full ${index >= 3 ? 'md:col-span-1 lg:col-span-1' : ''}`}
-              >
-                <div className="relative h-full bg-primary text-primary-foreground p-8 rounded-xl shadow-lg flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rust to-accent" />
-                  
-                  <Quote className="w-8 h-8 text-accent/40 mb-4" />
-                  
-                  <blockquote className="text-primary-foreground/95 italic leading-relaxed flex-1 mb-6">
-                    "{testimonial.quote}"
-                  </blockquote>
+          <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {testimonials.slice(0, 3).map((testimonial, index) => (
+              <div key={index} className="h-full">
+                <TestimonialCard testimonial={testimonial} />
+              </div>
+            ))}
+          </div>
 
-                  <div className="border-t border-primary-foreground/20 pt-4">
-                    <div className="flex items-center space-x-3">
-                      <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center shrink-0">
-                        <span className="text-primary-foreground font-bold text-lg">
-                          {testimonial.author.charAt(0)}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="font-bold text-primary-foreground text-base">
-                          {testimonial.author}
-                        </p>
-                        {testimonial.company && (
-                          <p className="text-primary-foreground/70 text-xs uppercase tracking-wider font-medium">
-                            {testimonial.company}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-6">
+            {testimonials.slice(3, 5).map((testimonial, index) => (
+              <div key={index + 3} className="h-full">
+                <TestimonialCard testimonial={testimonial} />
               </div>
             ))}
           </div>
