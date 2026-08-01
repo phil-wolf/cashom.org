@@ -42,7 +42,7 @@ const Hero = () => {
         <p className="text-base md:text-lg text-parchment/70 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-          Professional certifications for hospitality, service, and wellness professionals who want to serve cannabis with confidence, care, and credibility.
+          Professional certifications for hospitality, service, and wellness professionals who want to serve cannabis with confidence, purpose, care, and credibility.
         </p>
 
         <div className="animate-scale-in" style={{ animationDelay: '0.4s' }}>
