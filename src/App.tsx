@@ -9,6 +9,7 @@ import THCServePro from "./pages/THCServePro";
 import CoursePage from "./pages/CoursePage";
 import Team from "./pages/Team";
 import Signup from "./pages/Signup";
+import DoshaLens from "./pages/DoshaLens";
 import PromoModal from "./components/PromoModal";
 
 const queryClient = new QueryClient();
@@ -40,6 +41,7 @@ const App = () => (
           />
           <Route path="/team" element={<Team />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/dosha-lens" element={<DoshaLens />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
