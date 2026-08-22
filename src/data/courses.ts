@@ -213,7 +213,8 @@ export const courses: Course[] = [
       'The Lens Framework in full — reaching specific states on purpose',
       'Building and running your own guided practice with real guests',
       'Specialization in your domain — culinary, movement, coaching, retail, or events',
-      'Four days in person in Boulder, plus a year of direct work with Philip Wolf',
+      'The retreat — four days together in Boulder, March 18–21, 2027',
+      'A year of direct work with Philip Wolf',
     ],
     curriculum: [
       {
@@ -246,6 +247,8 @@ export const courses: Course[] = [
       'Earn the CashoM designation',
       'Design and run a signature offering, tested with real guests',
       '26 live sessions and 12 private coaching calls with Philip Wolf over the year',
+      'Return next year to teach the incoming cohort',
+      'Join a small alumni network shaping the field',
     ],
     seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',
     seoDescription:

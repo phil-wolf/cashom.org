@@ -14,6 +14,34 @@ const CoursePage = () => {
 
   const others = courses.filter((c) => c.slug !== course.slug);
 
+  const arcCards = [
+    {
+      title: 'Foundation Term · November–December 2026',
+      description:
+        'The Certified Steward of Cannabis course, included in tuition. Everyone arrives sharing the same vocabulary.',
+    },
+    {
+      title: 'Q1 · Craft · January–March 2027',
+      description:
+        'Advanced connoisseurship, the tasting protocol, and holding space. Build the palate and the room presence. The quarter closes with the retreat in Boulder.',
+    },
+    {
+      title: 'Q2 · Practice · April–June 2027',
+      description:
+        'Establish your own practice. Real guests, real repetitions, documented and brought back to the cohort. Advanced service work: over-consumption, harm reduction, and reading a room.',
+    },
+    {
+      title: 'Q3 · The Lens · July–September 2027',
+      description:
+        'The Lens Framework arrives — not as theory, but as the answer to what you have already run into. Applied to guests you already know, inside the domain you are specializing in.',
+    },
+    {
+      title: 'Q4 · Threshold · October–December 2027',
+      description:
+        'Design and run a full experience, assessed against the mastery rubric. Co-lead a public webinar. Meet the cohort at MJBizCon. Conferral in December.',
+    },
+  ];
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Course',
@@ -159,19 +187,23 @@ const CoursePage = () => {
           </div>
         </section>
 
-        {/* One per room */}
+        {/* What this is */}
         {course.slug === 'cashom-level-1' && (
           <section className="py-16 bg-parchment border-t border-ink-brown/10">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl">
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
-                  One per room
+                  What this is
                 </h2>
                 <p className="text-lg text-ink-brown/75 leading-relaxed">
-                  A serious restaurant has one master sommelier. Cannabis hospitality is building
-                  toward the same thing — one person per lounge who designs the program, trains the
-                  floor, and guides the guest. This is the credential for that person. Eight seats
-                  a year, by application only.
+                  A twelve-month apprenticeship in cannabis service, stewardship and guidance,
+                  culminating in the CashoM designation. It is built for practitioners already
+                  working with cannabis and consumers who have gone as far as they can on their own.
+                  You will develop mastery of advanced connoisseurship and the Lens Framework, and
+                  earn the designation that comes with it.
+                </p>
+                <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
+                  Eight seats a year, by application only.
                 </p>
               </div>
             </div>
@@ -213,36 +245,68 @@ const CoursePage = () => {
           </div>
         </section>
 
-        {/* Curriculum */}
-        <section className="py-16 bg-parchment">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mb-12">
-              <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
-                Curriculum
-              </p>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown">
-                What the program covers
-              </h2>
-            </div>
+        {/* The Arc / Curriculum */}
+        {course.slug === 'cashom-level-1' ? (
+          <section className="py-16 bg-parchment">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
+                  THE ARC
+                </p>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  How the year moves
+                </h2>
+                <p className="text-lg text-ink-brown/75 leading-relaxed">
+                  Each quarter answers the question the last one raised.
+                </p>
+              </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {course.curriculum.map((module, i) => (
-                <article
-                  key={module.title}
-                  className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
-                >
-                  <p className="text-rust text-[0.7rem] font-sans font-semibold tracking-[0.2em] uppercase mb-3">
-                    Module {String(i + 1).padStart(2, '0')}
-                  </p>
-                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
-                    {module.title}
-                  </h3>
-                  <p className="text-sm text-ink-brown/70 leading-relaxed">{module.description}</p>
-                </article>
-              ))}
+              <div className="grid gap-6">
+                {arcCards.map((card) => (
+                  <article
+                    key={card.title}
+                    className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
+                  >
+                    <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm text-ink-brown/70 leading-relaxed">{card.description}</p>
+                  </article>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        ) : (
+          <section className="py-16 bg-parchment">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
+                  Curriculum
+                </p>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown">
+                  What the program covers
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {course.curriculum.map((module, i) => (
+                  <article
+                    key={module.title}
+                    className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
+                  >
+                    <p className="text-rust text-[0.7rem] font-sans font-semibold tracking-[0.2em] uppercase mb-3">
+                      Module {String(i + 1).padStart(2, '0')}
+                    </p>
+                    <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
+                      {module.title}
+                    </h3>
+                    <p className="text-sm text-ink-brown/70 leading-relaxed">{module.description}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="py-20 bg-ink-brown">
