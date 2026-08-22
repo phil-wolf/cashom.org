@@ -1,5 +1,10 @@
 export const APPLY_URL = 'https://forms.gle/1ph4uKp1EtsLsiyr5';
 
+export interface PaymentOption {
+  label: string;
+  value: string;
+}
+
 export interface Course {
   slug: string;
   tier: string;
@@ -8,6 +13,10 @@ export interface Course {
   title: string;
   becomes: string;
   price: string;
+  foundingLabel?: string;
+  standardPriceNote?: string;
+  paymentOptions?: PaymentOption[];
+  paymentNote?: string;
   format: string;
   audience: string;
   intro: string;
@@ -181,20 +190,30 @@ export const courses: Course[] = [
   {
     slug: 'cashom-level-1',
     tier: 'Tier 4',
-    status: 'Cohort-based · in-person retreat',
+    status: 'COHORT-BASED · 8 SEATS · APPLICATIONS OPEN',
     title: 'CashoM',
     becomes: 'CashoM — Level 1',
-    price: '$12,000',
-    format: '12-month program · weekly sessions · monthly workshops · live retreat',
-    audience: 'A dedicated few pursuing full mastery and stewardship of the experience itself',
+    price: '$9,500',
+    foundingLabel: 'Founding Cohort',
+    standardPriceNote: 'Standard tuition from Cohort Two: $15,000',
+    paymentOptions: [
+      { label: 'Pay in full', value: '$8,900 at acceptance' },
+      { label: 'Two payments', value: '$4,900 × 2 (acceptance, month 6)' },
+      { label: 'Monthly', value: '$1,800 deposit + 8 × $1,050' },
+    ],
+    paymentNote:
+      'All payments complete by month 8. Existing Certified Steward of Cannabis holders receive full credit for prior tuition.',
+    format: '12-month apprenticeship · 8 seats · Boulder retreat · begins January 13, 2027',
+    audience:
+      'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
     intro:
-      'The full mastery path. A twelve-month cohort with weekly training, monthly workshops, private coaching with Philip Wolf, and an in-person retreat — for the few who intend to shape cannabis hospitality itself.',
+      '<strong>People don\'t know how to identify what type of high they will have. A CashoM does.</strong><br /><br />Learn how to reach specific states of your high and apply them to your pursuits — the lens that serves writing poetry is not the lens that serves athletic flow. That precision is the gold.<br /><br />Then learn to guide it for others.<br /><br /><strong>We call this the Lens Framework, and it\'s the heart of becoming a CashoM.</strong>',
     learn: [
-      '12-month structured curriculum',
-      'Weekly training sessions and monthly group workshops',
-      'Private coaching sessions with Philip Wolf',
-      'Full application of the Lens Framework: "Apply your high to your pursuits in life"',
-      'An exclusive in-person retreat experience',
+      'Advanced connoisseurship and the CashoM tasting protocol',
+      'The Lens Framework in full — reaching specific states on purpose',
+      'Building and running your own guided practice with real guests',
+      'Specialization in your domain — culinary, movement, coaching, retail, or events',
+      'Four days in person in Boulder, plus a year of direct work with Philip Wolf',
     ],
     curriculum: [
       {
@@ -224,14 +243,13 @@ export const courses: Course[] = [
       },
     ],
     outcomes: [
-      'Earn the CashoM — Level 1 credential',
-      'Build and launch a signature cannabis hospitality offering',
-      'Work directly with Philip Wolf for a full year',
-      'Join a small alumni network shaping the field',
+      'Earn the CashoM designation',
+      'Design and run a signature offering, tested with real guests',
+      '26 live sessions and 12 private coaching calls with Philip Wolf over the year',
     ],
-    seoTitle: 'CashoM Level 1 — 12-Month Cannabis Mastery Program',
+    seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',
     seoDescription:
-      'A 12-month cohort program with weekly training, monthly workshops, private coaching with Philip Wolf, and an in-person retreat. Earn CashoM — Level 1.',
+      'A 12-month cannabis apprenticeship with 8 seats, private coaching with Philip Wolf, and a Boulder retreat. Founding Cohort: $9,500.',
     ctaLabel: 'Apply now',
   },
 ];
