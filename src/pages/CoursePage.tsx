@@ -159,19 +159,23 @@ const CoursePage = () => {
           </div>
         </section>
 
-        {/* One per room */}
+        {/* What this is */}
         {course.slug === 'cashom-level-1' && (
           <section className="py-16 bg-parchment border-t border-ink-brown/10">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl">
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
-                  One per room
+                  What this is
                 </h2>
                 <p className="text-lg text-ink-brown/75 leading-relaxed">
-                  A serious restaurant has one master sommelier. Cannabis hospitality is building
-                  toward the same thing — one person per lounge who designs the program, trains the
-                  floor, and guides the guest. This is the credential for that person. Eight seats
-                  a year, by application only.
+                  A twelve-month apprenticeship in cannabis service, stewardship and guidance,
+                  culminating in the CashoM designation. It is built for practitioners already
+                  working with cannabis and consumers who have gone as far as they can on their own.
+                  You will develop mastery of advanced connoisseurship and the Lens Framework, and
+                  earn the designation that comes with it.
+                </p>
+                <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
+                  Eight seats a year, by application only.
                 </p>
               </div>
             </div>
