@@ -203,7 +203,7 @@ export const courses: Course[] = [
     ],
     paymentNote:
       'All payments complete by month 8. Existing Certified Steward of Cannabis holders receive full credit for prior tuition.',
-    format: '12-month apprenticeship · January 2027 – January 2028 · Boulder retreat',
+    format: '12-month apprenticeship · January 2027 – January 2028 · Boulder, CO retreat',
     audience:
       'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
     intro:
@@ -212,7 +212,7 @@ export const courses: Course[] = [
       'Advanced connoisseurship and the CashoM tasting protocol',
       'The Lens Framework in full — reaching specific states on purpose',
       'Building and running your own guided practice with real guests',
-      'Specialization in your domain — culinary, movement, coaching, retail, or events',
+      'Specialization in your domain — culinary, movement, wellness, coaching, retail, or events',
       'The retreat — four days together in Boulder, March 18–21, 2027',
       'A year of direct work with Philip Wolf',
     ],
@@ -247,7 +247,8 @@ export const courses: Course[] = [
       'Earn the CashoM designation',
       'Design and run a signature offering, tested with real guests',
       '26 live sessions and 12 private coaching calls with Philip Wolf over the year',
-      'Return next year to teach the incoming cohort',
+      'The option to return and teach the next cohort',
+      'Licensing to run Cultivating Spirits branded experiences',
       'Join a small alumni network shaping the field',
     ],
     seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',

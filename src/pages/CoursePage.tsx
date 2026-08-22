@@ -18,7 +18,7 @@ const CoursePage = () => {
     {
       title: 'Foundation Term · November–December 2026',
       description:
-        'The Certified Steward of Cannabis course, included in tuition. Everyone arrives sharing the same vocabulary.',
+        'The Certified Steward of Cannabis and Certified Server of Cannabis courses, both included in tuition — $947 of coursework. Everyone arrives sharing the same vocabulary.',
     },
     {
       title: 'Q1 · Craft · January–March 2027',
@@ -203,6 +203,10 @@ const CoursePage = () => {
                   earn the designation that comes with it.
                 </p>
                 <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
+                  This is not simply a certification. It is a year of devotion to becoming the kind
+                  of practitioner others trust to steward the cannabis experience.
+                </p>
+                <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
                   Twelve seats a year, by application only.
                 </p>
               </div>
@@ -273,7 +277,7 @@ const CoursePage = () => {
                 <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
                   <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">Four days in Boulder</h3>
                   <p className="text-sm text-ink-brown/70 leading-relaxed">
-                    March 18–21, 2027. Travel and lodging not included; budget approximately $1,200–1,800.
+                    A retreat from March 18–21, 2027. Travel and lodging not included; budget approximately $900–$1,500.
                   </p>
                 </article>
               </div>
