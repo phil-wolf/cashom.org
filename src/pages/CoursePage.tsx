@@ -312,7 +312,45 @@ const CoursePage = () => {
               </div>
             </div>
           </section>
-        ) : (
+        )}
+
+        {/* Key dates */}
+        {course.slug === 'cashom-level-1' && (
+          <section className="py-16 bg-background border-t border-ink-brown/10">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  Key dates
+                </h2>
+              </div>
+
+              <div className="max-w-3xl">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-y-4 gap-x-8 text-sm">
+                  <div className="font-semibold text-ink-brown">Applications</div>
+                  <div className="text-ink-brown/75">Reviewed as they arrive — the cohort closes when it's full</div>
+
+                  <div className="font-semibold text-ink-brown">Foundation term</div>
+                  <div className="text-ink-brown/75">November 9 – December 18, 2026</div>
+
+                  <div className="font-semibold text-ink-brown">Program opens</div>
+                  <div className="text-ink-brown/75">January 13, 2027</div>
+
+                  <div className="font-semibold text-ink-brown">Retreat — Boulder, CO</div>
+                  <div className="text-ink-brown/75">March 18–21, 2027</div>
+
+                  <div className="font-semibold text-ink-brown">MJBizCon gathering</div>
+                  <div className="text-ink-brown/75">December 2027</div>
+
+                  <div className="font-semibold text-ink-brown">Conferral</div>
+                  <div className="text-ink-brown/75">January 2028</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* The Arc / Curriculum */}
+        {course.slug === 'cashom-level-1' ? (
           <section className="py-16 bg-parchment">
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mb-12">
