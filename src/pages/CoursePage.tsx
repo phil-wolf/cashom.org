@@ -36,9 +36,9 @@ const CoursePage = () => {
         'The Lens Framework arrives — not as theory, but as the answer to what you have already run into. Applied to guests you already know, inside the domain you are specializing in.',
     },
     {
-      title: 'Q4 · Threshold · October–December 2027',
+      title: 'Q4 · Threshold · October 2027 – January 2028',
       description:
-        'Design and run a full experience, assessed against the mastery rubric. Co-lead a public webinar. Meet the cohort at MJBizCon. Conferral in December.',
+        'Design and run a full experience, assessed against the mastery rubric. Co-lead a public webinar. Meet the cohort at MJBizCon in December. Conferral in January.',
     },
   ];
 
@@ -203,7 +203,7 @@ const CoursePage = () => {
                   earn the designation that comes with it.
                 </p>
                 <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
-                  Eight seats a year, by application only.
+                  Twelve seats a year, by application only.
                 </p>
               </div>
             </div>
@@ -244,6 +244,42 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
+        {/* The rhythm */}
+        {course.slug === 'cashom-level-1' && (
+          <section className="py-16 bg-parchment border-t border-ink-brown/10">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  The rhythm
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">26 live sessions</h3>
+                  <p className="text-sm text-ink-brown/70 leading-relaxed">
+                    Every other week. Half transmission, half practicum, where you present real work to the cohort.
+                  </p>
+                </article>
+
+                <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">12 private calls</h3>
+                  <p className="text-sm text-ink-brown/70 leading-relaxed">
+                    45 minutes monthly with Philip Wolf. Progression review against the mastery rubric.
+                  </p>
+                </article>
+
+                <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">Four days in Boulder</h3>
+                  <p className="text-sm text-ink-brown/70 leading-relaxed">
+                    March 18–21, 2027. Travel and lodging not included; budget approximately $1,200–1,800.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* The Arc / Curriculum */}
         {course.slug === 'cashom-level-1' ? (
@@ -308,16 +344,57 @@ const CoursePage = () => {
           </section>
         )}
 
+        {/* Key dates */}
+        {course.slug === 'cashom-level-1' && (
+          <section className="py-16 bg-background border-t border-ink-brown/10">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  Key dates
+                </h2>
+              </div>
+
+              <div className="max-w-3xl">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-y-4 gap-x-8 text-sm">
+                  <div className="font-semibold text-ink-brown">Applications</div>
+                  <div className="text-ink-brown/75">Reviewed as they arrive — the cohort closes when it's full</div>
+
+                  <div className="font-semibold text-ink-brown">Foundation term</div>
+                  <div className="text-ink-brown/75">November 9 – December 18, 2026</div>
+
+                  <div className="font-semibold text-ink-brown">Program opens</div>
+                  <div className="text-ink-brown/75">January 13, 2027</div>
+
+                  <div className="font-semibold text-ink-brown">Retreat — Boulder, CO</div>
+                  <div className="text-ink-brown/75">March 18–21, 2027</div>
+
+                  <div className="font-semibold text-ink-brown">MJBizCon gathering</div>
+                  <div className="text-ink-brown/75">December 2027</div>
+
+                  <div className="font-semibold text-ink-brown">Conferral</div>
+                  <div className="text-ink-brown/75">January 2028</div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* CTA */}
         <section className="py-20 bg-ink-brown">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-parchment mb-4">
-              {course.comingSoon ? 'Be first in line' : 'Ready to get certified?'}
+              {course.comingSoon
+                ? 'Be first in line'
+                : course.slug === 'cashom-level-1'
+                  ? 'Twelve seats. One cohort a year.'
+                  : 'Ready to get certified?'}
             </h2>
             <p className="text-parchment/75 max-w-2xl mx-auto mb-8 leading-relaxed">
               {course.comingSoon
                 ? 'This certification is launching soon. Add your name and we will reach out the moment enrollment opens.'
-                : `Seats are limited. Apply to join the next ${course.title} cohort.`}
+                : course.slug === 'cashom-level-1'
+                  ? 'Applications are reviewed as they arrive, and the cohort closes when it\'s full. The year begins January 13, 2027.'
+                  : `Seats are limited. Apply to join the next ${course.title} cohort.`}
             </p>
             <a
               href={APPLY_URL}
