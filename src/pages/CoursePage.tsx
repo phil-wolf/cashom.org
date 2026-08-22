@@ -203,7 +203,7 @@ const CoursePage = () => {
                   earn the designation that comes with it.
                 </p>
                 <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
-                  Eight seats a year, by application only.
+                  Twelve seats a year, by application only.
                 </p>
               </div>
             </div>
