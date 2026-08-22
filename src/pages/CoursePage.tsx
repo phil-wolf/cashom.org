@@ -383,12 +383,18 @@ const CoursePage = () => {
         <section className="py-20 bg-ink-brown">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-parchment mb-4">
-              {course.comingSoon ? 'Be first in line' : 'Ready to get certified?'}
+              {course.comingSoon
+                ? 'Be first in line'
+                : course.slug === 'cashom-level-1'
+                  ? 'Twelve seats. One cohort a year.'
+                  : 'Ready to get certified?'}
             </h2>
             <p className="text-parchment/75 max-w-2xl mx-auto mb-8 leading-relaxed">
               {course.comingSoon
                 ? 'This certification is launching soon. Add your name and we will reach out the moment enrollment opens.'
-                : `Seats are limited. Apply to join the next ${course.title} cohort.`}
+                : course.slug === 'cashom-level-1'
+                  ? 'Applications are reviewed as they arrive, and the cohort closes when it\'s full. The year begins January 13, 2027.'
+                  : `Seats are limited. Apply to join the next ${course.title} cohort.`}
             </p>
             <a
               href={APPLY_URL}
