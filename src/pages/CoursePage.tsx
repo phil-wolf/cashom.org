@@ -36,9 +36,9 @@ const CoursePage = () => {
         'The Lens Framework arrives — not as theory, but as the answer to what you have already run into. Applied to guests you already know, inside the domain you are specializing in.',
     },
     {
-      title: 'Q4 · Threshold · October–December 2027',
+      title: 'Q4 · Threshold · October 2027 – January 2028',
       description:
-        'Design and run a full experience, assessed against the mastery rubric. Co-lead a public webinar. Meet the cohort at MJBizCon. Conferral in December.',
+        'Design and run a full experience, assessed against the mastery rubric. Co-lead a public webinar. Meet the cohort at MJBizCon in December. Conferral in January.',
     },
   ];
 
