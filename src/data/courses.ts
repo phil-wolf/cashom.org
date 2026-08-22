@@ -190,7 +190,7 @@ export const courses: Course[] = [
   {
     slug: 'cashom-level-1',
     tier: 'Tier 4',
-    status: 'COHORT-BASED · 8 SEATS · APPLICATIONS OPEN',
+    status: 'COHORT-BASED · TWELVE SEATS · APPLICATIONS OPEN',
     title: 'CashoM',
     becomes: 'CashoM — Level 1',
     price: '$9,500',
@@ -203,7 +203,7 @@ export const courses: Course[] = [
     ],
     paymentNote:
       'All payments complete by month 8. Existing Certified Steward of Cannabis holders receive full credit for prior tuition.',
-    format: '12-month apprenticeship · 8 seats · Boulder retreat · begins January 13, 2027',
+    format: '12-month apprenticeship · January 2027 – January 2028 · Boulder retreat',
     audience:
       'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
     intro:
@@ -252,7 +252,7 @@ export const courses: Course[] = [
     ],
     seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',
     seoDescription:
-      'A 12-month cannabis apprenticeship with 8 seats, private coaching with Philip Wolf, and a Boulder retreat. Founding Cohort: $9,500.',
+      'A 12-month cannabis apprenticeship with 12 seats, private coaching with Philip Wolf, and a Boulder retreat. Founding Cohort: $9,500.',
     ctaLabel: 'Apply now',
   },
 ];
