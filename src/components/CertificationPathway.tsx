@@ -55,7 +55,39 @@ const CertificationPathway = ({
                 <h3 className="mt-5 text-2xl font-serif font-bold text-ink-brown leading-snug">
                   {tier.title}
                 </h3>
-                <p className="mt-2 text-3xl font-serif font-bold text-ink-brown">{tier.price}</p>
+                <div className="mt-2">
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    <p className="text-3xl font-serif font-bold text-ink-brown">{tier.price}</p>
+                    {tier.foundingLabel && (
+                      <span className="inline-flex rounded-full bg-rust/10 text-rust text-[0.6rem] font-semibold tracking-[0.1em] uppercase px-2.5 py-1">
+                        {tier.foundingLabel}
+                      </span>
+                    )}
+                  </div>
+                  {tier.standardPriceNote && (
+                    <p className="text-xs text-ink-brown/60">{tier.standardPriceNote}</p>
+                  )}
+                  {tier.paymentOptions && (
+                    <div className="mt-3 p-3 rounded-lg bg-parchment-deep/50 border border-ink-brown/10">
+                      <p className="text-[0.6rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-2">
+                        Payment options
+                      </p>
+                      <ul className="space-y-1">
+                        {tier.paymentOptions.map((opt) => (
+                          <li key={opt.label} className="text-xs text-ink-brown/80 leading-snug">
+                            <span className="font-semibold text-ink-brown">{opt.label}</span> —{' '}
+                            {opt.value}
+                          </li>
+                        ))}
+                      </ul>
+                      {tier.paymentNote && (
+                        <p className="mt-2 text-[0.65rem] text-ink-brown/60 leading-relaxed">
+                          {tier.paymentNote}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </div>
 
                 <p className="mt-4 text-sm text-ink-brown/70 leading-relaxed">
                   <span className="font-semibold text-ink-brown">For: </span>

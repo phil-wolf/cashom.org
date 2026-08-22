@@ -59,19 +59,73 @@ const CoursePage = () => {
               <h1 className="text-4xl md:text-6xl font-serif font-bold text-ink-brown leading-tight mb-6">
                 {course.title}
               </h1>
-              <p className="text-lg text-ink-brown/75 leading-relaxed mb-8">{course.intro}</p>
+              <p
+                className="text-lg text-ink-brown/75 leading-relaxed mb-8"
+                dangerouslySetInnerHTML={{ __html: course.intro }}
+              />
 
-              <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mb-10">
-                <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
-                <p className="flex items-center gap-2 text-sm text-ink-brown/70">
-                  <Clock className="w-4 h-4 text-rust" />
-                  {course.format}
-                </p>
-                <p className="flex items-center gap-2 text-sm text-ink-brown/70">
-                  <Users className="w-4 h-4 text-rust" />
-                  {course.audience}
-                </p>
-              </div>
+              {course.slug === 'cashom-level-1' ? (
+                <div className="mb-10">
+                  <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-2">
+                    <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
+                    {course.foundingLabel && (
+                      <span className="inline-flex rounded-full bg-rust/10 text-rust text-[0.65rem] font-semibold tracking-[0.12em] uppercase px-3 py-1">
+                        {course.foundingLabel}
+                      </span>
+                    )}
+                  </div>
+                  {course.standardPriceNote && (
+                    <p className="text-sm text-ink-brown/70 mb-5">{course.standardPriceNote}</p>
+                  )}
+
+                  {course.paymentOptions && (
+                    <div className="bg-parchment-deep/50 rounded-xl p-5 border border-ink-brown/10 max-w-xl mb-8">
+                      <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
+                        Payment options
+                      </p>
+                      <ul className="space-y-2">
+                        {course.paymentOptions.map((opt) => (
+                          <li
+                            key={opt.label}
+                            className="flex flex-wrap justify-between gap-x-4 gap-y-1 text-sm"
+                          >
+                            <span className="font-semibold text-ink-brown">{opt.label}</span>
+                            <span className="text-ink-brown/80">{opt.value}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      {course.paymentNote && (
+                        <p className="mt-3 text-xs text-ink-brown/60 leading-relaxed">
+                          {course.paymentNote}
+                        </p>
+                      )}
+                    </div>
+                  )}
+
+                  <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+                    <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                      <Clock className="w-4 h-4 text-rust" />
+                      {course.format}
+                    </p>
+                    <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                      <Users className="w-4 h-4 text-rust" />
+                      {course.audience}
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mb-10">
+                  <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
+                  <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                    <Clock className="w-4 h-4 text-rust" />
+                    {course.format}
+                  </p>
+                  <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                    <Users className="w-4 h-4 text-rust" />
+                    {course.audience}
+                  </p>
+                </div>
+              )}
 
               {course.comingSoon ? (
                 <div className="inline-flex flex-col gap-2">
@@ -104,6 +158,25 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
+        {/* One per room */}
+        {course.slug === 'cashom-level-1' && (
+          <section className="py-16 bg-parchment border-t border-ink-brown/10">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  One per room
+                </h2>
+                <p className="text-lg text-ink-brown/75 leading-relaxed">
+                  A serious restaurant has one master sommelier. Cannabis hospitality is building
+                  toward the same thing — one person per lounge who designs the program, trains the
+                  floor, and guides the guest. This is the credential for that person. Eight seats
+                  a year, by application only.
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* What you'll learn */}
         <section className="py-16 bg-background">
