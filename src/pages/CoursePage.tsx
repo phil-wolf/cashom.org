@@ -245,36 +245,68 @@ const CoursePage = () => {
           </div>
         </section>
 
-        {/* Curriculum */}
-        <section className="py-16 bg-parchment">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mb-12">
-              <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
-                Curriculum
-              </p>
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown">
-                What the program covers
-              </h2>
-            </div>
+        {/* The Arc / Curriculum */}
+        {course.slug === 'cashom-level-1' ? (
+          <section className="py-16 bg-parchment">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
+                  THE ARC
+                </p>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  How the year moves
+                </h2>
+                <p className="text-lg text-ink-brown/75 leading-relaxed">
+                  Each quarter answers the question the last one raised.
+                </p>
+              </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {course.curriculum.map((module, i) => (
-                <article
-                  key={module.title}
-                  className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
-                >
-                  <p className="text-rust text-[0.7rem] font-sans font-semibold tracking-[0.2em] uppercase mb-3">
-                    Module {String(i + 1).padStart(2, '0')}
-                  </p>
-                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
-                    {module.title}
-                  </h3>
-                  <p className="text-sm text-ink-brown/70 leading-relaxed">{module.description}</p>
-                </article>
-              ))}
+              <div className="grid gap-6">
+                {arcCards.map((card) => (
+                  <article
+                    key={card.title}
+                    className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
+                  >
+                    <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
+                      {card.title}
+                    </h3>
+                    <p className="text-sm text-ink-brown/70 leading-relaxed">{card.description}</p>
+                  </article>
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        ) : (
+          <section className="py-16 bg-parchment">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
+                  Curriculum
+                </p>
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown">
+                  What the program covers
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                {course.curriculum.map((module, i) => (
+                  <article
+                    key={module.title}
+                    className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
+                  >
+                    <p className="text-rust text-[0.7rem] font-sans font-semibold tracking-[0.2em] uppercase mb-3">
+                      Module {String(i + 1).padStart(2, '0')}
+                    </p>
+                    <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
+                      {module.title}
+                    </h3>
+                    <p className="text-sm text-ink-brown/70 leading-relaxed">{module.description}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* CTA */}
         <section className="py-20 bg-ink-brown">
