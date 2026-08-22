@@ -245,6 +245,42 @@ const CoursePage = () => {
           </div>
         </section>
 
+        {/* The rhythm */}
+        {course.slug === 'cashom-level-1' && (
+          <section className="py-16 bg-parchment border-t border-ink-brown/10">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mb-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-5">
+                  The rhythm
+                </h2>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">26 live sessions</h3>
+                  <p className="text-sm text-ink-brown/70 leading-relaxed">
+                    Every other week. Half transmission, half practicum, where you present real work to the cohort.
+                  </p>
+                </article>
+
+                <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">12 private calls</h3>
+                  <p className="text-sm text-ink-brown/70 leading-relaxed">
+                    45 minutes monthly with Philip Wolf. Progression review against the mastery rubric.
+                  </p>
+                </article>
+
+                <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+                  <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">Four days in Boulder</h3>
+                  <p className="text-sm text-ink-brown/70 leading-relaxed">
+                    March 18–21, 2027. Travel and lodging not included; budget approximately $1,200–1,800.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* The Arc / Curriculum */}
         {course.slug === 'cashom-level-1' ? (
           <section className="py-16 bg-parchment">
