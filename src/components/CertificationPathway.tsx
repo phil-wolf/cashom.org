@@ -109,8 +109,26 @@ const CertificationPathway = ({
                 </div>
 
                 <div className="mt-auto pt-6">
-                  <p className="text-xs text-ink-brown/60 mb-4">{tier.format}</p>
+                  <p className="text-xs text-ink-brown/60 mb-1">{tier.format}</p>
+                  {tier.schedule && (
+                    <div className="mb-4">
+                      <p className="text-[0.6rem] font-sans font-semibold tracking-[0.15em] uppercase text-ink-brown/60 mb-1.5">
+                        {tier.schedule.label}
+                      </p>
+                      <ul className="space-y-0.5 mb-1.5">
+                        {tier.schedule.items.map((item) => (
+                          <li key={item} className="text-xs text-ink-brown/70 leading-snug">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      {tier.schedule.note && (
+                        <p className="text-xs text-rust font-medium leading-snug">{tier.schedule.note}</p>
+                      )}
+                    </div>
+                  )}
                   <div className="border-t border-ink-brown/10 pt-4">
+
                     <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-1">
                       You become
                     </p>
