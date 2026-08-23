@@ -5,6 +5,13 @@ export interface PaymentOption {
   value: string;
 }
 
+export interface ScheduleBlock {
+  label: string;
+  items: string[];
+  note?: string;
+}
+
+
 export interface Course {
   slug: string;
   tier: string;
@@ -17,7 +24,9 @@ export interface Course {
   standardPriceNote?: string;
   paymentOptions?: PaymentOption[];
   paymentNote?: string;
+  schedule?: ScheduleBlock;
   format: string;
+
   audience: string;
   intro: string;
   learn: string[];
