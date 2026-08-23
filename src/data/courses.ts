@@ -96,6 +96,12 @@ export const courses: Course[] = [
     becomes: 'Certified Server of Cannabis',
     price: '$149',
     format: '2 live classes, 105 minutes each',
+    schedule: {
+      label: 'Fall 2026 dates (all 1:00-2:45 PM MT):',
+      items: ['September 15 & 22', 'October 13 & 20', 'November 3 & 5'],
+      note: '2027 calendar coming soon',
+    },
+
     audience: 'Hospitality staff serving cannabis guests directly',
     intro:
       'The gateway certification of the CashoM pathway and the credential most professionals need. In three live classes you learn to explain the plant, match a guest to a product they will genuinely enjoy, and hold the room safely.',
@@ -142,6 +148,15 @@ export const courses: Course[] = [
     becomes: 'Certified Steward of Cannabis',
     price: '$798',
     format: '6 live classes, 105 minutes each',
+    schedule: {
+      label: 'Fall 2026 cohorts (all 1:00-2:45 PM MT):',
+      items: [
+        'Fall cohort: September 30, October 7, 14, 21, 28, November 4',
+        'Winter cohort: November 10, 12, 17, 19, December 8, 10',
+      ],
+      note: '2027 calendar coming soon',
+    },
+
     audience: 'Professionals ready to guide guests, curate events, and build a coaching practice',
     intro:
       'For professionals who want to lead the experience rather than support it. Stewards curate events, guide groups, and begin building a coaching or hospitality practice of their own.',
