@@ -420,7 +420,7 @@ const CoursePage = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-serif font-bold text-ink-brown mb-8">
-              Other steps on the pathway
+              Progress through the CashoM pathway
             </h2>
             <div className="grid sm:grid-cols-3 gap-6">
               {others.map((c) => (
