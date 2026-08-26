@@ -4,6 +4,9 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Seo from '@/components/Seo';
 import { SITE_URL } from '@/components/Seo';
+import TierStepper from '@/components/TierStepper';
+import DefinitionBlock from '@/components/DefinitionBlock';
+import CourseSocialProof from '@/components/CourseSocialProof';
 import { APPLY_URL, courses, getCourse } from '@/data/courses';
 
 const CoursePage = () => {
@@ -76,6 +79,8 @@ const CoursePage = () => {
               <ArrowLeft className="w-4 h-4" />
               Back to the certification pathway
             </Link>
+
+            <TierStepper currentSlug={course.slug} />
 
             <div className="max-w-3xl">
               <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
@@ -359,7 +364,7 @@ const CoursePage = () => {
               </div>
 
               <div className="max-w-3xl">
-                <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-y-4 gap-x-8 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-y-4 gap-x-8 text-base leading-relaxed">
                   <div className="font-semibold text-ink-brown">Applications</div>
                   <div className="text-ink-brown/75">Reviewed as they arrive — the cohort closes when it's full</div>
 
@@ -415,7 +420,7 @@ const CoursePage = () => {
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl font-serif font-bold text-ink-brown mb-8">
-              Other steps on the pathway
+              Progress through the CashoM pathway
             </h2>
             <div className="grid sm:grid-cols-3 gap-6">
               {others.map((c) => (
@@ -438,6 +443,10 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
+        <DefinitionBlock />
+
+        <CourseSocialProof />
       </main>
 
       <Footer />

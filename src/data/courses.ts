@@ -106,11 +106,11 @@ export const courses: Course[] = [
     intro:
       'The gateway certification of the CashoM pathway and the credential most professionals need. In three live classes you learn to explain the plant, match a guest to a product they will genuinely enjoy, and hold the room safely.',
     learn: [
-      'Explaining the plant to a curious guest',
-      'Basic safety, cleanliness, and legal/compliance awareness',
-      "Matching a guest to a product they'll enjoy, across flower, concentrates, edibles, and THC beverages",
       'Guest communication, with an introduction to the GUIDE method',
+      'Explaining the plant to a curious guest',
+      "Matching a guest to a product they'll enjoy, across flower, concentrates, edibles, and THC beverages",
       'Recognizing over-consumption and basic harm-reduction',
+      'Basic safety, cleanliness, and legal/compliance awareness',
     ],
     curriculum: [
       {
@@ -133,7 +133,7 @@ export const courses: Course[] = [
       'Serve cannabis guests with the same confidence a sommelier brings to a wine list',
       'Give responsible, accurate product guidance in any legal setting',
       'Handle over-consumption calmly and correctly',
-      'Unlock the Steward and CashoM tiers of the pathway',
+      'Progress through the CashoM pathway',
     ],
     seoTitle: 'Certified Server of Cannabis — Certification | CashoM',
     seoDescription:
@@ -161,11 +161,11 @@ export const courses: Course[] = [
     intro:
       'For professionals who want to lead the experience rather than support it. Stewards curate events, guide groups, and begin building a coaching or hospitality practice of their own.',
     learn: [
-      'Full application of the GUIDE method',
+      'Take guests through the full GUIDE method',
       'Introduction to the Lens Framework',
-      'Pacing, sequencing, and curating larger events',
       'Advanced terpene and cannabinoid knowledge',
-      'Deeper harm-reduction and addiction awareness',
+      'Beginner connoisseurship',
+      'Pacing, sequencing, and curating larger events',
       'Introduction to building a coaching or service business',
     ],
     curriculum: [
