@@ -443,6 +443,10 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
+        <DefinitionBlock />
+
+        <CourseSocialProof />
       </main>
 
       <Footer />
