@@ -80,6 +80,8 @@ const CoursePage = () => {
               Back to the certification pathway
             </Link>
 
+            <TierStepper currentSlug={course.slug} />
+
             <div className="max-w-3xl">
               <p className="text-rust text-xs font-sans font-semibold tracking-[0.2em] uppercase mb-4">
                 {course.tier} · The Certification Pathway
@@ -362,7 +364,7 @@ const CoursePage = () => {
               </div>
 
               <div className="max-w-3xl">
-                <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-y-4 gap-x-8 text-sm">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-y-4 gap-x-8 text-base leading-relaxed">
                   <div className="font-semibold text-ink-brown">Applications</div>
                   <div className="text-ink-brown/75">Reviewed as they arrive — the cohort closes when it's full</div>
 
