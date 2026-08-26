@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import BeliefSection from '@/components/BeliefSection';
 import CertificationPathway from '@/components/CertificationPathway';
 import CredentialSection from '@/components/CredentialSection';
+import DefinitionBlock from '@/components/DefinitionBlock';
 import SignUpCTA from '@/components/SignUpCTA';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
 import PromoModal from '@/components/PromoModal';
@@ -25,6 +26,7 @@ const Index = () => {
         <BeliefSection />
         <CertificationPathway />
         <CredentialSection />
+        <DefinitionBlock />
         <PhilipWolfSection />
         <SignUpCTA />
         <CashomSection />
