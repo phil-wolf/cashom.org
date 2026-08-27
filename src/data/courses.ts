@@ -54,7 +54,7 @@ export const courses: Course[] = [
 
     audience: 'Hospitality staff serving cannabis guests directly',
     intro:
-      'The gateway certification of the CashoM pathway and the credential most professionals need. In three live classes you learn to explain the plant, match a guest to a product they will genuinely enjoy, and hold the room safely.',
+      'The gateway certification of the CashoM pathway and the credential most professionals need. In two live classes you learn to explain the plant, match a guest to a product they will genuinely enjoy, and hold the room safely.',
     learn: [
       'Guest communication, with an introduction to the GUIDE method',
       'Explaining the plant to a curious guest',
@@ -64,19 +64,14 @@ export const courses: Course[] = [
     ],
     curriculum: [
       {
-        title: 'Class One — The Plant and the Guest',
+        title: 'Class One — The Plant, the Guest, and a Safe Room',
         description:
-          'Cannabis fundamentals you can explain in plain language: cannabinoids, terpenes, the entourage effect, and why two guests react differently to the same product.',
+          'Cannabis fundamentals you can explain in plain language: cannabinoids, terpenes, the entourage effect, and why two guests react differently to the same product. Plus the foundations of a safe service environment — cleanliness standards and harm-reduction basics every server must hold from day one.',
       },
       {
-        title: 'Class Two — Product Matching and Service',
+        title: 'Class Two — Product Matching, Service, and Recovery',
         description:
-          'Reading intent, dosing conversations, and matching across flower, concentrates, edibles, and THC beverages. Introduction to the GUIDE method of guest communication.',
-      },
-      {
-        title: 'Class Three — Safety, Compliance, and Recovery',
-        description:
-          'Cleanliness and compliance awareness, spotting over-consumption early, and harm-reduction techniques for bringing a guest back to comfort.',
+          'Reading intent, dosing conversations, and matching across flower, concentrates, edibles, and THC beverages. Introduction to the GUIDE method of guest communication, compliance awareness in legal settings, spotting over-consumption early, and techniques for bringing a guest back to comfort.',
       },
     ],
     outcomes: [
@@ -87,7 +82,7 @@ export const courses: Course[] = [
     ],
     seoTitle: 'Certified Server of Cannabis — Certification | CashoM',
     seoDescription:
-      'Become a Certified Server of Cannabis in three live classes. Learn product matching, the GUIDE method, compliance awareness, and harm reduction. $149.',
+      'Become a Certified Server of Cannabis in two live classes. Learn product matching, the GUIDE method, compliance awareness, and harm reduction. $149.',
     ctaLabel: 'Apply now',
   },
   {
