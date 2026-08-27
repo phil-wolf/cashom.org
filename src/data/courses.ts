@@ -39,58 +39,8 @@ export interface Course {
 
 export const courses: Course[] = [
   {
-    slug: 'cannabis-lounge-attendant',
-    tier: 'Tier 1',
-    status: 'Coming soon',
-    comingSoon: true,
-    title: 'Cannabis Lounge Attendant Certification',
-    becomes: 'Lounge Attendant Certified',
-    price: '$39',
-    format: 'Self-paced · online',
-    audience: 'Lounge workers with no hosting or guidance responsibilities',
-    intro:
-      'An optional starting point for anyone working the floor of a consumption lounge. Learn the product basics, service standards, and safety habits that keep a room running well — before you ever step into a guiding role.',
-    learn: [
-      'Consumable basics across product formats',
-      'Responsible service fundamentals',
-      'Cleanliness and basic safety protocols',
-    ],
-    curriculum: [
-      {
-        title: 'Product Formats 101',
-        description:
-          'Flower, pre-rolls, concentrates, edibles, and THC beverages — what each one is, how it is consumed, and how onset and duration differ.',
-      },
-      {
-        title: 'Responsible Service Fundamentals',
-        description:
-          'Checking identification, understanding local rules, pacing guests, and knowing when to stop service.',
-      },
-      {
-        title: 'Cleanliness, Equipment, and Safety',
-        description:
-          'Glass and device hygiene, ventilation and air quality, spill and ash handling, and basic incident response.',
-      },
-      {
-        title: 'Working the Room',
-        description:
-          'Reading the floor, escalating to a certified server, and supporting the guest experience without giving guidance you are not certified to give.',
-      },
-    ],
-    outcomes: [
-      'Confidently support a consumption lounge floor from day one',
-      'Speak accurately about product formats without overstepping',
-      'Recognize when a guest needs a certified server or steward',
-      'Carry a credential that shows employers you take service seriously',
-    ],
-    seoTitle: 'Cannabis Lounge Attendant Certification — CashoM',
-    seoDescription:
-      'Entry-level cannabis lounge attendant certification covering product formats, responsible service, cleanliness, and safety. Coming soon from CashoM.',
-    ctaLabel: 'Join the waitlist',
-  },
-  {
     slug: 'certified-server-of-cannabis',
-    tier: 'Tier 2',
+    tier: 'Tier 1',
     status: 'The gateway — enrolling now',
     title: 'Certified Server of Cannabis',
     becomes: 'Certified Server of Cannabis',
@@ -142,7 +92,7 @@ export const courses: Course[] = [
   },
   {
     slug: 'certified-steward-of-cannabis',
-    tier: 'Tier 3',
+    tier: 'Tier 2',
     status: 'Enrollment opening soon',
     title: 'Certified Steward of Cannabis',
     becomes: 'Certified Steward of Cannabis',
@@ -213,7 +163,7 @@ export const courses: Course[] = [
   },
   {
     slug: 'cashom-level-1',
-    tier: 'Tier 4',
+    tier: 'Tier 3',
     status: 'COHORT-BASED · TWELVE SEATS · APPLICATIONS OPEN',
     title: 'CashoM',
     becomes: 'CashoM — Level 1',

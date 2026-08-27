@@ -17,7 +17,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Seo
         title="CashoM — Cannabis Certifications & Hospitality Coaching"
-        description="Cannabis hospitality certifications and coaching for service, wellness, and event professionals. Train from Lounge Attendant to Certified Server of Cannabis."
+        description="Cannabis hospitality certifications and coaching for service, wellness, and event professionals. Train from Certified Server to Certified Steward of Cannabis."
         path="/"
       />
       <Header />
