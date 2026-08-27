@@ -9,10 +9,6 @@ interface CertificationPathwayProps {
   showFraming?: boolean;
 }
 
-const branchNotes: Record<string, string> = {
-  'certified-steward-of-cannabis':
-    'Optional branch: Specialty Certifications (for chefs, yoga teachers, life coaches, bud bar operators, and more) — In development',
-};
 
 const CertificationPathway = ({
   eyebrow = 'The Certification Pathway',
