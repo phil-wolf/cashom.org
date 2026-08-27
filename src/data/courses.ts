@@ -94,7 +94,7 @@ export const courses: Course[] = [
   {
     slug: 'certified-steward-of-cannabis',
     tier: 'Tier 2',
-    status: 'Enrollment opening soon',
+    status: 'ENROLLING NOW',
     title: 'Certified Steward of Cannabis',
     becomes: 'Certified Steward of Cannabis',
     price: '$798',
