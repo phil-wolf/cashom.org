@@ -42,7 +42,7 @@ const PhilipWolfSection = () => {
     { name: 'Forbes', style: 'font-serif', color: 'text-ink-brown' },
     { name: 'TIME', style: 'font-sans font-bold tracking-tight', color: 'text-red-700' },
     { name: 'Bloomberg', style: 'font-sans font-semibold', color: 'text-ink-brown' },
-    { name: 'CBC', style: 'font-sans font-bold', color: 'text-red-600' },
+    { name: 'CBS', style: 'font-sans font-bold', color: 'text-red-600' },
     { name: 'Al Jazeera', style: 'font-serif', color: 'text-amber-700' },
     { name: 'High Times', style: 'font-serif font-bold', color: 'text-green-700' },
     { name: 'Rolling Stone', style: 'font-sans font-bold tracking-wide', color: 'text-red-700' },
