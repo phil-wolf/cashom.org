@@ -7,7 +7,7 @@ import CredentialSection from '@/components/CredentialSection';
 import DefinitionBlock from '@/components/DefinitionBlock';
 import SignUpCTA from '@/components/SignUpCTA';
 import PhilipWolfSection from '@/components/PhilipWolfSection';
-import PromoModal from '@/components/PromoModal';
+
 import CashomSection from '@/components/CashomSection';
 import Footer from '@/components/Footer';
 
@@ -32,7 +32,6 @@ const Index = () => {
         <CashomSection />
       </main>
       <Footer />
-      <PromoModal />
     </div>
   );
 };
