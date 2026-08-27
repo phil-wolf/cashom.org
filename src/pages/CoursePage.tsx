@@ -6,6 +6,7 @@ import Seo from '@/components/Seo';
 import { SITE_URL } from '@/components/Seo';
 import TierStepper from '@/components/TierStepper';
 import DefinitionBlock from '@/components/DefinitionBlock';
+import CourseCredentialSection from '@/components/CourseCredentialSection';
 import CourseSocialProof from '@/components/CourseSocialProof';
 import { APPLY_URL, courses, getCourse } from '@/data/courses';
 
@@ -253,6 +254,11 @@ const CoursePage = () => {
             </div>
           </div>
         </section>
+
+        {/* The credential */}
+        {(course.slug === 'certified-server-of-cannabis' || course.slug === 'certified-steward-of-cannabis') && (
+          <CourseCredentialSection courseSlug={course.slug} />
+        )}
 
         {/* The rhythm */}
         {course.slug === 'cashom-level-1' && (
