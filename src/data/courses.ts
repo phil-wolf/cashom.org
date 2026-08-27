@@ -48,7 +48,12 @@ export const courses: Course[] = [
     format: '2 live classes, 105 minutes each',
     schedule: {
       label: 'Fall 2026 dates (all 1:00-2:45 PM MT):',
-      items: ['September 15 & 22', 'October 13 & 20', 'November 3 & 5'],
+      items: [
+        'September 15th and 17th',
+        'September 22nd and 24th',
+        'October 13th and 20th',
+        'November 3rd and 5th',
+      ],
       note: '2027 calendar coming soon',
     },
 
