@@ -6,6 +6,7 @@ import Seo from '@/components/Seo';
 import { SITE_URL } from '@/components/Seo';
 import TierStepper from '@/components/TierStepper';
 import DefinitionBlock from '@/components/DefinitionBlock';
+import CourseCredentialSection from '@/components/CourseCredentialSection';
 import CourseSocialProof from '@/components/CourseSocialProof';
 import { APPLY_URL, courses, getCourse } from '@/data/courses';
 
