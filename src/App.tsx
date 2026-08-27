@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import THCServePro from "./pages/THCServePro";
 import CoursePage from "./pages/CoursePage";
+import LoungeAttendant from "./pages/LoungeAttendant";
 import Team from "./pages/Team";
 import Signup from "./pages/Signup";
 import PromoModal from "./components/PromoModal";
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/thc-servepro" element={<THCServePro />} />
           <Route path="/thc-servesmart" element={<THCServePro />} />
+          <Route path="/courses/cannabis-lounge-attendant" element={<LoungeAttendant />} />
           <Route path="/courses/:slug" element={<CoursePage />} />
           {/* Legacy course URLs → new course pages */}
           <Route
