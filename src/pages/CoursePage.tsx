@@ -255,6 +255,11 @@ const CoursePage = () => {
           </div>
         </section>
 
+        {/* The credential */}
+        {(course.slug === 'certified-server-of-cannabis' || course.slug === 'certified-steward-of-cannabis') && (
+          <CourseCredentialSection courseSlug={course.slug} />
+        )}
+
         {/* The rhythm */}
         {course.slug === 'cashom-level-1' && (
           <section className="py-16 bg-parchment border-t border-ink-brown/10">
