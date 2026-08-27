@@ -1,5 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ArrowLeft, Check, Clock, Users } from 'lucide-react';
+import { ArrowLeft, Check, Clock, Users, CalendarDays } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Seo from '@/components/Seo';
@@ -154,6 +154,12 @@ const CoursePage = () => {
                     <Clock className="w-4 h-4 text-rust" />
                     {course.format}
                   </p>
+                  {course.oneOnOne && (
+                    <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                      <CalendarDays className="w-4 h-4 text-rust" />
+                      {course.oneOnOne}
+                    </p>
+                  )}
                   <p className="flex items-center gap-2 text-sm text-ink-brown/70">
                     <Users className="w-4 h-4 text-rust" />
                     {course.audience}
@@ -235,6 +241,12 @@ const CoursePage = () => {
                       <span>{item}</span>
                     </li>
                   ))}
+                  {course.oneOnOne && (
+                    <li className="flex gap-3 text-ink-brown/80 leading-relaxed">
+                      <Check className="w-5 h-5 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
+                      <span>{course.oneOnOne}</span>
+                    </li>
+                  )}
                 </ul>
               </div>
               <div>
