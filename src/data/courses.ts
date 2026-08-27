@@ -64,14 +64,14 @@ export const courses: Course[] = [
     ],
     curriculum: [
       {
-        title: 'Class One — The Plant, the Guest, and a Safe Room',
+        title: 'Class One — Product Fundamentals and the Plant',
         description:
-          'Cannabis fundamentals you can explain in plain language: cannabinoids, terpenes, the entourage effect, and why two guests react differently to the same product. Plus the foundations of a safe service environment — cleanliness standards and harm-reduction basics every server must hold from day one.',
+          'Product fundamentals every server must know: flower, concentrates, edibles, and THC beverages. Then the plant science that makes those products matter — cannabinoids, terpenes, the entourage effect, and why two guests react differently to the same product.',
       },
       {
-        title: 'Class Two — Product Matching, Service, and Recovery',
+        title: 'Class Two — The Safe Room, Service, and Recovery',
         description:
-          'Reading intent, dosing conversations, and matching across flower, concentrates, edibles, and THC beverages. Introduction to the GUIDE method of guest communication, compliance awareness in legal settings, spotting over-consumption early, and techniques for bringing a guest back to comfort.',
+          'The foundations of a safe service environment — cleanliness standards and harm-reduction basics every server must hold from day one. Then reading intent, dosing conversations, and matching a guest to a product they will enjoy. Introduction to the GUIDE method of guest communication, compliance awareness in legal settings, spotting over-consumption early, and techniques for bringing a guest back to comfort.',
       },
     ],
     outcomes: [
