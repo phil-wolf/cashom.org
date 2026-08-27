@@ -17,7 +17,7 @@ const branchNotes: Record<string, string> = {
 const CertificationPathway = ({
   eyebrow = 'The Certification Pathway',
   title = 'How the path works',
-  subtitle = 'A four-tier ladder from your first day on the floor to full mastery of the cannabis experience. Start where you are — advance only as far as you want to go.',
+  subtitle = 'A three-tier ladder from your first day serving guests to full mastery of the cannabis experience. Start where you are — advance only as far as you want to go.',
   showFraming = true,
 }: CertificationPathwayProps) => {
   return (
@@ -35,7 +35,7 @@ const CertificationPathway = ({
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-4 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-4 items-stretch">
           {courses.map((tier, i) => (
             <div key={tier.slug} className="relative flex">
               <article className="flex flex-col w-full bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
@@ -160,8 +160,8 @@ const CertificationPathway = ({
 
         {showFraming && (
           <p className="mt-16 max-w-3xl mx-auto text-center text-lg text-ink-brown/70 leading-relaxed">
-            Lounge Attendant and Server are all most people ever need. Steward and CashoM are optional
-            advanced mastery, pursued by a dedicated few.
+            Server and Steward are all most people ever need. CashoM is optional advanced mastery,
+            pursued by a dedicated few.
           </p>
         )}
       </div>
