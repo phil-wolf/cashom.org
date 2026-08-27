@@ -25,6 +25,7 @@ export interface Course {
   paymentOptions?: PaymentOption[];
   paymentNote?: string;
   schedule?: ScheduleBlock;
+  oneOnOne?: string;
   format: string;
 
   audience: string;
@@ -98,6 +99,7 @@ export const courses: Course[] = [
     becomes: 'Certified Steward of Cannabis',
     price: '$798',
     format: '6 live classes, 105 minutes each',
+    oneOnOne: 'Two 30-minute one-on-one sessions to help you build your service',
     schedule: {
       label: 'Fall 2026 cohorts (all 1:00-2:45 PM MT):',
       items: [
