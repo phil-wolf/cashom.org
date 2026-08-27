@@ -58,7 +58,7 @@ export const courses: Course[] = [
     learn: [
       'Guest communication, with an introduction to the GUIDE method',
       'Explaining the plant to a curious guest',
-      "Matching a guest to a product they'll enjoy, across flower, concentrates, edibles, and THC beverages",
+      'Hospitality basics that ensure every guest is taken care of',
       'Recognizing over-consumption and basic harm-reduction',
       'Basic safety, cleanliness, and legal/compliance awareness',
     ],
@@ -66,7 +66,7 @@ export const courses: Course[] = [
       {
         title: 'Class One — Product Fundamentals and the Plant',
         description:
-          'Product fundamentals every server must know: flower, concentrates, edibles, and THC beverages. Then the plant science that makes those products matter — cannabinoids, terpenes, the entourage effect, and why two guests react differently to the same product.',
+          'Product fundamentals every server must know: flower, concentrates, edibles, and THC beverages. Basic product guidance.',
       },
       {
         title: 'Class Two — The Safe Room, Service, and Recovery',
