@@ -7,7 +7,6 @@ interface TierStepperProps {
 }
 
 const shortNames: Record<string, string> = {
-  'cannabis-lounge-attendant': 'Lounge Attendant',
   'certified-server-of-cannabis': 'Server',
   'certified-steward-of-cannabis': 'Steward',
   'cashom-level-1': 'CashoM',
