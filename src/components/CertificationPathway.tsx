@@ -38,7 +38,7 @@ const CertificationPathway = ({
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-4 items-stretch">
           {courses.map((tier, i) => (
             <div key={tier.slug} className="relative flex">
-              <article className="flex flex-col w-full bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
+              <article className="flex flex-col w-full h-full bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
                 <p className="text-rust text-[0.7rem] font-sans font-semibold tracking-[0.2em] uppercase">
                   {tier.tier}
                 </p>
@@ -94,7 +94,7 @@ const CertificationPathway = ({
                   {tier.audience}
                 </p>
 
-                <div className="mt-6 border-t border-ink-brown/10 pt-5">
+                <div className="mt-6 border-t border-ink-brown/10 pt-5 flex-1">
                   <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
                     What you'll learn
                   </p>
