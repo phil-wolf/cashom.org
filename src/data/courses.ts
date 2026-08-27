@@ -92,7 +92,7 @@ export const courses: Course[] = [
   },
   {
     slug: 'certified-steward-of-cannabis',
-    tier: 'Tier 3',
+    tier: 'Tier 2',
     status: 'Enrollment opening soon',
     title: 'Certified Steward of Cannabis',
     becomes: 'Certified Steward of Cannabis',
@@ -163,7 +163,7 @@ export const courses: Course[] = [
   },
   {
     slug: 'cashom-level-1',
-    tier: 'Tier 4',
+    tier: 'Tier 3',
     status: 'COHORT-BASED · TWELVE SEATS · APPLICATIONS OPEN',
     title: 'CashoM',
     becomes: 'CashoM — Level 1',
