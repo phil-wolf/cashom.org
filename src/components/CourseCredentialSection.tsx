@@ -1,7 +1,7 @@
 import { Check } from 'lucide-react';
 
 const content = {
-  server: {
+  'certified-server-of-cannabis': {
     eyebrow: 'THE CREDENTIAL',
     headline: 'Proof that travels with you',
     intro:
@@ -18,7 +18,7 @@ const content = {
     ],
     footnote: 'Valid two years. Renew anytime with a $49 assessment.',
   },
-  steward: {
+  'certified-steward-of-cannabis': {
     eyebrow: 'THE CREDENTIAL',
     headline: 'Proof that travels with you',
     intro:
