@@ -10,8 +10,8 @@ const CashomSection = () => {
           <div className="text-lg text-foreground/80 space-y-6 leading-relaxed">
             <p>
               A <strong className="text-primary font-semibold">CashoM</strong> is a Certified Server & Steward of Cannabis - 
-              a trained professional who understands the sacred nature of this plant and can guide others 
-              in conscious, intentional consumption.
+              a trained professional who understands the true nature of this plant and can guide others 
+              in intentional consumption.
             </p>
             
             <p>
