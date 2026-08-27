@@ -9,10 +9,6 @@ interface CertificationPathwayProps {
   showFraming?: boolean;
 }
 
-const branchNotes: Record<string, string> = {
-  'certified-steward-of-cannabis':
-    'Optional branch: Specialty Certifications (for chefs, yoga teachers, life coaches, bud bar operators, and more) — In development',
-};
 
 const CertificationPathway = ({
   eyebrow = 'The Certification Pathway',
@@ -137,11 +133,6 @@ const CertificationPathway = ({
                     </p>
                     <p className="font-serif text-lg font-semibold text-ink-brown">{tier.becomes}</p>
                   </div>
-                  {branchNotes[tier.slug] && (
-                    <p className="mt-4 rounded-lg bg-parchment-deep px-4 py-3 text-xs text-ink-brown/70 leading-relaxed">
-                      {branchNotes[tier.slug]}
-                    </p>
-                  )}
                   <Link
                     to={`/courses/${tier.slug}`}
                     className="mt-5 inline-flex w-full items-center justify-center rounded-full border border-rust text-rust font-sans text-sm font-semibold px-5 py-3 hover:bg-rust hover:text-white transition-colors"
