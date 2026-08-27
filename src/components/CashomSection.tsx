@@ -1,6 +1,6 @@
 
 const CashomSection = () => {
-  return <section className="py-20 bg-white">
+  return <section className="pt-20 pb-12 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
@@ -23,12 +23,6 @@ const CashomSection = () => {
             </p>
           </div>
 
-          <div className="pt-8">
-            <div className="inline-flex items-center space-x-4 bg-accent/20 px-8 py-4 rounded-lg">
-              <img src="/lovable-uploads/cdfc5b29-a363-40f3-a90f-3e4e147f1d88.png" alt="CashoM Cannabis Hospitality and Training logo" className="h-8 w-auto" />
-              <span className="text-primary font-serif font-semibold text-xl">Join the movement towards conscious cannabis education</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>;
