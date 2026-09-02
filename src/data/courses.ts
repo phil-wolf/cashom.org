@@ -62,11 +62,12 @@ export const courses: Course[] = [
     intro:
       'The gateway certification of the CashoM pathway and the credential most professionals need. In two live classes you learn to explain the plant, match a guest to a product they will genuinely enjoy, and hold the room safely.',
     learn: [
+      'The history of cannabis and the principle of reciprocity',
+      'Flower, concentrates, edibles, and THC beverages with a hospitality lens',
+      'How compound makeups shape the kind of high a guest has',
+      'Holding space for people who are high and the flow of cannabis service',
       'Guest communication, with an introduction to the GUIDE method',
-      'Explaining the plant to a curious guest',
-      'Hospitality basics that ensure every guest is taken care of',
-      'Recognizing over-consumption and basic harm-reduction',
-      'Basic safety, cleanliness, and legal/compliance awareness',
+      'Recognizing over-consumption, harm reduction, and legal compliance',
     ],
     curriculum: [
       {
