@@ -134,14 +134,14 @@ export const courses: Course[] = [
     ],
     curriculum: [
       {
-        title: 'The GUIDE Method in Full',
+        title: 'Advanced Guest Communication and the GUIDE Method',
         description:
-          'Move from introduction to fluency — leading a guest through intention, selection, consumption, and integration.',
+          'Move from introduction to fluency in the GUIDE method — the CashoM approach to guest communication — and make product recommendations that land.',
       },
       {
-        title: 'The Lens Framework — Introduction',
+        title: 'Vibe Setting and Holding Space',
         description:
-          'The CashoM approach to applying a cannabis experience to a pursuit: creativity, movement, connection, or rest.',
+          'Setting the room before anyone consumes, the seven check-ins that come first, holding space in real time, and bringing a guest\'s experience to a close.',
       },
       {
         title: 'Advanced Terpenes and Cannabinoids',
@@ -149,19 +149,19 @@ export const courses: Course[] = [
           'Deeper chemistry and sensory training so your recommendations hold up in front of a discerning room.',
       },
       {
-        title: 'Curating Events',
+        title: 'The Lens Framework — Introduction',
         description:
-          'Pacing, sequencing, room design, and dosing strategy for dinners, retreats, and larger gatherings.',
+          'How cannabis actually makes a person feel, why different bodies and minds respond differently, and an introduction to the CashoM approach to applying a high toward a pursuit.',
       },
       {
-        title: 'Harm Reduction and Addiction Awareness',
+        title: 'Beginner Connoisseurship',
         description:
-          'Recognizing dependency patterns, holding difficult conversations, and knowing your limits as a practitioner.',
+          'Telling quality cannabis from the rest, and presenting product the way a professional does.',
       },
       {
         title: 'Building Your Practice',
         description:
-          'Pricing, positioning, partnerships, and the first offers of a coaching or cannabis service business.',
+          'Curating events — pacing, sequencing, room design, and dosing strategy. Then pricing, positioning, partnerships, and the first offers of a coaching or cannabis service business.',
       },
     ],
     outcomes: [
