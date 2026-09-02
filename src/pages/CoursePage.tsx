@@ -241,6 +241,7 @@ const CoursePage = () => {
                       <span>{item}</span>
                     </li>
                   ))}
+                </ul>
               </div>
               <div>
                 <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-4">
