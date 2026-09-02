@@ -129,7 +129,7 @@ export const courses: Course[] = [
       'Take guests through the full GUIDE method of guest communication',
       'Setting the vibe and holding space for people who are high',
       'Advanced terpene and cannabinoid knowledge',
-      'Introduction to the Lens Framework',
+      'Introduction to the Lens Framework — applying your high to your pursuits in life',
       'Beginner connoisseurship — assessing quality and presenting product',
       'Pacing, sequencing, and curating larger events',
       'Introduction to building a coaching or service business',
@@ -154,7 +154,7 @@ export const courses: Course[] = [
       {
         title: 'The Lens Framework — Introduction',
         description:
-          'How cannabis actually makes a person feel, why different bodies and minds respond differently, and an introduction to the CashoM approach to applying a high toward a pursuit.',
+          'How cannabis actually makes a person feel, why different bodies and minds respond differently, and an introduction to applying your high to your pursuits in life.',
       },
       {
         title: 'Beginner Connoisseurship',
