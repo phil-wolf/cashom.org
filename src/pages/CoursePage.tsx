@@ -148,19 +148,21 @@ const CoursePage = () => {
                   </div>
                 </div>
               ) : (
-                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 mb-10">
-                  <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
-                  <p className="flex items-center gap-2 text-sm text-ink-brown/70">
-                    <Clock className="w-4 h-4 text-rust" />
-                    {course.format}
-                  </p>
-                  {course.oneOnOne && (
+                <div className="mb-10">
+                  <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+                    <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
                     <p className="flex items-center gap-2 text-sm text-ink-brown/70">
-                      <CalendarDays className="w-4 h-4 text-rust" />
-                      {course.oneOnOne}
+                      <Clock className="w-4 h-4 text-rust" />
+                      {course.format}
                     </p>
-                  )}
-                  <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                    {course.oneOnOne && (
+                      <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                        <CalendarDays className="w-4 h-4 text-rust" />
+                        {course.oneOnOne}
+                      </p>
+                    )}
+                  </div>
+                  <p className="mt-4 flex items-center gap-2 text-sm text-ink-brown/70">
                     <Users className="w-4 h-4 text-rust" />
                     {course.audience}
                   </p>
