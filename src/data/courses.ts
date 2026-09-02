@@ -81,7 +81,6 @@ export const courses: Course[] = [
       },
       {
         title: 'Class Two — Holding the Room',
-        description: 'Module 02',
         items: [
           'Holding space for people who are high',
           'The flow of cannabis service',
