@@ -121,7 +121,8 @@ export const courses: Course[] = [
       note: '2027 calendar coming soon',
     },
 
-    audience: 'Professionals ready to guide guests, curate events, and build a coaching practice',
+    audience:
+      'Professionals ready to guide guests, curate events, add cannabis to an existing service, or lead a retail team',
     intro:
       'For professionals who want to lead the experience rather than support it. Stewards curate events, guide groups, and begin building a coaching or hospitality practice of their own.',
     learn: [
