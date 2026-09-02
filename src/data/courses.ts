@@ -31,7 +31,7 @@ export interface Course {
   audience: string;
   intro: string;
   learn: string[];
-  curriculum: { title: string; description: string }[];
+  curriculum: { title: string; description: string; items?: string[] }[];
   outcomes: string[];
   seoTitle: string;
   seoDescription: string;
