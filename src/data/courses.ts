@@ -31,7 +31,7 @@ export interface Course {
   audience: string;
   intro: string;
   learn: string[];
-  curriculum: { title: string; description: string }[];
+  curriculum: { title: string; description?: string; items?: string[] }[];
   outcomes: string[];
   seoTitle: string;
   seoDescription: string;
@@ -70,14 +70,25 @@ export const courses: Course[] = [
     ],
     curriculum: [
       {
-        title: 'Class One — Product Fundamentals and the Plant',
-        description:
-          'Product fundamentals every server must know: flower, concentrates, edibles, and THC beverages. Basic product guidance.',
+        title: 'Class One — Roots, Products, and the Law',
+        items: [
+          'History of cannabis',
+          'The principle of reciprocity',
+          'Flower, concentrates, edibles, and THC beverages with a hospitality lens',
+          'Introduction to compound makeups and how they shape the high',
+          'Compliance awareness in legal settings',
+        ],
       },
       {
-        title: 'Class Two — The Safe Room, Service, and Recovery',
-        description:
-          'The foundations of a safe service environment — cleanliness standards and harm-reduction basics every server must hold from day one. Then reading intent, dosing conversations, and matching a guest to a product they will enjoy. Introduction to the GUIDE method of guest communication, compliance awareness in legal settings, spotting over-consumption early, and techniques for bringing a guest back to comfort.',
+        title: 'Class Two — Holding the Room',
+        items: [
+          'Holding space for people who are high',
+          'The flow of cannabis service',
+          'Guest communication basics',
+          'Introduction to the GUIDE method',
+          'Reading intent and the dosing conversation',
+          'Harm reduction: recognizing over-consumption and bringing a guest back to comfort',
+        ],
       },
     ],
     outcomes: [

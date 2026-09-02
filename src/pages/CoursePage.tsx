@@ -351,19 +351,38 @@ const CoursePage = () => {
                 </h2>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-6 items-stretch">
                 {course.curriculum.map((module, i) => (
                   <article
                     key={module.title}
-                    className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8"
+                    className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8 h-full flex flex-col"
                   >
                     <p className="text-rust text-[0.7rem] font-sans font-semibold tracking-[0.2em] uppercase mb-3">
                       Module {String(i + 1).padStart(2, '0')}
                     </p>
-                    <h3 className="text-xl font-serif font-bold text-ink-brown mb-3 leading-snug">
+                    <h3 className="text-xl font-serif font-bold text-ink-brown mb-4 leading-snug">
                       {module.title}
                     </h3>
-                    <p className="text-sm text-ink-brown/70 leading-relaxed">{module.description}</p>
+                    {module.items ? (
+                      <ul className="space-y-3">
+                        {module.items.map((item) => (
+                          <li
+                            key={item}
+                            className="flex gap-3 text-sm text-ink-brown/80 leading-relaxed"
+                          >
+                            <Check
+                              className="w-5 h-5 mt-0.5 shrink-0 text-rust"
+                              strokeWidth={3}
+                            />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="text-sm text-ink-brown/70 leading-relaxed">
+                        {module.description}
+                      </p>
+                    )}
                   </article>
                 ))}
               </div>
