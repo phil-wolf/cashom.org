@@ -65,7 +65,7 @@ export const courses: Course[] = [
       'The history of cannabis and the principle of reciprocity',
       'Flower, concentrates, edibles, and THC beverages with a hospitality lens',
       'How compound makeups shape the kind of high a guest has',
-      'Holding space for people who are high and the flow of cannabis service',
+      'Introduction to holding space for people who are high and the flow of cannabis service',
       'Guest communication, with an introduction to the GUIDE method',
       'Recognizing over-consumption, harm reduction, and legal compliance',
     ],
