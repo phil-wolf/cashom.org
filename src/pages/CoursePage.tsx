@@ -241,13 +241,6 @@ const CoursePage = () => {
                       <span>{item}</span>
                     </li>
                   ))}
-                  {course.oneOnOne && (
-                    <li className="flex gap-3 text-ink-brown/80 leading-relaxed">
-                      <Check className="w-5 h-5 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
-                      <span>{course.oneOnOne}</span>
-                    </li>
-                  )}
-                </ul>
               </div>
               <div>
                 <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-4">
