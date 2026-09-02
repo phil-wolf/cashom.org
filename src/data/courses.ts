@@ -125,12 +125,14 @@ export const courses: Course[] = [
     intro:
       'For professionals who want to lead the experience rather than support it. Stewards curate events, guide groups, and begin building a coaching or hospitality practice of their own.',
     learn: [
-      'Take guests through the full GUIDE method',
-      'Introduction to the Lens Framework',
+      'Take guests through the full GUIDE method of guest communication',
+      'Setting the vibe and holding space for people who are high',
       'Advanced terpene and cannabinoid knowledge',
-      'Beginner connoisseurship',
+      'Introduction to the Lens Framework',
+      'Beginner connoisseurship — assessing quality and presenting product',
       'Pacing, sequencing, and curating larger events',
       'Introduction to building a coaching or service business',
+      'Two 30-minute one-on-one sessions to help you build your service',
     ],
     curriculum: [
       {

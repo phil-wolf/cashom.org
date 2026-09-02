@@ -105,9 +105,6 @@ const CertificationPathway = ({
                 </div>
 
                 <div className="mt-auto pt-6">
-                  {tier.oneOnOne && (
-                    <p className="text-xs text-ink-brown/60 mb-1">{tier.oneOnOne}</p>
-                  )}
                   <p className="text-xs text-ink-brown/60 mb-1">{tier.format}</p>
                   {tier.schedule && (
                     <div className="mb-4">
