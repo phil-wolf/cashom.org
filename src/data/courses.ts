@@ -154,7 +154,7 @@ export const courses: Course[] = [
       {
         title: 'The Lens Framework — Introduction',
         description:
-          'How cannabis actually makes a person feel, why different bodies and minds respond differently, and an introduction to the CashoM approach to applying a high toward a pursuit.',
+          'How cannabis actually makes a person feel, why different bodies and minds respond differently, and an introduction to applying your high to your pursuits in life.',
       },
       {
         title: 'Beginner Connoisseurship',
