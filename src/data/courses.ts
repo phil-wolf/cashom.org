@@ -32,6 +32,8 @@ export interface Course {
   intro: string;
   learn: string[];
   curriculum: { title: string; description?: string; items?: string[] }[];
+  curriculumHeading?: string;
+  curriculumSubheading?: string;
   outcomes: string[];
   seoTitle: string;
   seoDescription: string;
@@ -71,7 +73,7 @@ export const courses: Course[] = [
     ],
     curriculum: [
       {
-        title: 'Class One — Roots, Products, and the Law',
+        title: 'Cannabis and Product Knowledge',
         items: [
           'History of cannabis',
           'The principle of reciprocity',
