@@ -343,8 +343,13 @@ const CoursePage = () => {
                   Curriculum
                 </p>
                 <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown">
-                  What the program covers
+                  {course.curriculumHeading ?? 'What the program covers'}
                 </h2>
+                {course.curriculumSubheading && (
+                  <p className="mt-4 text-lg text-ink-brown/75 leading-relaxed">
+                    {course.curriculumSubheading}
+                  </p>
+                )}
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 items-stretch">
