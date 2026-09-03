@@ -83,7 +83,7 @@ export const courses: Course[] = [
         ],
       },
       {
-        title: 'Class Two — Holding the Room',
+        title: 'Guest Service and Safety',
         items: [
           'Holding space for people who are high',
           'The flow of cannabis service',
@@ -94,6 +94,9 @@ export const courses: Course[] = [
         ],
       },
     ],
+    curriculumHeading: 'Cannabis Hospitality Foundations',
+    curriculumSubheading:
+      'Two live classes. Complete both and you become a Certified Server of Cannabis.',
     outcomes: [
       'Serve cannabis guests with the same confidence a sommelier brings to a wine list',
       'Give responsible, accurate product guidance in any legal setting',
