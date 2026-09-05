@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import certificateAsset from '@/assets/cashom-certificate.png.asset.json';
 
 const bullets = [
   'Named credential holder and unique recipient ID',
