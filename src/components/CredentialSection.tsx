@@ -1,4 +1,5 @@
 import { Check } from 'lucide-react';
+import certificateAsset from '@/assets/cashom-certificate.png.asset.json';
 
 const bullets = [
   'Named credential holder and unique recipient ID',
@@ -16,8 +17,8 @@ const CredentialSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <img
-              src="/lovable-uploads/cashom-certificate.jpg"
-              alt="Sample CashoM Cannabis Hospitality Stewardship Program certificate of completion signed by Philip Wolf"
+              src={certificateAsset.url}
+              alt="Sample CashoM Certified Steward of Cannabis certificate of completion signed by Philip Wolf"
               width={2000}
               height={1125}
               loading="lazy"
