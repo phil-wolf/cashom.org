@@ -148,45 +148,47 @@ const CoursePage = () => {
                   </div>
                 </div>
               ) : (
-                <div className="mb-10">
-                  <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
-                    <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
-                    <p className="flex items-center gap-2 text-sm text-ink-brown/70">
-                      <Clock className="w-4 h-4 text-rust" />
-                      {course.format}
-                    </p>
-                    {course.oneOnOne && (
+                <>
+                  <div className="mb-10">
+                    <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+                      <p className="text-3xl font-serif font-bold text-ink-brown">{course.price}</p>
                       <p className="flex items-center gap-2 text-sm text-ink-brown/70">
-                        <CalendarDays className="w-4 h-4 text-rust" />
-                        {course.oneOnOne}
+                        <Clock className="w-4 h-4 text-rust" />
+                        {course.format}
                       </p>
-                    )}
-                  </div>
-                  <p className="mt-4 flex items-center gap-2 text-sm text-ink-brown/70">
-                    <Users className="w-4 h-4 text-rust" />
-                    {course.audience}
-                  </p>
-                </div>
-
-                {course.slug === 'certified-server-of-cannabis' && course.schedule && (
-                  <div className="mt-8 max-w-xl rounded-lg bg-parchment-deep/50 border border-ink-brown/10 p-5">
-                    <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
-                      {course.schedule.label}
+                      {course.oneOnOne && (
+                        <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                          <CalendarDays className="w-4 h-4 text-rust" />
+                          {course.oneOnOne}
+                        </p>
+                      )}
+                    </div>
+                    <p className="mt-4 flex items-center gap-2 text-sm text-ink-brown/70">
+                      <Users className="w-4 h-4 text-rust" />
+                      {course.audience}
                     </p>
-                    <ul className="space-y-1 mb-3">
-                      {course.schedule.items.map((item) => (
-                        <li key={item} className="text-sm text-ink-brown/80 leading-snug">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    {course.schedule.note && (
-                      <p className="text-xs text-rust font-medium leading-snug">
-                        {course.schedule.note}
-                      </p>
-                    )}
                   </div>
-                )}
+
+                  {course.slug === 'certified-server-of-cannabis' && course.schedule && (
+                    <div className="max-w-xl rounded-lg bg-parchment-deep/50 border border-ink-brown/10 p-5">
+                      <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
+                        {course.schedule.label}
+                      </p>
+                      <ul className="space-y-1 mb-3">
+                        {course.schedule.items.map((item) => (
+                          <li key={item} className="text-sm text-ink-brown/80 leading-snug">
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                      {course.schedule.note && (
+                        <p className="text-xs text-rust font-medium leading-snug">
+                          {course.schedule.note}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </>
               )}
 
               {course.comingSoon ? (
