@@ -170,7 +170,7 @@ const CoursePage = () => {
                   </div>
 
                   {course.slug === 'certified-server-of-cannabis' && course.schedule && (
-                    <div className="max-w-xl rounded-lg bg-parchment-deep/50 border border-ink-brown/10 p-5">
+                    <div className="max-w-xl rounded-lg bg-parchment-deep/50 border border-ink-brown/10 p-5 mb-8">
                       <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
                         {course.schedule.label}
                       </p>
