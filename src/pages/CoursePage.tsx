@@ -167,6 +167,26 @@ const CoursePage = () => {
                     {course.audience}
                   </p>
                 </div>
+
+                {course.slug === 'certified-server-of-cannabis' && course.schedule && (
+                  <div className="mt-8 max-w-xl rounded-lg bg-parchment-deep/50 border border-ink-brown/10 p-5">
+                    <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
+                      {course.schedule.label}
+                    </p>
+                    <ul className="space-y-1 mb-3">
+                      {course.schedule.items.map((item) => (
+                        <li key={item} className="text-sm text-ink-brown/80 leading-snug">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                    {course.schedule.note && (
+                      <p className="text-xs text-rust font-medium leading-snug">
+                        {course.schedule.note}
+                      </p>
+                    )}
+                  </div>
+                )}
               )}
 
               {course.comingSoon ? (

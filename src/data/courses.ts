@@ -62,7 +62,7 @@ export const courses: Course[] = [
 
     audience: 'Hospitality staff serving cannabis guests directly',
     intro:
-      'The gateway certification of the CashoM pathway and the credential most professionals need. In two live classes you learn to explain the plant, match a guest to a product they will genuinely enjoy, and hold the room safely.',
+      'The gateway certification of the CashoM pathway and the credential most professionals need. In two live classes you learn the plant and the products you\'re serving, how to hold space for people who are high, and how to guide the flow of cannabis service safely.',
     learn: [
       'The history of cannabis and the principle of reciprocity',
       'Flower, concentrates, edibles, and THC beverages with a hospitality lens',
