@@ -60,7 +60,7 @@ export const courses: Course[] = [
       note: '2027 calendar coming soon',
     },
 
-    audience: 'Hospitality staff serving cannabis guests directly',
+    audience: 'Hospitality staff, and anyone bringing cannabis into the work they already do',
     intro:
       'The gateway certification of the CashoM pathway. Serving someone who is high is its own skill, and the industry has never taught it. Bad service interrupts a guest\'s high; good service supports it. Two live classes in the ethics of this work, what you\'re serving and how it affects people, and how to offer service that holds space for people who are high. This is the difference between handing someone a product and hosting an experience — and it sets a standard the industry doesn\'t currently have.',
     learn: [
