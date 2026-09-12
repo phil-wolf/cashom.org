@@ -1,5 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
-import { ArrowLeft, Check, Clock, Users, CalendarDays } from 'lucide-react';
+import { ArrowLeft, Check, Clock, Users, CalendarDays, FileCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Seo from '@/components/Seo';
@@ -160,6 +160,12 @@ const CoursePage = () => {
                         <p className="flex items-center gap-2 text-sm text-ink-brown/70">
                           <CalendarDays className="w-4 h-4 text-rust" />
                           {course.oneOnOne}
+                        </p>
+                      )}
+                      {course.finalProject && (
+                        <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                          <FileCheck className="w-4 h-4 text-rust" />
+                          {course.finalProject}
                         </p>
                       )}
                     </div>
