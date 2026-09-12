@@ -75,6 +75,20 @@ const CourseCredentialSection = ({ courseSlug }: CourseCredentialSectionProps) =
             <p className="mt-4 text-sm text-ink-brown/60">
               Sample certificate — issued and verified through Accredible.
             </p>
+
+            <div className="mt-8 flex flex-col items-center">
+              <img
+                src={badgeAsset.url}
+                alt="Sample CashoM digital badge for LinkedIn and email signatures"
+                width={400}
+                height={400}
+                loading="lazy"
+                className="w-full max-w-[180px] rounded-xl border border-ink-brown/10 shadow-md bg-background"
+              />
+              <p className="mt-3 text-sm text-center text-ink-brown/70 max-w-[260px]">
+                Add the badge to LinkedIn, your website, proposals, and email signature.
+              </p>
+            </div>
           </div>
 
           <div className="max-w-3xl">
