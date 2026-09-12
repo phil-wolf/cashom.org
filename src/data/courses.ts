@@ -118,6 +118,7 @@ export const courses: Course[] = [
     price: '$798',
     format: '6 live classes, 105 minutes each',
     oneOnOne: 'Two 30-minute one-on-one sessions to help you build your service',
+    finalProject: "Your final project: a cannabis event you design, with Philip's guidance and assessment",
     schedule: {
       label: 'Fall 2026 cohorts (all 1:00-2:45 PM MT):',
       items: [
