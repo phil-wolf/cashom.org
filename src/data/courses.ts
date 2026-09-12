@@ -26,6 +26,7 @@ export interface Course {
   paymentNote?: string;
   schedule?: ScheduleBlock;
   oneOnOne?: string;
+  finalProject?: string;
   format: string;
 
   audience: string;
