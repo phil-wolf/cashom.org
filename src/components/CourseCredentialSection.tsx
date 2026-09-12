@@ -19,6 +19,10 @@ const content = {
         lead: 'Guests trust you faster.',
         body: "A certified server answers the question every guest is quietly asking: does this person actually know what they're doing?",
       },
+      {
+        lead: 'It goes where you go.',
+        body: 'Dispensary, lounge, private event, on-premise — the credential follows the work, not the employer.',
+      },
     ],
     footnote: 'Valid two years. Renew anytime with a $49 assessment.',
   },
