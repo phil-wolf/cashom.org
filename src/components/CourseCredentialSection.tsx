@@ -1,6 +1,8 @@
 import { Check } from 'lucide-react';
-import certificateAsset from '@/assets/cashom-certificate.png.asset.json';
-import badgeAsset from '@/assets/cashom-badge.png.asset.json';
+import serverCertificateAsset from '@/assets/server-certificate.jpg.asset.json';
+import serverBadgeAsset from '@/assets/server-badge.png.asset.json';
+import stewardCertificateAsset from '@/assets/cashom-certificate.png.asset.json';
+import stewardBadgeAsset from '@/assets/cashom-badge.png.asset.json';
 
 const content = {
   'certified-server-of-cannabis': {
