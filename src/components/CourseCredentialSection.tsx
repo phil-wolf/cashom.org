@@ -61,30 +61,46 @@ const CourseCredentialSection = ({ courseSlug }: CourseCredentialSectionProps) =
   return (
     <section className="py-16 bg-parchment border-t border-ink-brown/10">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl">
-          <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-4">
-            {data.eyebrow}
-          </p>
-          <h2 className="text-3xl font-serif font-bold text-ink-brown mb-5">
-            {data.headline}
-          </h2>
-          <p className="text-lg text-ink-brown/75 leading-relaxed mb-8">
-            {data.intro}
-          </p>
-          <ul className="space-y-4">
-            {data.benefits.map((benefit) => (
-              <li key={benefit.lead} className="flex gap-3 text-ink-brown/80 leading-relaxed">
-                <Check className="w-5 h-5 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
-                <span>
-                  <span className="font-bold text-ink-brown">{benefit.lead}</span>{' '}
-                  {benefit.body}
-                </span>
-              </li>
-            ))}
-          </ul>
-          <p className="mt-8 text-sm italic text-ink-brown/60">
-            {data.footnote}
-          </p>
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div>
+            <img
+              src={certificateAsset.url}
+              alt="Sample CashoM Certified Steward of Cannabis certificate of completion signed by Philip Wolf"
+              width={2000}
+              height={1125}
+              loading="lazy"
+              className="w-full rounded-2xl border border-ink-brown/10 shadow-lg bg-background"
+            />
+            <p className="mt-4 text-sm text-ink-brown/60">
+              Sample certificate — issued and verified through Accredible.
+            </p>
+          </div>
+
+          <div className="max-w-3xl">
+            <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-4">
+              {data.eyebrow}
+            </p>
+            <h2 className="text-3xl font-serif font-bold text-ink-brown mb-5">
+              {data.headline}
+            </h2>
+            <p className="text-lg text-ink-brown/75 leading-relaxed mb-8">
+              {data.intro}
+            </p>
+            <ul className="space-y-4">
+              {data.benefits.map((benefit) => (
+                <li key={benefit.lead} className="flex gap-3 text-ink-brown/80 leading-relaxed">
+                  <Check className="w-5 h-5 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
+                  <span>
+                    <span className="font-bold text-ink-brown">{benefit.lead}</span>{' '}
+                    {benefit.body}
+                  </span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-8 text-sm italic text-ink-brown/60">
+              {data.footnote}
+            </p>
+          </div>
         </div>
       </div>
     </section>
