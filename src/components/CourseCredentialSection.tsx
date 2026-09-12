@@ -88,6 +88,9 @@ const CourseCredentialSection = ({ courseSlug }: CourseCredentialSectionProps) =
             <p className="mt-4 text-sm text-ink-brown/60">
               Sample certificate — issued and verified through Accredible.
             </p>
+            <p className="mt-2 text-sm text-ink-brown/60">
+              Yours to share, print, and display — verified through Accredible.
+            </p>
 
             <div className="mt-8 flex flex-col items-center">
               <img
