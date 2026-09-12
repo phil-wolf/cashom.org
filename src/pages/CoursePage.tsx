@@ -162,6 +162,12 @@ const CoursePage = () => {
                           {course.oneOnOne}
                         </p>
                       )}
+                      {course.finalProject && (
+                        <p className="flex items-center gap-2 text-sm text-ink-brown/70">
+                          <FileCheck className="w-4 h-4 text-rust" />
+                          {course.finalProject}
+                        </p>
+                      )}
                     </div>
                     <p className="mt-4 flex items-center gap-2 text-sm text-ink-brown/70">
                       <Users className="w-4 h-4 text-rust" />
