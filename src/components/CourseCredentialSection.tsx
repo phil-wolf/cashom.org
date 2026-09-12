@@ -61,6 +61,17 @@ const CourseCredentialSection = ({ courseSlug }: CourseCredentialSectionProps) =
   const data = content[courseSlug];
   if (!data) return null;
 
+  const certificateAsset =
+    courseSlug === 'certified-server-of-cannabis'
+      ? serverCertificateAsset
+      : stewardCertificateAsset;
+  const badgeAsset =
+    courseSlug === 'certified-server-of-cannabis' ? serverBadgeAsset : stewardBadgeAsset;
+  const certificateAlt =
+    courseSlug === 'certified-server-of-cannabis'
+      ? 'Sample CashoM Certified Server of Cannabis certificate of completion signed by Philip Wolf'
+      : 'Sample CashoM Certified Steward of Cannabis certificate of completion signed by Philip Wolf';
+
   return (
     <section className="py-16 bg-parchment border-t border-ink-brown/10">
       <div className="container mx-auto px-4">
@@ -68,7 +79,7 @@ const CourseCredentialSection = ({ courseSlug }: CourseCredentialSectionProps) =
           <div>
             <img
               src={certificateAsset.url}
-              alt="Sample CashoM Certified Steward of Cannabis certificate of completion signed by Philip Wolf"
+              alt={certificateAlt}
               width={2000}
               height={1125}
               loading="lazy"
