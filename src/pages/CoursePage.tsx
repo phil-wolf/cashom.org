@@ -160,6 +160,9 @@ const CoursePage = () => {
                         <p className="flex items-center gap-2 text-sm text-ink-brown/70">
                           <CalendarDays className="w-4 h-4 text-rust" />
                           {course.oneOnOne}
+                          <span className="inline-flex rounded-full bg-rust/10 text-rust text-[0.65rem] font-semibold tracking-[0.12em] uppercase px-2 py-0.5">
+                            Included
+                          </span>
                         </p>
                       )}
                       {course.finalProject && (
