@@ -85,9 +85,6 @@ const CourseCredentialSection = ({ courseSlug }: CourseCredentialSectionProps) =
               loading="lazy"
               className="w-full rounded-2xl border border-ink-brown/10 shadow-lg bg-background"
             />
-            <p className="mt-4 text-sm text-ink-brown/60">
-              Issued and verified through Accredible.
-            </p>
 
             <div className="mt-8 flex flex-col items-center">
               <img
