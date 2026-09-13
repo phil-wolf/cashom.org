@@ -131,7 +131,7 @@ export const courses: Course[] = [
     audience:
       'Professionals ready to guide guests, curate events, add cannabis to an existing service, or lead a retail team',
     intro:
-      'For professionals who want to guide the experience. Advanced service keeps a guest in their high. Guiding consumption is an art — using compounds with enough precision to shape the mood an event calls for. Steward is where you go beyond holding space for a person to holding space for an entire room. You\'ll leave with the business foundations to build a cannabis events company, and to expand this work into a coaching practice or a wellness service of your own.',
+      'For professionals who want to guide the experience with cannabis. Advanced service keeps a guest in their high. Guiding consumption is an art — using compounds with enough precision to shape the mood an event calls for. Steward is where you go beyond holding space for a person to holding space for an entire room. You\'ll leave with the business foundations to build a cannabis events company, and to expand this work into a coaching practice or a wellness service of your own.',
     learn: [
       'Take guests through the full GUIDE method of guest communication',
       'Setting the vibe and holding space for people who are high',
