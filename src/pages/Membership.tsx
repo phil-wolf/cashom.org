@@ -150,12 +150,13 @@ const Membership = () => {
               </h2>
               <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
                 <p>
-                  Cannabis hospitality is still being built. The people doing the work deserve
-                  real training, real recognition, and each other.
+                  We're doing everything we can to grow the cannabis hospitality space, because
+                  we believe in the impact it can have on our society.
                 </p>
                 <p>
-                  This community exists to raise the standard of the space and to put the people
-                  raising it in the same room.
+                  If you're committed to this work, we want to support you however we can. This
+                  community isn't perfect yet. We're striving for it, and we'd rather say that
+                  than pretend we are there.
                 </p>
               </div>
             </div>
