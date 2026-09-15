@@ -75,6 +75,12 @@ const Header = () => {
               All Courses
             </button>
             <button 
+              onClick={() => navigate('/membership')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Membership
+            </button>
+            <button 
               onClick={handleContactClick}
               className="text-foreground hover:text-primary transition-colors"
             >
@@ -135,6 +141,12 @@ const Header = () => {
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
                 All Courses
+              </button>
+              <button 
+                onClick={() => { navigate('/membership'); setIsMobileMenuOpen(false); }}
+                className="text-foreground hover:text-primary transition-colors text-left"
+              >
+                Membership
               </button>
               <button 
                 onClick={handleContactClick}
