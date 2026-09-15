@@ -153,41 +153,37 @@ const Membership = () => {
           </div>
         </section>
 
-        {/* 2. Why this exists */}
+        {/* 2. Why this exists + How it works — side by side */}
         <section className="pb-20 md:pb-28">
           <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
-                Why this exists
-              </h2>
-              <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
-                <p>
-                  We're doing everything we can to grow the cannabis hospitality space, because
-                  we believe in the impact it can have on our society.
-                </p>
-                <p>
-                  If you're committed to this work, we want to support you however we can. This
-                  community isn't perfect yet. We're striving for it, and we'd rather say that
-                  than pretend we are there.
-                </p>
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 md:divide-x md:divide-ink-brown/10">
+              <div className="md:pr-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
+                  Why this exists
+                </h2>
+                <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
+                  <p>
+                    We're doing everything we can to grow the cannabis hospitality space, because
+                    we believe in the impact it can have on our society.
+                  </p>
+                  <p>
+                    If you're committed to this work, we want to support you however we can. This
+                    community isn't perfect yet. We're striving for it, and we'd rather say that
+                    than pretend we are there.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 3. How it works */}
-        <section className="pb-20 md:pb-28">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
-                How it works
-              </h2>
-              <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
-                <p>Take a CashoM course and you're in.</p>
-                <p>
-                  The further you go, the more opens up — the room, the recognition, and
-                  eventually the right to teach it yourself.
-                </p>
+              <div className="md:pl-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
+                  How it works
+                </h2>
+                <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
+                  <p>Take a CashoM course and you're in.</p>
+                  <p>
+                    The further you go, the more opens up — the room, the recognition, and
+                    eventually the right to teach it yourself.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
