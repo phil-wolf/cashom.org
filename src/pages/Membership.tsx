@@ -301,7 +301,7 @@ const Membership = () => {
                             <td className="p-4 md:p-5 text-center"><Cell value={row.cashom} /></td>
                           </tr>
                         ))}
-                      </>
+                      </Fragment>
                     ))}
                   </tbody>
                 </table>
