@@ -2,7 +2,7 @@ import Seo from '@/components/Seo';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Fragment } from 'react';
-import { Check, Minus, ArrowRight } from 'lucide-react';
+import { Check, Minus, ArrowRight, ArrowDown } from 'lucide-react';
 
 type TierKey = 'server' | 'steward' | 'cashom';
 
@@ -15,12 +15,69 @@ interface BenefitRow {
 
 interface BenefitGroup {
   title: string;
+  description: string;
   rows: BenefitRow[];
 }
+
+interface AccessGroup {
+  title: string;
+  description: string;
+  items: string[];
+}
+
+// Access groups mirror the benefit matrix exactly (no prices here).
+const accessGroups: AccessGroup[] = [
+  {
+    title: 'Community',
+    description: 'A circle of people doing the same work, and a place to be part of it.',
+    items: [
+      'Circle member space',
+      'Monthly members call',
+      'Featured on the monthly call',
+      'In-person meetups (potential during conferences)',
+      'Private cohort space',
+      'Monthly one-on-one with Philip',
+    ],
+  },
+  {
+    title: 'Learning',
+    description: 'Sessions, courses, and frameworks that deepen the craft.',
+    items: [
+      'Session library',
+      'Server and Steward courses included',
+      'Full Lens Framework',
+      'Boulder retreat (travel not covered)',
+    ],
+  },
+  {
+    title: 'Recognition',
+    description: 'Credentials and visibility that follow you wherever you work.',
+    items: [
+      'Digital badge and credential use',
+      'Public member directory',
+      'Guest Substack feature (by invitation)',
+      'Webinar feature (by invitation)',
+      'Partner spotlights',
+      'Conferral and lapel pin',
+      'First look at guiding work',
+    ],
+  },
+  {
+    title: 'Opportunities',
+    description: 'Room to teach, lead, and build beyond your own practice.',
+    items: [
+      'Teaching and certifying rights',
+      'Cultivating Spirits licensing potential',
+      'Co-led webinars and live events',
+      'Return to the retreat as teacher',
+    ],
+  },
+];
 
 const benefitGroups: BenefitGroup[] = [
   {
     title: 'Community',
+    description: '',
     rows: [
       { label: 'Circle member space', server: true, steward: true, cashom: true },
       { label: 'Monthly members call', server: true, steward: true, cashom: true },
@@ -32,6 +89,7 @@ const benefitGroups: BenefitGroup[] = [
   },
   {
     title: 'Learning',
+    description: '',
     rows: [
       { label: 'Session library', server: true, steward: true, cashom: true },
       { label: 'Server and Steward courses included', server: false, steward: false, cashom: true },
@@ -41,6 +99,7 @@ const benefitGroups: BenefitGroup[] = [
   },
   {
     title: 'Recognition',
+    description: '',
     rows: [
       { label: 'Digital badge and credential use', server: true, steward: true, cashom: true },
       { label: 'Public member directory', server: false, steward: true, cashom: true },
@@ -53,6 +112,7 @@ const benefitGroups: BenefitGroup[] = [
   },
   {
     title: 'Opportunities',
+    description: '',
     rows: [
       { label: 'Teaching and certifying rights', server: false, steward: false, cashom: true },
       { label: 'Cultivating Spirits licensing potential', server: false, steward: false, cashom: true },
@@ -62,65 +122,39 @@ const benefitGroups: BenefitGroup[] = [
   },
 ];
 
-interface TierCard {
+interface Tier {
   key: TierKey;
   name: string;
   price: string;
-  audience: string;
-  benefits: string[];
-  footer: string;
-  featured?: boolean;
+  description: string;
+  opens: string;
 }
 
-const tierCards: TierCard[] = [
+const tiers: Tier[] = [
   {
     key: 'server',
     name: 'Server',
     price: '$149',
-    audience: 'For anyone bringing cannabis into the work they already do.',
-    benefits: [
-      'Certified Server of Cannabis course',
-      'Circle member space',
-      'Monthly members call',
-      'Session library',
-      'Digital badge and credential use',
-    ],
-    footer: 'Founding rate on Steward',
+    description: 'For anyone bringing cannabis into the work they already do.',
+    opens: 'Completing this certification opens the Circle, the monthly call, and the session library.',
   },
   {
     key: 'steward',
     name: 'Steward',
     price: '$798',
-    audience: 'For professionals ready to guide guests and curate experiences.',
-    benefits: [
-      'Certified Steward of Cannabis course',
-      'Two one-on-one sessions with Philip',
-      'Featured on the monthly call',
-      'Public member directory',
-      'Webinar features and partner spotlights',
-      'In-person meetups',
-    ],
-    footer: 'Full tuition credit to the Initiation',
+    description: 'For professionals ready to guide guests and curate experiences.',
+    opens: 'Stewardship opens the member directory, webinars, partner spotlights, and in-person meetups.',
   },
   {
     key: 'cashom',
     name: 'CashoM',
     price: '$9,500',
-    audience: 'For the few who want to master the craft and teach it.',
-    benefits: [
-      'The year-long Initiation',
-      'Full Lens Framework',
-      'Boulder retreat',
-      'Monthly one-on-one with Philip',
-      'Teaching and certifying rights',
-      'Conferral and lapel pin',
-    ],
-    footer: 'You hold the standard and teach the tiers below',
-    featured: true,
+    description: 'For the few who want to master the craft and teach it.',
+    opens: 'The Initiation opens the private cohort, one-on-one guidance with Philip, the retreat, and teaching rights.',
   },
 ];
 
-const ladder = [
+const progression = [
   { tier: 'Server', line: 'You receive.' },
   { tier: 'Steward', line: "You're seen." },
   { tier: 'CashoM', line: 'You teach.' },
@@ -134,6 +168,13 @@ const Cell = ({ value }: { value: boolean }) =>
   );
 
 const Membership = () => {
+  const scrollToJoin = () => {
+    const joinSection = document.getElementById('how-to-join');
+    if (joinSection) {
+      joinSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-parchment">
       <Seo
@@ -147,118 +188,123 @@ const Membership = () => {
         <section className="pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="container mx-auto px-4 text-center max-w-3xl">
             <p className="text-rust text-xs font-sans font-semibold tracking-[0.25em] uppercase mb-6">
-              Certification & Membership
+              Certification &amp; Membership
             </p>
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-ink-brown leading-[1.05] mb-6">
               CashoM Membership
             </h1>
             <p className="text-lg md:text-xl text-ink-brown/70 leading-relaxed mb-10 max-w-2xl mx-auto">
-              A professional home for people who serve cannabis — trained, credentialed, and connected.
+              A professional community for people who serve cannabis — trained, credentialed, and connected.
             </p>
-            <a
-              href="#"
+            <button
+              onClick={scrollToJoin}
               className="inline-flex items-center rounded-full bg-rust text-white font-sans text-base font-semibold px-10 py-4 hover:bg-rust/90 transition-colors shadow-lg shadow-rust/20"
             >
-              Enroll
-              <ArrowRight className="w-4 h-4 ml-2" />
-            </a>
+              See what membership opens
+              <ArrowDown className="w-4 h-4 ml-2" />
+            </button>
           </div>
         </section>
 
-        {/* 2. The ladder */}
+        {/* 2. Why this exists */}
         <section className="pb-20 md:pb-28">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-px bg-ink-brown/10 rounded-2xl overflow-hidden border border-ink-brown/10">
-              {ladder.map((step, i) => (
-                <div key={step.tier} className="bg-background p-8 md:p-10 text-center relative">
-                  <p className="text-rust text-[0.65rem] font-sans font-semibold tracking-[0.25em] uppercase mb-3">
-                    {String(i + 1).padStart(2, '0')}
-                  </p>
-                  <h2 className="text-2xl font-serif font-bold text-ink-brown mb-2">{step.tier}</h2>
-                  <p className="text-ink-brown/70">{step.line}</p>
-                </div>
-              ))}
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
+                Why this exists
+              </h2>
+              <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
+                <p>
+                  Cannabis hospitality is still being invented — and the people doing it deserve
+                  real training, real recognition, and each other.
+                </p>
+                <p>
+                  The purpose of this community is to raise the standard of the space, not to
+                  gatekeep it.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* 3. Pricing cards */}
-        <section className="pb-24 md:pb-32">
+        {/* 3. What you get access to */}
+        <section className="pb-20 md:pb-28">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
-              {tierCards.map((tier) => (
+            <div className="max-w-2xl mx-auto mb-12">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-3">
+                What you get access to
+              </h2>
+              <p className="text-ink-brown/70 leading-relaxed">
+                Membership isn't a plan with features — it's a set of things members have.
+              </p>
+            </div>
+            <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+              {accessGroups.map((group) => (
                 <article
-                  key={tier.key}
-                  className={`flex flex-col rounded-2xl p-8 md:p-10 ${
-                    tier.featured
-                      ? 'bg-ink-brown text-parchment shadow-xl lg:-my-4 lg:py-14'
-                      : 'bg-background border border-ink-brown/10 shadow-sm'
-                  }`}
+                  key={group.title}
+                  className="rounded-2xl bg-background border border-ink-brown/10 shadow-sm p-8 md:p-10"
                 >
-                  <h3
-                    className={`text-2xl font-serif font-bold ${
-                      tier.featured ? 'text-parchment' : 'text-ink-brown'
-                    }`}
-                  >
-                    {tier.name}
-                  </h3>
-                  <p
-                    className={`mt-3 text-4xl font-serif font-bold ${
-                      tier.featured ? 'text-parchment' : 'text-ink-brown'
-                    }`}
-                  >
-                    {tier.price}
-                  </p>
-                  <p
-                    className={`mt-3 text-sm leading-relaxed ${
-                      tier.featured ? 'text-parchment/70' : 'text-ink-brown/70'
-                    }`}
-                  >
-                    {tier.audience}
-                  </p>
-                  <ul
-                    className={`mt-8 space-y-3 flex-1 border-t pt-6 ${
-                      tier.featured ? 'border-parchment/15' : 'border-ink-brown/10'
-                    }`}
-                  >
-                    {tier.benefits.map((b) => (
-                      <li key={b} className="flex gap-2.5 text-sm leading-relaxed">
-                        <Check
-                          className={`w-4 h-4 mt-0.5 shrink-0 ${
-                            tier.featured ? 'text-parchment' : 'text-rust'
-                          }`}
-                          strokeWidth={3}
-                        />
-                        <span className={tier.featured ? 'text-parchment/90' : 'text-ink-brown/80'}>
-                          {b}
-                        </span>
+                  <h3 className="text-2xl font-serif font-bold text-ink-brown">{group.title}</h3>
+                  <p className="mt-2 text-ink-brown/70 text-sm leading-relaxed">{group.description}</p>
+                  <ul className="mt-6 space-y-3 border-t border-ink-brown/10 pt-6">
+                    {group.items.map((item) => (
+                      <li key={item} className="flex gap-2.5 text-sm leading-relaxed">
+                        <Check className="w-4 h-4 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
+                        <span className="text-ink-brown/80">{item}</span>
                       </li>
                     ))}
                   </ul>
-                  <a
-                    href="#"
-                    className={`mt-8 inline-flex w-full items-center justify-center rounded-full font-sans text-sm font-semibold px-5 py-3 transition-colors ${
-                      tier.featured
-                        ? 'bg-parchment text-ink-brown hover:bg-parchment-deep'
-                        : 'border border-rust text-rust hover:bg-rust hover:text-white'
-                    }`}
-                  >
-                    Enroll in {tier.name}
-                  </a>
-                  <p
-                    className={`mt-4 text-center text-xs leading-relaxed ${
-                      tier.featured ? 'text-parchment/60' : 'text-ink-brown/60'
-                    }`}
-                  >
-                    {tier.footer}
-                  </p>
                 </article>
               ))}
             </div>
           </div>
         </section>
 
-        {/* 4. Comparison table */}
+        {/* 4. How access works */}
+        <section className="pb-20 md:pb-28">
+          <div className="container mx-auto px-4">
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
+                How access works
+              </h2>
+              <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
+                <p>Access is earned, not bought. Complete a CashoM certification and you're in.</p>
+                <p>Each level of certification opens more of the community. Nobody buys their way past the work.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 5. The progression */}
+        <section className="pb-20 md:pb-28">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-3 text-center">
+                The progression
+              </h2>
+              <p className="text-ink-brown/70 leading-relaxed mb-12 text-center max-w-2xl mx-auto">
+                Three certifications, each opening deeper access to the community.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                {tiers.map((tier) => (
+                  <article
+                    key={tier.key}
+                    className="flex flex-col rounded-2xl bg-background border border-ink-brown/10 shadow-sm p-8 md:p-10"
+                  >
+                    <h3 className="text-2xl font-serif font-bold text-ink-brown">{tier.name}</h3>
+                    <p className="mt-2 text-rust font-serif italic text-xl">{progression.find((p) => p.tier === tier.name)?.line}</p>
+                    <p className="mt-4 text-sm text-ink-brown/70 leading-relaxed">{tier.description}</p>
+                    <p className="mt-6 text-sm text-ink-brown/80 leading-relaxed border-t border-ink-brown/10 pt-6 flex-1">
+                      {tier.opens}
+                    </p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Full comparison table */}
         <section className="pb-24 md:pb-32">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
@@ -310,32 +356,75 @@ const Membership = () => {
           </div>
         </section>
 
-        {/* 5. How membership works */}
-        <section className="pb-24 md:pb-32">
+        {/* 7. How to join */}
+        <section id="how-to-join" className="pb-24 md:pb-32">
           <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
-                How membership works
-              </h2>
-              <p className="text-lg text-ink-brown/70 leading-relaxed mb-4">
-                Membership is earned by completing a course, not by signing up.
-              </p>
-              <p className="text-lg text-ink-brown/70 leading-relaxed">
-                Complete a tier, and its benefits are yours.
-              </p>
+            <div className="max-w-6xl mx-auto">
+              <div className="max-w-2xl mb-12">
+                <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-3">
+                  How to join
+                </h2>
+                <p className="text-ink-brown/70 leading-relaxed">
+                  Complete the certification for the level you want, and that tier of membership is yours.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-stretch">
+                {tiers.map((tier) => (
+                  <article
+                    key={tier.key}
+                    className={`flex flex-col rounded-2xl p-8 md:p-10 ${
+                      tier.key === 'cashom'
+                        ? 'bg-ink-brown text-parchment shadow-xl'
+                        : 'bg-background border border-ink-brown/10 shadow-sm'
+                    }`}
+                  >
+                    <h3
+                      className={`text-2xl font-serif font-bold ${
+                        tier.key === 'cashom' ? 'text-parchment' : 'text-ink-brown'
+                      }`}
+                    >
+                      {tier.name}
+                    </h3>
+                    <p
+                      className={`mt-3 text-4xl font-serif font-bold ${
+                        tier.key === 'cashom' ? 'text-parchment' : 'text-ink-brown'
+                      }`}
+                    >
+                      {tier.price}
+                    </p>
+                    <p
+                      className={`mt-3 text-sm leading-relaxed flex-1 ${
+                        tier.key === 'cashom' ? 'text-parchment/70' : 'text-ink-brown/70'
+                      }`}
+                    >
+                      {tier.description}
+                    </p>
+                    <a
+                      href="#"
+                      className={`mt-8 inline-flex w-full items-center justify-center rounded-full font-sans text-sm font-semibold px-5 py-3 transition-colors ${
+                        tier.key === 'cashom'
+                          ? 'bg-parchment text-ink-brown hover:bg-parchment-deep'
+                          : 'border border-rust text-rust hover:bg-rust hover:text-white'
+                      }`}
+                    >
+                      Enroll in {tier.name}
+                    </a>
+                  </article>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* 6. Closing CTA */}
+        {/* 8. Closing */}
         <section className="pb-24 md:pb-32">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center bg-ink-brown rounded-2xl px-8 py-16 md:py-20">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-parchment mb-6">
-                Choose your tier
+                Raise the standard of the space
               </h2>
               <p className="text-parchment/70 leading-relaxed mb-10 max-w-xl mx-auto">
-                Start where you are. Advance only as far as you want to go.
+                Complete the work, take your place in the community.
               </p>
               <a
                 href="#"
