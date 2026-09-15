@@ -98,9 +98,14 @@ const tiers: Tier[] = [
 
 const Cell = ({ value }: { value: boolean }) =>
   value ? (
-    <Check className="w-4 h-4 text-rust mx-auto" strokeWidth={3} aria-label="Included" />
+    <span
+      className="mx-auto flex w-6 h-6 items-center justify-center rounded-full bg-rust/10"
+      aria-label="Included"
+    >
+      <Check className="w-3.5 h-3.5 text-rust" strokeWidth={3} />
+    </span>
   ) : (
-    <Minus className="w-4 h-4 text-ink-brown/25 mx-auto" aria-label="Not included" />
+    <Minus className="w-4 h-4 text-ink-brown/20 mx-auto" aria-label="Not included" />
   );
 
 const Membership = () => {
