@@ -10,6 +10,7 @@ import CoursePage from "./pages/CoursePage";
 import LoungeAttendant from "./pages/LoungeAttendant";
 import Team from "./pages/Team";
 import Signup from "./pages/Signup";
+import Membership from "./pages/Membership";
 
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
           />
           <Route path="/team" element={<Team />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/membership" element={<Membership />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
