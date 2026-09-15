@@ -150,28 +150,31 @@ const Membership = () => {
               </h2>
               <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
                 <p>
-                  Cannabis hospitality is still being invented — and the people doing it deserve
+                  Cannabis hospitality is still being built. The people doing the work deserve
                   real training, real recognition, and each other.
                 </p>
                 <p>
-                  The purpose of this community is to raise the standard of the space, not to
-                  gatekeep it.
+                  This community exists to raise the standard of the space and to put the people
+                  raising it in the same room.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 3. How access works */}
+        {/* 3. How it works */}
         <section className="pb-20 md:pb-28">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-serif font-bold text-ink-brown mb-6">
-                How access works
+                How it works
               </h2>
               <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
-                <p>Access is earned, not bought. Complete a CashoM certification and you're in.</p>
-                <p>Each level of certification opens more of the community. Nobody buys their way past the work.</p>
+                <p>Take a CashoM course and you're in.</p>
+                <p>
+                  The further you go, the more opens up — the room, the recognition, and
+                  eventually the right to teach it yourself.
+                </p>
               </div>
             </div>
           </div>
