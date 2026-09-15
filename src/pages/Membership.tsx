@@ -98,9 +98,14 @@ const tiers: Tier[] = [
 
 const Cell = ({ value }: { value: boolean }) =>
   value ? (
-    <Check className="w-4 h-4 text-rust mx-auto" strokeWidth={3} aria-label="Included" />
+    <span
+      className="mx-auto flex w-6 h-6 items-center justify-center rounded-full bg-rust/10"
+      aria-label="Included"
+    >
+      <Check className="w-3.5 h-3.5 text-rust" strokeWidth={3} />
+    </span>
   ) : (
-    <Minus className="w-4 h-4 text-ink-brown/25 mx-auto" aria-label="Not included" />
+    <Minus className="w-4 h-4 text-ink-brown/20 mx-auto" aria-label="Not included" />
   );
 
 const Membership = () => {
@@ -199,15 +204,24 @@ const Membership = () => {
                 Every benefit, side by side.
               </p>
               <div className="overflow-x-auto rounded-2xl border border-ink-brown/10 bg-background shadow-sm">
-                <table className="w-full min-w-[640px] text-sm">
+                <table className="w-full min-w-[560px] text-sm">
                   <thead>
                     <tr className="border-b border-ink-brown/10">
-                      <th className="sticky left-0 bg-background z-10 text-left font-serif font-bold text-ink-brown p-4 md:p-5 min-w-[220px]">
+                      <th className="sticky left-0 bg-background z-10 text-left font-serif font-bold text-ink-brown p-4 md:p-5 min-w-[210px] md:min-w-[240px]">
                         Benefit
                       </th>
-                      <th className="p-4 md:p-5 font-serif font-bold text-ink-brown text-center w-28">Server</th>
-                      <th className="p-4 md:p-5 font-serif font-bold text-ink-brown text-center w-28">Steward</th>
-                      <th className="p-4 md:p-5 font-serif font-bold text-ink-brown text-center w-28">CashoM</th>
+                      <th className="p-4 md:p-5 font-serif font-bold text-ink-brown/60 text-center w-24 md:w-28">
+                        Server
+                      </th>
+                      <th className="p-4 md:p-5 font-serif font-bold text-ink-brown/60 text-center w-24 md:w-28">
+                        Steward
+                      </th>
+                      <th className="p-4 md:p-5 font-serif font-bold text-ink-brown text-center w-24 md:w-32 bg-parchment-deep/40">
+                        CashoM
+                        <span className="block mt-1 text-[0.55rem] font-sans font-semibold tracking-[0.18em] uppercase text-rust">
+                          Full access
+                        </span>
+                      </th>
                     </tr>
                   </thead>
                   <tbody>
@@ -222,13 +236,16 @@ const Membership = () => {
                           </td>
                         </tr>
                         {group.rows.map((row) => (
-                          <tr key={row.label} className="border-t border-ink-brown/10">
-                            <td className="sticky left-0 bg-background p-4 md:p-5 text-ink-brown/80 leading-snug">
+                          <tr
+                            key={row.label}
+                            className="group border-t border-ink-brown/[0.07] hover:bg-parchment-deep/20 transition-colors"
+                          >
+                            <td className="sticky left-0 bg-background group-hover:bg-parchment-deep/30 p-4 md:p-5 text-ink-brown/80 leading-snug transition-colors">
                               {row.label}
                             </td>
                             <td className="p-4 md:p-5 text-center"><Cell value={row.server} /></td>
                             <td className="p-4 md:p-5 text-center"><Cell value={row.steward} /></td>
-                            <td className="p-4 md:p-5 text-center"><Cell value={row.cashom} /></td>
+                            <td className="p-4 md:p-5 text-center bg-parchment-deep/25"><Cell value={row.cashom} /></td>
                           </tr>
                         ))}
                       </Fragment>
@@ -236,6 +253,9 @@ const Membership = () => {
                   </tbody>
                 </table>
               </div>
+              <p className="mt-3 text-xs text-ink-brown/50 md:hidden">
+                Swipe to compare all tiers
+              </p>
             </div>
           </div>
         </section>
