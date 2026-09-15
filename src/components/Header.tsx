@@ -75,6 +75,12 @@ const Header = () => {
               All Courses
             </button>
             <button 
+              onClick={() => navigate('/membership')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Membership
+            </button>
+            <button 
               onClick={handleContactClick}
               className="text-foreground hover:text-primary transition-colors"
             >
