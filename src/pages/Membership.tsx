@@ -1,6 +1,7 @@
 import Seo from '@/components/Seo';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { Fragment } from 'react';
 import { Check, Minus, ArrowRight } from 'lucide-react';
 
 type TierKey = 'server' | 'steward' | 'cashom';
