@@ -78,7 +78,7 @@ const Header = () => {
               onClick={() => navigate('/membership')}
               className="text-foreground hover:text-primary transition-colors"
             >
-              Membership
+              Community
             </button>
             <button 
               onClick={handleContactClick}
@@ -146,7 +146,7 @@ const Header = () => {
                 onClick={() => { navigate('/membership'); setIsMobileMenuOpen(false); }}
                 className="text-foreground hover:text-primary transition-colors text-left"
               >
-                Membership
+                Community
               </button>
               <button 
                 onClick={handleContactClick}
