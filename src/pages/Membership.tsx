@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Fragment } from 'react';
 import { Check, Minus, ArrowRight, ArrowDown } from 'lucide-react';
+import cashomSymbol from '@/assets/cashom-symbol.png.asset.json';
 
 type TierKey = 'server' | 'steward' | 'cashom';
 
