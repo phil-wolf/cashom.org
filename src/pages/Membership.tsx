@@ -129,7 +129,7 @@ const Membership = () => {
               CashoM
             </h1>
             <p className="text-lg md:text-xl text-ink-brown/70 leading-relaxed mb-10 max-w-2xl mx-auto">
-              A professional home for people who serve cannabis — trained, credentialed, and connected.
+              Certification for cannabis hospitality professionals. Complete a course, earn the credential, and join the community that comes with it.
             </p>
             <button
               onClick={scrollToJoin}
