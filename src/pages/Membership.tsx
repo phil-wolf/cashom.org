@@ -282,8 +282,8 @@ const Membership = () => {
                   </thead>
                   <tbody>
                     {benefitGroups.map((group) => (
-                      <>
-                        <tr key={group.title} className="bg-parchment-deep/50">
+                      <Fragment key={group.title}>
+                        <tr className="bg-parchment-deep/50">
                           <td
                             colSpan={4}
                             className="sticky left-0 p-4 md:p-5 text-rust text-[0.65rem] font-sans font-semibold tracking-[0.25em] uppercase"
