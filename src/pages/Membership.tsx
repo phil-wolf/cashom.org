@@ -123,6 +123,12 @@ const Membership = () => {
         {/* 1. Hero */}
         <section className="pt-32 pb-20 md:pt-40 md:pb-28">
           <div className="container mx-auto px-4 text-center max-w-3xl">
+            <img
+              src={cashomSymbol.url}
+              alt="CashoM symbol"
+              className="w-20 h-auto mx-auto mb-8"
+              loading="eager"
+            />
             <p className="text-rust text-xs font-sans font-semibold tracking-[0.25em] uppercase mb-6">
               Cannabis Hospitality Certification
             </p>
