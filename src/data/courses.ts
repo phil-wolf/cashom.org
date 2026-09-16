@@ -188,16 +188,13 @@ export const courses: Course[] = [
     status: 'COHORT-BASED · TWELVE SEATS · APPLICATIONS OPEN',
     title: 'CashoM',
     becomes: 'CashoM — Level 1',
-    price: '$9,500',
-    foundingLabel: 'Founding Cohort',
-    standardPriceNote: 'Standard tuition from Cohort Two: $15,000',
+    price: '$12,000',
     paymentOptions: [
-      { label: 'Pay in full', value: '$8,900 at acceptance' },
-      { label: 'Two payments', value: '$4,900 × 2 (acceptance, month 6)' },
-      { label: 'Monthly', value: '$1,800 deposit + 8 × $1,050' },
+      { label: 'Pay in full', value: '$12,000 at acceptance' },
+      { label: 'Two payments', value: '$6,250 × 2 (acceptance, month 6)' },
+      { label: 'Monthly', value: '$2,100 deposit + 8 × $1,350' },
     ],
-    paymentNote:
-      'All payments complete by month 8. Existing Certified Steward of Cannabis holders receive full credit for prior tuition.',
+    paymentNote: 'All payments complete by month 8.',
     format: '12-month apprenticeship · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
     audience:
       'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
@@ -248,7 +245,7 @@ export const courses: Course[] = [
     ],
     seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',
     seoDescription:
-      'A 12-month cannabis apprenticeship with 12 seats, private coaching with Philip Wolf, and a Boulder retreat. Founding Cohort: $9,500.',
+      'A 12-month cannabis apprenticeship with 12 seats, private coaching with Philip Wolf, and a Boulder retreat. Tuition: $12,000.',
     ctaLabel: 'Apply now',
   },
 ];
