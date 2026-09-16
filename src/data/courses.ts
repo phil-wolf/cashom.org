@@ -53,11 +53,10 @@ export const courses: Course[] = [
     schedule: {
       label: 'Fall 2026 dates (all 1:00-2:45 PM MT):',
       items: [
-        'September 22nd and 24th',
-        'October 13th and 20th',
-        'November 3rd and 5th',
+        'October 13th and 15th',
+        'October 20th and 22nd',
       ],
-      note: '2027 calendar coming soon',
+      note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
 
     audience: 'Hospitality staff, and anyone bringing cannabis into the work they already do',
@@ -119,12 +118,11 @@ export const courses: Course[] = [
     oneOnOne: 'Two 30-minute one-on-one sessions to help you build your service',
     finalProject: "Your final project: a cannabis event you design, with Philip's guidance and assessment",
     schedule: {
-      label: 'Fall 2026 cohorts (all 1:00-2:45 PM MT):',
+      label: 'Fall 2026 cohort (1:00-2:45 PM MT):',
       items: [
-        'Fall cohort: September 30, October 7, 14, 21, 28, November 4',
-        'Winter cohort: November 10, 12, 17, 19, December 8, 10',
+        'November 4th through December 16th',
       ],
-      note: '2027 calendar coming soon',
+      note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
 
     audience:
@@ -200,7 +198,7 @@ export const courses: Course[] = [
     ],
     paymentNote:
       'All payments complete by month 8. Existing Certified Steward of Cannabis holders receive full credit for prior tuition.',
-    format: '12-month apprenticeship · January 2027 – January 2028 · Boulder, CO retreat',
+    format: '12-month apprenticeship · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
     audience:
       'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
     intro:
