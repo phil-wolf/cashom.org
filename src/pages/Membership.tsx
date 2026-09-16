@@ -166,6 +166,10 @@ const Membership = () => {
                     We're doing everything we can to grow the cannabis hospitality space, because
                     we believe in the impact it can have on our society.
                   </p>
+                  <p>
+                    We believe building a community for our students helps this. Please stay tuned
+                    as we continue to refine and perfect this community.
+                  </p>
                 </div>
               </div>
               <div className="md:pl-12">
