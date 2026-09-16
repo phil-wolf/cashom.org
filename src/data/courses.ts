@@ -195,7 +195,7 @@ export const courses: Course[] = [
       { label: 'Monthly', value: '$2,100 deposit + 8 × $1,350' },
     ],
     paymentNote: 'All payments complete by month 8.',
-    format: '12-month apprenticeship · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
+    format: '12-month apprenticeship · Classes every other Monday, 11am Mountain Time · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
     audience:
       'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
     intro:
@@ -207,6 +207,7 @@ export const courses: Course[] = [
       'Specialization in your domain — culinary, movement, wellness, coaching, retail, or events',
       'The retreat — four days together in Boulder, March 18–21, 2027',
       'A year of direct work with Philip Wolf',
+      'Access to the CashoM Community',
     ],
     curriculum: [
       {
