@@ -246,6 +246,7 @@ export const courses: Course[] = [
     seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',
     seoDescription:
       'A 12-month cannabis apprenticeship with 12 seats, private coaching with Philip Wolf, and a Boulder retreat. Tuition: $12,000.',
+    ctaLabel: 'Apply now',
   },
 ];
 
