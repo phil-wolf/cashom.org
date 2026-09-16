@@ -28,6 +28,7 @@ export interface Course {
   oneOnOne?: string;
   finalProject?: string;
   format: string;
+  formatSub?: string;
 
   audience: string;
   intro: string;
@@ -115,13 +116,13 @@ export const courses: Course[] = [
     becomes: 'Certified Steward of Cannabis',
     price: '$798',
     format: '6 live classes, 105 minutes each',
+    formatSub: 'Two one-on-one coaching calls with Philip',
     oneOnOne: 'Two 30-minute one-on-one sessions to help you build your service',
     finalProject: "Your final project: a cannabis event you design, with Philip's guidance and assessment",
     schedule: {
       label: 'Fall 2026 cohort (1:00-2:45 PM MT):',
       items: [
         'November 4th through December 16th — classes every Wednesday',
-        'Two one-on-one coaching calls with Philip',
       ],
       note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
