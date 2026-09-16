@@ -197,7 +197,7 @@ export const courses: Course[] = [
     paymentNote: 'All payments complete by month 8.',
     format: '12-month apprenticeship · Classes every other Monday, 11am Mountain Time · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
     audience:
-      'For practitioners already working with cannabis and consumers who have gone as far as they can on their own.',
+      'People who want to master the art of cannabis hospitality, and those who want to serve cannabis in a way that optimizes people\'s lives.',
     intro:
       '<strong>People don\'t know how to identify what type of high they will have. A CashoM does.</strong><br /><br />Learn how to reach specific states of your high and apply them to your pursuits — the lens that serves writing poetry is not the lens that serves athletic flow. That precision is the gold.<br /><br />Then learn to guide it for others.<br /><br /><strong>We call this the Lens Framework, and it\'s the heart of becoming a CashoM.</strong>',
     learn: [
