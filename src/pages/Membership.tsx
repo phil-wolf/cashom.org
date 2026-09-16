@@ -177,10 +177,15 @@ const Membership = () => {
                   How it works
                 </h2>
                 <div className="space-y-4 text-lg text-ink-brown/70 leading-relaxed">
-                  <p>Take a CashoM course and you're in.</p>
                   <p>
-                    The further you go, the more opens up — the room, the recognition, and
-                    eventually the right to teach it yourself.
+                    This is a benefit that we offer our students. We offer different tiers of
+                    offerings (which you can see below) depending on how far you go with the
+                    training.
+                  </p>
+                  <p>
+                    Our goal is to be a support as people are putting their work into practice. Not
+                    ready to certify? Sign up for our email list and look out for our free
+                    webinars.
                   </p>
                 </div>
               </div>
