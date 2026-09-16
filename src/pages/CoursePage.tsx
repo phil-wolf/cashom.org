@@ -323,7 +323,7 @@ const CoursePage = () => {
                 <article className="bg-background rounded-2xl border border-ink-brown/10 shadow-sm p-8">
                   <h3 className="text-xl font-serif font-bold text-ink-brown mb-3">12 private calls</h3>
                   <p className="text-sm text-ink-brown/70 leading-relaxed">
-                    45 minutes each with Philip Wolf, held on Wednesdays. Progression review against the mastery rubric.
+                    45 minutes each with Philip Wolf. Progression review against the mastery rubric.
                   </p>
                 </article>
 

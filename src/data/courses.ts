@@ -197,8 +197,8 @@ export const courses: Course[] = [
       { label: 'Monthly', value: '$2,100 deposit + 8 × $1,350' },
     ],
     paymentNote: 'All payments complete by month 8.',
-    format: '12-month apprenticeship · Classes every other Monday, 11am Mountain Time · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
-    formatSub: 'One-on-one coaching calls with Philip — Wednesdays',
+    format: '12-month apprenticeship · Classes every other Wednesday, 11am Mountain Time · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
+    formatSub: 'One-on-one coaching calls with Philip',
     audience:
       'People who want to master the art of cannabis hospitality, and those who want to serve cannabis in a way that optimizes people\'s lives.',
     intro:
