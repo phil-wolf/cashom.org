@@ -30,7 +30,7 @@ const benefitGroups: BenefitGroup[] = [
       { label: 'Featured on the monthly call', server: false, steward: true, cashom: true },
       { label: 'In-person meetups (potential during conferences)', server: false, steward: true, cashom: true },
       { label: 'Private cohort space', server: false, steward: false, cashom: true },
-      { label: 'One-on-one coaching calls with Philip (Wednesdays)', server: false, steward: false, cashom: true },
+      { label: 'One-on-one coaching calls with Philip', server: false, steward: false, cashom: true },
     ],
   },
   {
