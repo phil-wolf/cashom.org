@@ -28,6 +28,7 @@ export interface Course {
   oneOnOne?: string;
   finalProject?: string;
   format: string;
+  formatSub?: string;
 
   audience: string;
   intro: string;

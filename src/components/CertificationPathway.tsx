@@ -121,6 +121,9 @@ const CertificationPathway = ({
 
                 <div className="mt-auto pt-6">
                   <p className="text-xs text-ink-brown/60 mb-1">{tier.format}</p>
+                  {tier.formatSub && (
+                    <p className="text-xs text-ink-brown/70 leading-snug mb-1">{tier.formatSub}</p>
+                  )}
                   {tier.schedule && (
                     <div className="mb-4">
                       <p className="text-[0.6rem] font-sans font-semibold tracking-[0.15em] uppercase text-ink-brown/60 mb-1.5">
