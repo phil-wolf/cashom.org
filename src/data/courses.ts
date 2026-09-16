@@ -201,7 +201,7 @@ export const courses: Course[] = [
     audience:
       'People who want to master the art of cannabis hospitality, and those who want to serve cannabis in a way that optimizes people\'s lives.',
     intro:
-      '<strong>People don\'t know how to identify what type of high they will have. A CashoM does.</strong><br /><br />Learn how to reach specific states of your high and apply them to your pursuits — the lens that serves writing poetry is not the lens that serves athletic flow. That precision is the gold.<br /><br />Then learn to guide it for others.<br /><br /><strong>We call this the Lens Framework, and it\'s the heart of becoming a CashoM.</strong>',
+      'For those dedicating part of their life to this plant. A CashoM is a master of cannabis hospitality — able to curate an environment with enough precision that a guest has the best experience available to them, to reach a specific high and guide someone else there, teaching people how to optimize their life with cannabis. It asks for the deepest understanding of the science and the philosophy of this plant, giving you the tools to cultivate your own wisdom. This is not an easy path. For those who choose it, the impact on your guests, your clients, and your community is revolutionary.<br /><br />CashoMs are pioneers in an industry still growing, and you have the opportunity to help lead the way. This is more than a course — it\'s an apprenticeship that confers the title of CashoM. This is for people who believe cannabis can change our society.',
     learn: [
       'Advanced connoisseurship and the CashoM tasting protocol',
       'The Lens Framework in full — reaching specific states on purpose',
