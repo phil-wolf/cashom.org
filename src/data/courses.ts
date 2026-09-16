@@ -121,6 +121,7 @@ export const courses: Course[] = [
       label: 'Fall 2026 cohort (1:00-2:45 PM MT):',
       items: [
         'November 4th through December 16th — classes every Wednesday',
+        'Two one-on-one coaching calls with Philip',
       ],
       note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
