@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-ink-brown/70 via-ink-brown/50 to-ink-brown/80" />
       
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
-        <p className="text-rust text-sm font-sans font-semibold tracking-[0.25em] uppercase mb-6 animate-fade-in">
+        <p className="text-rust-light text-sm font-sans font-semibold tracking-[0.25em] uppercase mb-6 animate-fade-in [text-shadow:0_1px_3px_rgba(0,0,0,0.45)]">
           Cannabis Hospitality Certifications & Training
         </p>
         
@@ -36,13 +36,13 @@ const Hero = () => {
         <p className="text-xl md:text-2xl lg:text-3xl text-parchment/90 mb-4 max-w-3xl mx-auto font-serif italic animate-fade-in" style={{
           animationDelay: '0.2s'
         }}>
-          Elevate service. Deepen wisdom. Lead the cannabis experience.
+          Elevate service. Cultivate wisdom. Guide the cannabis experience.
         </p>
         
         <p className="text-base md:text-lg text-parchment/70 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-          Professional certifications for hospitality, service, and wellness professionals who want to serve cannabis with confidence, purpose, care, and credibility.
+          Advanced training for hospitality, retail, service, and wellness professionals — from your first certification to the title of CashoM.
         </p>
 
         <div className="animate-scale-in" style={{ animationDelay: '0.4s' }}>
