@@ -26,7 +26,7 @@ const Hero = () => {
       
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
         <p className="text-rust text-sm font-sans font-semibold tracking-[0.25em] uppercase mb-6 animate-fade-in">
-          Cannabis Hospitality Certifications & Training
+          The School of CashoM
         </p>
 
         
