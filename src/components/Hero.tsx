@@ -25,9 +25,10 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-ink-brown/70 via-ink-brown/50 to-ink-brown/80" />
       
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-20">
-        <p className="text-rust-light text-sm font-sans font-semibold tracking-[0.25em] uppercase mb-6 animate-fade-in [text-shadow:0_1px_3px_rgba(0,0,0,0.45)]">
+        <p className="text-accent text-sm font-sans font-semibold tracking-[0.25em] uppercase mb-6 animate-fade-in [text-shadow:0_1px_3px_rgba(0,0,0,0.45)]">
           Cannabis Hospitality Certifications & Training
         </p>
+
         
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-parchment mb-6 leading-[1.1] animate-fade-in">
           CashoM
