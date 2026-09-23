@@ -304,7 +304,9 @@ const Membership = () => {
                       {tier.description}
                     </p>
                     <a
-                      href="#"
+                      href="https://forms.gle/PRRM6KciRJcDkzWw6"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`mt-8 inline-flex w-full items-center justify-center rounded-full font-sans text-sm font-semibold px-5 py-3 transition-colors ${
                         tier.key === 'cashom'
                           ? 'bg-parchment text-ink-brown hover:bg-parchment-deep'
@@ -331,7 +333,9 @@ const Membership = () => {
                 Complete the work, take your place in the community.
               </p>
               <a
-                href="#"
+                href="https://forms.gle/PRRM6KciRJcDkzWw6"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center rounded-full bg-parchment text-ink-brown font-sans text-base font-semibold px-10 py-4 hover:bg-parchment-deep transition-colors"
               >
                 Enroll
