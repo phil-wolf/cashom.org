@@ -60,10 +60,8 @@ const benefitGroups: BenefitGroup[] = [
     title: 'Opportunities',
     description: '',
     rows: [
-      { label: 'Teaching and certifying rights', server: false, steward: false, cashom: true },
-      { label: 'Cultivating Spirits licensing potential', server: false, steward: false, cashom: true },
+      { label: 'Licensing and teaching opportunities — by invitation', server: false, steward: false, cashom: true },
       { label: 'Co-led webinars and live events', server: false, steward: false, cashom: true },
-      { label: 'Return to the retreat as teacher', server: false, steward: false, cashom: true },
     ],
   },
 ];
