@@ -92,7 +92,7 @@ const CertificationPathway = ({
                 </p>
 
                 <div className="mt-6 border-t border-ink-brown/10 pt-5 flex-1">
-                  <CourseLists course={tier} hideReceive={tier.receiveCoursePageOnly} />
+                  <CourseLists course={tier} card />
                 </div>
 
                 <div className="mt-auto pt-6">
