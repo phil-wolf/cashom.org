@@ -1,4 +1,5 @@
-import { Check, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import CourseLists from './CourseLists';
 import { Link } from 'react-router-dom';
 import { courses } from '@/data/courses';
 
@@ -91,32 +92,7 @@ const CertificationPathway = ({
                 </p>
 
                 <div className="mt-6 border-t border-ink-brown/10 pt-5 flex-1">
-                  <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
-                    What you'll learn
-                  </p>
-                  <ul className="space-y-2.5">
-                    {tier.learn.map((item) =>
-                      item === 'Access to the CashoM Community' ? (
-                        <li key={item} className="flex gap-2.5 text-sm text-ink-brown/80 leading-relaxed">
-                          <Check className="w-4 h-4 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
-                          <span>
-                            Access to the{' '}
-                            <Link
-                              to="/membership"
-                              className="text-rust underline underline-offset-2 hover:text-rust/80"
-                            >
-                              CashoM Community
-                            </Link>
-                          </span>
-                        </li>
-                      ) : (
-                        <li key={item} className="flex gap-2.5 text-sm text-ink-brown/80 leading-relaxed">
-                          <Check className="w-4 h-4 mt-0.5 shrink-0 text-rust" strokeWidth={3} />
-                          <span>{item}</span>
-                        </li>
-                      ),
-                    )}
-                  </ul>
+                  <CourseLists course={tier} />
                 </div>
 
                 <div className="mt-auto pt-6">

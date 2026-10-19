@@ -33,6 +33,9 @@ export interface Course {
   audience: string;
   intro: string;
   learn: string[];
+  receive?: string[];
+  opensUpIntro?: string;
+  opensUp?: string[];
   curriculum: { title: string; description?: string; items?: string[] }[];
   curriculumHeading?: string;
   curriculumSubheading?: string;
@@ -204,14 +207,28 @@ export const courses: Course[] = [
     intro:
       'For those dedicating part of their life to this plant. A CashoM is a master of cannabis hospitality — able to curate an environment with enough precision that a guest has the best experience available to them, to reach a specific high and guide someone else there, teaching people how to optimize their life with cannabis. It asks for the deepest understanding of the science and the philosophy of this plant, giving you the tools to cultivate your own wisdom. This is not an easy path. For those who choose it, the impact on your guests, your clients, and your community is revolutionary.<br /><br />CashoMs are pioneers in an industry still growing, and you have the opportunity to help lead the way. This is more than a course — it\'s an apprenticeship that confers the title of CashoM. This is for people who believe cannabis can change our society.',
     learn: [
-      'Advanced connoisseurship and the CashoM tasting protocol',
-      'The Lens Framework in full — reaching specific states on purpose',
+      'Advanced connoisseurship — identifying your type of high',
+      'Quality assessment — identifying defects and evaluating how cannabis was grown, cured, and handled',
+      'The Lens Framework in full — reaching specific states of your high on purpose',
+      'Becoming a master space holder',
+      'Event and service design expertise',
+      'Guest communication and recommendation',
       'Building and running your own guided practice with real guests',
       'Specialization in your domain — culinary, movement, wellness, coaching, retail, or events',
-      'The retreat — four days together in Boulder, March 18–21, 2027',
-      'A year of direct work with Philip Wolf',
-      'Teaching opportunities — lead sessions and guide the tiers below',
+    ],
+    receive: [
+      'The title of CashoM',
+      'A year of direct work with Philip Wolf, plus monthly one-on-one calls',
+      'The Certified Server and Certified Steward courses ($947 value), included in the foundation term',
+      'Four days together in Boulder, March 18–21, 2027',
+      'In-person training at the Cannabis Hospitality Summit during MJBizCon week',
       'Access to the CashoM Community',
+    ],
+    opensUpIntro: 'Available to graduates by invitation:',
+    opensUp: [
+      'A license to run Cultivating Spirits experiences',
+      'A license to run Cannabis Wedding Expo events',
+      'Teaching rights — lead sessions and certify at the tiers below',
     ],
     curriculum: [
       {
