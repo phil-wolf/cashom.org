@@ -7,9 +7,10 @@ const COMMUNITY_ITEM = 'Access to the CashoM Community';
 interface Props {
   course: Course;
   size?: 'sm' | 'md';
+  hideReceive?: boolean;
 }
 
-const CourseLists = ({ course, size = 'sm' }: Props) => {
+const CourseLists = ({ course, size = 'sm', hideReceive = false }: Props) => {
   const sm = size === 'sm';
   const liCls = sm
     ? 'flex gap-2.5 text-sm text-ink-brown/80 leading-relaxed'
@@ -36,7 +37,7 @@ const CourseLists = ({ course, size = 'sm' }: Props) => {
 
   const groups = [
     { label: "What you'll learn", items: course.learn },
-    course.receive && { label: 'What you receive', items: course.receive },
+    !hideReceive && course.receive && { label: 'What you receive', items: course.receive },
     course.opensUp && { label: 'What opens up', items: course.opensUp, intro: course.opensUpIntro },
   ].filter(Boolean) as { label: string; items: string[]; intro?: string }[];
 
