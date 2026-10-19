@@ -1,4 +1,5 @@
-import { Check, ChevronRight } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
+import CourseLists from './CourseLists';
 import { Link } from 'react-router-dom';
 import { courses } from '@/data/courses';
 

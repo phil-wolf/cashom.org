@@ -1,4 +1,5 @@
 import { Link, useParams, Navigate } from 'react-router-dom';
+import CourseLists from '@/components/CourseLists';
 import { ArrowLeft, Check, Clock, Users, CalendarDays, FileCheck } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
