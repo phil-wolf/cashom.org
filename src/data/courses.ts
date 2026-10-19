@@ -34,6 +34,7 @@ export interface Course {
   intro: string;
   learn: string[];
   receive?: string[];
+  receiveCoursePageOnly?: boolean;
   opensUpIntro?: string;
   opensUp?: string[];
   curriculum: { title: string; description?: string; items?: string[] }[];
@@ -139,11 +140,19 @@ export const courses: Course[] = [
       'Setting the vibe and holding space for people who are high',
       'Advanced terpene and cannabinoid knowledge',
       'Introduction to the Lens Framework — applying your high to your pursuits in life',
-      'Beginner connoisseurship — assessing quality and presenting product',
+      'Beginner connoisseurship — identifying your type of high',
+      'Quality assessment and product presentation',
       'Pacing, sequencing, and curating larger events',
       'Introduction to building a coaching or service business',
-      'Two 30-minute one-on-one sessions to help you build your service',
+      "Design a complete cannabis event, with Philip's guidance and assessment",
     ],
+    receive: [
+      'A verifiable online profile showing exactly what you were trained in — shareable with clients, venues, and partners',
+      'Two 30-minute one-on-one sessions with Philip Wolf',
+      'Six live classes, all recorded',
+      'Access to the CashoM Community',
+    ],
+    receiveCoursePageOnly: true,
     curriculum: [
       {
         title: 'Advanced Guest Communication and the GUIDE Method',
@@ -168,7 +177,7 @@ export const courses: Course[] = [
       {
         title: 'Beginner Connoisseurship',
         description:
-          'Telling quality cannabis from the rest, and presenting product the way a professional does.',
+          'Identifying your type of high, assessing quality by how cannabis was grown and cured, and presenting product the way a professional does.',
       },
       {
         title: 'Building Your Practice',
