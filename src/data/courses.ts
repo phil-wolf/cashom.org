@@ -257,12 +257,11 @@ export const courses: Course[] = [
       },
     ],
     outcomes: [
-      'Earn the CashoM designation',
-      'Design and run a signature offering, tested with real guests',
-      '26 live sessions and 12 private coaching calls with Philip Wolf over the year',
-      'The option to return and teach the next cohort',
-      'Licensing to run Cultivating Spirits branded experiences',
-      'Join a small alumni network shaping the field',
+      'Identify the type of high a cultivar produces and guide someone to it on purpose',
+      'Hold a room from before consumption through to its close',
+      'Design and run cannabis experiences in your own domain',
+      'Assess quality and speak to it with authority',
+      'Run a guided practice with real guests',
     ],
     seoTitle: 'CashoM Level 1 — 12-Month Cannabis Apprenticeship',
     seoDescription:
