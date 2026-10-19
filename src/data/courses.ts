@@ -34,7 +34,7 @@ export interface Course {
   intro: string;
   learn: string[];
   receive?: string[];
-  receiveCoursePageOnly?: boolean;
+  cardReceive?: string[];
   opensUpIntro?: string;
   opensUp?: string[];
   curriculum: { title: string; description?: string; items?: string[] }[];
@@ -74,6 +74,11 @@ export const courses: Course[] = [
       'Introduction to holding space for people who are high and the flow of cannabis service',
       'Guest communication, with an introduction to the GUIDE method',
       'Recognizing over-consumption, harm reduction, and legal compliance',
+    ],
+    cardReceive: [
+      'A verifiable online profile showing exactly what you were trained in',
+      'Two live classes, both recorded',
+      'Access to the CashoM Community',
     ],
     curriculum: [
       {
@@ -152,7 +157,12 @@ export const courses: Course[] = [
       'Six live classes, all recorded',
       'Access to the CashoM Community',
     ],
-    receiveCoursePageOnly: true,
+    cardReceive: [
+      'A verifiable online profile showing exactly what you were trained in',
+      'Two 30-minute one-on-one sessions with Philip Wolf',
+      'Six live classes, all recorded',
+      'Access to the CashoM Community',
+    ],
     curriculum: [
       {
         title: 'Advanced Guest Communication and the GUIDE Method',
@@ -230,6 +240,13 @@ export const courses: Course[] = [
       'The Certified Server and Certified Steward courses ($947 value), included in the foundation term',
       'Four days together in Boulder, March 18–21, 2027',
       'In-person training at the Cannabis Hospitality Summit during MJBizCon week',
+      'Access to the CashoM Community',
+    ],
+    cardReceive: [
+      'The title of CashoM',
+      'Twenty-six group sessions plus monthly one-on-one calls with Philip Wolf',
+      'The Certified Server and Certified Steward courses ($947 value)',
+      'Four days together in Boulder, March 18–21, 2027',
       'Access to the CashoM Community',
     ],
     opensUpIntro: 'Available to graduates by invitation:',
