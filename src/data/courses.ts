@@ -201,7 +201,6 @@ export const courses: Course[] = [
     ],
     paymentNote: 'All payments complete by month 8.',
     format: '12-month apprenticeship · Classes every other Wednesday, 11am Mountain Time · January 2027 – January 2028 · Boulder, CO retreat · sessions recorded',
-    formatSub: 'One-on-one coaching calls with Philip',
     audience:
       'People who want to master the art of cannabis hospitality, and those who want to serve cannabis in a way that optimizes people\'s lives.',
     intro:
@@ -218,7 +217,7 @@ export const courses: Course[] = [
     ],
     receive: [
       'The title of CashoM',
-      'A year of direct work with Philip Wolf, plus monthly one-on-one calls',
+      'Twenty-six group sessions across the year, plus monthly one-on-one calls with Philip Wolf',
       'The Certified Server and Certified Steward courses ($947 value), included in the foundation term',
       'Four days together in Boulder, March 18–21, 2027',
       'In-person training at the Cannabis Hospitality Summit during MJBizCon week',
