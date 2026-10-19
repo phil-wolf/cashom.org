@@ -274,7 +274,7 @@ const CoursePage = () => {
                 <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-4">
                   You become
                 </p>
-                <h2 className="text-3xl font-serif font-bold text-ink-brown mb-6">{course.becomes}</h2>
+                <h2 className="text-3xl font-serif font-bold text-ink-brown mb-6">{course.slug === 'cashom-level-1' ? course.title : course.becomes}</h2>
                 <ul className="space-y-3">
                   {course.outcomes.map((item) => (
                     <li key={item} className="flex gap-3 text-ink-brown/80 leading-relaxed">
