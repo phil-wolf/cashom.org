@@ -192,7 +192,7 @@ export const courses: Course[] = [
     tier: 'Tier 3',
     status: 'COHORT-BASED · TWELVE SEATS · APPLICATIONS OPEN',
     title: 'CashoM',
-    becomes: 'CashoM — Level 1',
+    becomes: 'CashoM',
     price: '$12,000',
     paymentOptions: [
       { label: 'Pay in full', value: '$12,000 at acceptance' },
