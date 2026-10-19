@@ -153,7 +153,6 @@ export const courses: Course[] = [
       'Access to the CashoM Community',
     ],
     receiveCoursePageOnly: true,
-    ],
     curriculum: [
       {
         title: 'Advanced Guest Communication and the GUIDE Method',
