@@ -58,8 +58,7 @@ export const courses: Course[] = [
     schedule: {
       label: 'Fall 2026 dates (all 1:00-2:45 PM MT):',
       items: [
-        'October 13th and 15th',
-        'October 20th and 22nd',
+        'November 4th and 6th',
       ],
       note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
@@ -129,10 +128,8 @@ export const courses: Course[] = [
     oneOnOne: 'Two 30-minute one-on-one sessions to help you build your service',
     finalProject: "Your final project: a cannabis event you design, with Philip's guidance and assessment",
     schedule: {
-      label: 'Fall 2026 cohort (1:00-2:45 PM MT):',
-      items: [
-        'November 4th through December 16th — classes every Wednesday',
-      ],
+      label: 'Classes 1:00-2:45 PM MT',
+      items: [],
       note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
 
