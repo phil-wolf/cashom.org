@@ -1,0 +1,1 @@
+alter table public.exam_questions add column section_order int not null default 0;

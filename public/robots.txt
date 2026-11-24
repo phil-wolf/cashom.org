@@ -11,6 +11,8 @@ User-agent: facebookexternalhit
 Allow: /
 
 User-agent: *
+Disallow: /final-exam
+Disallow: /admin
 Allow: /
 
 Sitemap: https://cashom.org/sitemap.xml

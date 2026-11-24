@@ -11,6 +11,8 @@ import LoungeAttendant from "./pages/LoungeAttendant";
 import Team from "./pages/Team";
 import Signup from "./pages/Signup";
 import Membership from "./pages/Membership";
+import FinalExam from "./pages/FinalExam";
+import AdminExam from "./pages/admin/AdminExam";
 
 
 const queryClient = new QueryClient();
@@ -43,6 +45,8 @@ const App = () => (
           <Route path="/team" element={<Team />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/membership" element={<Membership />} />
+          <Route path="/final-exam" element={<FinalExam />} />
+          <Route path="/admin/exam" element={<AdminExam />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
