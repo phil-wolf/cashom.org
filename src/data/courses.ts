@@ -56,9 +56,9 @@ export const courses: Course[] = [
     price: '$149',
     format: '2 live classes, 105 minutes each',
     schedule: {
-      label: 'Fall 2026 dates (all 1:00-2:45 PM MT):',
+      label: 'December 2026 dates (all 1:00-2:45 PM MT):',
       items: [
-        'November 4th and 6th',
+        'December 8th and 10th',
       ],
       note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
     },
@@ -129,8 +129,8 @@ export const courses: Course[] = [
     finalProject: "Your final project: a cannabis event you design, with Philip's guidance and assessment",
     schedule: {
       label: 'Classes 1:00-2:45 PM MT',
-      items: [],
-      note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with. 2027 calendar coming soon',
+      items: ['January 6th through February 10th — classes every Wednesday'],
+      note: 'All classes are recorded — if you happen to miss one, the recording is yours to catch up with.',
     },
 
     audience:
