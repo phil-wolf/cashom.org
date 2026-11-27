@@ -105,13 +105,15 @@ const CertificationPathway = ({
                       <p className="text-[0.6rem] font-sans font-semibold tracking-[0.15em] uppercase text-ink-brown/60 mb-1.5">
                         {tier.schedule.label}
                       </p>
-                      <ul className="space-y-0.5 mb-1.5">
-                        {tier.schedule.items.map((item) => (
-                          <li key={item} className="text-xs text-ink-brown/70 leading-snug">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
+                      {tier.schedule.items.length > 0 && (
+                        <ul className="space-y-0.5 mb-1.5">
+                          {tier.schedule.items.map((item) => (
+                            <li key={item} className="text-xs text-ink-brown/70 leading-snug">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                       {tier.schedule.note && (
                         <p className="text-xs text-rust font-medium leading-snug">{tier.schedule.note}</p>
                       )}

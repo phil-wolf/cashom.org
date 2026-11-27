@@ -187,13 +187,15 @@ const CoursePage = () => {
                       <p className="text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase text-rust mb-3">
                         {course.schedule.label}
                       </p>
-                      <ul className="space-y-1 mb-3">
-                        {course.schedule.items.map((item) => (
-                          <li key={item} className="text-sm text-ink-brown/80 leading-snug">
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
+                      {course.schedule.items.length > 0 && (
+                        <ul className="space-y-1 mb-3">
+                          {course.schedule.items.map((item) => (
+                            <li key={item} className="text-sm text-ink-brown/80 leading-snug">
+                              {item}
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                       {course.schedule.note && (
                         <p className="text-xs text-rust font-medium leading-snug">
                           {course.schedule.note}
